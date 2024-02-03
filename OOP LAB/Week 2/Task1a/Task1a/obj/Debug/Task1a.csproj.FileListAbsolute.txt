@@ -1,0 +1,7 @@
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\Week 2\Task1a\Task1a\bin\Debug\Task1a.exe.config
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\Week 2\Task1a\Task1a\bin\Debug\Task1a.exe
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\Week 2\Task1a\Task1a\bin\Debug\Task1a.pdb
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\Week 2\Task1a\Task1a\obj\Debug\Task1a.csproj.AssemblyReference.cache
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\Week 2\Task1a\Task1a\obj\Debug\Task1a.csproj.CoreCompileInputs.cache
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\Week 2\Task1a\Task1a\obj\Debug\Task1a.exe
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\Week 2\Task1a\Task1a\obj\Debug\Task1a.pdb
