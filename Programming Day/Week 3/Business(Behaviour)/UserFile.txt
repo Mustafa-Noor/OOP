@@ -1,0 +1,2 @@
+1,123456,Customer
+Mustafa,123456,Employee

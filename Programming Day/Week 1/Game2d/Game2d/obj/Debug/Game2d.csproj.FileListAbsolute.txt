@@ -1,0 +1,10 @@
+C:\Users\musno\source\repos\Game2d\Game2d\bin\Debug\Game2d.exe.config
+C:\Users\musno\source\repos\Game2d\Game2d\bin\Debug\Game2d.exe
+C:\Users\musno\source\repos\Game2d\Game2d\bin\Debug\Game2d.pdb
+C:\Users\musno\source\repos\Game2d\Game2d\bin\Debug\EZInput.dll
+C:\Users\musno\source\repos\Game2d\Game2d\bin\Debug\EZInput.xml
+C:\Users\musno\source\repos\Game2d\Game2d\obj\Debug\Game2d.csproj.AssemblyReference.cache
+C:\Users\musno\source\repos\Game2d\Game2d\obj\Debug\Game2d.csproj.CoreCompileInputs.cache
+C:\Users\musno\source\repos\Game2d\Game2d\obj\Debug\Game2d.csproj.CopyComplete
+C:\Users\musno\source\repos\Game2d\Game2d\obj\Debug\Game2d.exe
+C:\Users\musno\source\repos\Game2d\Game2d\obj\Debug\Game2d.pdb

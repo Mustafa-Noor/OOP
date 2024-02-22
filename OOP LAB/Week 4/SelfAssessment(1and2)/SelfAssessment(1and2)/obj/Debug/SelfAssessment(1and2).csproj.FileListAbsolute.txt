@@ -1,0 +1,7 @@
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 4\SelfAssessment(1and2)\SelfAssessment(1and2)\bin\Debug\SelfAssessment(1and2).exe.config
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 4\SelfAssessment(1and2)\SelfAssessment(1and2)\bin\Debug\SelfAssessment(1and2).exe
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 4\SelfAssessment(1and2)\SelfAssessment(1and2)\bin\Debug\SelfAssessment(1and2).pdb
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 4\SelfAssessment(1and2)\SelfAssessment(1and2)\obj\Debug\SelfAssessment(1and2).csproj.AssemblyReference.cache
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 4\SelfAssessment(1and2)\SelfAssessment(1and2)\obj\Debug\SelfAssessment(1and2).csproj.CoreCompileInputs.cache
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 4\SelfAssessment(1and2)\SelfAssessment(1and2)\obj\Debug\SelfAssessment(1and2).exe
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 4\SelfAssessment(1and2)\SelfAssessment(1and2)\obj\Debug\SelfAssessment(1and2).pdb
