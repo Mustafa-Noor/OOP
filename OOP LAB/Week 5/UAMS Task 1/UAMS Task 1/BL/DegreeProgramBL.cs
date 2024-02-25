@@ -8,35 +8,35 @@ namespace UAMS_Task_1.BL
 {
     internal class DegreeProgramBL
     {
-        public string degreeName;
-        public float degreeDuration;
-        public List<SubjectBL> subjects;
-        public int seats;
+        public string DegreeName;
+        public float DegreeDuration;
+        public List<SubjectBL> Subjects;
+        public int Seats;
 
-        public DegreeProgramBL(string degreeName, float degreeDuration, int seats)
+        public DegreeProgramBL(string DegreeName, float DegreeDuration, int Seats)
         {
-            this.degreeName = degreeName;
-            this.degreeDuration = degreeDuration;
-            this.seats = seats;
-            subjects = new List<SubjectBL>();
+            this.DegreeName = DegreeName;
+            this.DegreeDuration = DegreeDuration;
+            this.Seats = Seats;
+            Subjects = new List<SubjectBL>();
         }
 
         public int CalcualateCreditHours()
         {
-            int count = 0;
-            for (int i = 0; i < subjects.Count; i++)
+            int Count = 0;
+            for (int i = 0; i < Subjects.Count; i++)
             {
-                count = count + subjects[i].creditHours;
+                Count = Count + Subjects[i].CreditHours;
             }
-            return count;
+            return Count;
         }
 
         public bool AddSubject(SubjectBL s)
         {
-            int creditHours = CalcualateCreditHours();
-            if (creditHours + s.creditHours <= 20)
+            int CreditHours = CalcualateCreditHours();
+            if (CreditHours + s.CreditHours <= 20)
             {
-                subjects.Add(s);
+                Subjects.Add(s);
                 return true;
             }
             else
@@ -49,9 +49,9 @@ namespace UAMS_Task_1.BL
 
         public bool IsSubjectExists(SubjectBL sub)
         {
-            foreach (SubjectBL s in subjects)
+            foreach (SubjectBL s in Subjects)
             {
-                if (s.code == sub.code)
+                if (s.Code == sub.Code)
                 {
                     return true;
                 }

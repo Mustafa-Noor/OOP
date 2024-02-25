@@ -28,20 +28,20 @@ namespace UAMS_Task_1
                 else if (option == 2)
                 {
                     BL.DegreeProgramBL d = UI.DegreeUI.TakeInputForDegree();
-                    DL.DegreeProgramDL.addIntoDegreeList(d);
+                    DL.DegreeProgramDL.AddIntoDegreeList(d);
                 }
 
                 else if (option == 3)
                 {
-                    List<BL.StudentBL> sortedStudentList = new List<BL.StudentBL>();
-                    sortedStudentList = DL.StudentDL.SortStudentsByMerit();
-                    BL.StudentBL.GiveAdmission(sortedStudentList);
+                    List<BL.StudentBL> SortedStudentList = new List<BL.StudentBL>();
+                    SortedStudentList = DL.StudentDL.SortStudentsByMerit();
+                    BL.StudentBL.GiveAdmission(SortedStudentList);
                     UI.StudentUI.PrintStduents();
                 }
 
                 else if (option == 4)
                 {
-                    UI.StudentUI.viewRegisteredStudents();
+                    UI.StudentUI.ViewRegisteredStudents();
                 }
                 else if (option == 5)
                 {

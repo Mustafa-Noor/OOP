@@ -25,7 +25,7 @@ namespace UAMS_Task_1.DL
                 s.CalculateMerit();
             }
 
-            sortedStudentList = StudentList.OrderByDescending(o => o.merit).ToList();
+            sortedStudentList = StudentList.OrderByDescending(o => o.Merit).ToList();
             return sortedStudentList;
         }
     }

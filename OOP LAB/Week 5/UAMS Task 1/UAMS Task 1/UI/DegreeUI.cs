@@ -12,7 +12,7 @@ namespace UAMS_Task_1.UI
         {
             foreach (BL.DegreeProgramBL dp in DL.DegreeProgramDL.ProgramList)
             {
-                Console.WriteLine(dp.degreeName);
+                Console.WriteLine(dp.DegreeName);
             }
         }
 

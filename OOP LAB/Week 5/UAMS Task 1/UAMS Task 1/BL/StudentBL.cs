@@ -8,37 +8,37 @@ namespace UAMS_Task_1.BL
 {
     internal class StudentBL
     {
-        public string name;
-        public int age;
-        public double fscMarks;
-        public double ecatMarks;
-        public double merit;
+        public string Name;
+        public int Age;
+        public double FSCMarks;
+        public double EcatMarks;
+        public double Merit;
         public List<DegreeProgramBL> Preferences;
-        public List<SubjectBL> regSubject;
-        public DegreeProgramBL regDegree;
+        public List<SubjectBL> RegSubject;
+        public DegreeProgramBL RegDegree;
 
-        public StudentBL(string name, int age, double fscMarks, double ecatMarks, List<DegreeProgramBL> preferences)
+        public StudentBL(string Name, int Age, double FSCMarks, double EcatMarks, List<DegreeProgramBL> Preferences)
         {
-            this.name = name;
-            this.age = age;
-            this.fscMarks = fscMarks;
-            this.ecatMarks = ecatMarks;
-            this.Preferences = preferences;
-            regSubject = new List<SubjectBL>();
+            this.Name = Name;
+            this.Age = Age;
+            this.FSCMarks = FSCMarks;
+            this.EcatMarks = EcatMarks;
+            this.Preferences = Preferences;
+            RegSubject = new List<SubjectBL>();
 
         }
 
         public void CalculateMerit()
         {
-            this.merit = (((fscMarks / 1100) * 0.45F) + ((ecatMarks / 400) * 0.55f)) * 100;
+            this.Merit = (((FSCMarks / 1100) * 0.45F) + ((EcatMarks / 400) * 0.55f)) * 100;
         }
 
         public bool RegStudentSubject(SubjectBL s)
         {
-            int stCH = GetCreditHours();
-            if (regDegree != null && regDegree.IsSubjectExists(s) && stCH + s.creditHours <= 9)
+            int StCH = GetCreditHours();
+            if (RegDegree != null && RegDegree.IsSubjectExists(s) && StCH + s.CreditHours <= 9)
             {
-                regSubject.Add(s);
+                RegSubject.Add(s);
                 return true;
             }
             else
@@ -51,37 +51,37 @@ namespace UAMS_Task_1.BL
 
         public int GetCreditHours()
         {
-            int count = 0;
-            foreach (SubjectBL sub in regSubject)
+            int Count = 0;
+            foreach (SubjectBL sub in RegSubject)
             {
-                count = count + sub.creditHours;
+                Count = Count + sub.CreditHours;
             }
-            return count;
+            return Count;
         }
 
         public float CalculateFee()
         {
-            float fee = 0;
-            if (regDegree != null)
+            float Fee = 0;
+            if (RegDegree != null)
             {
-                foreach (SubjectBL sub in regSubject)
+                foreach (SubjectBL sub in RegSubject)
                 {
-                    fee = fee + sub.subjectFees;
+                    Fee = Fee + sub.SubjectFees;
                 }
             }
-            return fee;
+            return Fee;
         }
 
-        public static void GiveAdmission(List<BL.StudentBL> sortedStudentList)
+        public static void GiveAdmission(List<BL.StudentBL> SortedStudentList)
         {
-            foreach (BL.StudentBL s in sortedStudentList)
+            foreach (BL.StudentBL s in SortedStudentList)
             {
                 foreach (BL.DegreeProgramBL d in s.Preferences)
                 {
-                    if (d.seats > 0 && s.regDegree == null)
+                    if (d.Seats > 0 && s.RegDegree == null)
                     {
-                        s.regDegree = d;
-                        d.seats--;
+                        s.RegDegree = d;
+                        d.Seats--;
                         break;
                     }
                 }
@@ -89,11 +89,11 @@ namespace UAMS_Task_1.BL
         }
 
 
-        public static BL.StudentBL StudentPresent(string name)
+        public static BL.StudentBL StudentPresent(string Name)
         {
             foreach (BL.StudentBL s in DL.StudentDL.StudentList)
             {
-                if (name == s.name && s.regDegree != null)
+                if (Name == s.Name && s.RegDegree != null)
                 {
                     return s;
                 }

@@ -30,18 +30,18 @@ namespace UAMS_Task_1.UI
             int Count = int.Parse(Console.ReadLine());
             for (int x = 0; x < Count; x++)
             {
-                string degName = Console.ReadLine();
-                bool flag = false;
+                string DegName = Console.ReadLine();
+                bool Flag = false;
                 foreach (BL.DegreeProgramBL dp in DL.DegreeProgramDL.ProgramList)
                 {
-                    if (degName == dp.degreeName && !(Preferences.Contains(dp)))
+                    if (DegName == dp.DegreeName && !(Preferences.Contains(dp)))
                     {
                         Preferences.Add(dp);
-                        flag = true;
+                        Flag = true;
                     }
                 }
 
-                if (flag == false)
+                if (Flag == false)
                 {
                     Console.WriteLine("Enter Valid Degree Program Name");
                     x--;
@@ -56,25 +56,25 @@ namespace UAMS_Task_1.UI
         {
             foreach (BL.StudentBL s in DL.StudentDL.StudentList)
             {
-                if (s.regDegree != null)
+                if (s.RegDegree != null)
                 {
-                    Console.WriteLine(s.name + " got Admission in " + s.regDegree.degreeName);
+                    Console.WriteLine(s.Name + " got Admission in " + s.RegDegree.DegreeName);
                 }
                 else
                 {
-                    Console.WriteLine(s.name + " did not get Admission");
+                    Console.WriteLine(s.Name + " did not get Admission");
                 }
             }
         }
 
-        public static void viewRegisteredStudents()
+        public static void ViewRegisteredStudents()
         {
             Console.WriteLine("Name\tFSC\tEcat\tAge");
             foreach (BL.StudentBL s in DL.StudentDL.StudentList)
             {
-                if (s.regDegree != null)
+                if (s.RegDegree != null)
                 {
-                    Console.WriteLine(s.name + "\t" + s.fscMarks + "\t" + s.ecatMarks + "\t" + s.age);
+                    Console.WriteLine(s.Name + "\t" + s.FSCMarks + "\t" + s.EcatMarks + "\t" + s.Age);
                 }
             }
         }
@@ -82,17 +82,17 @@ namespace UAMS_Task_1.UI
         public static string TakeName()
         {
             Console.Write("Enter the Student Name: ");
-            string name = Console.ReadLine();
-            return name;
+            string Name = Console.ReadLine();
+            return Name;
         }
 
         public static void CalculateFeeForAll()
         {
             foreach (BL.StudentBL s in DL.StudentDL.StudentList)
             {
-                if (s.regDegree != null)
+                if (s.RegDegree != null)
                 {
-                    Console.WriteLine(s.name + " has " + s.CalculateFee() + " fees");
+                    Console.WriteLine(s.Name + " has " + s.CalculateFee() + " fees");
                 }
             }
         }
@@ -102,11 +102,11 @@ namespace UAMS_Task_1.UI
             Console.WriteLine("Name\tFSC\tEcat\tAge");
             foreach (BL.StudentBL s in DL.StudentDL.StudentList)
             {
-                if (s.regDegree != null)
+                if (s.RegDegree != null)
                 {
-                    if (degName == s.regDegree.degreeName)
+                    if (degName == s.RegDegree.DegreeName)
                     {
-                        Console.WriteLine(s.name + "\t" + s.fscMarks + "\t" + s.ecatMarks + "\t" + s.age);
+                        Console.WriteLine(s.Name + "\t" + s.FSCMarks + "\t" + s.EcatMarks + "\t" + s.Age);
                     }
                 }
             }

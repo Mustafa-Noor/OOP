@@ -8,19 +8,19 @@ namespace UAMS_Task_1.BL
 {
     internal class SubjectBL
     {
-        public string code;
-        public string type;
-        public int creditHours;
-        public int subjectFees;
+        public string Code;
+        public string Type;
+        public int CreditHours;
+        public int SubjectFees;
 
-        public SubjectBL(string code, string type, int creditHours, int subjectFees)
+        public SubjectBL(string Code, string Type, int CreditHours, int SubjectFees)
 
         {
 
-            this.code = code;
-            this.type = type;
-            this.creditHours = creditHours;
-            this.subjectFees = subjectFees;
+            this.Code = Code;
+            this.Type = Type;
+            this.CreditHours = CreditHours;
+            this.SubjectFees = SubjectFees;
 
         }
     }

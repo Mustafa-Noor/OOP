@@ -11,7 +11,7 @@ namespace UAMS_Task_1.DL
     internal class DegreeProgramDL
     {
        public static  List<DegreeProgramBL> ProgramList = new List<DegreeProgramBL>();
-        public static void addIntoDegreeList(BL.DegreeProgramBL d)
+        public static void AddIntoDegreeList(BL.DegreeProgramBL d)
         {
             ProgramList.Add(d);
         }
