@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A964A4AB-28EF-4244-9CBD-B1416BFE0C45}|GUI\\GUI.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week 10\\gui\\gui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A964A4AB-28EF-4244-9CBD-B1416BFE0C45}|GUI\\GUI.csproj|solutionrelative:gui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A964A4AB-28EF-4244-9CBD-B1416BFE0C45}|GUI\\GUI.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week 10\\gui\\gui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A964A4AB-28EF-4244-9CBD-B1416BFE0C45}|GUI\\GUI.csproj|solutionrelative:gui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A964A4AB-28EF-4244-9CBD-B1416BFE0C45}|GUI\\GUI.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week 10\\gui\\gui\\signinpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A964A4AB-28EF-4244-9CBD-B1416BFE0C45}|GUI\\GUI.csproj|solutionrelative:gui\\signinpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A964A4AB-28EF-4244-9CBD-B1416BFE0C45}|GUI\\GUI.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week 10\\gui\\gui\\signinpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A964A4AB-28EF-4244-9CBD-B1416BFE0C45}|GUI\\GUI.csproj|solutionrelative:gui\\signinpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\GUI\\SignUp.cs",
+              "RelativeDocumentMoniker": "GUI\\SignUp.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\GUI\\SignUp.cs",
+              "RelativeToolTip": "GUI\\SignUp.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAzwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T04:35:56.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\GUI\\SignUp.cs",
+              "RelativeDocumentMoniker": "GUI\\SignUp.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\GUI\\SignUp.cs [Design]",
+              "RelativeToolTip": "GUI\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T04:30:59.93Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignInPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\GUI\\SignInPage.cs",
+              "RelativeDocumentMoniker": "GUI\\SignInPage.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\GUI\\SignInPage.cs [Design]",
+              "RelativeToolTip": "GUI\\SignInPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T03:18:50.619Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SignInPage.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\GUI\\SignInPage.cs",
+              "RelativeDocumentMoniker": "GUI\\SignInPage.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 10\\GUI\\GUI\\SignInPage.cs",
+              "RelativeToolTip": "GUI\\SignInPage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T03:55:09.38Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+C:\Users\musno\OneDrive\Desktop\kam\kam\obj\Debug\kam.csproj.AssemblyReference.cache
+C:\Users\musno\OneDrive\Desktop\kam\kam\obj\Debug\kam.csproj.CoreCompileInputs.cache
+C:\Users\musno\OneDrive\Desktop\kam\kam\bin\Debug\kam.exe.config
+C:\Users\musno\OneDrive\Desktop\kam\kam\bin\Debug\kam.exe
+C:\Users\musno\OneDrive\Desktop\kam\kam\bin\Debug\kam.pdb
+C:\Users\musno\OneDrive\Desktop\kam\kam\obj\Debug\kam.exe
+C:\Users\musno\OneDrive\Desktop\kam\kam\obj\Debug\kam.pdb

@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 9\\signinup\\signinup\\ui\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|solutionrelative:signinup\\ui\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 9\\signinup\\signinup\\ui\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|solutionrelative:signinup\\ui\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 9\\signinup\\signinup\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|solutionrelative:signinup\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 9\\signinup\\signinup\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|solutionrelative:signinup\\ui\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 9\\signinup\\signinup\\ui\\mainh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|solutionrelative:signinup\\ui\\mainh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 9\\signinup\\signinup\\ui\\mainh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|solutionrelative:signinup\\ui\\mainh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 9\\signinup\\signinup\\dl\\muserdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|solutionrelative:signinup\\dl\\muserdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 9\\signinup\\signinup\\bl\\muserbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C8B2AF2-3124-49A5-9831-9ED223C60BE4}|SignInUp\\SignInUp.csproj|solutionrelative:signinup\\bl\\muserbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\SignUp.cs",
+              "RelativeDocumentMoniker": "SignInUp\\UI\\SignUp.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\SignUp.cs [Design]",
+              "RelativeToolTip": "SignInUp\\UI\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T08:14:14.373Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignIn.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\SignIn.cs",
+              "RelativeDocumentMoniker": "SignInUp\\UI\\SignIn.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\SignIn.cs [Design]",
+              "RelativeToolTip": "SignInUp\\UI\\SignIn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T08:20:27.458Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignIn.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\SignIn.cs",
+              "RelativeDocumentMoniker": "SignInUp\\UI\\SignIn.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\SignIn.cs",
+              "RelativeToolTip": "SignInUp\\UI\\SignIn.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAADwvzQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T09:43:11.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\SignUp.cs",
+              "RelativeDocumentMoniker": "SignInUp\\UI\\SignUp.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\SignUp.cs",
+              "RelativeToolTip": "SignInUp\\UI\\SignUp.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvzAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T09:23:07.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MUserDL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\DL\\MUserDL.cs",
+              "RelativeDocumentMoniker": "SignInUp\\DL\\MUserDL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\DL\\MUserDL.cs",
+              "RelativeToolTip": "SignInUp\\DL\\MUserDL.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAADwv00AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T08:28:49.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainH.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\MainH.cs",
+              "RelativeDocumentMoniker": "SignInUp\\UI\\MainH.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\MainH.cs",
+              "RelativeToolTip": "SignInUp\\UI\\MainH.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA/wDkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T07:29:48.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainH.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\MainH.cs",
+              "RelativeDocumentMoniker": "SignInUp\\UI\\MainH.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\UI\\MainH.cs [Design]",
+              "RelativeToolTip": "SignInUp\\UI\\MainH.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T07:25:35.915Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MUserBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\BL\\MUserBL.cs",
+              "RelativeDocumentMoniker": "SignInUp\\BL\\MUserBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 9\\SignInUp\\SignInUp\\BL\\MUserBL.cs",
+              "RelativeToolTip": "SignInUp\\BL\\MUserBL.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAA7wDEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T08:22:38.829Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

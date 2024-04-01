@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\blackjack\\blackjack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|solutionrelative:blackjack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\blackjack\\blackjack\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|solutionrelative:blackjack\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\blackjack\\blackjack\\hand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|solutionrelative:blackjack\\hand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\blackjack\\blackjack\\blackjackhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|solutionrelative:blackjack\\blackjackhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\blackjack\\blackjack\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B916094-65E0-417D-947A-4E35DCCE4423}|BlackJack\\BlackJack.csproj|solutionrelative:blackjack\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 183,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Deck.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\Deck.cs",
+              "RelativeDocumentMoniker": "BlackJack\\Deck.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\Deck.cs",
+              "RelativeToolTip": "BlackJack\\Deck.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T06:57:14.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hand.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\Hand.cs",
+              "RelativeDocumentMoniker": "BlackJack\\Hand.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\Hand.cs",
+              "RelativeToolTip": "BlackJack\\Hand.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAIA2wCQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T06:57:04.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\Program.cs",
+              "RelativeDocumentMoniker": "BlackJack\\Program.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\Program.cs",
+              "RelativeToolTip": "BlackJack\\Program.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAlwF0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T06:56:42.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BlackJackHand.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\BlackJackHand.cs",
+              "RelativeDocumentMoniker": "BlackJack\\BlackJackHand.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\BlackJackHand.cs",
+              "RelativeToolTip": "BlackJack\\BlackJackHand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:25:09.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\Card.cs",
+              "RelativeDocumentMoniker": "BlackJack\\Card.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\BlackJack\\BlackJack\\Card.cs",
+              "RelativeToolTip": "BlackJack\\Card.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T06:56:56.791Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

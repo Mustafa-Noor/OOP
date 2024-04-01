@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1264A92-77F4-4E92-A48B-00CB0C0CB2B4}|Task01\\Task01.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\task01\\task01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1264A92-77F4-4E92-A48B-00CB0C0CB2B4}|Task01\\Task01.csproj|solutionrelative:task01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1264A92-77F4-4E92-A48B-00CB0C0CB2B4}|Task01\\Task01.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\task01\\task01\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1264A92-77F4-4E92-A48B-00CB0C0CB2B4}|Task01\\Task01.csproj|solutionrelative:task01\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1264A92-77F4-4E92-A48B-00CB0C0CB2B4}|Task01\\Task01.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\task01\\task01\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1264A92-77F4-4E92-A48B-00CB0C0CB2B4}|Task01\\Task01.csproj|solutionrelative:task01\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1264A92-77F4-4E92-A48B-00CB0C0CB2B4}|Task01\\Task01.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week10\\task01\\task01\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1264A92-77F4-4E92-A48B-00CB0C0CB2B4}|Task01\\Task01.csproj|solutionrelative:task01\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 183,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\Task01\\Staff.cs",
+              "RelativeDocumentMoniker": "Task01\\Staff.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\Task01\\Staff.cs",
+              "RelativeToolTip": "Task01\\Staff.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAIwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T04:02:59.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\Task01\\Student.cs",
+              "RelativeDocumentMoniker": "Task01\\Student.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\Task01\\Student.cs",
+              "RelativeToolTip": "Task01\\Student.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAkwDUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T04:02:48.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\Task01\\Person.cs",
+              "RelativeDocumentMoniker": "Task01\\Person.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\Task01\\Person.cs",
+              "RelativeToolTip": "Task01\\Person.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA6wCMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T04:02:37.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\Task01\\Program.cs",
+              "RelativeDocumentMoniker": "Task01\\Program.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week10\\Task01\\Task01\\Program.cs",
+              "RelativeToolTip": "Task01\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T04:02:06.277Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
