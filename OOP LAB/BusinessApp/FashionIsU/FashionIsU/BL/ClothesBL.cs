@@ -13,11 +13,11 @@ namespace FashionIsU
         private string Type;
         private string Gender;
         private string Color;
-        private float Price;
+        private int Price;
         private int Quantity;
         private List<ReviewBL> Reviews;
 
-        public ClothesBL(int id, string type, string gender, string color, float price, int availability)
+        public ClothesBL(int id, string type, string gender, string color, int price, int availability)
         {
             ClothesID = id;
             Type = type;
@@ -82,12 +82,12 @@ namespace FashionIsU
             Color = color;
         }
 
-        public float GetPrice()
+        public int GetPrice()
         {
             return Price;
         }
 
-        public void SetPrice(float price)
+        public void SetPrice(int price)
         {
             Price = price;
         }
@@ -128,7 +128,7 @@ namespace FashionIsU
         }
 
 
-        public void UpdateCloth(string gender, string color, string type, float price, int available)
+        public void UpdateCloth(string gender, string color, string type, int price, int available)
         {
             SetGender(gender);
             SetColor(color);

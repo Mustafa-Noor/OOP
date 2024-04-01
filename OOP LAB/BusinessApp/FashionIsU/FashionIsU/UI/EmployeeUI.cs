@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using FashionIsU.UI;
 
 namespace FashionIsU
 {
@@ -16,8 +17,10 @@ namespace FashionIsU
             Console.WriteLine();
             Console.Write("Enter Employee Position: ");
             string position = Console.ReadLine();
+            position = ConsoleUtility.ValidateWordsWithInt(position);
             Console.Write("Enter Employee Qualification: ");
             string qualification = Console.ReadLine();
+            qualification = ConsoleUtility.ValidateWordsWithInt(qualification);
 
             EmployeeBL emp = new EmployeeBL(u, position, qualification);
             return emp;
@@ -55,20 +58,28 @@ namespace FashionIsU
             Console.WriteLine();
             Console.Write("Enter Username: ");
             string name = Console.ReadLine();
+            name = ConsoleUtility.ValidateWords(name);
             Console.Write("Enter Password: ");
             string password = Console.ReadLine();
+            password = ConsoleUtility.RestrictPassword(password);
             Console.Write("Enter Email: ");
             string email = Console.ReadLine();
+            email = ConsoleUtility.ValidateEmail(email);
             Console.Write("Enter First Name: ");
             string fname = Console.ReadLine();
+            fname = ConsoleUtility.ValidateWordsWithInt(fname);
             Console.Write("Enter Last Name: ");
             string lname = Console.ReadLine();
+            lname = ConsoleUtility.ValidateWordsWithInt(lname);
             Console.Write("Enter Contact Number: ");
             string phone = Console.ReadLine();
+            phone = ConsoleUtility.ValidateContact(phone);
             Console.Write("Enter Employee Position: ");
             string position = Console.ReadLine();
+            position = ConsoleUtility.ValidateWordsWithInt(position);
             Console.Write("Enter Employee Qualification: ");
             string qualification = Console.ReadLine();
+            qualification = ConsoleUtility.ValidateWordsWithInt(qualification);
 
             emp.UpdateProfile(name, password, email, fname, lname, phone, position, qualification);
             user.UpdateProfile(name, password, email, fname, lname, phone);

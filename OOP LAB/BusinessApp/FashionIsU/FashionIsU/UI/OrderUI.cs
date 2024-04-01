@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using FashionIsU;
+using FashionIsU.UI;
 
 namespace FashionIsU
 {
@@ -13,13 +14,14 @@ namespace FashionIsU
     {
         public static OrderBL TakeInputForOrder(CustomerBL customer, PaymentMethodBL pm)
         {
-            float price = pm.GetAmount(customer.GetCart().GetTotalCartAmount());
+            int price = pm.GetAmount(customer.GetCart().GetTotalCartAmount());
             Console.WriteLine();
             Console.WriteLine("--------------------------------PLACE YOUR ORDER---------------------------------------------");
             Console.WriteLine();
             Console.WriteLine("Your Total Price (After PaymentMethod) : Rs " + price);
             Console.Write("Enter Your Delivery Address : ");
             string address = Console.ReadLine();
+            address = ConsoleUtility.ValidateWords(address);
 
             OrderBL order = new OrderBL(customer.GetCart().GetCartItems(), price, address, pm);
             return order;

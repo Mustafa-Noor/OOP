@@ -20,9 +20,9 @@ namespace FashionIsU
             Cart.Add (c);
         }
 
-        public float GetTotalCartAmount()
+        public int GetTotalCartAmount()
         {
-            float total = 0;
+            int total = 0;
             foreach (ClothesBL c in Cart)
             {
                 total += c.GetPrice() * c.GetQuantity();

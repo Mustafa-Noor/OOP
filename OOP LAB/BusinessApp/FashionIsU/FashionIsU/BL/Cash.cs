@@ -11,7 +11,7 @@ namespace FashionIsU
     {
         public Cash(string type) : base(type) { }
 
-        public override float GetAmount(float amount)
+        public override int GetAmount(int amount)
         {
 
             amount = base.GetAmount(amount);

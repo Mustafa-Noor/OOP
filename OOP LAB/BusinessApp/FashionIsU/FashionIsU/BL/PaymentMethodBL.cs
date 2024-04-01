@@ -28,10 +28,10 @@ namespace FashionIsU
             PaymentType = paymentType;
         }
 
-        public virtual float GetAmount(float amount)
+        public virtual int GetAmount(int amount)
         {
             
-                amount = amount + amount*0.15F;
+                amount = (int)(amount + amount*0.15);
             
             return amount;
         }

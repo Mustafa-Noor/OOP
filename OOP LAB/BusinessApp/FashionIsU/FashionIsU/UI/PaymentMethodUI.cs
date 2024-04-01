@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FashionIsU.UI;
 
 namespace FashionIsU
 {
@@ -13,8 +14,11 @@ namespace FashionIsU
             Console.WriteLine();
             Console.Write("Enter The Name of Card Company: ");
             string company = Console.ReadLine();
+            company = ConsoleUtility.ValidateWordsWithInt(company);
             Console.Write("Enter Your 4-Digit Pin: ");
-            int pin = int.Parse(Console.ReadLine());
+            string pin = Console.ReadLine();
+            pin = ConsoleUtility.ValidatePin(pin);
+
 
             Card cd = new Card(type, company, pin);
             return cd;
@@ -27,12 +31,12 @@ namespace FashionIsU
             Console.WriteLine("Cash on Delivery will cost 300Rs and Card will give you a Discount of 20%");
             Console.Write("Enter the Payment Type (Cash or Card): ");
             string type = Console.ReadLine();
-            if(type == "Card" || type == "card")
+            if(type.ToLower() == "card")
             {
                 Card c = TakeInputForCard(type);
                 return c;
             }
-            else if (type == "Cash" || type == "cash")
+            else if (type.ToLower() == "cash")
             {
                 Cash c = new Cash(type);
                 return c;

@@ -5,6 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using FashionIsU.UI;
 
 namespace FashionIsU
 {
@@ -14,6 +15,7 @@ namespace FashionIsU
         {
             Console.Write("Enter Address : ");
             string address = Console.ReadLine();
+            address = ConsoleUtility.ValidateSentences(address);
 
             CustomerBL c = new CustomerBL(user, address);
             return c;
@@ -62,18 +64,25 @@ namespace FashionIsU
             Console.WriteLine();
             Console.Write("Enter Username: ");
             string name = Console.ReadLine();
-            Console.Write("Enter Password: ");
+            name = ConsoleUtility.ValidateWords(name);
+            Console.Write("Enter Password(6-Digits): ");
             string password = Console.ReadLine();
+            password = ConsoleUtility.RestrictPassword(password);
             Console.Write("Enter Email: ");
             string email = Console.ReadLine();
+            email = ConsoleUtility.ValidateEmail(email);
             Console.Write("Enter First Name: ");
             string fname = Console.ReadLine();
+            fname = ConsoleUtility.ValidateWordsWithInt(fname);
             Console.Write("Enter Last Name: ");
             string lname = Console.ReadLine();
+            lname = ConsoleUtility.ValidateWordsWithInt(lname);
             Console.Write("Enter Contact Number: ");
             string phone = Console.ReadLine();
+            phone = ConsoleUtility.ValidateContact(phone);
             Console.Write("Enter Address : ");
             string address = Console.ReadLine();
+            address = ConsoleUtility.ValidateSentences(address);
 
             cus.UpdateProfile(name, password, email, fname, lname, phone, address);
             user.UpdateProfile(name, password, email, fname, lname, phone);
@@ -112,6 +121,7 @@ namespace FashionIsU
             Console.WriteLine();
             Console.Write("Enter the Username Of the Customer: ");
             string username = Console.ReadLine();
+            username = ConsoleUtility.ValidateWords(username);
             return username;
 
         }

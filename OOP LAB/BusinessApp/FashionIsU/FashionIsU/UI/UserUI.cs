@@ -18,17 +18,23 @@ namespace FashionIsU.UI
 
             Console.Write("Enter Username: ");
             string name = Console.ReadLine();
-            Console.Write("Enter Password: ");
+            name = ConsoleUtility.ValidateWords(name);
+            Console.Write("Enter Password (Must be 6-Digits): ");
             string password = Console.ReadLine();
+            password = ConsoleUtility.RestrictPassword(password);
             Console.Write("Enter Email: ");
             string email = Console.ReadLine();
+            email = ConsoleUtility.ValidateEmail(email);
             Console.Write("Enter First Name: ");
             string fname = Console.ReadLine();
+            fname = ConsoleUtility.ValidateWordsWithInt(fname);
             Console.Write("Enter Last Name: ");
             string lname= Console.ReadLine();
+            lname = ConsoleUtility.ValidateWordsWithInt(lname);
             Console.Write("Enter Contact Number: ");
             string phone = Console.ReadLine();
-            Console.Write("Enter the Type Of User (Customer, Employee, Admin) : ");
+            phone = ConsoleUtility.ValidateContact(phone);
+            Console.Write("Enter the Type Of User (Customer or Employee) : ");
             string type = Console.ReadLine();
 
 
@@ -66,8 +72,10 @@ namespace FashionIsU.UI
             Console.WriteLine();
             Console.Write("Enter Username: ");
             string Name = Console.ReadLine();
-            Console.Write("Enter Password: ");
+            Name = ConsoleUtility.ValidateWords(Name);
+            Console.Write("Enter Password (6-Digits): ");
             string Password = Console.ReadLine();
+            Password = ConsoleUtility.RestrictPassword(Password);
             
 
             UserBL nUser = new UserBL(Name, Password);

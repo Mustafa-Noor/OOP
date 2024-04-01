@@ -12,10 +12,10 @@ namespace FashionIsU
         
         private DateTime OrderDate;
         private List<ClothesBL> Items;
-        private float TotalPrice;
+        private int TotalPrice;
         private string DeliveryAddress;
         private PaymentMethodBL PaymentMethod;
-        public OrderBL(List<ClothesBL> items, float totalPrice, string deliveryAddress, PaymentMethodBL PaymentMethod)
+        public OrderBL(List<ClothesBL> items, int totalPrice, string deliveryAddress, PaymentMethodBL PaymentMethod)
         {
             OrderDate = DateTime.Now;
             Items = items;
@@ -47,12 +47,12 @@ namespace FashionIsU
             Items = items;
         }
 
-        public float GetTotalPrice()
+        public int GetTotalPrice()
         {
             return TotalPrice;
         }
 
-        public void SetTotalPrice(float totalPrice)
+        public void SetTotalPrice(int totalPrice)
         {
             TotalPrice = totalPrice;
         }

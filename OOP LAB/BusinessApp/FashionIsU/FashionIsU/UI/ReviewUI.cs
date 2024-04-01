@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using FashionIsU.UI;
 
 namespace FashionIsU
 {
@@ -17,9 +18,11 @@ namespace FashionIsU
             Console.WriteLine("--------------------------------Leave A Review--------------------------------------------");
             Console.WriteLine();
             Console.Write("Enter " + cloth.GetType() + " Rating (from 1 to 5): ");
-            int rate = int.Parse(Console.ReadLine());
+            string temp = Console.ReadLine();
+            int rate = ConsoleUtility.ValidateRating(temp);
             Console.Write("Enter Its Review: ");
             string comment =  Console.ReadLine();
+            comment = ConsoleUtility.ValidateSentences(comment);
 
             ReviewBL rev = new ReviewBL(rate, comment, cus.GetUsername());
             return rev;

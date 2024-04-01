@@ -10,20 +10,20 @@ namespace FashionIsU
     internal class Card : PaymentMethodBL
     {
         private string Company;
-        private int Pin;
+        private string Pin;
 
-        public Card(string type,string company, int pin) :base (type)
+        public Card(string type,string company, string  pin) :base (type)
         {
             Company = company;
             Pin = pin;
         }
 
-        private void SetPin(int pin)
+        private void SetPin(string pin)
         {
             Pin = pin;
         }
 
-        private int GetPin()
+        private string GetPin()
         { return Pin; }
 
 
@@ -35,12 +35,12 @@ namespace FashionIsU
         private string GetCompany()
         { return Company; }
 
-        public override float GetAmount(float amount)
+        public override int GetAmount(int amount)
         {
 
             amount = base.GetAmount(amount);
 
-            amount = amount - amount * 0.20f;
+            amount = (int)(amount - amount * 0.20);
 
             return amount;
         }

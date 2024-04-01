@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2783F868-EC6B-4057-A4D9-04CA3752E27B}|Business(Behaviour)\\Business(Behaviour).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\business(behaviour)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783F868-EC6B-4057-A4D9-04CA3752E27B}|Business(Behaviour)\\Business(Behaviour).csproj|solutionrelative:business(behaviour)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783F868-EC6B-4057-A4D9-04CA3752E27B}|Business(Behaviour)\\Business(Behaviour).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\business(behaviour)\\customercloth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783F868-EC6B-4057-A4D9-04CA3752E27B}|Business(Behaviour)\\Business(Behaviour).csproj|solutionrelative:business(behaviour)\\customercloth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783F868-EC6B-4057-A4D9-04CA3752E27B}|Business(Behaviour)\\Business(Behaviour).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\programming day\\week 3\\business(behaviour)\\business(behaviour)\\clothes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783F868-EC6B-4057-A4D9-04CA3752E27B}|Business(Behaviour)\\Business(Behaviour).csproj|solutionrelative:business(behaviour)\\clothes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2783F868-EC6B-4057-A4D9-04CA3752E27B}|Business(Behaviour)\\Business(Behaviour).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\business(behaviour)\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2783F868-EC6B-4057-A4D9-04CA3752E27B}|Business(Behaviour)\\Business(Behaviour).csproj|solutionrelative:business(behaviour)\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerCloth.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\Business(Behaviour)\\CustomerCloth.cs",
+              "RelativeDocumentMoniker": "Business(Behaviour)\\CustomerCloth.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\Business(Behaviour)\\CustomerCloth.cs",
+              "RelativeToolTip": "Business(Behaviour)\\CustomerCloth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-04T05:19:07.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Clothes.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\Business(Behaviour)\\Clothes.cs",
+              "RelativeDocumentMoniker": "Business(Behaviour)\\Clothes.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\Business(Behaviour)\\Clothes.cs",
+              "RelativeToolTip": "Business(Behaviour)\\Clothes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-04T05:17:40.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\Business(Behaviour)\\User.cs",
+              "RelativeDocumentMoniker": "Business(Behaviour)\\User.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\Business(Behaviour)\\User.cs",
+              "RelativeToolTip": "Business(Behaviour)\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-04T05:16:42.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\Business(Behaviour)\\Program.cs",
+              "RelativeDocumentMoniker": "Business(Behaviour)\\Program.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\Programming Day\\Week 3\\Business(Behaviour)\\Business(Behaviour)\\Program.cs",
+              "RelativeToolTip": "Business(Behaviour)\\Program.cs",
+              "ViewState": "AQIAACwCAAAAAAAAAAA7wDUCAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-04T05:14:41.273Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
