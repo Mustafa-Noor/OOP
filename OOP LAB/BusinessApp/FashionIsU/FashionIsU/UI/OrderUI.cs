@@ -45,20 +45,17 @@ namespace FashionIsU
         public static void DisplayOrders(List<OrderBL> orders)
         {
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("|   Order Date   |                           Items                           |  Total Price  |   Delivery Address   |");
+            Console.WriteLine("|{0,-14}|{1,-60}|{2,-13}|{3,-21}|{4,-15}|", "Order Date", "Items", "Total Price", "Delivery Address", "Payment Type");
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
 
-            foreach (var order in orders)
+            foreach (OrderBL order in orders)
             {
-                Console.Write($"| {order.GetOrderDate().ToString("yyyy-MM-dd")} ");
-                Console.Write($"| {FormatItems(order.GetItems())} ");
-                Console.Write($"| ${order.GetTotalPrice(),-12} ");
-                Console.Write($"| {order.GetDeliveryAddress(),-20} ");
-                Console.WriteLine($"| {order.GetPaymentMethod().GetPaymentType(),-12} |");
+                Console.WriteLine($"|{order.GetOrderDate().ToString("yyyy-MM-dd"),-14}|{FormatItems(order.GetItems()),-60}|${order.GetTotalPrice(),-13}|{order.GetDeliveryAddress(),-21}|{order.GetPaymentMethod().GetPaymentType(),-15}|");
             }
 
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
         }
+
 
         private static string FormatItems(List<ClothesBL> items)
         {

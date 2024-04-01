@@ -55,7 +55,7 @@ namespace FashionIsU
             Console.WriteLine($"Total amount spent by {customer.GetFirstName()} {customer.GetLastName()}: Rs{totalAmountSpent}");
         }
 
-        public static void UpdateProfileInput(CustomerBL cus)
+        public static void UpdateProfileInput(CustomerBL cus, UserBL user)
         {
             Console.WriteLine();
             Console.WriteLine("------------------------------UPDATE PROFILE PAGE----------------------------");
@@ -76,29 +76,26 @@ namespace FashionIsU
             string address = Console.ReadLine();
 
             cus.UpdateProfile(name, password, email, fname, lname, phone, address);
+            user.UpdateProfile(name, password, email, fname, lname, phone);
             
 
         }
 
-        public static void ProfileUpdateSuccess()
-        {
-            Console.WriteLine();
-            Console.WriteLine("Profile Has Been Updated Successfully...");
-            Console.WriteLine();
-            Thread.Sleep(300);
-        }
+        
 
         public static void DisplayCustomers()
         {
-            Console.WriteLine("--------------------------------DISPLAY ALL CUSTOMERS---------------------------------------------");
-            Console.WriteLine("|{0,-15}|{1,-15}|{2,-25}|{3,-15}|{4,-15}|{5,-20}|{6,-15}|", "First Name", "Last Name", "Email", "Phone Number", "Address", "Order Count");
-            Console.WriteLine("--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("--------------------------------DISPLAY ALL CUSTOMERS--------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-15}|{4,-15}|{5,-15}|{6,-15}|", "Username", "FirstName", "LastName", "Email", "PhoneNumber", "Address", "OrderCount");
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
             foreach (CustomerBL cus in CustomerDL.GetAllCustomers())
             {
-                Console.WriteLine("|{0,-15}|{1,-15}|{2,-25}|{3,-15}|{4,-15}|{5,-20}|{6,-15}|", cus.GetFirstName(), cus.GetLastName(), cus.GetEmail(), cus.GetPhoneNumber(), cus.GetCustomerAddress(), cus.GetOrdersCount());
+                Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-15}|{4,-15}|{5,-15}|{6,-15}|", cus.GetUsername(), cus.GetFirstName(), cus.GetLastName(), cus.GetEmail(), cus.GetPhoneNumber(), cus.GetCustomerAddress(), cus.GetOrdersCount());
             }
-            Console.WriteLine("--------------------------------------------------------------------------------------------------");
+            Console.WriteLine("-------------------------------------------------------------------------------------------------");
         }
+
 
 
         public static void NoCustomers()
@@ -108,5 +105,17 @@ namespace FashionIsU
             Console.WriteLine();
             Thread.Sleep(300);
         }
+
+
+        public static string TakeUsername()
+        {
+            Console.WriteLine();
+            Console.Write("Enter the Username Of the Customer: ");
+            string username = Console.ReadLine();
+            return username;
+
+        }
+
+        
     }
 }

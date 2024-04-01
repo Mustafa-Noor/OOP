@@ -32,7 +32,7 @@ namespace FashionIsU
         {
             foreach (UserBL stored in Users)
             {
-                if(u.GetUsername() == stored.GetUsername())
+                if(u.GetUsername() == stored.GetUsername() && u.GetPassword() == stored.GetPassword())
                 { return stored; }
             }
             return null;

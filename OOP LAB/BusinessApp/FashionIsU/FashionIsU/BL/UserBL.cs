@@ -117,5 +117,16 @@ namespace FashionIsU
             PhoneNumber = value;
         }
 
+        public void UpdateProfile(string username, string password, string email, string firstName, string lastName, string phoneNumber)
+        {
+            SetUsername(username);
+            SetPassword(password);
+            SetEmail(email);
+            SetFirstName(firstName);
+            SetLastName(lastName);
+            SetPhoneNumber(phoneNumber);
+            
+        }
+
     }
 }

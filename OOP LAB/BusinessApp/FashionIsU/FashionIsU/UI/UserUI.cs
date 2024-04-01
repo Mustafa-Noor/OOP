@@ -94,6 +94,14 @@ namespace FashionIsU.UI
             Thread.Sleep(300);
         }
 
-        
+        public static void ProfileUpdateSuccess()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Profile Has Been Updated Successfully...");
+            Console.WriteLine();
+            Thread.Sleep(300);
+        }
+
+
     }
 }

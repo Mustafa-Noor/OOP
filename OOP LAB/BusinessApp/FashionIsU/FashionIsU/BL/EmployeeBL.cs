@@ -28,9 +28,21 @@ namespace FashionIsU
 
         }
 
-        
+        public void UpdateProfile(string username, string password, string email, string firstName, string lastName, string phoneNumber,string position, string qualification)
+        {
+            SetUsername(username);
+            SetPassword(password);
+            SetEmail(email);
+            SetFirstName(firstName);
+            SetLastName(lastName);
+            SetPhoneNumber(phoneNumber);
+            SetPosition(position);
+            SetQualification(qualification);
+        }
 
-       
+
+
+
 
         // Getter and setter methods for Position
         public string GetPosition()

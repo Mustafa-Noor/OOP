@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace FashionIsU
 {
@@ -34,5 +35,19 @@ namespace FashionIsU
             Console.WriteLine();
             Thread.Sleep(300);
         }
+
+
+        public static void DisplayReview(ClothesBL cloth)
+        {
+            Console.WriteLine("----------------------------CHECK REVIEWS FOR AN ITEM-----------------------------");
+            Console.WriteLine("|{0,-10}|{1,-40}|{2,-20}|", "Rating", "Comment", "Username");
+            Console.WriteLine("----------------------------------------------------------------------------------");
+            foreach (ReviewBL rev in cloth.GetReviews())
+            {
+                Console.WriteLine("|{0,-10}|{1,-40}|{2,-20}|", rev.GetRating(), rev.GetComment(), rev.GetUsername());
+            }
+            Console.WriteLine("---------------------------------------------------------------------------------");
+        }
+
     }
 }

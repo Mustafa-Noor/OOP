@@ -88,6 +88,8 @@ namespace FashionIsU
             SetCustomerAddress(customerAddress);
         }
 
+
+
         public int GetOrdersCount()
         {
             return Orders.Count;

@@ -234,8 +234,8 @@ namespace FashionIsU
                                 else if (choice == "9")
                                 {
                                     ConsoleUtility.ClearScreen();
-                                    CustomerUI.UpdateProfileInput(customer);
-                                    CustomerUI.ProfileUpdateSuccess();
+                                    CustomerUI.UpdateProfileInput(customer, user);
+                                    UserUI.ProfileUpdateSuccess();
                                     ConsoleUtility.ReturnForAll();
 
                                 }
@@ -246,111 +246,165 @@ namespace FashionIsU
                             }
                             
                         }
-                        else if (user.GetRole() == "Employee")
+                        else if (user.GetRole() == "Employee" && (EmployeeDL.FindEmployee(user) != null))
                         {
-                            if (EmployeeDL.FindEmployee(user) != null)
-                            {
-                                while (true)
-                                {
-                                    ConsoleUtility.ClearScreen();
-                                    string choice = EmployeeUI.EmployeeMenu();
-                                    if (choice == "1")
-                                    {
-                                        if (ClothesDL.CheckClothes())
-                                        {
-                                            ConsoleUtility.ClearScreen();
-                                            ClothesUI.DisplayAllClothes();
-                                        }
-                                        else
-                                        {
-                                            ConsoleUtility.ClearScreen();
-                                            ClothesUI.NoClothesFound();
-                                        }
-                                        ConsoleUtility.ReturnForAll();
-                                    }
-                                    else if (choice == "2")
-                                    {
-                                        ConsoleUtility.ClearScreen();
-                                        ClothesBL c = ClothesUI.TakeInputForClothes();
-                                        ClothesDL.AddClothes(c);
-                                        ConsoleUtility.ReturnForAll();
-                                    }
-                                    else if (choice == "3")
-                                    {
-                                        if (ClothesDL.CheckClothes())
-                                        {
-                                            ConsoleUtility.ClearScreen();
-                                            ClothesUI.DisplayAllClothes();
-                                            int id = ClothesUI.TakeId();
-                                            ClothesBL c = ClothesDL.FindClothByID(id);
-                                            if(c != null)
-                                            {
-                                                ConsoleUtility.ClearScreen();
-                                                ClothesUI.TakeInputForUpdateClothe(c);
-                                                ClothesUI.ClothUpdatedSuccessfully();
-                                            }
-                                            else
-                                            {
-                                                ClothesUI.IncorrectId();
-                                            }
-                                        }
-                                        else
-                                        {
-                                            ConsoleUtility.ClearScreen();
-                                            ClothesUI.NoClothesFound();
-                                        }
-                                        ConsoleUtility.ReturnForAll();
-                                    }
-                                    else if (choice == "4")
-                                    {
-                                        if (ClothesDL.CheckClothes())
-                                        {
-                                            ConsoleUtility.ClearScreen();
-                                            ClothesUI.DisplayAllClothes();
-                                            int id = ClothesUI.TakeId();
-                                            ClothesBL c = ClothesDL.FindClothByID(id);
-                                            if (c != null)
-                                            {
-                                                ConsoleUtility.ClearScreen();
-                                                ClothesDL.DeleteCloth(c);
-                                                ClothesUI.ClothDeletedSuccessfully();
-                                            }
-                                            else
-                                            {
-                                                ClothesUI.IncorrectId();
-                                            }
-                                        }
-                                        else
-                                        {
-                                            ConsoleUtility.ClearScreen();
-                                            ClothesUI.NoClothesFound();
-                                        }
-                                        ConsoleUtility.ReturnForAll();
-                                    }
-                                    else if(choice == "5")
-                                    {
-                                        if(CustomerDL.CheckCustomers())
-                                        {
-                                            CustomerUI.DisplayCustomers();
-                                        }
-                                        else
-                                        {
-                                            ConsoleUtility.ClearScreen();
-                                            CustomerUI.NoCustomers();
-                                        }
-                                        ConsoleUtility.ReturnForAll();
-                                    }
-                                    else if (choice == "9")
-                                    {
-                                        break;
-                                    }
+                            EmployeeBL employee = EmployeeDL.FindEmployee(user);
 
-                                }
-                            }
-                            else
+                            while (true)
                             {
-                                EmployeeUI.EmployeeNotFound();
-                            }
+                               ConsoleUtility.ClearScreen();
+                               string choice = EmployeeUI.EmployeeMenu();
+                               if (choice == "1")
+                               {
+                                   if (ClothesDL.CheckClothes())
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       ClothesUI.DisplayAllClothes();
+                                   }
+                                   else
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       ClothesUI.NoClothesFound();
+                                   }
+                                   ConsoleUtility.ReturnForAll();
+                               }
+                               else if (choice == "2")
+                               {
+                                   ConsoleUtility.ClearScreen();
+                                   ClothesBL c = ClothesUI.TakeInputForClothes();
+                                   ClothesDL.AddClothes(c);
+                                   ConsoleUtility.ReturnForAll();
+                               }
+                               else if (choice == "3")
+                               {
+                                   if (ClothesDL.CheckClothes())
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       ClothesUI.DisplayAllClothes();
+                                       int id = ClothesUI.TakeId();
+                                       ClothesBL c = ClothesDL.FindClothByID(id);
+                                       if(c != null)
+                                       {
+                                           ConsoleUtility.ClearScreen();
+                                           ClothesUI.TakeInputForUpdateClothe(c);
+                                           ClothesUI.ClothUpdatedSuccessfully();
+                                       }
+                                       else
+                                       {
+                                           ClothesUI.IncorrectId();
+                                       }
+                                   }
+                                   else
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       ClothesUI.NoClothesFound();
+                                   }
+                                   ConsoleUtility.ReturnForAll();
+                               }
+                               else if (choice == "4")
+                               {
+                                   if (ClothesDL.CheckClothes())
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       ClothesUI.DisplayAllClothes();
+                                       int id = ClothesUI.TakeId();
+                                       ClothesBL c = ClothesDL.FindClothByID(id);
+                                       if (c != null)
+                                       {
+                                           ConsoleUtility.ClearScreen();
+                                           ClothesDL.DeleteCloth(c);
+                                           ClothesUI.ClothDeletedSuccessfully();
+                                       }
+                                       else
+                                       {
+                                           ClothesUI.IncorrectId();
+                                       }
+                                   }
+                                   else
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       ClothesUI.NoClothesFound();
+                                   }
+                                   ConsoleUtility.ReturnForAll();
+                               }
+                               else if(choice == "5")
+                               {
+                                   ConsoleUtility.ClearScreen();
+                                   if(CustomerDL.CheckCustomers())
+                                   {
+                                       CustomerUI.DisplayCustomers();
+                                   }
+                                   else
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       CustomerUI.NoCustomers();
+                                   }
+                                   ConsoleUtility.ReturnForAll();
+                               }
+                               else if(choice == "6")
+                               {
+                                   ConsoleUtility.ClearScreen();
+                                   if (CustomerDL.CheckCustomers())
+                                   {
+                                       CustomerUI.DisplayCustomers();
+                                       string username =CustomerUI.TakeUsername();
+                                       CustomerBL cus = CustomerDL.FindCustomerByUsername(username);
+                                       if(cus != null)
+                                       {
+                                           OrderUI.DisplayOrders(cus.GetOrderList());
+                                       }
+                                       else
+                                       {
+                                           CustomerUI.CustomerNotFound();
+                                       }
+                          
+                                   }
+                                   else
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       CustomerUI.NoCustomers();
+                                   }
+                                   ConsoleUtility.ReturnForAll();
+                               }
+                               else if (choice == "7")
+                               {
+                                   if (ClothesDL.CheckClothes())
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       ClothesUI.DisplayAllClothes();
+                                       int id = ClothesUI.TakeId();
+                                       ClothesBL c = ClothesDL.FindClothByID(id);
+                                       if (c != null)
+                                       {
+                                           ConsoleUtility.ClearScreen();
+                                           ReviewUI.DisplayReview(c);
+                                       }
+                                       else
+                                       {
+                                           ClothesUI.IncorrectId();
+                                       }
+                                   }
+                                   else
+                                   {
+                                       ConsoleUtility.ClearScreen();
+                                       ClothesUI.NoClothesFound();
+                                   }
+                                   ConsoleUtility.ReturnForAll();
+                               }
+                               else if(choice =="8")
+                               {
+                                    ConsoleUtility.ClearScreen();
+                                    EmployeeUI.UpdateProfileInput(employee, user);
+                                    UserUI.ProfileUpdateSuccess();
+                                    ConsoleUtility.ReturnForAll();
+                                }
+                               else if (choice == "9")
+                               {
+                                   break;
+                               }
+                          
+                             }
+                             
 
                         }
                         else if (user is EmployeeBL)
@@ -397,13 +451,6 @@ namespace FashionIsU
                             UserUI.CongratsforSignup();
 
 
-                        }
-                        else if (role == "Admin" || role == "admin")
-                        {
-                            AdminBL a = AdminUI.TakeInfoAdmin(u);
-                            AdminDL.AddAdmin(a);
-                            UserDL.AddUser(u);
-                            UserUI.CongratsforSignup();
                         }
                         else
                         {

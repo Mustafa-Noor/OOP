@@ -9,7 +9,7 @@ namespace FashionIsU
 {
     internal class CustomerDL
     {
-        private static List <CustomerBL> Customers = new List<CustomerBL> ();
+        private static List<CustomerBL> Customers = new List<CustomerBL>();
         public static void AddCustomer(CustomerBL c)
         {
             Customers.Add(c);
@@ -17,9 +17,9 @@ namespace FashionIsU
 
         public static CustomerBL FindCustomer(UserBL u)
         {
-            foreach(CustomerBL cus in Customers)
+            foreach (CustomerBL cus in Customers)
             {
-                if(cus.GetUsername() == u.GetUsername() && cus.GetPassword() == u.GetPassword())
+                if (cus.GetUsername() == u.GetUsername() && cus.GetPassword() == u.GetPassword())
                 {
                     return cus;
                 }
@@ -33,7 +33,18 @@ namespace FashionIsU
         }
 
         public static bool CheckCustomers()
-        { return Customers.Count > 0;}
+        { return Customers.Count > 0; }
+
+        public static CustomerBL FindCustomerByUsername(string username)
+        {
+            foreach(CustomerBL cus in Customers)
+            {
+                if(cus.GetUsername() == username) { return cus; }
+            }
+
+            return null;    
+        }
+
 
         /*
         public static bool AddCustomerInDB(CustomerBL customer, string connectionString)

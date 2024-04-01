@@ -16,7 +16,7 @@ namespace FashionIsU
 
             amount = base.GetAmount(amount);
 
-            amount = amount + amount * 300;
+            amount = amount + 300;
 
             return amount;
         }

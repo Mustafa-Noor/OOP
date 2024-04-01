@@ -47,5 +47,33 @@ namespace FashionIsU
             return  choice;
 
         }
+
+        public static void UpdateProfileInput(EmployeeBL emp, UserBL user)
+        {
+            Console.WriteLine();
+            Console.WriteLine("------------------------------UPDATE PROFILE PAGE----------------------------");
+            Console.WriteLine();
+            Console.Write("Enter Username: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter Password: ");
+            string password = Console.ReadLine();
+            Console.Write("Enter Email: ");
+            string email = Console.ReadLine();
+            Console.Write("Enter First Name: ");
+            string fname = Console.ReadLine();
+            Console.Write("Enter Last Name: ");
+            string lname = Console.ReadLine();
+            Console.Write("Enter Contact Number: ");
+            string phone = Console.ReadLine();
+            Console.Write("Enter Employee Position: ");
+            string position = Console.ReadLine();
+            Console.Write("Enter Employee Qualification: ");
+            string qualification = Console.ReadLine();
+
+            emp.UpdateProfile(name, password, email, fname, lname, phone, position, qualification);
+            user.UpdateProfile(name, password, email, fname, lname, phone);
+
+
+        }
     }
 }
