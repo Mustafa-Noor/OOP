@@ -10,8 +10,8 @@ namespace FashionIsU.UI
 {
     internal class ConsoleUtility
     {
-        private string connectionString = "Data Source=GREY\\SQLEXPRESS;Initial Catalog=FashionIsU;Integrated Security=True";
-        public string ConnectionString()
+        private static string connectionString = "Data Source=GREY\\SQLEXPRESS;Initial Catalog=FashionIsU;Integrated Security=True";
+        public static string GetConnectionString()
         { return connectionString; }
 
 

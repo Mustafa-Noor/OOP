@@ -438,8 +438,10 @@ namespace FashionIsU
                     }
                     else
                     {
-                        UserDL.AddUser(u);
-                        UserUI.CongratsforSignup();
+                        if(UserDL.AddUser(u))
+                        {
+                            UserUI.CongratsforSignup();
+                        }
 
                     }
 
