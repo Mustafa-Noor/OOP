@@ -10,7 +10,7 @@ namespace FashionIsU
 {
     internal class UserDL
     {
-        private static List<UserBL> Users = new List<UserBL>();
+        
     /*
         public static void AddUser(UserBL u)
         {
@@ -125,6 +125,100 @@ namespace FashionIsU
 
             return null; // User not found
         }
+
+        public static List<CustomerBL> GetAllCustomers()
+        {
+            List<CustomerBL> customers = new List<CustomerBL>();
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM Users WHERE Role = 'customer'";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string username = Convert.ToString(reader["Username"]);
+                            string password = Convert.ToString(reader["Password"]);
+                            string email = Convert.ToString(reader["Email"]);
+                            string fname = Convert.ToString(reader["FirstName"]);
+                            string lname = Convert.ToString(reader["LastName"]);
+                            string phone = Convert.ToString(reader["PhoneNumber"]);
+                            string role = Convert.ToString(reader["Role"]);
+
+                            CustomerBL customer = new CustomerBL(username, password, email, fname, lname, phone, role);
+                            customers.Add(customer);
+                        }
+                        connection.Close();
+                    }
+                }
+            }
+
+            return customers;
+        }
+
+        public static bool CheckCustomersCount()
+        {
+            int count = 0;
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT COUNT(*) FROM Users WHERE Role = 'customer'";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    count = (int)cmd.ExecuteScalar();
+                }
+                connection.Close() ;
+            }
+
+            return count>0;
+        }
+
+        public static CustomerBL FindCustomerByUsername(string username)
+        {
+            CustomerBL customer = null;
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM Users WHERE Username = @Username AND Role = 'customer'";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@Username", username);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string foundUsername = reader["Username"].ToString();
+                            string password = reader["Password"].ToString();
+                            string email = reader["Email"].ToString();
+                            string fname = reader["FirstName"].ToString();
+                            string lname = reader["LastName"].ToString();
+                            string phone = reader["PhoneNumber"].ToString();
+                            string role = reader["Role"].ToString();
+
+                            customer = new CustomerBL(foundUsername, password, email, fname, lname, phone, role);
+                        }
+                        connection.Close();
+                    }
+                }
+            }
+
+            return customer;
+        }
+
+
+
 
 
 

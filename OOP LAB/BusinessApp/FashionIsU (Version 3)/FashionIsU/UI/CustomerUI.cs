@@ -125,7 +125,7 @@ namespace FashionIsU
             Console.WriteLine();
             Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-15}|{4,-15}|{5,-15}|", "Username", "FirstName", "LastName", "Email", "PhoneNumber","OrderCount");
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
-            foreach (CustomerBL cus in CustomerDL.GetAllCustomers())
+            foreach (CustomerBL cus in UserDL.GetAllCustomers())
             {
                 Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-15}|{4,-15}|{5,-15}|", cus.GetUsername(), cus.GetFirstName(), cus.GetLastName(), cus.GetEmail(), cus.GetPhoneNumber(),cus.GetOrdersCount());
             }

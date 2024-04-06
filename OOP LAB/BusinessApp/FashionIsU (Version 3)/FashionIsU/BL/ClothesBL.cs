@@ -28,6 +28,18 @@ namespace FashionIsU
             Reviews = new List<ReviewBL>();
         }
 
+        public ClothesBL(string type, string gender, string color, int price, int availability)
+        {
+            Type = type;
+            Gender = gender;
+            Color = color;
+            Price = price;
+            Quantity = availability;
+            Reviews = new List<ReviewBL>();
+        }
+
+
+
         public ClothesBL(ClothesBL c) 
         {
             ClothesID = c.GetId();  

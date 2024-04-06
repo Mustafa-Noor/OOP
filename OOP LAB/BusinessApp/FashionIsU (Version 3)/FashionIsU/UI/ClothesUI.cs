@@ -50,9 +50,6 @@ namespace FashionIsU
             Console.WriteLine();
             Console.WriteLine("Enter clothing details:");
             Console.WriteLine();
-            Console.Write("Give its ID: ");
-            temp = Console.ReadLine();
-            Id = ConsoleUtility.ValidateId(temp);
             Console.Write("Enter the Type: ");
             string type = Console.ReadLine();
             type = ConsoleUtility.ValidateWordsWithInt(type);
@@ -69,7 +66,7 @@ namespace FashionIsU
             temp = Console.ReadLine();
             available = ConsoleUtility.ValidateInt(temp, available);
 
-            ClothesBL c = new ClothesBL(Id, type, gender, color, price, available);
+            ClothesBL c = new ClothesBL(type, gender, color, price, available);
             return c;
         }
 

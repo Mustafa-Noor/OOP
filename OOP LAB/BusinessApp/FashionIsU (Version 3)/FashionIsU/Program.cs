@@ -30,7 +30,7 @@ namespace FashionIsU
                         CustomerBL customer = UserDL.FindUser(u) as CustomerBL;
                         if (customer != null)
                         {
-
+                            CartDL.RetrieveCart(customer);
                             while (true)
                             {
                                 ConsoleUtility.ClearScreen();
@@ -217,7 +217,7 @@ namespace FashionIsU
                                         int id = ClothesUI.TakeId();
                                         ClothesBL c = ClothesDL.FindClothByID(id);
                                         ReviewBL rev = ReviewUI.TakeReview(c, customer);
-                                        ReviewDL.AddReviews(rev);
+                                        ReviewDL.AddReviews(rev,c);
                                         c.AddReview(rev);
                                         ReviewUI.ReviewAddedSuccess();
                                     }
@@ -245,6 +245,7 @@ namespace FashionIsU
                                 }
                                 else if (choice == "10")
                                 {
+                                    CartDL.SaveCart(customer.GetCart(), customer);
                                     break;
                                 }
                             }
@@ -322,8 +323,11 @@ namespace FashionIsU
                                         if (c != null)
                                         {
                                             ConsoleUtility.ClearScreen();
-                                            ClothesDL.DeleteCloth(c);
-                                            ClothesUI.ClothDeletedSuccessfully();
+                                            if (ClothesDL.DeleteCloth(c))
+                                            {
+                                                ClothesUI.ClothDeletedSuccessfully();
+                                            }
+                                            
                                         }
                                         else
                                         {
@@ -340,7 +344,7 @@ namespace FashionIsU
                                 else if (choice == "5")
                                 {
                                     ConsoleUtility.ClearScreen();
-                                    if (CustomerDL.CheckCustomers())
+                                    if (UserDL.CheckCustomersCount())
                                     {
                                         CustomerUI.DisplayCustomers();
                                     }
@@ -354,11 +358,11 @@ namespace FashionIsU
                                 else if (choice == "6")
                                 {
                                     ConsoleUtility.ClearScreen();
-                                    if (CustomerDL.CheckCustomers())
+                                    if (UserDL.CheckCustomersCount())
                                     {
                                         CustomerUI.DisplayCustomers();
                                         string username = CustomerUI.TakeUsername();
-                                        CustomerBL cus = CustomerDL.FindCustomerByUsername(username);
+                                        CustomerBL cus = UserDL.FindCustomerByUsername(username);
                                         if (cus != null)
                                         {
                                             OrderUI.DisplayOrders(cus.GetOrderList());

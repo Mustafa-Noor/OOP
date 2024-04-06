@@ -53,9 +53,8 @@
     <Compile Include="BL\PaymentMethodBL.cs" />
     <Compile Include="BL\ReviewBL.cs" />
     <Compile Include="BL\UserBL.cs" />
+    <Compile Include="DL\CartDL.cs" />
     <Compile Include="DL\ClothesDL.cs" />
-    <Compile Include="DL\CustomerDL.cs" />
-    <Compile Include="DL\EmployeeDL.cs" />
     <Compile Include="DL\OrderDL.cs" />
     <Compile Include="DL\ReviewDL.cs" />
     <Compile Include="DL\UserDL.cs" />

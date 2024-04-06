@@ -23,7 +23,7 @@ namespace FashionIsU
             string address = Console.ReadLine();
             address = ConsoleUtility.ValidateWords(address);
 
-            OrderBL order = new OrderBL(customer.GetCart().GetCartItems(), price, address, pm);
+            OrderBL order = new OrderBL(customer.GetCart().GetCartItems(), price, address, pm, customer.GetUsername()) ;
             return order;
         }
 

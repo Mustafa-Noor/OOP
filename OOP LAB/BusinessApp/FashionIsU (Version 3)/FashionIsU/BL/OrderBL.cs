@@ -9,23 +9,45 @@ namespace FashionIsU
 {
     internal class OrderBL
     {
-        
+        private int OrderId;
         private DateTime OrderDate;
         private List<ClothesBL> Items;
         private int TotalPrice;
         private string DeliveryAddress;
         private PaymentMethodBL PaymentMethod;
-        public OrderBL(List<ClothesBL> items, int totalPrice, string deliveryAddress, PaymentMethodBL PaymentMethod)
+        private string Username;
+        public OrderBL(List<ClothesBL> items, int totalPrice, string deliveryAddress, PaymentMethodBL PaymentMethod, string username)
         {
             OrderDate = DateTime.Now;
             Items = items;
             TotalPrice = totalPrice;
             DeliveryAddress = deliveryAddress;
             this.PaymentMethod = PaymentMethod;
+            this.Username = username;
+        }
+
+        public OrderBL(int id, DateTime orderDate, List<ClothesBL> items, int totalPrice, string deliveryAddress, PaymentMethodBL PaymentMethod, string username) 
+        {
+            OrderId = id;
+            OrderDate = orderDate;
+            Items = items;
+            TotalPrice = totalPrice;
+            DeliveryAddress = deliveryAddress;
+            this.PaymentMethod = PaymentMethod;
+            this.Username = username;
         }
 
 
-       
+        public int GetId()
+        {
+            return OrderId;
+        }
+       public string GetUsername()
+        {
+            return Username;
+        }
+
+        public void SetUsername(string username) { }
 
         public DateTime GetOrderDate()
         {

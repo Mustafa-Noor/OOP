@@ -8,7 +8,7 @@ namespace FashionIsU
 {
     internal abstract class PaymentMethodBL
     {
-        
+        private int PaymentMethodID;
         private string PaymentType;
 
         public PaymentMethodBL(string type)
@@ -16,7 +16,17 @@ namespace FashionIsU
             
             PaymentType = type;
         }
+
+        public PaymentMethodBL(int id, string type)
+        {
+            PaymentMethodID = id;
+            PaymentType = type;
+        }
         
+
+        private int GetPaymentId()
+        { return PaymentMethodID; }
+
 
         public string GetPaymentType()
         {
