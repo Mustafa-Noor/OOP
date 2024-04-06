@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC54B7F-F476-4BCB-96FF-B611947F72AA}|MusicPlaylist\\MusicPlaylist.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\musicplaylist\\bl\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC54B7F-F476-4BCB-96FF-B611947F72AA}|MusicPlaylist\\MusicPlaylist.csproj|solutionrelative:musicplaylist\\bl\\playlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC54B7F-F476-4BCB-96FF-B611947F72AA}|MusicPlaylist\\MusicPlaylist.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\musicplaylist\\bl\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC54B7F-F476-4BCB-96FF-B611947F72AA}|MusicPlaylist\\MusicPlaylist.csproj|solutionrelative:musicplaylist\\bl\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC54B7F-F476-4BCB-96FF-B611947F72AA}|MusicPlaylist\\MusicPlaylist.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 6\\musicplaylist\\musicplaylist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC54B7F-F476-4BCB-96FF-B611947F72AA}|MusicPlaylist\\MusicPlaylist.csproj|solutionrelative:musicplaylist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Song.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\MusicPlaylist\\BL\\Song.cs",
+              "RelativeDocumentMoniker": "MusicPlaylist\\BL\\Song.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\MusicPlaylist\\BL\\Song.cs",
+              "RelativeToolTip": "MusicPlaylist\\BL\\Song.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T09:46:15.221Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Playlist.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\MusicPlaylist\\BL\\Playlist.cs",
+              "RelativeDocumentMoniker": "MusicPlaylist\\BL\\Playlist.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\MusicPlaylist\\BL\\Playlist.cs",
+              "RelativeToolTip": "MusicPlaylist\\BL\\Playlist.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T09:46:29.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\MusicPlaylist\\Program.cs",
+              "RelativeDocumentMoniker": "MusicPlaylist\\Program.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 6\\MusicPlaylist\\MusicPlaylist\\Program.cs",
+              "RelativeToolTip": "MusicPlaylist\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T09:44:30.234Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
