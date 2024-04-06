@@ -216,7 +216,7 @@ namespace FashionIsU.UI
         public static int ValidateId(string temp)
         {
             int id;
-
+            temp = ValidateSentences(temp);
             while (CheckIDExist(temp) || !CheckingforInteger(temp))
             {
                 if (CheckIDExist(temp))

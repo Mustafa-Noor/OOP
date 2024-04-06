@@ -1,0 +1,5 @@
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 10\MyLibrary\MyLibrary\obj\Debug\net8.0\MyLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 10\MyLibrary\MyLibrary\obj\Debug\net8.0\MyLibrary.AssemblyInfoInputs.cache
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 10\MyLibrary\MyLibrary\obj\Debug\net8.0\MyLibrary.AssemblyInfo.cs
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 10\MyLibrary\MyLibrary\obj\Debug\net8.0\MyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\Week 10\MyLibrary\MyLibrary\obj\Debug\net8.0\MyLibrary.sourcelink.json
