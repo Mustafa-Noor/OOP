@@ -44,6 +44,11 @@ namespace FashionIsU
             return Orders;
         }
 
+        public void SetOrderList(List <OrderBL> Orders)
+        {
+            this.Orders = Orders;
+        }
+
         public void AddOrderCustomer(OrderBL order)
         {
             Orders.Add(order);
@@ -69,10 +74,6 @@ namespace FashionIsU
 
             return totalAmount;
         }
-
-        
-
-
 
         public int GetOrdersCount()
         {

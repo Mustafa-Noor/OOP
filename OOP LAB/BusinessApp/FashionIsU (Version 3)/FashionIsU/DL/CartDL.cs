@@ -20,7 +20,7 @@ namespace FashionIsU
 
                 foreach (ClothesBL cloth in cart.GetCartItems())
                 {
-                    if(!CheckCartItemFromDB(cloth.GetId(), customer))
+                    if(!CheckItemInCart(cloth.GetId(), customer))
                     {
                         string query = "INSERT INTO Carts (Username, ClothesId, Type, Gender, Color, Price, Quantity) VALUES (@Username, @ClothId, @Type, @Gender, @Color, @Price, @Quantity);";
 
@@ -45,7 +45,7 @@ namespace FashionIsU
             }
         }
 
-        public static bool CheckCartItemFromDB(int id, CustomerBL customer)
+        public static bool CheckItemInCart(int id, CustomerBL customer)
         {
             string connectionString = ConsoleUtility.GetConnectionString();
 
@@ -103,6 +103,75 @@ namespace FashionIsU
             
             
         }
+
+        public static void DeleteAnItem(int id, CustomerBL customer)
+        {
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "Delete FROM Carts WHERE ClothesID = @clothID and Username = @username";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@clothID", id);
+                    cmd.Parameters.AddWithValue("@username", customer.GetUsername());
+
+                    cmd.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
+
+        public static void UpdateQuantity(int id, CustomerBL customer, int quantity)
+        {
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "Update Carts Set Quantity = @quantity WHERE ClothesID = @clothID and Username = @username";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@clothID", id);
+                    cmd.Parameters.AddWithValue("@username", customer.GetUsername());
+                    cmd.Parameters.AddWithValue("@quantity", quantity);
+
+                    cmd.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
+        public static void EmptyCart(CustomerBL customer)
+        {
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "Delete from Carts WHERE Username = @username";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    
+                    cmd.Parameters.AddWithValue("@username", customer.GetUsername());
+                    
+
+                    cmd.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
+
+
 
 
     }

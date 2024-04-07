@@ -114,6 +114,52 @@ namespace FashionIsU
             
         }
 
+        public static void ChangeQuantity(int id, int quantity)
+        {
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "Update Clothes Set Quantity = @quantity WHERE ClothesID = @clothID";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@clothID", id);
+                    cmd.Parameters.AddWithValue("@quantity", quantity);
+
+                    cmd.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
+        public static void UpdateCloth(ClothesBL cloth)
+        {
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "Update Clothes Set Type = @type, Gender = @gender, Color = @color, Price = @price, Quantity = @quantity WHERE ClothesID = @clothID";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@clothID", cloth.GetId());
+                    cmd.Parameters.AddWithValue("@quantity", cloth.GetQuantity());
+                    cmd.Parameters.AddWithValue("@type", cloth.GetType());
+                    cmd.Parameters.AddWithValue("@gender", cloth.GetGender());
+                    cmd.Parameters.AddWithValue("@color", cloth.GetColor());
+                    cmd.Parameters.AddWithValue("@price", cloth.GetPrice());
+
+                    cmd.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
         /*
         public static List <ClothesBL> GetAllClothes()
         {

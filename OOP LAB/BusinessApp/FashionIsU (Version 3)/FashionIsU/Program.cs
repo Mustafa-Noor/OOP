@@ -31,6 +31,7 @@ namespace FashionIsU
                         if (customer != null)
                         {
                             CartDL.RetrieveCart(customer);
+                            customer.SetOrderList(OrderDL.RetrieveOrdersOfCustomer(customer));
                             while (true)
                             {
                                 ConsoleUtility.ClearScreen();
@@ -51,6 +52,7 @@ namespace FashionIsU
                                                 ClothesBL cartItem = new ClothesBL(c);
                                                 cartItem.SetQuantity(quantity);
                                                 c.DropQuantity(quantity);
+                                                ClothesDL.ChangeQuantity(id, c.GetQuantity());
                                                 customer.GetCart().AddIntoCart(cartItem);
                                                 CartUI.AddedToCart();
                                             }
@@ -107,9 +109,11 @@ namespace FashionIsU
                                             int quantity = c.GetQuantity();
                                             ClothesBL shopItem = ClothesDL.FindClothByID(id);
                                             shopItem.AddQuantity(quantity);
+                                            ClothesDL.ChangeQuantity(id, shopItem.GetQuantity());
 
                                             if (customer.GetCart().DelItem(c))
                                             {
+                                                CartDL.DeleteAnItem(id, customer);
                                                 CartUI.CartItemDel();
                                             }
 
@@ -147,7 +151,9 @@ namespace FashionIsU
                                             if (shopItem.IsAvailableToBuy(quantity))
                                             {
                                                 c.SetQuantity(quantity);
+                                                CartDL.UpdateQuantity(id, customer, quantity);
                                                 shopItem.DropQuantity(quantity);
+                                                ClothesDL.ChangeQuantity(id, shopItem.GetQuantity());
                                                 CartUI.CartItemUpdated();
                                             }
                                             else
@@ -182,6 +188,7 @@ namespace FashionIsU
                                         OrderDL.AddOrder(order);
                                         customer.AddOrderCustomer(order);
                                         customer.ClearCart();
+                                        CartDL.EmptyCart(customer);
                                         OrderUI.OrderSuccessful();
 
                                     }
@@ -195,6 +202,8 @@ namespace FashionIsU
                                 }
                                 else if (choice == "6")
                                 {
+                                    customer.SetOrderList(OrderDL.RetrieveOrdersOfCustomer(customer));
+
                                     ConsoleUtility.ClearScreen();
                                     if (customer.CheckOrders())
                                     {
@@ -239,6 +248,7 @@ namespace FashionIsU
                                 {
                                     ConsoleUtility.ClearScreen();
                                     CustomerUI.UpdateProfileInput(customer);
+                                    UserDL.UpdateProfile(customer);
                                     UserUI.ProfileUpdateSuccess();
                                     ConsoleUtility.ReturnForAll();
 
@@ -261,6 +271,7 @@ namespace FashionIsU
                         EmployeeBL employee = UserDL.FindUser(u) as EmployeeBL;
                         if (employee != null)
                         {
+                            
                             while (true)
                             {
                                 ConsoleUtility.ClearScreen();
@@ -298,6 +309,7 @@ namespace FashionIsU
                                         {
                                             ConsoleUtility.ClearScreen();
                                             ClothesUI.TakeInputForUpdateClothe(c);
+                                            ClothesDL.UpdateCloth(c);
                                             ClothesUI.ClothUpdatedSuccessfully();
                                         }
                                         else
@@ -365,6 +377,7 @@ namespace FashionIsU
                                         CustomerBL cus = UserDL.FindCustomerByUsername(username);
                                         if (cus != null)
                                         {
+                                            cus.SetOrderList(OrderDL.RetrieveOrdersOfCustomer(cus));
                                             OrderUI.DisplayOrders(cus.GetOrderList());
                                         }
                                         else
@@ -390,6 +403,7 @@ namespace FashionIsU
                                         ClothesBL c = ClothesDL.FindClothByID(id);
                                         if (c != null)
                                         {
+                                            c.SetReviews(ReviewDL.RetrieveReviews(id));
                                             ConsoleUtility.ClearScreen();
                                             ReviewUI.DisplayReview(c);
                                         }
@@ -409,6 +423,7 @@ namespace FashionIsU
                                 {
                                     ConsoleUtility.ClearScreen();
                                    EmployeeUI.UpdateProfileInput(employee);
+                                    UserDL.UpdateProfile(employee);
                                     UserUI.ProfileUpdateSuccess();
                                     ConsoleUtility.ReturnForAll();
                                 }

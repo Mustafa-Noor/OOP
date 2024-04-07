@@ -139,6 +139,11 @@ namespace FashionIsU
             return Reviews;
         }
 
+        public void SetReviews(List<ReviewBL> reviews)
+        {
+            this.Reviews = reviews;
+        }
+
 
         public void UpdateCloth(string gender, string color, string type, int price, int available)
         {

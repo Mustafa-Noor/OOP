@@ -60,9 +60,6 @@ namespace FashionIsU
             Console.WriteLine();
             Console.WriteLine("------------------------------UPDATE PROFILE PAGE----------------------------");
             Console.WriteLine();
-            Console.Write("Enter Username: ");
-            string name = Console.ReadLine();
-            name = ConsoleUtility.ValidateWords(name);
             Console.Write("Enter Password(6-Digits): ");
             string password = Console.ReadLine();
             password = ConsoleUtility.RestrictPassword(password);
@@ -80,7 +77,7 @@ namespace FashionIsU
             phone = ConsoleUtility.ValidateContact(phone);
 
 
-            cus.UpdateProfile(name, password, email, fname, lname, phone) ;
+            cus.UpdateProfile(password, email, fname, lname, phone) ;
             
             
 
@@ -123,11 +120,11 @@ namespace FashionIsU
         {
             Console.WriteLine("--------------------------------DISPLAY ALL CUSTOMERS--------------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-15}|{4,-15}|{5,-15}|", "Username", "FirstName", "LastName", "Email", "PhoneNumber","OrderCount");
+            Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-15}|{4,-15}|", "Username", "FirstName", "LastName", "Email", "PhoneNumber");
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
             foreach (CustomerBL cus in UserDL.GetAllCustomers())
             {
-                Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-15}|{4,-15}|{5,-15}|", cus.GetUsername(), cus.GetFirstName(), cus.GetLastName(), cus.GetEmail(), cus.GetPhoneNumber(),cus.GetOrdersCount());
+                Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-15}|{4,-15}|", cus.GetUsername(), cus.GetFirstName(), cus.GetLastName(), cus.GetEmail(), cus.GetPhoneNumber());
             }
             Console.WriteLine("-------------------------------------------------------------------------------------------------");
         }

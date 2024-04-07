@@ -71,7 +71,89 @@ namespace FashionIsU
                 }
         }
 
-        
+        public static List<OrderBL> RetrieveOrdersOfCustomer(CustomerBL customer)
+        {
+            List <OrderBL> Orders = new List <OrderBL>();
+            string connectionString = ConsoleUtility.GetConnectionString();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM Orders WHERE Username = @username";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@username", customer.GetUsername());
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+
+                            int orderID = Convert.ToInt32(reader["OrderID"]);
+                            DateTime orderDate = Convert.ToDateTime(reader["OrderDate"]);
+                            int price = Convert.ToInt32(reader["TotalPrice"]);
+                            string address = Convert.ToString(reader["DeliveryAddress"]);
+                            string paymentType = Convert.ToString(reader["PaymentType"]);
+                            List<ClothesBL> Clothes = GetListOfClothesInOrder(orderID);
+                            if (paymentType == "Cash")
+                            {
+                                
+                                OrderBL order = new OrderBL(orderID, orderDate, Clothes, price, address, new Cash(paymentType), customer.GetUsername());
+                                Orders.Add(order);
+                            }
+                            else
+                            {
+                                OrderBL order = new OrderBL(orderID, orderDate, Clothes, price, address, new Card(paymentType, "m", "1234"), customer.GetUsername());
+                                Orders.Add(order);
+                            }
+                            
+                            
+                        }
+                        connection.Close();
+                    }
+                }
+            }
+
+            return Orders;
+
+        }
+
+        public static List <ClothesBL> GetListOfClothesInOrder(int orderID)
+        {
+            List<ClothesBL> Clothes = new List<ClothesBL>();
+            string connectionString = ConsoleUtility.GetConnectionString();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM OrderItems WHERE OrderID = @OrderID";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {   
+                    
+                    cmd.Parameters.AddWithValue("@OrderID", orderID);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+
+                            int clothesID = Convert.ToInt32(reader["ClothesID"]);
+                            string type = Convert.ToString(reader["Type"]);
+                            string gender = Convert.ToString(reader["Gender"]);
+                            string color = Convert.ToString(reader["Color"]);
+                            int price = Convert.ToInt32(reader["Price"]);
+                            int quantity = Convert.ToInt32(reader["Quantity"]);
+
+                            ClothesBL cloth = new ClothesBL(clothesID, type, gender, color, price, quantity);
+                            Clothes.Add(cloth);
+                        }
+                        connection.Close();
+                    }
+                }
+            }
+
+            return Clothes;
+        }
+
+
 
 
 

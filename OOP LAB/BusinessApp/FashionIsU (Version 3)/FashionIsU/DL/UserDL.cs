@@ -39,6 +39,20 @@ namespace FashionIsU
             }
         }
 
+        public static void UpdateProfile(UserBL user)
+        {
+            string connectiongString = ConsoleUtility.GetConnectionString();
+            SqlConnection connection = new SqlConnection(connectiongString);
+            connection.Open();
+
+            string query = string.Format("UPDATE Users SET Password = '{0}', Email = '{1}', FirstName = '{2}', LastName = '{3}', PhoneNumber = '{4}' WHERE username = '{5}'", user.GetPassword(), user.GetEmail(), user.GetFirstName(), user.GetLastName(), user.GetPhoneNumber(), user.GetUsername());
+            SqlCommand cmd = new SqlCommand(query, connection);
+            int rows = cmd.ExecuteNonQuery();
+            connection.Close();
+
+            
+        }
+
         public static bool IsUserExists(UserBL cUser)
         {
             string connectiongString = ConsoleUtility.GetConnectionString();

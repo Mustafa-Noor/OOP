@@ -48,9 +48,6 @@ namespace FashionIsU
             Console.WriteLine();
             Console.WriteLine("------------------------------UPDATE PROFILE PAGE----------------------------");
             Console.WriteLine();
-            Console.Write("Enter Username: ");
-            string name = Console.ReadLine();
-            name = ConsoleUtility.ValidateWords(name);
             Console.Write("Enter Password: ");
             string password = Console.ReadLine();
             password = ConsoleUtility.RestrictPassword(password);
@@ -68,7 +65,7 @@ namespace FashionIsU
             phone = ConsoleUtility.ValidateContact(phone);
             
 
-            emp.UpdateProfile(name, password, email, fname, lname, phone);
+            emp.UpdateProfile(password, email, fname, lname, phone);
            
 
 

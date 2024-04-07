@@ -39,6 +39,8 @@ namespace FashionIsU
 
         }
 
+        
+
 
         public UserBL(string username, string password) 
         {
@@ -117,9 +119,8 @@ namespace FashionIsU
             PhoneNumber = value;
         }
 
-        public void UpdateProfile(string username, string password, string email, string firstName, string lastName, string phoneNumber)
+        public void UpdateProfile(string password, string email, string firstName, string lastName, string phoneNumber)
         {
-            SetUsername(username);
             SetPassword(password);
             SetEmail(email);
             SetFirstName(firstName);

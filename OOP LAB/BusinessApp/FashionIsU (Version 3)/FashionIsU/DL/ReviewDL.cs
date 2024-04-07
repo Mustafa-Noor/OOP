@@ -38,5 +38,41 @@ namespace FashionIsU
                 return false;
             }
         }
+
+        public static List<ReviewBL> RetrieveReviews(int id)
+        {
+            List<ReviewBL> Reviews = new List<ReviewBL>();
+            string connectionString = ConsoleUtility.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT * FROM Reviews where clothid = @id";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            
+                            int rating = Convert.ToInt32(reader["Rating"]);
+                            string comment = Convert.ToString(reader["Comment"]);
+                            string username = Convert.ToString(reader["Username"]);
+                            
+
+                            ReviewBL rev = new ReviewBL(rating, comment, username);
+                            Reviews.Add(rev);
+
+                        }
+                        connection.Close();
+                    }
+                }
+            }
+
+            return Reviews;
+        }
     }
 }
