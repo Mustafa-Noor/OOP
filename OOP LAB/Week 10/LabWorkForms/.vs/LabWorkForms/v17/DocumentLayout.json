@@ -7,14 +7,14 @@
       "RelativeMoniker": "D:0:0:{F9590FBD-9F9D-4A89-830C-5E543879DC6A}|LabWorkForms\\LabWorkForms.csproj|solutionrelative:labworkforms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9590FBD-9F9D-4A89-830C-5E543879DC6A}|LabWorkForms\\LabWorkForms.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 10\\labworkforms\\labworkforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9590FBD-9F9D-4A89-830C-5E543879DC6A}|LabWorkForms\\LabWorkForms.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 10\\LabWorkForms\\labworkforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9590FBD-9F9D-4A89-830C-5E543879DC6A}|LabWorkForms\\LabWorkForms.csproj|solutionrelative:labworkforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 10\\LabWork\\LabWork\\DL\\DegreeProgramDL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9590FBD-9F9D-4A89-830C-5E543879DC6A}|LabWorkForms\\LabWorkForms.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 10\\labworkforms\\labworkforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F9590FBD-9F9D-4A89-830C-5E543879DC6A}|LabWorkForms\\LabWorkForms.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 10\\LabWorkForms\\labworkforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F9590FBD-9F9D-4A89-830C-5E543879DC6A}|LabWorkForms\\LabWorkForms.csproj|solutionrelative:labworkforms\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -41,8 +41,7 @@
               "RelativeToolTip": "..\\LabWork\\LabWork\\DL\\DegreeProgramDL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T20:12:39.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T20:12:39.83Z"
             },
             {
               "$type": "Document",
@@ -54,8 +53,7 @@
               "RelativeToolTip": "LabWorkForms\\Form2.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAAYwE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T19:51:48.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T19:51:48.085Z"
             },
             {
               "$type": "Document",
@@ -66,8 +64,7 @@
               "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 10\\LabWorkForms\\LabWorkForms\\Form2.cs [Design]",
               "RelativeToolTip": "LabWorkForms\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T19:51:00.54Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-05T19:51:00.54Z"
             },
             {
               "$type": "Document",
@@ -77,7 +74,7 @@
               "RelativeDocumentMoniker": "LabWorkForms\\Form1.cs",
               "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 10\\LabWorkForms\\LabWorkForms\\Form1.cs",
               "RelativeToolTip": "LabWorkForms\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAMAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAowE4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T09:11:49.039Z",
               "EditorCaption": ""
@@ -91,8 +88,7 @@
               "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 10\\LabWorkForms\\LabWorkForms\\Form1.cs [Design]",
               "RelativeToolTip": "LabWorkForms\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T09:11:06.192Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-02T09:11:06.192Z"
             }
           ]
         }

@@ -1,0 +1,6 @@
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\BusinessApp\FashionIsUlLibrary\FashionIsUlLibrary\obj\Debug\FashionIsUlLibrary.csproj.AssemblyReference.cache
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\BusinessApp\FashionIsUlLibrary\FashionIsUlLibrary\obj\Debug\FashionIsUlLibrary.csproj.CoreCompileInputs.cache
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\BusinessApp\FashionIsUlLibrary\FashionIsUlLibrary\bin\Debug\FashionIsUlLibrary.dll
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\BusinessApp\FashionIsUlLibrary\FashionIsUlLibrary\bin\Debug\FashionIsUlLibrary.pdb
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\BusinessApp\FashionIsUlLibrary\FashionIsUlLibrary\obj\Debug\FashionIsUlLibrary.dll
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\OOP LAB\BusinessApp\FashionIsUlLibrary\FashionIsUlLibrary\obj\Debug\FashionIsUlLibrary.pdb
