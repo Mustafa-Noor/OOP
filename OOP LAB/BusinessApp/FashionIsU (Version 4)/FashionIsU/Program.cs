@@ -190,6 +190,7 @@ namespace FashionIsU
                                         MainUI.ClearScreen();
                                         OrderBL order = OrderUI.TakeInputForOrder(customer, new PaymentMethodBL(p.GetPaymentType()));
                                         OrderDL.AddOrder(order);
+                                        customer.ClearOrders();
                                         OrderDL.RetrieveOrdersOfCustomer(customer);
                                         CartDL.EmptyCart(customer);
                                         CartDL.RetrieveCart(customer);
@@ -231,6 +232,7 @@ namespace FashionIsU
                                         ClothesBL c = ClothesDL.FindClothByID(id);
                                         ReviewBL rev = ReviewUI.TakeReview(c, customer);
                                         ReviewDL.AddReviews(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()),c);
+                                        c.ClearReviews();
                                         ReviewDL.RetrieveReviews(c);
                                         ReviewUI.ReviewAddedSuccess();
                                     }
@@ -408,6 +410,7 @@ namespace FashionIsU
                                         ClothesBL c = ClothesDL.FindClothByID(id);
                                         if (c != null)
                                         {
+                                            c.ClearReviews();
                                             ReviewDL.RetrieveReviews(c);
                                             MainUI.ClearScreen();
                                             ReviewUI.DisplayReview(c);

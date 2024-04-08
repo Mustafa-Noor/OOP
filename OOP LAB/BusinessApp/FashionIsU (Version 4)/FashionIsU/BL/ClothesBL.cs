@@ -144,6 +144,9 @@ namespace FashionIsU
             this.Reviews = reviews;
         }
 
+        public void ClearReviews()
+        { Reviews.Clear(); }
+
 
         public void UpdateCloth(string gender, string color, string type, int price, int available)
         {

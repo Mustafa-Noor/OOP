@@ -80,6 +80,9 @@ namespace FashionIsU
             return Orders.Count;
         }
 
+        public void ClearOrders()
+        { Orders.Clear(); }
+
         
     }
 }
