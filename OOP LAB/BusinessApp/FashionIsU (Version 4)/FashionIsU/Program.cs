@@ -32,7 +32,7 @@ namespace FashionIsU
                         if (customer != null)
                         {
                             CartDL.RetrieveCart(customer);
-                            customer.SetOrderList(OrderDL.RetrieveOrdersOfCustomer(customer));
+                            OrderDL.RetrieveOrdersOfCustomer(customer);
 
                             while (true)
                             {
@@ -55,8 +55,9 @@ namespace FashionIsU
                                                 cartItem.SetQuantity(quantity);
                                                 c.DropQuantity(quantity);
                                                 ClothesDL.ChangeQuantity(id, c.GetQuantity());
-                                                customer.GetCart().AddIntoCart(cartItem);
+                                                CartDL.SaveItemInCart(cartItem, customer);
                                                 CartUI.AddedToCart();
+                                                CartDL.RetrieveCart(customer);
                                             }
                                             else
                                             {
@@ -112,12 +113,11 @@ namespace FashionIsU
                                             ClothesBL shopItem = ClothesDL.FindClothByID(id);
                                             shopItem.AddQuantity(quantity);
                                             ClothesDL.ChangeQuantity(id, shopItem.GetQuantity());
-
-                                            if (customer.GetCart().DelItem(c))
-                                            {
-                                                CartDL.DeleteAnItem(id, customer);
-                                                CartUI.CartItemDel();
-                                            }
+                                            CartDL.DeleteAnItem(id, customer);
+                                            customer.ClearCart();
+                                            CartDL.RetrieveCart(customer);
+                                            CartUI.CartItemDel();
+                                            
 
                                         }
                                         else
@@ -152,10 +152,12 @@ namespace FashionIsU
                                             int quantity = ClothesUI.TakeQuantity();
                                             if (shopItem.IsAvailableToBuy(quantity))
                                             {
-                                                c.SetQuantity(quantity);
+                                                
                                                 CartDL.UpdateQuantity(id, customer, quantity);
                                                 shopItem.DropQuantity(quantity);
                                                 ClothesDL.ChangeQuantity(id, shopItem.GetQuantity());
+                                                customer.ClearCart();
+                                                CartDL.RetrieveCart(customer);
                                                 CartUI.CartItemUpdated();
                                             }
                                             else
@@ -188,9 +190,9 @@ namespace FashionIsU
                                         MainUI.ClearScreen();
                                         OrderBL order = OrderUI.TakeInputForOrder(customer, new PaymentMethodBL(p.GetPaymentType()));
                                         OrderDL.AddOrder(order);
-                                        customer.AddOrderCustomer(order);
-                                        customer.ClearCart();
+                                        OrderDL.RetrieveOrdersOfCustomer(customer);
                                         CartDL.EmptyCart(customer);
+                                        CartDL.RetrieveCart(customer);
                                         OrderUI.OrderSuccessful();
 
                                     }
@@ -204,7 +206,7 @@ namespace FashionIsU
                                 }
                                 else if (choice == "6")
                                 {
-                                    customer.SetOrderList(OrderDL.RetrieveOrdersOfCustomer(customer));
+                                    
 
                                     MainUI.ClearScreen();
                                     if (customer.CheckOrders())
@@ -229,7 +231,7 @@ namespace FashionIsU
                                         ClothesBL c = ClothesDL.FindClothByID(id);
                                         ReviewBL rev = ReviewUI.TakeReview(c, customer);
                                         ReviewDL.AddReviews(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()),c);
-                                        c.AddReview(rev);
+                                        ReviewDL.RetrieveReviews(c);
                                         ReviewUI.ReviewAddedSuccess();
                                     }
                                     else
@@ -257,7 +259,7 @@ namespace FashionIsU
                                 }
                                 else if (choice == "10")
                                 {
-                                    CartDL.SaveCart(customer.GetCart(), customer);
+                                    
                                     break;
                                 }
                             }
@@ -380,7 +382,7 @@ namespace FashionIsU
                                         CustomerBL cus = UserDL.FindCustomerByUsername(username);
                                         if (cus != null)
                                         {
-                                            cus.SetOrderList(OrderDL.RetrieveOrdersOfCustomer(cus));
+                                            OrderDL.RetrieveOrdersOfCustomer(cus);
                                             OrderUI.DisplayOrders(cus.GetOrderList());
                                         }
                                         else
@@ -406,7 +408,7 @@ namespace FashionIsU
                                         ClothesBL c = ClothesDL.FindClothByID(id);
                                         if (c != null)
                                         {
-                                            c.SetReviews(ReviewDL.RetrieveReviews(id));
+                                            ReviewDL.RetrieveReviews(c);
                                             MainUI.ClearScreen();
                                             ReviewUI.DisplayReview(c);
                                         }

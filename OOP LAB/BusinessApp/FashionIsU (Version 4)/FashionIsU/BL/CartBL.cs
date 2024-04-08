@@ -17,7 +17,11 @@ namespace FashionIsU
 
         public void AddIntoCart(ClothesBL c)
         {
-            Cart.Add (c);
+            if(!Cart.Contains(c))
+            {
+                Cart.Add(c);
+            }
+            
         }
 
         public int GetTotalCartAmount()

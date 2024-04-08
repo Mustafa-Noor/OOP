@@ -71,9 +71,9 @@ namespace FashionIsU
                 }
         }
 
-        public static List<OrderBL> RetrieveOrdersOfCustomer(CustomerBL customer)
+        public static void RetrieveOrdersOfCustomer(CustomerBL customer)
         {
-            List <OrderBL> Orders = new List <OrderBL>();
+            
             string connectionString = UtilityClass.GetConnectionString();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -95,7 +95,7 @@ namespace FashionIsU
                             string paymentType = Convert.ToString(reader["PaymentType"]);
                             List<ClothesBL> Clothes = GetListOfClothesInOrder(orderID);    
                             OrderBL order = new OrderBL(orderID, orderDate, Clothes, price, address, new PaymentMethodBL(paymentType), customer.GetUsername());
-                            Orders.Add(order);
+                            customer.AddOrderCustomer(order);
                             
                         }
                         connection.Close();
@@ -103,7 +103,7 @@ namespace FashionIsU
                 }
             }
 
-            return Orders;
+            
 
         }
 

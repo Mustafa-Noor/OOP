@@ -39,9 +39,9 @@ namespace FashionIsU
             }
         }
 
-        public static List<ReviewBL> RetrieveReviews(int id)
+        public static void RetrieveReviews(ClothesBL c)
         {
-            List<ReviewBL> Reviews = new List<ReviewBL>();
+            
             string connectionString = UtilityClass.GetConnectionString();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -51,7 +51,7 @@ namespace FashionIsU
                 string query = "SELECT * FROM Reviews where clothid = @id";
                 using (SqlCommand cmd = new SqlCommand(query, connection))
                 {
-                    cmd.Parameters.AddWithValue("id", id);
+                    cmd.Parameters.AddWithValue("id", c.GetId());
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
@@ -64,7 +64,7 @@ namespace FashionIsU
                             
 
                             ReviewBL rev = new ReviewBL(rating, comment, username);
-                            Reviews.Add(rev);
+                            c.AddReview(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()));
 
                         }
                         connection.Close();
@@ -72,7 +72,7 @@ namespace FashionIsU
                 }
             }
 
-            return Reviews;
+            
         }
     }
 }

@@ -10,7 +10,7 @@ namespace FashionIsU
 {
     internal class CartDL
     {
-        public static void SaveCart(CartBL cart, CustomerBL customer)
+        public static void SaveItemInCart(ClothesBL cloth, CustomerBL customer)
         {
             string connectionString = UtilityClass.GetConnectionString();
 
@@ -18,8 +18,6 @@ namespace FashionIsU
             {
                 connection.Open();
 
-                foreach (ClothesBL cloth in cart.GetCartItems())
-                {
                     if(!CheckItemInCart(cloth.GetId(), customer))
                     {
                         string query = "INSERT INTO Carts (Username, ClothesId, Type, Gender, Color, Price, Quantity) VALUES (@Username, @ClothId, @Type, @Gender, @Color, @Price, @Quantity);";
@@ -38,8 +36,6 @@ namespace FashionIsU
                             cmd.ExecuteNonQuery();
                         }
                     }
-                    
-                }
 
                 connection.Close();
             }
