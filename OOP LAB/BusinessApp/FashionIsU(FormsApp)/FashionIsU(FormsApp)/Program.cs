@@ -16,7 +16,7 @@ namespace FashionIsU_FormsApp_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SignInUI());
+            Application.Run(new MainUI());
         }
     }
 }

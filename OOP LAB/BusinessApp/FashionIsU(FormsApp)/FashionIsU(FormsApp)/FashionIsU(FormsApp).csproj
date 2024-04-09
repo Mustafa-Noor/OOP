@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F736C072-8100-41AC-A7CD-14684CFE7784}</ProjectGuid>
+    <ProjectGuid>{38162B58-4A7F-4388-B479-C79176FD5A3B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>FashionIsU_FormsApp_</RootNamespace>
     <AssemblyName>FashionIsU%28FormsApp%29</AssemblyName>
@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FashionIsUlLibrary">
-      <HintPath>..\..\FashionIsUlLibrary\FashionIsUlLibrary\bin\Debug\FashionIsUlLibrary.dll</HintPath>
+    <Reference Include="FashionIsULibrary">
+      <HintPath>..\..\FashionIsULibrary\FashionIsULibrary\bin\Debug\FashionIsULibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,13 +49,91 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ObjectHandler.cs" />
+    <Compile Include="UI\AddClothUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddClothUI.Designer.cs">
+      <DependentUpon>AddClothUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BuyItemUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BuyItemUI.Designer.cs">
+      <DependentUpon>BuyItemUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomerMenuUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomerMenuUI.Designer.cs">
+      <DependentUpon>CustomerMenuUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DeleteClothUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DeleteClothUI.Designer.cs">
+      <DependentUpon>DeleteClothUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DisplayCustomersUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DisplayCustomersUI.Designer.cs">
+      <DependentUpon>DisplayCustomersUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DisplayOrdersUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DisplayOrdersUI.Designer.cs">
+      <DependentUpon>DisplayOrdersUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DisplayOrderOfCustomerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DisplayOrderOfCustomerUI.Designer.cs">
+      <DependentUpon>DisplayOrderOfCustomerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DisplayReviewsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DisplayReviewsUI.Designer.cs">
+      <DependentUpon>DisplayReviewsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EmployeeMenuUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EmployeeMenuUI.Designer.cs">
+      <DependentUpon>EmployeeMenuUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GiveReviewUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GiveReviewUI.Designer.cs">
+      <DependentUpon>GiveReviewUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ManageCartUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ManageCartUI.Designer.cs">
+      <DependentUpon>ManageCartUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PlaceOrderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\PlaceOrderUI.Designer.cs">
+      <DependentUpon>PlaceOrderUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\SignInUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\SignInUI.Designer.cs">
       <DependentUpon>SignInUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="ObjecHandler.cs" />
+    <Compile Include="UI\MainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainUI.Designer.cs">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\SignUpUI.cs">
@@ -64,8 +142,56 @@
     <Compile Include="UI\SignUpUI.Designer.cs">
       <DependentUpon>SignUpUI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\SignInUI.resx">
-      <DependentUpon>SignInUI.cs</DependentUpon>
+    <Compile Include="UI\UpdateClothUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UpdateClothUI.Designer.cs">
+      <DependentUpon>UpdateClothUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UpdateProfileCustomerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UpdateProfileCustomerUI.Designer.cs">
+      <DependentUpon>UpdateProfileCustomerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UpdateProfileEmployeeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UpdateProfileEmployeeUI.Designer.cs">
+      <DependentUpon>UpdateProfileEmployeeUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\AddClothUI.resx">
+      <DependentUpon>AddClothUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BuyItemUI.resx">
+      <DependentUpon>BuyItemUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomerMenuUI.resx">
+      <DependentUpon>CustomerMenuUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DeleteClothUI.resx">
+      <DependentUpon>DeleteClothUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DisplayCustomersUI.resx">
+      <DependentUpon>DisplayCustomersUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DisplayOrderOfCustomerUI.resx">
+      <DependentUpon>DisplayOrderOfCustomerUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DisplayOrdersUI.resx">
+      <DependentUpon>DisplayOrdersUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DisplayReviewsUI.resx">
+      <DependentUpon>DisplayReviewsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EmployeeMenuUI.resx">
+      <DependentUpon>EmployeeMenuUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GiveReviewUI.resx">
+      <DependentUpon>GiveReviewUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainUI.resx">
+      <DependentUpon>MainUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,8 +202,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\ManageCartUI.resx">
+      <DependentUpon>ManageCartUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PlaceOrderUI.resx">
+      <DependentUpon>PlaceOrderUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SignInUI.resx">
+      <DependentUpon>SignInUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\SignUpUI.resx">
       <DependentUpon>SignUpUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UpdateClothUI.resx">
+      <DependentUpon>UpdateClothUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UpdateProfileCustomerUI.resx">
+      <DependentUpon>UpdateProfileCustomerUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UpdateProfileEmployeeUI.resx">
+      <DependentUpon>UpdateProfileEmployeeUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,6 +236,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
