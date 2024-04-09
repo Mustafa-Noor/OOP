@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\businessapp\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\businessapp\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\ui\\reviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\ui\\reviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\ui\\reviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\businessapp\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\ui\\orderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\ui\\orderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\ui\\orderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\businessapp\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\ui\\clothesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\businessapp\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\ui\\userui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\ui\\userui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\ui\\userui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,8 +46,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\UI\\ReviewUI.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:20:29.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T10:20:29.427Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\UI\\CustomerUI.cs",
               "ViewState": "AQIAAGUAAAAAAAAAAAAqwHAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:57:28.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T08:57:28.62Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\UI\\OrderUI.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAA6wC4AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T18:18:59.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T18:18:59.195Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\UI\\UserUI.cs",
               "ViewState": "AQIAAKMAAAAAAAAAAAAwwFgAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T10:51:41.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T10:51:41.234Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\UI\\ClothesUI.cs",
               "ViewState": "AQIAAEcAAAAAAAAAAAAqwGcAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:55:29.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T08:55:29.741Z"
             }
           ]
         }

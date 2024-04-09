@@ -26,6 +26,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void BuyItemUI_Load(object sender, EventArgs e)
         {
+            MakeColumns();
             DisplayClothes();
         }
 
@@ -36,12 +37,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void DisplayClothes()
         {
-            dataTable.Columns.Add("ClothesID", typeof(string));
-            dataTable.Columns.Add("Type", typeof(string));
-            dataTable.Columns.Add("Gender", typeof(string));
-            dataTable.Columns.Add("Color", typeof(string));
-            dataTable.Columns.Add("Price", typeof(string));
-            dataTable.Columns.Add("Availability", typeof(string));
+            
 
             List<ClothesBL> AllClothes = ObjectHandler.GetClothesDL().GetAllClothes();
             foreach(ClothesBL cloth in AllClothes)
@@ -50,6 +46,17 @@ namespace FashionIsU_FormsApp_.UI
             }
 
             ClothesGrid.DataSource = dataTable;
+        }
+
+
+        private void MakeColumns()
+        {
+            dataTable.Columns.Add("ClothesID", typeof(string));
+            dataTable.Columns.Add("Type", typeof(string));
+            dataTable.Columns.Add("Gender", typeof(string));
+            dataTable.Columns.Add("Color", typeof(string));
+            dataTable.Columns.Add("Price", typeof(string));
+            dataTable.Columns.Add("Availability", typeof(string));
         }
 
         private void Addbtn_Click(object sender, EventArgs e)
