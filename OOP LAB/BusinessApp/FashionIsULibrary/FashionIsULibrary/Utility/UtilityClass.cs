@@ -13,11 +13,14 @@ namespace FashionIsU
         private static string ConnectionString = "Data Source=GREY\\SQLEXPRESS;Initial Catalog=FashionIsU;Integrated Security=True";
 
         private static string UserFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Users.txt";
+        private static string ClothesFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Clothes.txt";
 
         public static string GetUserFilePath()
-        {
-            return UserFilePath;
-        }
+        { return UserFilePath;}
+
+        public static string GetClothesFilePath() 
+        {  return ClothesFilePath; }
+
         public static string GetConnectionString()
         { return ConnectionString; }
 

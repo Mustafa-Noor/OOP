@@ -14,7 +14,7 @@ namespace FashionIsU_ConsoleApp_
         static void Main(string[] args)
         {
             ICartDL cartDL = new CartDB();
-            IClothesDL clothesDL = new ClothesDB();
+            IClothesDL clothesDL = new ClothesFH();
             IOrderDL orderDL = new OrderDB();
             IReviewDL reviewDL = new ReviewDB();
             IUserDL userDL = new UserFH();

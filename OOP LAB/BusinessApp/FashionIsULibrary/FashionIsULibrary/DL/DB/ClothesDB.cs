@@ -111,8 +111,7 @@ namespace FashionIsU
             }
 
             return cloth;
-
-            
+  
         }
 
         public bool CheckClothExistence(ClothesBL c)
