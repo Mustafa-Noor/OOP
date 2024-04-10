@@ -1,0 +1,4 @@
+Ken,123456,k@gmail.com,Kaneki,Ken,0310-4682886,customer
+Mus,123456,m@gmail.com,Mustafa,Noor,0321-4050454,customer
+K,323232,1@gmail.com,Steph,Curry,0300-0000000,customer
+Light,123456,l@gmail.com,Light,Yagami,0321-4050454,employee

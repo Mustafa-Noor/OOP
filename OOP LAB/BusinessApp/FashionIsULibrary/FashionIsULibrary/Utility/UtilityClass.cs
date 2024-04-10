@@ -10,9 +10,16 @@ namespace FashionIsU
 {
     public class UtilityClass
     {
-        private static string connectionString = "Data Source=GREY\\SQLEXPRESS;Initial Catalog=FashionIsU;Integrated Security=True";
+        private static string ConnectionString = "Data Source=GREY\\SQLEXPRESS;Initial Catalog=FashionIsU;Integrated Security=True";
+
+        private static string UserFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Users.txt";
+
+        public static string GetUserFilePath()
+        {
+            return UserFilePath;
+        }
         public static string GetConnectionString()
-        { return connectionString; }
+        { return ConnectionString; }
 
 
         

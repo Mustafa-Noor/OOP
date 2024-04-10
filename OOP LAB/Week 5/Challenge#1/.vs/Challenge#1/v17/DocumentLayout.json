@@ -1,0 +1,261 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\week 5\\challenge#1\\challenge#1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\ui\\userui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\ui\\userui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\ui\\productui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\ui\\productui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\ui\\customerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\bl\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\bl\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\dl\\productdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\dl\\productdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\dl\\userdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\dl\\userdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\bl\\adminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\bl\\adminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\dl\\admindl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\dl\\admindl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\dl\\customerdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\dl\\customerdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\ui\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\ui\\adminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\ui\\consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\ui\\consoleutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\challenge#1\\bl\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD2D55A-703A-44F0-82EC-0ED856D2FE22}|Challenge#1\\Challenge#1.csproj|solutionrelative:challenge#1\\bl\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 183,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\UserUI.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\UI\\UserUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\UserUI.cs",
+              "RelativeToolTip": "Challenge#1\\UI\\UserUI.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAIwHcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:23:38.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\ProductUI.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\UI\\ProductUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\ProductUI.cs",
+              "RelativeToolTip": "Challenge#1\\UI\\ProductUI.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAowFoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:01:29.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\Program.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\Program.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\Program.cs",
+              "RelativeToolTip": "Challenge#1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHUAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T05:57:33.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\CustomerUI.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\UI\\CustomerUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\CustomerUI.cs",
+              "RelativeToolTip": "Challenge#1\\UI\\CustomerUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:01:19.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\MainUI.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\UI\\MainUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\MainUI.cs",
+              "RelativeToolTip": "Challenge#1\\UI\\MainUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:01:59.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\BL\\ProductBL.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\BL\\ProductBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\BL\\ProductBL.cs",
+              "RelativeToolTip": "Challenge#1\\BL\\ProductBL.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwEUAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:00:08.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\BL\\UserBL.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\BL\\UserBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\BL\\UserBL.cs",
+              "RelativeToolTip": "Challenge#1\\BL\\UserBL.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:12:41.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductDL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\DL\\ProductDL.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\DL\\ProductDL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\DL\\ProductDL.cs",
+              "RelativeToolTip": "Challenge#1\\DL\\ProductDL.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:00:57.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserDL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\DL\\UserDL.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\DL\\UserDL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\DL\\UserDL.cs",
+              "RelativeToolTip": "Challenge#1\\DL\\UserDL.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:12:53.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\BL\\AdminBL.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\BL\\AdminBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\BL\\AdminBL.cs",
+              "RelativeToolTip": "Challenge#1\\BL\\AdminBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T05:59:36.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminDL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\DL\\AdminDL.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\DL\\AdminDL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\DL\\AdminDL.cs",
+              "RelativeToolTip": "Challenge#1\\DL\\AdminDL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:00:34.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomerDL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\DL\\CustomerDL.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\DL\\CustomerDL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\DL\\CustomerDL.cs",
+              "RelativeToolTip": "Challenge#1\\DL\\CustomerDL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:00:43.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\AdminUI.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\UI\\AdminUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\AdminUI.cs",
+              "RelativeToolTip": "Challenge#1\\UI\\AdminUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:01:08.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConsoleUtility.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\ConsoleUtility.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\UI\\ConsoleUtility.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\UI\\ConsoleUtility.cs",
+              "RelativeToolTip": "Challenge#1\\UI\\ConsoleUtility.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T06:43:08.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\BL\\CustomerBL.cs",
+              "RelativeDocumentMoniker": "Challenge#1\\BL\\CustomerBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Week 5\\Challenge#1\\Challenge#1\\BL\\CustomerBL.cs",
+              "RelativeToolTip": "Challenge#1\\BL\\CustomerBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T05:59:49.759Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

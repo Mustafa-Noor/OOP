@@ -17,7 +17,7 @@ namespace FashionIsU_ConsoleApp_
             IClothesDL clothesDL = new ClothesDB();
             IOrderDL orderDL = new OrderDB();
             IReviewDL reviewDL = new ReviewDB();
-            IUserDL userDL = new UserDB();
+            IUserDL userDL = new UserFH();
 
             while (true)
             {
@@ -392,20 +392,23 @@ namespace FashionIsU_ConsoleApp_
                                 }
                                 else if (choice == "5")
                                 {
-                                    MainUI.ClearScreen();
-                                    if (userDL.CheckCustomersCount())
-                                    {
-                                        CustomerUI.DisplayCustomers(userDL.GetAllCustomers());
-                                    }
-                                    else
-                                    {
+                                    
+                                   MainUI.ClearScreen();
+                                   if (userDL.CheckCustomersCount())
+                                   {
+                                       CustomerUI.DisplayCustomers(userDL.GetAllCustomers());
+                                   }
+                                   else
+                                   {
                                         MainUI.ClearScreen();
-                                        CustomerUI.NoCustomers();
-                                    }
+                                       CustomerUI.NoCustomers();
+                                   }
                                     MainUI.ReturnForAll();
+                                    
                                 }
                                 else if (choice == "6")
                                 {
+                                    
                                     MainUI.ClearScreen();
                                     if (userDL.CheckCustomersCount())
                                     {
@@ -429,6 +432,7 @@ namespace FashionIsU_ConsoleApp_
                                         CustomerUI.NoCustomers();
                                     }
                                     MainUI.ReturnForAll();
+                                    
                                 }
                                 else if (choice == "7")
                                 {

@@ -33,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FashionIsULibrary">
+    <Reference Include="FashionIsULibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\FashionIsULibrary\FashionIsULibrary\bin\Debug\FashionIsULibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
