@@ -1,0 +1,4 @@
+1,10/04/2024 8:32:44 pm,4700,Model Town,cash,Ken
+2,10/04/2024 8:38:24 pm,1600,Gulberg,Card,Ken
+3,10/04/2024 8:41:37 pm,4800,Sabzazar,Card,Ken
+4,10/04/2024 8:45:27 pm,3840,Gulbahar,Card,Ken

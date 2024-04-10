@@ -15,7 +15,7 @@ namespace FashionIsU_ConsoleApp_
         {
             ICartDL cartDL = new CartFH();
             IClothesDL clothesDL = new ClothesFH();
-            IOrderDL orderDL = new OrderDB();
+            IOrderDL orderDL = new OrderFH();
             IReviewDL reviewDL = new ReviewDB();
             IUserDL userDL = new UserFH();
 
@@ -198,6 +198,7 @@ namespace FashionIsU_ConsoleApp_
                                         customer.ClearOrders();
                                         orderDL.RetrieveOrdersOfCustomer(customer);
                                         cartDL.EmptyCart(customer);
+                                        customer.ClearCart();
                                         cartDL.RetrieveCart(customer);
                                         OrderUI.OrderSuccessful();
 

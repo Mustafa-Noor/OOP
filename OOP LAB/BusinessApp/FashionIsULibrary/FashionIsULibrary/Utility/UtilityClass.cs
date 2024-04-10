@@ -15,6 +15,8 @@ namespace FashionIsU
         private static string UserFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Users.txt";
         private static string ClothesFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Clothes.txt";
         private static string CartsFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Carts.txt";
+        private static string OrdersFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Orders.txt";
+        private static string OrderItemsFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\OrderItems.txt";
         public static string GetUserFilePath()
         { return UserFilePath;}
 
@@ -23,6 +25,14 @@ namespace FashionIsU
 
         public static string GetCartsFilePath()
         {  return CartsFilePath;}
+
+        public static string GetOrdersFilePath() 
+        {  return OrdersFilePath;}
+        public static string GetOrderItemsFilePath()
+        {  return OrderItemsFilePath;}
+
+
+
         public static string GetConnectionString()
         { return ConnectionString; }
 

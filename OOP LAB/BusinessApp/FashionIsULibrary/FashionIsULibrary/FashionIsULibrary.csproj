@@ -61,6 +61,7 @@
     <Compile Include="DL\DB\UserDB.cs" />
     <Compile Include="DL\FH\CartFH.cs" />
     <Compile Include="DL\FH\ClothesFH.cs" />
+    <Compile Include="DL\FH\OrderFH.cs" />
     <Compile Include="DL\FH\UserFH.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\UtilityClass.cs" />
