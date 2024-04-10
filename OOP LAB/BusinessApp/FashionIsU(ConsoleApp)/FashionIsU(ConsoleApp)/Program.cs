@@ -16,7 +16,7 @@ namespace FashionIsU_ConsoleApp_
             ICartDL cartDL = new CartFH();
             IClothesDL clothesDL = new ClothesFH();
             IOrderDL orderDL = new OrderFH();
-            IReviewDL reviewDL = new ReviewDB();
+            IReviewDL reviewDL = new ReviewFH();
             IUserDL userDL = new UserFH();
 
             while (true)
