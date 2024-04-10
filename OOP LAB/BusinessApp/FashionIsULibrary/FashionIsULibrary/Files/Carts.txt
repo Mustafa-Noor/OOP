@@ -1,0 +1,2 @@
+K,1,Jacket,Male,Grey,1000,2
+Ken,2,Sweater,Male,White,1200,4

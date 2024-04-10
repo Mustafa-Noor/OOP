@@ -1,0 +1,2 @@
+1,Jacket,Male,Grey,1000,11
+2,Sweater,Male,White,1200,18

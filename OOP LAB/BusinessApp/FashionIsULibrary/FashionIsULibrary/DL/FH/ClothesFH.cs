@@ -18,6 +18,7 @@ namespace FashionIsU
             {
                 if (f != null)
                 {
+
                     f.WriteLine(id+","+c.GetType()+","+c.GetGender()+","+c.GetColor()+","+c.GetPrice()+","+c.GetQuantity());
                     f.Flush();
                     return true;

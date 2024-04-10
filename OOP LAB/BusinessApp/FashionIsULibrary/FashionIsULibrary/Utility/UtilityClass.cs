@@ -14,13 +14,15 @@ namespace FashionIsU
 
         private static string UserFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Users.txt";
         private static string ClothesFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Clothes.txt";
-
+        private static string CartsFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsULibrary\\FashionIsULibrary\\Files\\Carts.txt";
         public static string GetUserFilePath()
         { return UserFilePath;}
 
         public static string GetClothesFilePath() 
         {  return ClothesFilePath; }
 
+        public static string GetCartsFilePath()
+        {  return CartsFilePath;}
         public static string GetConnectionString()
         { return ConnectionString; }
 
