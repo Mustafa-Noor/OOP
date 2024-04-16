@@ -35,15 +35,18 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        int clothId = Convert.ToInt32(splittedRecord[3]);
-                        if (clothId == c.GetId())
+                        if (!string.IsNullOrEmpty(record))
                         {
-                            int rating = Convert.ToInt32(splittedRecord[0]);
-                            string comment = splittedRecord[1];
-                            string username = splittedRecord[2];
-                            ReviewBL rev = new ReviewBL(rating, comment, username);
-                            c.AddReview(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()));
+                            string[] splittedRecord = record.Split(',');
+                            int clothId = Convert.ToInt32(splittedRecord[3]);
+                            if (clothId == c.GetId())
+                            {
+                                int rating = Convert.ToInt32(splittedRecord[0]);
+                                string comment = splittedRecord[1];
+                                string username = splittedRecord[2];
+                                ReviewBL rev = new ReviewBL(rating, comment, username);
+                                c.AddReview(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()));
+                            }
                         }
                     }
                 }

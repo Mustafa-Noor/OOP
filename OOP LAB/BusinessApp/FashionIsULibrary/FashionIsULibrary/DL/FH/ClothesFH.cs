@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,16 +11,17 @@ namespace FashionIsU
 {
     public class ClothesFH : IClothesDL
     {
+        private static int ClothesId = 0;
         public bool AddClothes(ClothesBL c)
         {
             string path = UtilityClass.GetClothesFilePath();
-            int id = GetAllClothes().Count+1;
+            ClothesId = GetAllClothes().Max(cloth => cloth.GetId())+1;
             using (StreamWriter f = new StreamWriter(path, true))
             {
                 if (f != null)
                 {
 
-                    f.WriteLine(id+","+c.GetType()+","+c.GetGender()+","+c.GetColor()+","+c.GetPrice()+","+c.GetQuantity());
+                    f.WriteLine(ClothesId + "," + c.GetType() + "," + c.GetGender() + "," + c.GetColor() + "," + c.GetPrice() + "," + c.GetQuantity());
                     f.Flush();
                     return true;
                 }
@@ -38,7 +40,11 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        count++;
+                        if (!string.IsNullOrEmpty(record))
+                        {
+                            count++;
+                        }
+                            
 
                     }
                 }
@@ -57,16 +63,19 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        int cID = Convert.ToInt32(splittedRecord[0]);
-                        string type = splittedRecord[1];
-                        string gender = splittedRecord[2];
-                        string color = splittedRecord[3];
-                        int price = Convert.ToInt32(splittedRecord[4]);
-                        int quantity = Convert.ToInt32(splittedRecord[5]);
+                        if (!string.IsNullOrEmpty(record))
+                        {
+                            string[] splittedRecord = record.Split(',');
+                            int cID = Convert.ToInt32(splittedRecord[0]);
+                            string type = splittedRecord[1];
+                            string gender = splittedRecord[2];
+                            string color = splittedRecord[3];
+                            int price = Convert.ToInt32(splittedRecord[4]);
+                            int quantity = Convert.ToInt32(splittedRecord[5]);
 
-                        ClothesBL cloth = new ClothesBL(cID, type, gender, color, price, quantity);
-                        Clothes.Add(cloth);
+                            ClothesBL cloth = new ClothesBL(cID, type, gender, color, price, quantity);
+                            Clothes.Add(cloth);
+                        }
 
                     }
                 }
@@ -86,27 +95,32 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        int cID = Convert.ToInt32(splittedRecord[0]);
-                        string type = splittedRecord[1];
-                        string gender = splittedRecord[2];
-                        string color = splittedRecord[3];
-                        int price = Convert.ToInt32(splittedRecord[4]);
-                        int quantity = Convert.ToInt32(splittedRecord[5]);
-
-                        if (id == cID)
+                        if (!string.IsNullOrEmpty(record))
                         {
-                            
-                            ClothesBL cloth = new ClothesBL(cID, type, gender, color, price, quantity);
-                            return cloth;
 
+
+                            string[] splittedRecord = record.Split(',');
+                            int cID = Convert.ToInt32(splittedRecord[0]);
+                            string type = splittedRecord[1];
+                            string gender = splittedRecord[2];
+                            string color = splittedRecord[3];
+                            int price = Convert.ToInt32(splittedRecord[4]);
+                            int quantity = Convert.ToInt32(splittedRecord[5]);
+
+                            if (id == cID)
+                            {
+
+                                ClothesBL cloth = new ClothesBL(cID, type, gender, color, price, quantity);
+                                return cloth;
+
+                            }
                         }
-                        
+
                     }
                 }
             }
 
-            return null; 
+            return null;
         }
 
         public bool CheckClothExistence(ClothesBL c)
@@ -120,17 +134,21 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        string type = splittedRecord[1];
-                        string gender = splittedRecord[2];
-                        string color = splittedRecord[3];
+                        
+                        
+                            string[] splittedRecord = record.Split(',');
+                            string type = splittedRecord[1];
+                            string gender = splittedRecord[2];
+                            string color = splittedRecord[3];
 
-                        if (type.ToLower() == c.GetType().ToLower() && gender == c.GetGender().ToLower() && color == c.GetColor().ToLower())
-                        {
+                            if (type.ToLower() == c.GetType().ToLower() && gender.ToLower() == c.GetGender().ToLower() && color.ToLower() == c.GetColor().ToLower())
+                            {
 
-                            return true;
+                                return true;
 
-                        }
+                            }
+
+                        
 
                     }
                 }
@@ -150,16 +168,20 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        string type = splittedRecord[1];
-                        string gender = splittedRecord[2];
-                        string color = splittedRecord[3];
-                        int quantity = Convert.ToInt32(splittedRecord[5]);
-
-                        if (type.ToLower() == c.GetType().ToLower() && gender == c.GetGender().ToLower() && color == c.GetColor().ToLower() && quantity == c.GetQuantity())
+                        if (!string.IsNullOrEmpty(record))
                         {
+                            string[] splittedRecord = record.Split(',');
+                            string type = splittedRecord[1];
+                            string gender = splittedRecord[2];
+                            string color = splittedRecord[3];
+                            int quantity = Convert.ToInt32(splittedRecord[5]);
 
-                            return true;
+                            if (type.ToLower() == c.GetType().ToLower() && gender.ToLower() == c.GetGender().ToLower() && color.ToLower() == c.GetColor().ToLower() && quantity == c.GetQuantity())
+                            {
+
+                                return true;
+
+                            }
 
                         }
 
@@ -173,7 +195,7 @@ namespace FashionIsU
         public void ChangeQuantity(int id, int quantity)
         {
             string path = UtilityClass.GetClothesFilePath();
-            List <ClothesBL> AllClothes = GetAllClothes();
+            List<ClothesBL> AllClothes = GetAllClothes();
             foreach (ClothesBL stored in AllClothes)
             {
                 if (stored.GetId() == id)
@@ -186,7 +208,13 @@ namespace FashionIsU
 
             foreach (ClothesBL stored in AllClothes)
             {
-                AddClothes(stored);
+                using (StreamWriter f = new StreamWriter(path, true))
+                {
+
+                    f.WriteLine(stored.GetId() + "," + stored.GetType() + "," + stored.GetGender() + "," + stored.GetColor() + "," + stored.GetPrice() + "," + stored.GetQuantity());
+                    f.Flush();
+
+                }
             }
         }
 
@@ -206,7 +234,13 @@ namespace FashionIsU
 
             foreach (ClothesBL stored in AllClothes)
             {
-                AddClothes(stored);
+                using (StreamWriter f = new StreamWriter(path, true))
+                {
+
+                    f.WriteLine(stored.GetId() + "," + stored.GetType() + "," + stored.GetGender() + "," + stored.GetColor() + "," + stored.GetPrice() + "," + stored.GetQuantity());
+                    f.Flush();
+
+                }
             }
         }
 
@@ -223,7 +257,7 @@ namespace FashionIsU
                 {
                     AllClothes.Remove(stored);
                     clothDeleted = true;
-                    break; 
+                    break;
                 }
             }
 
@@ -232,7 +266,13 @@ namespace FashionIsU
                 File.WriteAllText(path, "");
                 foreach (ClothesBL stored in AllClothes)
                 {
-                    AddClothes(stored);
+                    using (StreamWriter f = new StreamWriter(path, true))
+                    {
+     
+                            f.WriteLine(stored.GetId() + "," + stored.GetType() + "," + stored.GetGender() + "," + stored.GetColor() + "," + stored.GetPrice() + "," + stored.GetQuantity());
+                            f.Flush();
+
+                    }
                 }
             }
 

@@ -1,5 +1,1 @@
-1,1,Jacket,Male,Grey,1000,2
-1,2,Sweater,Male,White,1200,2
-2,1,Jacket,Male,Grey,1000,2
-3,2,Sweater,Male,White,1200,5
-4,2,Sweater,Male,White,1200,4
+1,5,Jacket,Male,Margarita,1500,6

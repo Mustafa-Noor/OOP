@@ -43,31 +43,34 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        string username = splittedRecord[0];
-                        string password = splittedRecord[1];
-                        string email = splittedRecord[2];
-                        string fname = splittedRecord[3];
-                        string lname = splittedRecord[4];
-                        string phone = splittedRecord[5];
-                        string role = splittedRecord[6];
-                        if (role == "customer")
+                        if (!string.IsNullOrEmpty(record))
                         {
-                            if(username == u.GetUsername() && password == u.GetPassword())
+                            string[] splittedRecord = record.Split(',');
+                            string username = splittedRecord[0];
+                            string password = splittedRecord[1];
+                            string email = splittedRecord[2];
+                            string fname = splittedRecord[3];
+                            string lname = splittedRecord[4];
+                            string phone = splittedRecord[5];
+                            string role = splittedRecord[6];
+                            if (role == "customer")
                             {
-                                CustomerBL customer = new CustomerBL(username, password, email, fname, lname, phone, role);
-                                return customer;
+                                if (username == u.GetUsername() && password == u.GetPassword())
+                                {
+                                    CustomerBL customer = new CustomerBL(username, password, email, fname, lname, phone, role);
+                                    return customer;
+                                }
+
                             }
-                            
-                        }
-                        else
-                        {
-                            if (username == u.GetUsername() && password == u.GetPassword())
+                            else
                             {
-                                EmployeeBL employee = new EmployeeBL(username, password, email, fname, lname, phone, role);
-                                return employee;
+                                if (username == u.GetUsername() && password == u.GetPassword())
+                                {
+                                    EmployeeBL employee = new EmployeeBL(username, password, email, fname, lname, phone, role);
+                                    return employee;
+                                }
+
                             }
-                            
                         }
                     }
                 }
@@ -88,18 +91,21 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        string username = splittedRecord[0];
-                        string password = splittedRecord[1];
-                        string email = splittedRecord[2];
-                        string fname = splittedRecord[3];
-                        string lname = splittedRecord[4];
-                        string phone = splittedRecord[5];
-                        string role = splittedRecord[6];
-                        if (role == "customer")
+                        if (!string.IsNullOrEmpty(record))
                         {
-                            CustomerBL customer = new CustomerBL(username, password, email, fname, lname, phone, role);
-                            customers.Add(customer);
+                            string[] splittedRecord = record.Split(',');
+                            string username = splittedRecord[0];
+                            string password = splittedRecord[1];
+                            string email = splittedRecord[2];
+                            string fname = splittedRecord[3];
+                            string lname = splittedRecord[4];
+                            string phone = splittedRecord[5];
+                            string role = splittedRecord[6];
+                            if (role == "customer")
+                            {
+                                CustomerBL customer = new CustomerBL(username, password, email, fname, lname, phone, role);
+                                customers.Add(customer);
+                            }
                         }
                         
                     }
@@ -147,13 +153,16 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        string username = splittedRecord[0];
-                        
-
-                        if (username == cUser.GetUsername())
+                        if (!string.IsNullOrEmpty(record))
                         {
-                            return true;
+                            string[] splittedRecord = record.Split(',');
+                            string username = splittedRecord[0];
+
+
+                            if (username == cUser.GetUsername())
+                            {
+                                return true;
+                            }
                         }
                     }
                 }
@@ -173,19 +182,24 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        string name = splittedRecord[0];
-                        string role = splittedRecord[6];
-
-                        if (name == username && role == "customer")
+                        if (!string.IsNullOrEmpty(record))
                         {
-                            string password = splittedRecord[1];
-                            string email = splittedRecord[2];
-                            string fname = splittedRecord[3];
-                            string lname = splittedRecord[4];
-                            string phone = splittedRecord[5];
-                            return new CustomerBL(name, password, email, fname, lname, phone, role);
-                            
+
+
+                            string[] splittedRecord = record.Split(',');
+                            string name = splittedRecord[0];
+                            string role = splittedRecord[6];
+
+                            if (name == username && role == "customer")
+                            {
+                                string password = splittedRecord[1];
+                                string email = splittedRecord[2];
+                                string fname = splittedRecord[3];
+                                string lname = splittedRecord[4];
+                                string phone = splittedRecord[5];
+                                return new CustomerBL(name, password, email, fname, lname, phone, role);
+
+                            }
                         }
                     }
                 }
@@ -206,23 +220,26 @@ namespace FashionIsU
                     string record;
                     while ((record = f.ReadLine()) != null)
                     {
-                        string[] splittedRecord = record.Split(',');
-                        string username = splittedRecord[0];
-                        string password = splittedRecord[1];
-                        string email = splittedRecord[2];
-                        string fname = splittedRecord[3];
-                        string lname = splittedRecord[4];
-                        string phone = splittedRecord[5];
-                        string role = splittedRecord[6];
-                        if(role == "customer")
+                        if (!string.IsNullOrEmpty(record))
                         {
-                            CustomerBL customer = new CustomerBL(username, password, email, fname, lname, phone, role);
-                            AllUsers.Add(customer);
-                        }
-                        else
-                        {
-                            EmployeeBL employee = new EmployeeBL(username, password, email, fname, lname, phone, role);
-                            AllUsers.Add(employee);
+                            string[] splittedRecord = record.Split(',');
+                            string username = splittedRecord[0];
+                            string password = splittedRecord[1];
+                            string email = splittedRecord[2];
+                            string fname = splittedRecord[3];
+                            string lname = splittedRecord[4];
+                            string phone = splittedRecord[5];
+                            string role = splittedRecord[6];
+                            if (role == "customer")
+                            {
+                                CustomerBL customer = new CustomerBL(username, password, email, fname, lname, phone, role);
+                                AllUsers.Add(customer);
+                            }
+                            else
+                            {
+                                EmployeeBL employee = new EmployeeBL(username, password, email, fname, lname, phone, role);
+                                AllUsers.Add(employee);
+                            }
                         }
                         
 
