@@ -373,6 +373,7 @@ namespace FashionIsU_ConsoleApp_
                                         if (c != null)
                                         {
                                             MainUI.ClearScreen();
+                                            reviewDL.DeleteReview(c);
                                             if (clothesDL.DeleteCloth(c))
                                             {
                                                 ClothesUI.ClothDeletedSuccessfully();

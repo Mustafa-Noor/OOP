@@ -52,5 +52,41 @@ namespace FashionIsU
                 }
             }
         }
+
+        public void DeleteReview(ClothesBL c)
+        {
+            string path = UtilityClass.GetReviewsFilePath();
+
+                if (File.Exists(path))
+                {
+                    List<string> remainingLines = new List<string>();
+
+                    using (StreamReader f = new StreamReader(path))
+                    {
+                        string record;
+                        while ((record = f.ReadLine()) != null)
+                        {
+                            if (!string.IsNullOrEmpty(record))
+                            {
+                               string[] splittedRecord = record.Split(',');
+                               int currentClothId = Convert.ToInt32(splittedRecord[3]);
+
+                               // If the clothId matches the specified clothId, skip adding the review
+                               if (currentClothId != c.GetId())
+                               {
+                                   remainingLines.Add(record);
+                               }
+                            }
+                        }
+                    }
+
+                    // Write the remaining reviews back to the file
+                    File.WriteAllLines(path, remainingLines);
+                }
+            
+
+        }
+
+        
     }
 }

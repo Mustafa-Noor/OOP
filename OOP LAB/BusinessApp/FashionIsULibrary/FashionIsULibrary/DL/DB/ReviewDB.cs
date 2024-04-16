@@ -20,6 +20,25 @@ namespace FashionIsU
         }
         */
 
+        public void DeleteReview(ClothesBL c)
+        {
+            string connectionString = UtilityClass.GetConnectionString();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "Delete FROM Reviews WHERE ClothesID = @clothID";
+
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@clothID", c.GetId());
+                    cmd.ExecuteNonQuery();
+                }
+                connection.Close();
+            }
+        }
+
         public bool AddReviews(ReviewBL rev, ClothesBL cloth)
         {
             string connectiongString = UtilityClass.GetConnectionString();

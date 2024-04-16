@@ -71,7 +71,7 @@ namespace FashionIsU_FormsApp_.UI
 
             if (c != null)
             {
-                
+                ObjectHandler.GetReviewDL().DeleteReview(c);
                 if (ObjectHandler.GetClothesDL().DeleteCloth(c))
                 {
                     MessageBox.Show("Successfully Deleted!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);

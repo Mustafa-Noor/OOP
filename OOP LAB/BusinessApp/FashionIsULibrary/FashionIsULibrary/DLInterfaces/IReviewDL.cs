@@ -11,6 +11,10 @@ namespace FashionIsUlLibrary
     {
         bool AddReviews(ReviewBL rev, ClothesBL cloth);
         void RetrieveReviews(ClothesBL c);
+        void DeleteReview(ClothesBL c);
+        
+
+
 
     }
 }
