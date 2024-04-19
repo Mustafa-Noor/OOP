@@ -127,10 +127,10 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidatePrice()
         {
-            int number;
-            if (string.IsNullOrWhiteSpace(PriceBox.Text) || !int.TryParse(PriceBox.Text, out number))
+            
+            if (string.IsNullOrWhiteSpace(PriceBox.Text) || !int.TryParse(PriceBox.Text, out int number) || number <= 0)
             {
-                errorProvider1.SetError(PriceBox, "It Is Required and Should Be Integer");
+                errorProvider1.SetError(PriceBox, "It Is Required and Should Be Number");
                 return false;
             }
             else
@@ -143,10 +143,10 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateQuantity() 
         {
-            int number;
-            if (string.IsNullOrWhiteSpace(QuantityBox.Text) || !int.TryParse(QuantityBox.Text, out number))
+            
+            if (string.IsNullOrWhiteSpace(QuantityBox.Text) || !int.TryParse(QuantityBox.Text, out int number) || number <= 0)
             {
-                errorProvider1.SetError(QuantityBox, "It Is Required and Should Be Integer");
+                errorProvider1.SetError(QuantityBox, "It Is Required and Should Be ");
                 return false;
             }
             else

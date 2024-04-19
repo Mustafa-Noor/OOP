@@ -21,6 +21,16 @@ namespace FashionIsU
         }
 
         */
+        private static ClothesDB Instance;
+        private ClothesDB() { }
+        public static ClothesDB GetClothesDB()
+        {
+            if (Instance == null)
+            {
+                Instance = new ClothesDB();
+            }
+            return Instance;
+        }
 
         public bool AddClothes(ClothesBL c)
         {

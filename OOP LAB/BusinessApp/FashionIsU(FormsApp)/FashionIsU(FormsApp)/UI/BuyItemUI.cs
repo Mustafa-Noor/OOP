@@ -79,6 +79,7 @@ namespace FashionIsU_FormsApp_.UI
                     ObjectHandler.GetClothesDL().ChangeQuantity(Id, cloth.GetQuantity());
                     ObjectHandler.GetCartDL().SaveItemInCart(cartItem, customer);
                     MessageBox.Show("Successfully Added To Cart", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ObjectHandler.GetCartDL().RetrieveCart(customer);
                     dataTable.Rows.Clear();
                     DisplayClothes();
                     
@@ -117,8 +118,8 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateQuantity(string quantity)
         {
-            int number;
-            if (string.IsNullOrWhiteSpace(quantity) || !int.TryParse(quantity, out number))
+            
+            if (string.IsNullOrWhiteSpace(quantity) || !int.TryParse(quantity, out int number) || number <= 0)
             {
                 errorProvider1.SetError(QuantityBox, "It Is Required and Should Be Integer");
                 return false;

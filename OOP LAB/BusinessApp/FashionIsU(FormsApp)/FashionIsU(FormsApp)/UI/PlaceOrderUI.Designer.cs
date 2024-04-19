@@ -37,10 +37,10 @@
             this.AmountLabel = new System.Windows.Forms.Label();
             this.PaymentCombo = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SetPayment = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.AmountLabelAfterPayment = new System.Windows.Forms.Label();
-            this.SetPayment = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.PlaceOrderbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -76,7 +76,7 @@
             // 
             // address
             // 
-            this.address.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.address.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.address.Location = new System.Drawing.Point(312, 503);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(468, 22);
@@ -84,10 +84,10 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(70, 503);
+            this.label3.Location = new System.Drawing.Point(37, 503);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(225, 23);
             this.label3.TabIndex = 49;
@@ -106,7 +106,7 @@
             // 
             // AmountLabel
             // 
-            this.AmountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AmountLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.AmountLabel.AutoSize = true;
             this.AmountLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AmountLabel.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -118,6 +118,7 @@
             // 
             // PaymentCombo
             // 
+            this.PaymentCombo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PaymentCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PaymentCombo.FormattingEnabled = true;
             this.PaymentCombo.Items.AddRange(new object[] {
@@ -130,6 +131,8 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel2.Controls.Add(this.SetPayment);
             this.panel2.Controls.Add(this.label1);
@@ -140,6 +143,19 @@
             this.panel2.Size = new System.Drawing.Size(747, 210);
             this.panel2.TabIndex = 54;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // SetPayment
+            // 
+            this.SetPayment.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SetPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.SetPayment.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SetPayment.Location = new System.Drawing.Point(555, 159);
+            this.SetPayment.Name = "SetPayment";
+            this.SetPayment.Size = new System.Drawing.Size(165, 36);
+            this.SetPayment.TabIndex = 54;
+            this.SetPayment.Text = "Set Payment Method";
+            this.SetPayment.UseVisualStyleBackColor = false;
+            this.SetPayment.Click += new System.EventHandler(this.SetPayment_Click);
             // 
             // label1
             // 
@@ -155,6 +171,8 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Lime;
             this.panel3.Controls.Add(this.AmountLabelAfterPayment);
             this.panel3.Location = new System.Drawing.Point(41, 391);
@@ -173,18 +191,6 @@
             this.AmountLabelAfterPayment.Size = new System.Drawing.Size(593, 27);
             this.AmountLabelAfterPayment.TabIndex = 53;
             this.AmountLabelAfterPayment.Text = "Your Total Amount After Your Payment Method Selection Is : Rs ";
-            // 
-            // SetPayment
-            // 
-            this.SetPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.SetPayment.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SetPayment.Location = new System.Drawing.Point(555, 159);
-            this.SetPayment.Name = "SetPayment";
-            this.SetPayment.Size = new System.Drawing.Size(165, 36);
-            this.SetPayment.TabIndex = 54;
-            this.SetPayment.Text = "Set Payment Method";
-            this.SetPayment.UseVisualStyleBackColor = false;
-            this.SetPayment.Click += new System.EventHandler(this.SetPayment_Click);
             // 
             // errorProvider1
             // 

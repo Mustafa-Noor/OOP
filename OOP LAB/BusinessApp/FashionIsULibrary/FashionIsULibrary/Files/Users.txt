@@ -1,2 +1,5 @@
 Mustafa,123456,21@gmail.com,Mustafa,Noor,0321-4050454,customer
 Flo,123456,f@gmail.com,Florence,Pugh,0321-4050545,employee
+tyu,456666,fgh@gmail.com,gh,tyh,1234-5675678,employee
+Asta,123456,as@gmail.com,Asta,Look,0321-4050454,customer
+Yuno,123456,fl@gmail.com,Yuno,Loki,0321-4050454,employee

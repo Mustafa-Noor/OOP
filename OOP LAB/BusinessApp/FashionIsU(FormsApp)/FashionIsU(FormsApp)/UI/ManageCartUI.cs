@@ -96,8 +96,8 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateQuantity(string quantity)
         {
-            int number;
-            if (string.IsNullOrWhiteSpace(quantity) || !int.TryParse(quantity, out number))
+           
+            if (string.IsNullOrWhiteSpace(quantity) || !int.TryParse(quantity, out int number) || number <= 0)
             {
                 errorProvider1.SetError(QuantityBox, "It Is Required and Should Be Integer");
                 return false;

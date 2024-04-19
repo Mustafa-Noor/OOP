@@ -1,0 +1,3 @@
+Mustafa,3,Jackey,Male,Grey,1200,12
+Mustafa,1,Hoodie,Male,Grey,1200,21
+Asta,5,Socks,Male,Red,1200,1
