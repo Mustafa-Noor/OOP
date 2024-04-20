@@ -83,9 +83,9 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateComment()
         {
-            if (UtilityClass.CheckforEmpty(CommentBox.Text))
+            if (UtilityClass.CheckforEmpty(CommentBox.Text) || UtilityClass.CheckingForcomma(CommentBox.Text))
             {
-                errorProvider1.SetError(CommentBox, "It Is Required");
+                errorProvider1.SetError(CommentBox, "It Is Required & Should not Contain a Comma");
                 return false;
             }
             else

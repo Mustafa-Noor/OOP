@@ -142,8 +142,20 @@ namespace FashionIsU
             }
         }
 
+        public static bool CheckingForcomma(string sen)
+        {
+            for (int x = 0; x < sen.Length; x++)
+            {
+                if (sen[x] == ',')
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
-        
+
+
 
 
 

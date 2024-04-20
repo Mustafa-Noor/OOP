@@ -10,7 +10,7 @@ namespace FashionIsU
     {
         public static string ValidateWordsWithInt(string name)
         {
-            while (UtilityClass.CheckforEmpty(name) || UtilityClass.CheckingForSpace(name) || UtilityClass.ContainsInteger(name))
+            while (UtilityClass.CheckforEmpty(name) || UtilityClass.CheckingForSpace(name) || UtilityClass.ContainsInteger(name) || UtilityClass.CheckingForcomma(name))
             {
                 if (UtilityClass.CheckforEmpty(name))
                 {
@@ -24,6 +24,10 @@ namespace FashionIsU
                 {
                     Console.WriteLine("It must not contain spaces.");
                 }
+                else if(UtilityClass.CheckingForcomma(name))
+                {
+                    Console.WriteLine("It must not contain comma.");
+                }
 
                 // Prompt for input again
                 Console.Write("Enter again: ");
@@ -36,17 +40,23 @@ namespace FashionIsU
 
         public static string ValidateWords(string name)
         {
-            while (UtilityClass.CheckforEmpty(name) || UtilityClass.CheckingForSpace(name))
+            while (UtilityClass.CheckforEmpty(name) || UtilityClass.CheckingForSpace(name) || UtilityClass.CheckingForcomma(name))
             {
                 if (UtilityClass.CheckforEmpty(name))
                 {
                     Console.WriteLine("It must not be empty.");
                 }
 
-                if (UtilityClass.CheckingForSpace(name))
+                else if (UtilityClass.CheckingForSpace(name))
                 {
                     Console.WriteLine("It must not contain a space.");
                 }
+
+                else if (UtilityClass.CheckingForcomma(name))
+                {
+                    Console.WriteLine("It must not contain comma.");
+                }
+
 
                 // Prompt for input again
                 Console.Write("Enter again: ");
@@ -197,13 +207,13 @@ namespace FashionIsU
 
         public static string ValidateSentences(string sen)
         {
-            while (UtilityClass.CheckforEmpty(sen))
+            while (UtilityClass.CheckforEmpty(sen) || UtilityClass.CheckingForcomma(sen))
             {
-                if (UtilityClass.CheckforEmpty(sen))
+                if (UtilityClass.CheckforEmpty(sen) || UtilityClass.CheckingForcomma(sen))
                 {
-                    while (UtilityClass.CheckforEmpty(sen))
+                    while (UtilityClass.CheckforEmpty(sen) || UtilityClass.CheckingForcomma(sen))
                     {
-                        Console.WriteLine("It should not be empty.");
+                        Console.WriteLine("It should not be empty or contain comma.");
                         Console.Write("Enter again: ");
                         sen = Console.ReadLine();
 
@@ -218,17 +228,22 @@ namespace FashionIsU
 
         public static string ValidateEmail(string email)
         {
-            while (UtilityClass.CheckforEmpty(email) || !UtilityClass.ValidateEmailPattern(email))
+            while (UtilityClass.CheckforEmpty(email) || !UtilityClass.ValidateEmailPattern(email) || UtilityClass.CheckingForcomma(email))
             {
                 if (UtilityClass.CheckforEmpty(email))
                 {
                     Console.WriteLine("Email should not be empty.");
                 }
 
-                if (!UtilityClass.ValidateEmailPattern(email))
+                else if (!UtilityClass.ValidateEmailPattern(email))
                 {
                     Console.WriteLine("Email should be in the proper email format.");
                 }
+                else if (UtilityClass.CheckingForcomma(email))
+                {
+                    Console.WriteLine("It must not contain comma.");
+                }
+
 
                 // Prompt for input again
                 Console.Write("Enter email again: ");

@@ -38,7 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.QuantityBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.colorBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TypeBox = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@
             this.IdBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.colorBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClothesGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -159,15 +159,6 @@
             this.label3.TabIndex = 102;
             this.label3.Text = "Enter Quantity";
             // 
-            // colorBox
-            // 
-            this.colorBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.colorBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorBox.Location = new System.Drawing.Point(168, 563);
-            this.colorBox.Name = "colorBox";
-            this.colorBox.Size = new System.Drawing.Size(205, 24);
-            this.colorBox.TabIndex = 101;
-            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -234,11 +225,44 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // colorBox
+            // 
+            this.colorBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.colorBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.colorBox.Font = new System.Drawing.Font("Palatino Linotype", 8.25F);
+            this.colorBox.FormattingEnabled = true;
+            this.colorBox.Items.AddRange(new object[] {
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow",
+            "Orange",
+            "Purple",
+            "Pink",
+            "Brown",
+            "Black",
+            "White",
+            "Gray",
+            "Cyan",
+            "Magenta",
+            "Turquoise",
+            "Indigo",
+            "Maroon",
+            "Teal",
+            "Lavender",
+            "Gold",
+            "Silve"});
+            this.colorBox.Location = new System.Drawing.Point(168, 564);
+            this.colorBox.Name = "colorBox";
+            this.colorBox.Size = new System.Drawing.Size(205, 27);
+            this.colorBox.TabIndex = 110;
+            // 
             // UpdateClothUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 661);
+            this.Controls.Add(this.colorBox);
             this.Controls.Add(this.IdBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.GenderCombo);
@@ -247,7 +271,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.QuantityBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.colorBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TypeBox);
@@ -277,7 +300,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox QuantityBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox colorBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TypeBox;
@@ -285,5 +307,6 @@
         private System.Windows.Forms.TextBox IdBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox colorBox;
     }
 }

@@ -35,7 +35,6 @@
             this.TypeLabel = new System.Windows.Forms.Label();
             this.TypeBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.colorBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.QuantityBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.Addbtn = new System.Windows.Forms.Button();
             this.GenderCombo = new System.Windows.Forms.ComboBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.colorBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ClothesGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -121,15 +121,6 @@
             this.label1.Size = new System.Drawing.Size(123, 26);
             this.label1.TabIndex = 87;
             this.label1.Text = "Enter Gender";
-            // 
-            // colorBox
-            // 
-            this.colorBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.colorBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorBox.Location = new System.Drawing.Point(159, 505);
-            this.colorBox.Name = "colorBox";
-            this.colorBox.Size = new System.Drawing.Size(205, 24);
-            this.colorBox.TabIndex = 90;
             // 
             // label2
             // 
@@ -213,18 +204,50 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // colorBox
+            // 
+            this.colorBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.colorBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.colorBox.Font = new System.Drawing.Font("Palatino Linotype", 8.25F);
+            this.colorBox.FormattingEnabled = true;
+            this.colorBox.Items.AddRange(new object[] {
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow",
+            "Orange",
+            "Purple",
+            "Pink",
+            "Brown",
+            "Black",
+            "White",
+            "Gray",
+            "Cyan",
+            "Magenta",
+            "Turquoise",
+            "Indigo",
+            "Maroon",
+            "Teal",
+            "Lavender",
+            "Gold",
+            "Silve"});
+            this.colorBox.Location = new System.Drawing.Point(159, 506);
+            this.colorBox.Name = "colorBox";
+            this.colorBox.Size = new System.Drawing.Size(205, 27);
+            this.colorBox.TabIndex = 97;
+            // 
             // AddClothUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 661);
+            this.Controls.Add(this.colorBox);
             this.Controls.Add(this.GenderCombo);
             this.Controls.Add(this.Addbtn);
             this.Controls.Add(this.PriceBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.QuantityBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.colorBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TypeBox);
@@ -251,7 +274,6 @@
         private System.Windows.Forms.Label TypeLabel;
         private System.Windows.Forms.TextBox TypeBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox colorBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox QuantityBox;
         private System.Windows.Forms.Label label3;
@@ -260,5 +282,6 @@
         private System.Windows.Forms.Button Addbtn;
         private System.Windows.Forms.ComboBox GenderCombo;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox colorBox;
     }
 }

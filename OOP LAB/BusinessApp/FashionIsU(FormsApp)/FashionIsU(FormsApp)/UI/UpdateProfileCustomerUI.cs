@@ -62,9 +62,9 @@ namespace FashionIsU_FormsApp_.UI
         }
         private bool ValidateEmail()
         {
-            if ((UtilityClass.CheckforEmpty(email.Text) || !UtilityClass.ValidateEmailPattern(email.Text)))
+            if ((UtilityClass.CheckforEmpty(email.Text) || !UtilityClass.ValidateEmailPattern(email.Text)) || UtilityClass.CheckingForcomma(email.Text))
             {
-                errorProvider1.SetError(email, "Email is required and in proper format");
+                errorProvider1.SetError(email, "Email is required and in proper format  & not contain Comma");
                 return false;
             }
             else
@@ -76,9 +76,9 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateFirstName()
         {
-            if (UtilityClass.CheckforEmpty(firstName.Text) || UtilityClass.CheckingForSpace(firstName.Text) || UtilityClass.ContainsInteger(firstName.Text))
+            if (UtilityClass.CheckforEmpty(firstName.Text) || UtilityClass.CheckingForSpace(firstName.Text) || UtilityClass.ContainsInteger(firstName.Text) || UtilityClass.CheckingForcomma(firstName.Text))
             {
-                errorProvider1.SetError(firstName, "It Should not Contain space or Contain Number");
+                errorProvider1.SetError(firstName, "It Should not Contain space or Contain Number or Comma");
                 return false;
             }
             else
@@ -90,9 +90,9 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateLastName()
         {
-            if (UtilityClass.CheckforEmpty(lastName.Text) || UtilityClass.CheckingForSpace(lastName.Text) || UtilityClass.ContainsInteger(lastName.Text))
+            if (UtilityClass.CheckforEmpty(lastName.Text) || UtilityClass.CheckingForSpace(lastName.Text) || UtilityClass.ContainsInteger(lastName.Text) || UtilityClass.CheckingForcomma(lastName.Text))
             {
-                errorProvider1.SetError(lastName, "It Should not Contain space or Contain Number");
+                errorProvider1.SetError(lastName, "It Should not Contain space or Contain Number or Comma");
                 return false;
             }
             else

@@ -52,7 +52,7 @@ namespace FashionIsU_FormsApp_.UI
             int number;
             if (string.IsNullOrWhiteSpace(IdBox.Text) || !int.TryParse(IdBox.Text, out number))
             {
-                errorProvider1.SetError(IdBox, "It Is Required and Should Be Integer");
+                errorProvider1.SetError(IdBox, "It Is Required and Should Be Number");
                 return false;
             }
             else

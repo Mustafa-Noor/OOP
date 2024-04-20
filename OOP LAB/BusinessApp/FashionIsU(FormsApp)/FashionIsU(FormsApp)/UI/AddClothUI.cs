@@ -82,9 +82,9 @@ namespace FashionIsU_FormsApp_.UI
         private bool ValidateType()
         {
             
-            if (UtilityClass.CheckforEmpty(TypeBox.Text) || UtilityClass.CheckingForSpace(TypeBox.Text) || UtilityClass.ContainsInteger(TypeBox.Text))
+            if (UtilityClass.CheckforEmpty(TypeBox.Text) || UtilityClass.CheckingForSpace(TypeBox.Text) || UtilityClass.ContainsInteger(TypeBox.Text) || UtilityClass.CheckingForcomma(TypeBox.Text))
             {
-                errorProvider1.SetError(TypeBox, "It Is Required and Should Not Contain Digits");
+                errorProvider1.SetError(TypeBox, "It Is Required and Should Not Contain Digits or Comma");
                 return false;
             }
             else
@@ -112,9 +112,9 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateColor()
         {
-            if (UtilityClass.CheckforEmpty(colorBox.Text) || UtilityClass.CheckingForSpace(colorBox.Text) || UtilityClass.ContainsInteger(colorBox.Text))
+            if (UtilityClass.CheckforEmpty(colorBox.Text) || UtilityClass.CheckingForSpace(colorBox.Text) || UtilityClass.ContainsInteger(colorBox.Text) || UtilityClass.CheckingForcomma(colorBox.Text))
             {
-                errorProvider1.SetError(colorBox, "It Is Required And Should Not Contain Digits Or Space");
+                errorProvider1.SetError(colorBox, "It Is Required");
                 return false;
             }
             else
@@ -146,7 +146,7 @@ namespace FashionIsU_FormsApp_.UI
             
             if (string.IsNullOrWhiteSpace(QuantityBox.Text) || !int.TryParse(QuantityBox.Text, out int number) || number <= 0)
             {
-                errorProvider1.SetError(QuantityBox, "It Is Required and Should Be ");
+                errorProvider1.SetError(QuantityBox, "It Is Required and Should Be Number");
                 return false;
             }
             else
@@ -160,7 +160,6 @@ namespace FashionIsU_FormsApp_.UI
         private void ClearTextBoxes()
         {
             TypeBox.Clear();
-            colorBox.Clear();
             PriceBox.Clear();
             QuantityBox.Clear();
 

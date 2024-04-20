@@ -1,0 +1,4 @@
+
+1,16/04/2024 7:44:22 pm,7200,Gulberg,Card,Mustafa
+2,19/04/2024 3:48:22 pm,2700,Gulberg,cash,Asta
+3,19/04/2024 3:50:37 pm,1600,New Canal,card,Asta

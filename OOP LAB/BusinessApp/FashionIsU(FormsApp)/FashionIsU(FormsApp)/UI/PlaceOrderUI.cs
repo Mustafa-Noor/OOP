@@ -105,9 +105,9 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateAddress()
         {
-            if(UtilityClass.CheckforEmpty(address.Text))
+            if(UtilityClass.CheckforEmpty(address.Text) || UtilityClass.CheckingForcomma(address.Text))
             { 
-                errorProvider1.SetError(address, "It Is Required");
+                errorProvider1.SetError(address, "It Is Required & Should Not Contain Comma");
                 return false;
             }
             else
