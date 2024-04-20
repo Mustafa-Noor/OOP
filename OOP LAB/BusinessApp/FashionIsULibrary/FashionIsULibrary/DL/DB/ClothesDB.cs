@@ -21,21 +21,25 @@ namespace FashionIsU
         }
 
         */
-        private static ClothesDB Instance;
-        private ClothesDB() { }
-        public static ClothesDB GetClothesDB()
+        private static ClothesDB ClothesDBInstance;
+        private string ConnectionString = "";
+        private ClothesDB(string ConnectionString)
         {
-            if (Instance == null)
+            this.ConnectionString = ConnectionString;
+        }
+        public static ClothesDB GetClothesDB(string connectionString)
+        {
+            if (ClothesDBInstance == null)
             {
-                Instance = new ClothesDB();
+               ClothesDBInstance = new ClothesDB(connectionString);
             }
-            return Instance;
+            return ClothesDBInstance;
         }
 
         public bool AddClothes(ClothesBL c)
         {
-            string connectiongString = UtilityClass.GetConnectionString();
-            SqlConnection connection = new SqlConnection(connectiongString);
+            
+            SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
 
             string query = string.Format("Insert into Clothes (Type, Gender, Color, Price, Quantity) Values('{0}', '{1}', '{2}', {3}, {4})", c.GetType(), c.GetGender(), c.GetColor(), c.GetPrice(), c.GetQuantity());
@@ -63,8 +67,8 @@ namespace FashionIsU
 
         public bool CheckClothes()
         {
-            string connectiongString = UtilityClass.GetConnectionString();
-            SqlConnection connection = new SqlConnection(connectiongString);
+            
+            SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
             string query = string.Format("Select count(*) from Clothes");
             SqlCommand cmd = new SqlCommand(query, connection);
@@ -90,9 +94,8 @@ namespace FashionIsU
         public ClothesBL FindClothByID(int id)
         {
             ClothesBL cloth = null;
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -127,9 +130,7 @@ namespace FashionIsU
         public bool CheckClothExistence(ClothesBL c)
         {
             bool clothExists = false;
-            string connectionString = UtilityClass.GetConnectionString();
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -154,9 +155,7 @@ namespace FashionIsU
         public bool CheckClothExistenceByQuantity(ClothesBL c)
         {
             bool clothExists = false;
-            string connectionString = UtilityClass.GetConnectionString();
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -184,9 +183,8 @@ namespace FashionIsU
 
         public void ChangeQuantity(int id, int quantity)
         {
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -205,9 +203,8 @@ namespace FashionIsU
 
         public void UpdateCloth(ClothesBL cloth)
         {
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -238,9 +235,8 @@ namespace FashionIsU
         public List <ClothesBL> GetAllClothes()
         {
             List <ClothesBL> clothes = new List <ClothesBL>();
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -280,9 +276,8 @@ namespace FashionIsU
 
         public bool DeleteCloth(ClothesBL c)
         {
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 

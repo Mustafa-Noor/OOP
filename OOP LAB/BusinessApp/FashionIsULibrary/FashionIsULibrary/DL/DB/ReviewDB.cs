@@ -11,7 +11,7 @@ namespace FashionIsU
 {
     public class ReviewDB:IReviewDL
     {
-       // private List<ReviewBL> AllReviews = new List<ReviewBL>();
+        // private List<ReviewBL> AllReviews = new List<ReviewBL>();
 
         /*
         public void AddReviews(ReviewBL rev)
@@ -20,11 +20,25 @@ namespace FashionIsU
         }
         */
 
+        private static ReviewDB ReviewDBInstance;
+        private string ConnectionString = "";
+        private ReviewDB(string ConnectionString)
+        {
+            this.ConnectionString = ConnectionString;
+        }
+        public static ReviewDB GetReviewDB(string connectionString)
+        {
+            if (ReviewDBInstance == null)
+            {
+                ReviewDBInstance = new ReviewDB(connectionString);
+            }
+            return ReviewDBInstance;
+        }
+
         public void DeleteReview(ClothesBL c)
         {
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -41,8 +55,7 @@ namespace FashionIsU
 
         public bool AddReviews(ReviewBL rev, ClothesBL cloth)
         {
-            string connectiongString = UtilityClass.GetConnectionString();
-            SqlConnection connection = new SqlConnection(connectiongString);
+            SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
 
             string query = string.Format("Insert into Reviews (Rating, Comment, Username, ClothID) Values('{0}', '{1}', '{2}', {3})", rev.GetRating(), rev.GetComment(), rev.GetUsername(), cloth.GetId());
@@ -61,10 +74,8 @@ namespace FashionIsU
 
         public void RetrieveReviews(ClothesBL c)
         {
-            
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 

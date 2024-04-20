@@ -12,7 +12,7 @@ namespace FashionIsU
 {
     public class OrderDB:IOrderDL
     {
-       // private List <OrderBL> TotalOrders = new List <OrderBL> ();
+        // private List <OrderBL> TotalOrders = new List <OrderBL> ();
 
         /*
         public void AddOrder(OrderBL order)
@@ -20,10 +20,25 @@ namespace FashionIsU
             TotalOrders.Add (order);
         }
         */
+
+        private static OrderDB OrderDBInstance;
+        private string ConnectionString = "";
+        private OrderDB(string ConnectionString)
+        {
+            this.ConnectionString = ConnectionString;
+        }
+        public static OrderDB GetOrderDB(string connectionString)
+        {
+            if (OrderDBInstance == null)
+            {
+                OrderDBInstance = new OrderDB(connectionString);
+            }
+            return OrderDBInstance;
+        }
         public bool AddOrder(OrderBL order)
         {
-            string connectiongString = UtilityClass.GetConnectionString();
-            SqlConnection connection = new SqlConnection(connectiongString);
+            
+            SqlConnection connection = new SqlConnection(ConnectionString);
             
 
             connection.Open();
@@ -43,9 +58,9 @@ namespace FashionIsU
 
         public void SaveOrderItems(int OrderId, OrderBL order)
         {
-                string connectionString = UtilityClass.GetConnectionString();
+                
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
 
@@ -75,8 +90,8 @@ namespace FashionIsU
         public void RetrieveOrdersOfCustomer(CustomerBL customer)
         {
             
-            string connectionString = UtilityClass.GetConnectionString();
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -111,8 +126,8 @@ namespace FashionIsU
         public List <ClothesBL> GetListOfClothesInOrder(int orderID)
         {
             List<ClothesBL> Clothes = new List<ClothesBL>();
-            string connectionString = UtilityClass.GetConnectionString();
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 

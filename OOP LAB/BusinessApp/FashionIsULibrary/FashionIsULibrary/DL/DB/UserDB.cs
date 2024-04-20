@@ -11,18 +11,32 @@ namespace FashionIsU
 {
     public class UserDB: IUserDL
     {
-        
-    /*
-        public void AddUser(UserBL u)
+
+        /*
+            public void AddUser(UserBL u)
+            {
+                Users.Add(u);
+            }
+        */
+
+        private static UserDB UserDBInstance;
+        private string ConnectionString = "";
+        private UserDB(string ConnectionString)
         {
-            Users.Add(u);
+            this.ConnectionString = ConnectionString;
         }
-    */
+        public static UserDB GetUserDB(string connectionString)
+        {
+            if (UserDBInstance == null)
+            {
+                UserDBInstance = new UserDB(connectionString);
+            }
+            return UserDBInstance;
+        }
 
         public bool AddUser(UserBL user)
         {
-            string connectiongString = UtilityClass.GetConnectionString();
-            SqlConnection connection = new SqlConnection(connectiongString);
+            SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
 
             string query = string.Format("Insert into Users (Username, Password, Email, FirstName, LastName, PhoneNumber, Role) Values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", user.GetUsername(), user.GetPassword(), user.GetEmail(), user.GetFirstName(), user.GetLastName(), user.GetPhoneNumber(), user.GetRole());
@@ -42,8 +56,7 @@ namespace FashionIsU
 
         public void UpdateProfile(UserBL user)
         {
-            string connectiongString = UtilityClass.GetConnectionString();
-            SqlConnection connection = new SqlConnection(connectiongString);
+            SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
 
             string query = string.Format("UPDATE Users SET Password = '{0}', Email = '{1}', FirstName = '{2}', LastName = '{3}', PhoneNumber = '{4}' WHERE username = '{5}'", user.GetPassword(), user.GetEmail(), user.GetFirstName(), user.GetLastName(), user.GetPhoneNumber(), user.GetUsername());
@@ -56,8 +69,7 @@ namespace FashionIsU
 
         public bool IsUserExists(UserBL cUser)
         {
-            string connectiongString = UtilityClass.GetConnectionString();
-            SqlConnection connection = new SqlConnection(connectiongString);
+            SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
             string query = string.Format("Select count(*) from Users where Username = '{0}'", cUser.GetUsername());
             SqlCommand cmd = new SqlCommand(query, connection);
@@ -93,9 +105,8 @@ namespace FashionIsU
 
         public UserBL FindUser(UserBL u)
         {
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -144,9 +155,8 @@ namespace FashionIsU
         public List<CustomerBL> GetAllCustomers()
         {
             List<CustomerBL> customers = new List<CustomerBL>();
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -179,9 +189,7 @@ namespace FashionIsU
         public bool CheckCustomersCount()
         {
             int count = 0;
-            string connectionString = UtilityClass.GetConnectionString();
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -199,9 +207,7 @@ namespace FashionIsU
         public CustomerBL FindCustomerByUsername(string username)
         {
             CustomerBL customer = null;
-            string connectionString = UtilityClass.GetConnectionString();
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 

@@ -10,11 +10,11 @@ namespace FashionIsU_FormsApp_
 {
     internal class ObjectHandler
     {
-       private static ICartDL cartDL = new CartFH();
-       private static IClothesDL clothesDL = new ClothesFH();
-       private static IOrderDL orderDL = new OrderFH();
-       private static IReviewDL reviewDL = new ReviewFH();
-       private static IUserDL userDL = new UserFH();
+       private static ICartDL cartDL = CartDB.GetCartDB(UtilityClass.GetConnectionString());
+       private static IClothesDL clothesDL = ClothesDB.GetClothesDB(UtilityClass.GetConnectionString());
+       private static IOrderDL orderDL = OrderDB.GetOrderDB(UtilityClass.GetConnectionString());
+       private static IReviewDL reviewDL = ReviewDB.GetReviewDB(UtilityClass.GetConnectionString());
+       private static IUserDL userDL = UserDB.GetUserDB(UtilityClass.GetConnectionString());
 
         public static ICartDL GetCartDL() { return cartDL; }
         public static IClothesDL GetClothesDL() {  return clothesDL; }

@@ -11,11 +11,24 @@ namespace FashionIsU
 {
     public class CartDB:ICartDL
     {
+        private static CartDB CartDBInstance;
+        private string ConnectionString = "";
+        private CartDB(string ConnectionString)        
+        {
+            this.ConnectionString = ConnectionString;
+        }
+        public static CartDB GetCartDB(string connectionString)
+        {
+            if (CartDBInstance == null)
+            {
+                CartDBInstance = new CartDB(connectionString);
+            }
+            return CartDBInstance;
+        }
         public void SaveItemInCart(ClothesBL cloth, CustomerBL customer)
         {
-            string connectionString = UtilityClass.GetConnectionString();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -44,9 +57,9 @@ namespace FashionIsU
 
         public bool CheckItemInCart(int id, CustomerBL customer)
         {
-            string connectionString = UtilityClass.GetConnectionString();
+            
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -68,9 +81,9 @@ namespace FashionIsU
         public void RetrieveCart(CustomerBL customer)
         {
             
-            string connectionString = UtilityClass.GetConnectionString();
+            
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -103,9 +116,9 @@ namespace FashionIsU
 
         public void DeleteAnItem(int id, CustomerBL customer)
         {
-            string connectionString = UtilityClass.GetConnectionString();
+            
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -125,9 +138,9 @@ namespace FashionIsU
 
         public void UpdateQuantity(int id, CustomerBL customer, int quantity)
         {
-            string connectionString = UtilityClass.GetConnectionString();
+            
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 
@@ -147,9 +160,9 @@ namespace FashionIsU
 
         public void EmptyCart(CustomerBL customer)
         {
-            string connectionString = UtilityClass.GetConnectionString();
+            
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
 

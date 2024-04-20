@@ -232,6 +232,8 @@
             // 
             // panelChild
             // 
+            this.panelChild.BackgroundImage = global::FashionIsU_FormsApp_.Properties.Resources.walk;
+            this.panelChild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChild.Location = new System.Drawing.Point(250, 0);
             this.panelChild.MinimumSize = new System.Drawing.Size(902, 708);

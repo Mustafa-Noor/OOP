@@ -201,6 +201,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UI\ManageCartUI.resx">
       <DependentUpon>ManageCartUI.cs</DependentUpon>
@@ -235,6 +236,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-03-26 at 11.56.01_e511508e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
