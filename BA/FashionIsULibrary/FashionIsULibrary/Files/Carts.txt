@@ -1,0 +1,1 @@
+Asta,5,Socks,Male,Red,1200,1

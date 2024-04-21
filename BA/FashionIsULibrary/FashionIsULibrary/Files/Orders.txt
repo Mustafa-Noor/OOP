@@ -1,0 +1,6 @@
+
+1,16/04/2024 7:44:22 pm,7200,Gulberg,Card,Mustafa
+2,19/04/2024 3:48:22 pm,2700,Gulberg,cash,Asta
+3,19/04/2024 3:50:37 pm,1600,New Canal,card,Asta
+4,20/04/2024 10:31:06 am,39900,Shimla Pahari,cash,Mustafa
+5,21/04/2024 11:37:39 am,3680,Green Town,Card,Mustafa

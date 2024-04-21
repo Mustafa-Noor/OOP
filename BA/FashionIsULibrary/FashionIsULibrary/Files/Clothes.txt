@@ -1,0 +1,8 @@
+1,Hoodie,Female,Green,1230,67
+3,Jackey,Male,Grey,1200,8
+4,Sweater,Male,Cyan,1399,22
+5,Socks,Male,Red,1200,22
+6,Bag,Male,Navy,1200,32
+7,Kuch,Male,Red,10,23
+8,Coat,Male,Black,1200,65
+9,Jeans,Male,Indigo,2300,19
