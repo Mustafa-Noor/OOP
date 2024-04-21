@@ -10,11 +10,25 @@ namespace FashionIsU
 {
     public class OrderFH:IOrderDL
     {
+        private static OrderFH OrderFHInstance;
+        private string FilePath = "";
+        private OrderFH(string FilePath)
+        {
+            this.FilePath = FilePath;
+        }
+        public static OrderFH GetOrderFH(string filePath)
+        {
+            if (OrderFHInstance == null)
+            {
+                OrderFHInstance = new OrderFH(filePath);
+            }
+            return OrderFHInstance;
+        }
+
         public bool AddOrder(OrderBL order)
         {
-            string path = UtilityClass.GetOrdersFilePath();
             int orderId = GetAllOrdersCount()+1;
-            using (StreamWriter f = new StreamWriter(path, true))
+            using (StreamWriter f = new StreamWriter(FilePath, true))
             {
                 if (f != null)
                 {
@@ -43,10 +57,9 @@ namespace FashionIsU
         public int GetAllOrdersCount()
         {
             int count = 0;  
-            string path = UtilityClass.GetOrdersFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -99,10 +112,9 @@ namespace FashionIsU
 
         public void RetrieveOrdersOfCustomer(CustomerBL customer)
         {
-            string path = UtilityClass.GetOrdersFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)

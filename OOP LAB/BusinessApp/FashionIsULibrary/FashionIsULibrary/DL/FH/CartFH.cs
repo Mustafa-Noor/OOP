@@ -11,12 +11,27 @@ namespace FashionIsU
 {
     public class CartFH : ICartDL
     {
+        private static CartFH CartFHInstance;
+        private string FilePath = "";
+        private CartFH(string FilePath)
+        {
+            this.FilePath = FilePath;
+        }
+        public static CartFH GetCartFH(string filePath)
+        {
+            if (CartFHInstance == null)
+            {
+                CartFHInstance = new CartFH(filePath);
+            }
+            return CartFHInstance;
+        }
+
         public void SaveItemInCart(ClothesBL cloth, CustomerBL customer)
         {
-            string path = UtilityClass.GetCartsFilePath();
+            
             if (!CheckItemInCart(cloth.GetId(), customer))
             {
-                using (StreamWriter f = new StreamWriter(path, true))
+                using (StreamWriter f = new StreamWriter(FilePath, true))
                 {
                     f.WriteLine(customer.GetUsername() + "," + cloth.GetId() + "," + cloth.GetType() + "," + cloth.GetGender() + "," + cloth.GetColor() + "," + cloth.GetPrice() + "," + cloth.GetQuantity());
                     f.Flush();
@@ -28,11 +43,11 @@ namespace FashionIsU
 
         public bool CheckItemInCart(int id, CustomerBL customer)
         {
-            string path = UtilityClass.GetCartsFilePath();
+            
 
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -60,10 +75,10 @@ namespace FashionIsU
 
         public void RetrieveCart(CustomerBL customer)
         {
-            string path = UtilityClass.GetCartsFilePath();
-            if (File.Exists(path))
+            
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -95,12 +110,12 @@ namespace FashionIsU
         public List<ClothesBL> GetAllClothesInCart(CustomerBL customer)
         {
             List<ClothesBL> AllClothes = new List<ClothesBL>();
-            string path = UtilityClass.GetCartsFilePath();
-            if (File.Exists(path))
+            
+            if (File.Exists(FilePath))
             {
                 List<string> linesToRemove = new List<string>();
 
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     
                     string record;
@@ -130,7 +145,7 @@ namespace FashionIsU
 
                 if (linesToRemove.Count > 0)
                 {
-                    string[] allLines = File.ReadAllLines(path);
+                    string[] allLines = File.ReadAllLines(FilePath);
                     List<string> remainingLines = new List<string>();
 
                     foreach (string line in allLines)
@@ -141,7 +156,7 @@ namespace FashionIsU
                         }
                     }
 
-                    File.WriteAllLines(path, remainingLines);
+                    File.WriteAllLines(FilePath, remainingLines);
                 }
             }
 
@@ -150,7 +165,7 @@ namespace FashionIsU
 
         public void DeleteAnItem(int id, CustomerBL customer)
         {
-            string path = UtilityClass.GetCartsFilePath();
+            
             List<ClothesBL> AllClothes = GetAllClothesInCart(customer);
             for (int i = AllClothes.Count - 1; i >= 0; i--)
             {
@@ -168,7 +183,7 @@ namespace FashionIsU
 
         public void UpdateQuantity(int id, CustomerBL customer, int quantity)
         {
-            string path = UtilityClass.GetCartsFilePath();
+            
             List<ClothesBL> AllClothes = GetAllClothesInCart(customer);
             foreach (ClothesBL stored in AllClothes)
             {
@@ -187,13 +202,11 @@ namespace FashionIsU
 
         public void EmptyCart(CustomerBL customer)
         {
-            
-            string path = UtilityClass.GetCartsFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
                 List<string> linesToRemove = new List<string>();
 
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
 
                     string record;
@@ -214,7 +227,7 @@ namespace FashionIsU
 
                 if (linesToRemove.Count > 0)
                 {
-                    string[] allLines = File.ReadAllLines(path);
+                    string[] allLines = File.ReadAllLines(FilePath);
                     List<string> remainingLines = new List<string>();
 
                     foreach (string line in allLines)
@@ -225,7 +238,7 @@ namespace FashionIsU
                         }
                     }
 
-                    File.WriteAllLines(path, remainingLines);
+                    File.WriteAllLines(FilePath, remainingLines);
                 }
             }
 

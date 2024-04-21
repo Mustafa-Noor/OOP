@@ -10,10 +10,24 @@ namespace FashionIsU
 {
     public class ReviewFH:IReviewDL
     {
+        private static ReviewFH ReviewFHInstance;
+        private string FilePath = "";
+        private ReviewFH(string FilePath)
+        {
+            this.FilePath = FilePath;
+        }
+        public static ReviewFH GetReviewFH(string filePath)
+        {
+            if (ReviewFHInstance == null)
+            {
+                ReviewFHInstance = new ReviewFH(filePath);
+            }
+            return ReviewFHInstance;
+        }
+
         public bool AddReviews(ReviewBL rev, ClothesBL cloth)
         {
-            string path = UtilityClass.GetReviewsFilePath();
-            using (StreamWriter f = new StreamWriter(path, true))
+            using (StreamWriter f = new StreamWriter(FilePath, true))
             {
                 if (f != null)
                 {
@@ -27,10 +41,9 @@ namespace FashionIsU
 
         public void RetrieveReviews(ClothesBL c)
         {
-            string path = UtilityClass.GetReviewsFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -55,13 +68,11 @@ namespace FashionIsU
 
         public void DeleteReview(ClothesBL c)
         {
-            string path = UtilityClass.GetReviewsFilePath();
-
-                if (File.Exists(path))
+                if (File.Exists(FilePath))
                 {
                     List<string> remainingLines = new List<string>();
 
-                    using (StreamReader f = new StreamReader(path))
+                    using (StreamReader f = new StreamReader(FilePath))
                     {
                         string record;
                         while ((record = f.ReadLine()) != null)
@@ -81,7 +92,7 @@ namespace FashionIsU
                     }
 
                     // Write the remaining reviews back to the file
-                    File.WriteAllLines(path, remainingLines);
+                    File.WriteAllLines(FilePath, remainingLines);
                 }
             
 

@@ -12,11 +12,24 @@ namespace FashionIsU
     public class ClothesFH : IClothesDL
     {
         private static int ClothesId = 0;
+        private static ClothesFH ClothesFHInstance;
+        private string FilePath = "";
+        private ClothesFH(string FilePath)
+        {
+            this.FilePath = FilePath;
+        }
+        public static ClothesFH GetClothesFH(string filePath)
+        {
+            if (ClothesFHInstance == null)
+            {
+                ClothesFHInstance = new ClothesFH(filePath);
+            }
+            return ClothesFHInstance;
+        }
         public bool AddClothes(ClothesBL c)
         {
-            string path = UtilityClass.GetClothesFilePath();
             ClothesId = GetAllClothes().Max(cloth => cloth.GetId())+1;
-            using (StreamWriter f = new StreamWriter(path, true))
+            using (StreamWriter f = new StreamWriter(FilePath, true))
             {
                 if (f != null)
                 {
@@ -32,10 +45,9 @@ namespace FashionIsU
         public bool CheckClothes()
         {
             int count = 0;
-            string path = UtilityClass.GetClothesFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -55,10 +67,9 @@ namespace FashionIsU
         public List<ClothesBL> GetAllClothes()
         {
             List<ClothesBL> Clothes = new List<ClothesBL>();
-            string path = UtilityClass.GetClothesFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -86,11 +97,10 @@ namespace FashionIsU
 
         public ClothesBL FindClothByID(int id)
         {
-            string path = UtilityClass.GetClothesFilePath();
 
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -125,11 +135,9 @@ namespace FashionIsU
 
         public bool CheckClothExistence(ClothesBL c)
         {
-            string path = UtilityClass.GetClothesFilePath();
-
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -159,11 +167,9 @@ namespace FashionIsU
 
         public bool CheckClothExistenceByQuantity(ClothesBL c)
         {
-            string path = UtilityClass.GetClothesFilePath();
-
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -194,7 +200,6 @@ namespace FashionIsU
 
         public void ChangeQuantity(int id, int quantity)
         {
-            string path = UtilityClass.GetClothesFilePath();
             List<ClothesBL> AllClothes = GetAllClothes();
             foreach (ClothesBL stored in AllClothes)
             {
@@ -204,11 +209,11 @@ namespace FashionIsU
                 }
             }
 
-            File.WriteAllText(path, "");
+            File.WriteAllText(FilePath, "");
 
             foreach (ClothesBL stored in AllClothes)
             {
-                using (StreamWriter f = new StreamWriter(path, true))
+                using (StreamWriter f = new StreamWriter(FilePath, true))
                 {
 
                     f.WriteLine(stored.GetId() + "," + stored.GetType() + "," + stored.GetGender() + "," + stored.GetColor() + "," + stored.GetPrice() + "," + stored.GetQuantity());
@@ -220,7 +225,6 @@ namespace FashionIsU
 
         public void UpdateCloth(ClothesBL cloth)
         {
-            string path = UtilityClass.GetClothesFilePath();
             List<ClothesBL> AllClothes = GetAllClothes();
             foreach (ClothesBL stored in AllClothes)
             {
@@ -230,11 +234,11 @@ namespace FashionIsU
                 }
             }
 
-            File.WriteAllText(path, "");
+            File.WriteAllText(FilePath, "");
 
             foreach (ClothesBL stored in AllClothes)
             {
-                using (StreamWriter f = new StreamWriter(path, true))
+                using (StreamWriter f = new StreamWriter(FilePath, true))
                 {
 
                     f.WriteLine(stored.GetId() + "," + stored.GetType() + "," + stored.GetGender() + "," + stored.GetColor() + "," + stored.GetPrice() + "," + stored.GetQuantity());
@@ -246,7 +250,6 @@ namespace FashionIsU
 
         public bool DeleteCloth(ClothesBL c)
         {
-            string path = UtilityClass.GetClothesFilePath();
             List<ClothesBL> AllClothes = GetAllClothes();
 
             bool clothDeleted = false;
@@ -263,10 +266,10 @@ namespace FashionIsU
 
             if (clothDeleted)
             {
-                File.WriteAllText(path, "");
+                File.WriteAllText(FilePath, "");
                 foreach (ClothesBL stored in AllClothes)
                 {
-                    using (StreamWriter f = new StreamWriter(path, true))
+                    using (StreamWriter f = new StreamWriter(FilePath, true))
                     {
      
                             f.WriteLine(stored.GetId() + "," + stored.GetType() + "," + stored.GetGender() + "," + stored.GetColor() + "," + stored.GetPrice() + "," + stored.GetQuantity());

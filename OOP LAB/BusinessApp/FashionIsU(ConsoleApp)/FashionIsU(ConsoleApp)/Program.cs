@@ -13,11 +13,6 @@ namespace FashionIsU_ConsoleApp_
     {
         static void Main(string[] args)
         {
-            ICartDL cartDL = new CartFH();
-            IClothesDL clothesDL = new ClothesFH();
-            IOrderDL orderDL = new OrderFH();
-            IReviewDL reviewDL = new ReviewFH();
-            IUserDL userDL = new UserFH();
 
             while (true)
             {
@@ -29,15 +24,15 @@ namespace FashionIsU_ConsoleApp_
                     string role = UserUI.TakeRole();
                     UserBL u = UserUI.SignInWindow(role);
 
-                    if (userDL.FindUser(u) != null && role == "customer")
+                    if (ObjectHandler.GetUserDL().FindUser(u) != null && role == "customer")
                     {
                         
-                        CustomerBL customer = userDL.FindUser(u) as CustomerBL;
+                        CustomerBL customer = ObjectHandler.GetUserDL().FindUser(u) as CustomerBL;
                         if (customer != null)
                         {
                             UserUI.CongratsforSignin();
-                            cartDL.RetrieveCart(customer);
-                            orderDL.RetrieveOrdersOfCustomer(customer);
+                            ObjectHandler.GetCartDL().RetrieveCart(customer);
+                            ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(customer);
 
                             while (true)
                             {
@@ -45,12 +40,12 @@ namespace FashionIsU_ConsoleApp_
                                 string choice = CustomerUI.CustomerMenu();
                                 if (choice == "1")
                                 {
-                                    if (clothesDL.CheckClothes())
+                                    if (ObjectHandler.GetClothesDL().CheckClothes())
                                     {
                                         MainUI.ClearScreen();
-                                        ClothesUI.DisplayAllClothes(clothesDL.GetAllClothes());
+                                        ClothesUI.DisplayAllClothes(ObjectHandler.GetClothesDL().GetAllClothes());
                                         int id = ClothesUI.TakeId();
-                                        ClothesBL c = clothesDL.FindClothByID(id);
+                                        ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id);
                                         if (c != null && customer.GetCart().FindClothFromCart(id) == null)
                                         {
                                             int quantity = ClothesUI.TakeQuantity();
@@ -59,10 +54,10 @@ namespace FashionIsU_ConsoleApp_
                                                 ClothesBL cartItem = new ClothesBL(c);
                                                 cartItem.SetQuantity(quantity);
                                                 c.DropQuantity(quantity);
-                                                clothesDL.ChangeQuantity(id, c.GetQuantity());
-                                                cartDL.SaveItemInCart(cartItem, customer);
+                                                ObjectHandler.GetClothesDL().ChangeQuantity(id, c.GetQuantity());
+                                                ObjectHandler.GetCartDL().SaveItemInCart(cartItem, customer);
                                                 CartUI.AddedToCart();
-                                                cartDL.RetrieveCart(customer);
+                                                ObjectHandler.GetCartDL().RetrieveCart(customer);
                                             }
                                             else
                                             {
@@ -115,12 +110,12 @@ namespace FashionIsU_ConsoleApp_
                                         if (c != null)
                                         {
                                             int quantity = c.GetQuantity();
-                                            ClothesBL shopItem = clothesDL.FindClothByID(id);
+                                            ClothesBL shopItem = ObjectHandler.GetClothesDL().FindClothByID(id);
                                             shopItem.AddQuantity(quantity);
-                                            clothesDL.ChangeQuantity(id, shopItem.GetQuantity());
-                                            cartDL.DeleteAnItem(id, customer);
+                                            ObjectHandler.GetClothesDL().ChangeQuantity(id, shopItem.GetQuantity());
+                                            ObjectHandler.GetCartDL().DeleteAnItem(id, customer);
                                             customer.ClearCart();
-                                            cartDL.RetrieveCart(customer);
+                                            ObjectHandler.GetCartDL().RetrieveCart(customer);
                                             CartUI.CartItemDel();
 
 
@@ -151,18 +146,18 @@ namespace FashionIsU_ConsoleApp_
                                         if (c != null)
                                         {
                                             int currentQuantity = c.GetQuantity();
-                                            ClothesBL shopItem = clothesDL.FindClothByID(id);
+                                            ClothesBL shopItem = ObjectHandler.GetClothesDL().FindClothByID(id);
                                             shopItem.AddQuantity(currentQuantity);
 
                                             int quantity = ClothesUI.TakeQuantity();
                                             if (shopItem.IsAvailableToBuy(quantity))
                                             {
 
-                                                cartDL.UpdateQuantity(id, customer, quantity);
+                                                ObjectHandler.GetCartDL().UpdateQuantity(id, customer, quantity);
                                                 shopItem.DropQuantity(quantity);
-                                                clothesDL.ChangeQuantity(id, shopItem.GetQuantity());
+                                                ObjectHandler.GetClothesDL().ChangeQuantity(id, shopItem.GetQuantity());
                                                 customer.ClearCart();
-                                                cartDL.RetrieveCart(customer);
+                                                ObjectHandler.GetCartDL().RetrieveCart(customer);
                                                 CartUI.CartItemUpdated();
                                             }
                                             else
@@ -194,12 +189,12 @@ namespace FashionIsU_ConsoleApp_
                                         PaymentMethodBL p = PaymentMethodUI.TakeTypeOfPayment();
                                         MainUI.ClearScreen();
                                         OrderBL order = OrderUI.TakeInputForOrder(customer, new PaymentMethodBL(p.GetPaymentType()));
-                                        orderDL.AddOrder(order);
+                                        ObjectHandler.GetOrderDL().AddOrder(order);
                                         customer.ClearOrders();
-                                        orderDL.RetrieveOrdersOfCustomer(customer);
-                                        cartDL.EmptyCart(customer);
+                                        ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(customer);
+                                        ObjectHandler.GetCartDL().EmptyCart(customer);
                                         customer.ClearCart();
-                                        cartDL.RetrieveCart(customer);
+                                        ObjectHandler.GetCartDL().RetrieveCart(customer);
                                         OrderUI.OrderSuccessful();
 
                                     }
@@ -230,18 +225,18 @@ namespace FashionIsU_ConsoleApp_
                                 else if (choice == "7")
                                 {
                                     MainUI.ClearScreen();
-                                    if (clothesDL.CheckClothes())
+                                    if (ObjectHandler.GetClothesDL().CheckClothes())
                                     {
                                         MainUI.ClearScreen();
-                                        ClothesUI.DisplayAllClothes(clothesDL.GetAllClothes());
+                                        ClothesUI.DisplayAllClothes(ObjectHandler.GetClothesDL().GetAllClothes());
                                         int id = ClothesUI.TakeId();
-                                        ClothesBL c = clothesDL.FindClothByID(id);
+                                        ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id);
                                         if(c != null)
                                         {
                                             ReviewBL rev = ReviewUI.TakeReview(c, customer);
-                                            reviewDL.AddReviews(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()), c);
+                                            ObjectHandler.GetReviewDL().AddReviews(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()), c);
                                             c.ClearReviews();
-                                            reviewDL.RetrieveReviews(c);
+                                            ObjectHandler.GetReviewDL().RetrieveReviews(c);
                                             ReviewUI.ReviewAddedSuccess();
                                         }
                                         else
@@ -269,7 +264,7 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     MainUI.ClearScreen();
                                     CustomerUI.UpdateProfileInput(customer);
-                                    userDL.UpdateProfile(customer);
+                                    ObjectHandler.GetUserDL().UpdateProfile(customer);
                                     UserUI.ProfileUpdateSuccess();
                                     MainUI.ReturnForAll();
 
@@ -287,10 +282,10 @@ namespace FashionIsU_ConsoleApp_
                             MainUI.ReturnForAll();
                         }
                     }
-                    else if (userDL.FindUser(u) != null && role == "employee")
+                    else if (ObjectHandler.GetUserDL().FindUser(u) != null && role == "employee")
                     {
                         
-                        EmployeeBL employee = userDL.FindUser(u) as EmployeeBL;
+                        EmployeeBL employee = ObjectHandler.GetUserDL().FindUser(u) as EmployeeBL;
                         if (employee != null)
                         {
                             UserUI.CongratsforSignin();
@@ -300,10 +295,10 @@ namespace FashionIsU_ConsoleApp_
                                 string choice = EmployeeUI.EmployeeMenu();
                                 if (choice == "1")
                                 {
-                                    if (clothesDL.CheckClothes())
+                                    if (ObjectHandler.GetClothesDL().CheckClothes())
                                     {
                                         MainUI.ClearScreen();
-                                        ClothesUI.DisplayAllClothes(clothesDL.GetAllClothes());
+                                        ClothesUI.DisplayAllClothes(ObjectHandler.GetClothesDL().GetAllClothes());
                                     }
                                     else
                                     {
@@ -316,9 +311,9 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     MainUI.ClearScreen();
                                     ClothesBL c = ClothesUI.TakeInputForClothes();
-                                    if(!clothesDL.CheckClothExistence(c))
+                                    if(!ObjectHandler.GetClothesDL().CheckClothExistence(c))
                                     {
-                                        clothesDL.AddClothes(c);
+                                        ObjectHandler.GetClothesDL().AddClothes(c);
                                     }
                                     else
                                     {
@@ -329,20 +324,20 @@ namespace FashionIsU_ConsoleApp_
                                 }
                                 else if (choice == "3")
                                 {
-                                    if (clothesDL.CheckClothes())
+                                    if (ObjectHandler.GetClothesDL().CheckClothes())
                                     {
                                         MainUI.ClearScreen();
-                                        ClothesUI.DisplayAllClothes(clothesDL.GetAllClothes());
+                                        ClothesUI.DisplayAllClothes(ObjectHandler.GetClothesDL().GetAllClothes());
                                         int id = ClothesUI.TakeId();
-                                        ClothesBL c = clothesDL.FindClothByID(id);
+                                        ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id);
                                         if (c != null)
                                         {
                                             MainUI.ClearScreen();
                                             ClothesBL cloth = ClothesUI.TakeInputForUpdateClothe(c);
-                                            if (!clothesDL.CheckClothExistence(cloth) || !clothesDL.CheckClothExistenceByQuantity(cloth))
+                                            if (!ObjectHandler.GetClothesDL().CheckClothExistence(cloth) || !ObjectHandler.GetClothesDL().CheckClothExistenceByQuantity(cloth))
                                             {
                                                 c.UpdateCloth(cloth);
-                                                clothesDL.UpdateCloth(c);
+                                                ObjectHandler.GetClothesDL().UpdateCloth(c);
                                                 ClothesUI.ClothUpdatedSuccessfully();
                                             }
                                             else
@@ -364,17 +359,17 @@ namespace FashionIsU_ConsoleApp_
                                 }
                                 else if (choice == "4")
                                 {
-                                    if (clothesDL.CheckClothes())
+                                    if (ObjectHandler.GetClothesDL().CheckClothes())
                                     {
                                         MainUI.ClearScreen();
-                                        ClothesUI.DisplayAllClothes(clothesDL.GetAllClothes());
+                                        ClothesUI.DisplayAllClothes(ObjectHandler.GetClothesDL().GetAllClothes());
                                         int id = ClothesUI.TakeId();
-                                        ClothesBL c = clothesDL.FindClothByID(id);
+                                        ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id);
                                         if (c != null)
                                         {
                                             MainUI.ClearScreen();
-                                            reviewDL.DeleteReview(c);
-                                            if (clothesDL.DeleteCloth(c))
+                                            ObjectHandler.GetReviewDL().DeleteReview(c);
+                                            if (ObjectHandler.GetClothesDL().DeleteCloth(c))
                                             {
                                                 ClothesUI.ClothDeletedSuccessfully();
                                             }
@@ -396,9 +391,9 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     
                                    MainUI.ClearScreen();
-                                   if (userDL.CheckCustomersCount())
+                                   if (ObjectHandler.GetUserDL().CheckCustomersCount())
                                    {
-                                       CustomerUI.DisplayCustomers(userDL.GetAllCustomers());
+                                       CustomerUI.DisplayCustomers(ObjectHandler.GetUserDL().GetAllCustomers());
                                    }
                                    else
                                    {
@@ -412,14 +407,14 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     
                                     MainUI.ClearScreen();
-                                    if (userDL.CheckCustomersCount())
+                                    if (ObjectHandler.GetUserDL().CheckCustomersCount())
                                     {
-                                        CustomerUI.DisplayCustomers(userDL.GetAllCustomers());
+                                        CustomerUI.DisplayCustomers(ObjectHandler.GetUserDL().GetAllCustomers());
                                         string username = CustomerUI.TakeUsername();
-                                        CustomerBL cus = userDL.FindCustomerByUsername(username);
+                                        CustomerBL cus = ObjectHandler.GetUserDL().FindCustomerByUsername(username);
                                         if (cus != null)
                                         {
-                                            orderDL.RetrieveOrdersOfCustomer(cus);
+                                            ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(cus);
                                             OrderUI.DisplayOrders(cus.GetOrderList());
                                         }
                                         else
@@ -438,16 +433,16 @@ namespace FashionIsU_ConsoleApp_
                                 }
                                 else if (choice == "7")
                                 {
-                                    if (clothesDL.CheckClothes())
+                                    if (ObjectHandler.GetClothesDL().CheckClothes())
                                     {
                                         MainUI.ClearScreen();
-                                        ClothesUI.DisplayAllClothes(clothesDL.GetAllClothes());
+                                        ClothesUI.DisplayAllClothes(ObjectHandler.GetClothesDL().GetAllClothes());
                                         int id = ClothesUI.TakeId();
-                                        ClothesBL c = clothesDL.FindClothByID(id);
+                                        ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id);
                                         if (c != null)
                                         {
                                             c.ClearReviews();
-                                            reviewDL.RetrieveReviews(c);
+                                            ObjectHandler.GetReviewDL().RetrieveReviews(c);
                                             MainUI.ClearScreen();
                                             ReviewUI.DisplayReview(c);
                                         }
@@ -467,7 +462,7 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     MainUI.ClearScreen();
                                     EmployeeUI.UpdateProfileInput(employee);
-                                    userDL.UpdateProfile(employee);
+                                    ObjectHandler.GetUserDL().UpdateProfile(employee);
                                     UserUI.ProfileUpdateSuccess();
                                     MainUI.ReturnForAll();
                                 }
@@ -495,13 +490,13 @@ namespace FashionIsU_ConsoleApp_
                     MainUI.ClearScreen();
                     string role = UserUI.TakeRole();
                     UserBL u = UserUI.CreateUser(role);
-                    if (userDL.IsUserExists(u))
+                    if (ObjectHandler.GetUserDL().IsUserExists(u))
                     {
                         UserUI.PrintUserTaken();
                     }
                     else
                     {
-                        if (userDL.AddUser(u))
+                        if (ObjectHandler.GetUserDL().AddUser(u))
                         {
                             UserUI.CongratsforSignup();
                         }

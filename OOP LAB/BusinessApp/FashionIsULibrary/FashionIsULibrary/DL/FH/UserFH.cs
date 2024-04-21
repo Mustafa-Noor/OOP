@@ -14,10 +14,24 @@ namespace FashionIsU
 {
     public class UserFH:IUserDL
     {
+        private static UserFH UserFHInstance;
+        private string FilePath = "";
+        private UserFH(string FilePath)
+        {
+            this.FilePath = FilePath;
+        }
+        public static UserFH GetUserFH(string filePath)
+        {
+            if (UserFHInstance == null)
+            {
+                UserFHInstance = new UserFH(filePath);
+            }
+            return UserFHInstance;
+        }
+
         public bool AddUser(UserBL user)
         {
-            string path = UtilityClass.GetUserFilePath();
-            using (StreamWriter f = new StreamWriter(path,true))
+            using (StreamWriter f = new StreamWriter(FilePath,true))
             {
                 if (f != null)
                 {
@@ -34,11 +48,10 @@ namespace FashionIsU
 
         public UserBL FindUser(UserBL u)
         {
-            string path = UtilityClass.GetUserFilePath();
 
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -83,10 +96,9 @@ namespace FashionIsU
         public List<CustomerBL> GetAllCustomers()
         {
             List <CustomerBL> customers = new List<CustomerBL>();
-            string path = UtilityClass.GetUserFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -120,10 +132,9 @@ namespace FashionIsU
         public bool CheckCustomersCount()
         {
             int count = 0;
-            string path = UtilityClass.GetUserFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -144,11 +155,10 @@ namespace FashionIsU
 
         public bool IsUserExists(UserBL cUser)
         {
-            string path = UtilityClass.GetUserFilePath();
 
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -174,10 +184,9 @@ namespace FashionIsU
 
         public CustomerBL FindCustomerByUsername(string username)
         {
-            string path = UtilityClass.GetUserFilePath();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -211,11 +220,10 @@ namespace FashionIsU
 
         public void UpdateProfile(UserBL user)
         {
-            string path = UtilityClass.GetUserFilePath();
             List <UserBL> AllUsers = new List <UserBL>();
-            if (File.Exists(path))
+            if (File.Exists(FilePath))
             {
-                using (StreamReader f = new StreamReader(path))
+                using (StreamReader f = new StreamReader(FilePath))
                 {
                     string record;
                     while ((record = f.ReadLine()) != null)
@@ -255,7 +263,7 @@ namespace FashionIsU
                 }
             }
 
-            File.WriteAllText(path, "");
+            File.WriteAllText(FilePath, "");
 
             foreach(UserBL stored in AllUsers)
             {
