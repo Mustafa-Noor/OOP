@@ -11,7 +11,50 @@ namespace FashionIsU
 {
     internal class CustomerUI
     {
-        
+
+        public static CustomerBL CreateCustomer()
+        {
+            Console.WriteLine();
+            Console.WriteLine("---------------------------------SIGN UP FOR CUSTOMER--------------------------------");
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.Write("Enter Username: ");
+            string name = Console.ReadLine();
+            name = ConsoleValidation.ValidateWords(name);
+
+            Console.Write("Enter Password (Must be 6-Digits): ");
+            string password = Console.ReadLine();
+            password = ConsoleValidation.RestrictPassword(password);
+
+            Console.Write("Enter Email: ");
+            string email = Console.ReadLine();
+            email = ConsoleValidation.ValidateEmail(email);
+
+            Console.Write("Enter First Name: ");
+            string fname = Console.ReadLine();
+            fname = ConsoleValidation.ValidateWordsWithInt(fname);
+
+            Console.Write("Enter Last Name: ");
+            string lname = Console.ReadLine();
+            lname = ConsoleValidation.ValidateWordsWithInt(lname);
+
+            Console.Write("Enter Contact Number: ");
+            string phone = Console.ReadLine();
+            phone = ConsoleValidation.ValidateContact(phone);
+
+            return new CustomerBL(name, password, email, fname, lname, phone, "customer");
+        }
+
+        public static void CongratsforSignup()
+        {
+            Console.WriteLine();
+            Console.WriteLine("---------------------------");
+            Console.WriteLine();
+            Console.WriteLine("You have successfully signed up.");
+            Console.Write("Press any key to continue...");
+            Console.Read();
+        }
 
         public static void CustomerNotFound()
         {

@@ -8,26 +8,32 @@ namespace FashionIsU
 {
     public class EmployeeBL : UserBL
     {
-
-        
-        public EmployeeBL(string username, string password, string email, string firstName, string lastName , string phoneNumber, string role) : base(username, password, email, firstName, lastName, phoneNumber, role) 
+        private string Position;
+        public EmployeeBL(string username, string password, string email, string firstName, string lastName , string phoneNumber, string role, string position) : base(username, password, email, firstName, lastName, phoneNumber, role) 
         {
-            
-
+            this.Position = position;
         }
 
         public EmployeeBL(string username, string password) : base(username, password) { }
 
-        public EmployeeBL(UserBL user) : base(user)
+        public EmployeeBL(UserBL user, string position) : base(user)
         {
-            
-
+            this.Position = position;
         }
 
-        
+        public EmployeeBL(EmployeeBL emp): base(emp)
+        {
+            this.Position= emp.Position;
+        }
 
+        public string GetPosition()
+        {
+            return this.Position;
+        }
 
-
-
+        public void SetPosition(string postion)
+        {
+            this.Position = postion;
+        }
     }
 }

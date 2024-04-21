@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dlinterfaces\\iuserdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisulibrary\\fashionisulibrary\\dl\\db\\employeedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\employeedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisulibrary\\fashionisulibrary\\bl\\adminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\adminbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\employeebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\employeebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\utility\\utilityclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\utility\\utilityclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisulibrary\\fashionisulibrary\\dlinterfaces\\iuserdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dlinterfaces\\iuserdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,24 +27,56 @@
       "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\userdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\db\\reviewdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\reviewdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisulibrary\\fashionisulibrary\\dl\\db\\customerdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\customerdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\db\\cartdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\cartdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\db\\clothesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\clothesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\paymentmethodbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\paymentmethodbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\fh\\userfh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\fh\\userfh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisulibrary\\fashionisulibrary\\utility\\utilityclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\utility\\utilityclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\db\\reviewdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\reviewdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\orderbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\orderbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\clothesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\clothesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\reviewbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\reviewbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\cartbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\cartbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\fh\\cartfh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\fh\\cartfh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\fh\\userfh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\fh\\userfh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\fh\\reviewfh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,48 +91,12 @@
       "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\fh\\clothesfh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\db\\clothesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\clothesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\db\\cartdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\cartdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dl\\db\\orderdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dl\\db\\orderdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dlinterfaces\\icartdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\dlinterfaces\\icartdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\reviewbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\reviewbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\paymentmethodbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\paymentmethodbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\orderbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\orderbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\cartbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\cartbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\clothesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\clothesbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\employeebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\employeebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\bl\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|solutionrelative:fashionisulibrary\\bl\\customerbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0704EE3-7325-4EE4-B8BF-790AFF90D29E}|FashionIsULibrary\\FashionIsULibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\fashionisulibrary\\dlinterfaces\\iclothesdl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,97 +127,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 183,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CartDB.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\CartDB.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\CartDB.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\CartDB.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\CartDB.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "DocumentIndex": 1,
+              "Title": "AdminBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\AdminBL.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\AdminBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\AdminBL.cs",
+              "RelativeToolTip": "FashionIsULibrary\\BL\\AdminBL.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAA9wEcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:24:54.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CartFH.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\CartFH.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\CartFH.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\CartFH.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\CartFH.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwBMAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T13:31:26.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ClothesFH.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\ClothesFH.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\ClothesFH.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\ClothesFH.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\ClothesFH.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T12:37:53.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrderFH.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\OrderFH.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\OrderFH.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\OrderFH.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\OrderFH.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:50:53.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ReviewFH.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\ReviewFH.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\ReviewFH.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\ReviewFH.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\ReviewFH.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T16:01:03.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UtilityClass.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Utility\\UtilityClass.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\Utility\\UtilityClass.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Utility\\UtilityClass.cs*",
-              "RelativeToolTip": "FashionIsULibrary\\Utility\\UtilityClass.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:28:13.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserBL.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\UserBL.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\UserBL.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\UserBL.cs",
-              "RelativeToolTip": "FashionIsULibrary\\BL\\UserBL.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:27:04.442Z",
+              "WhenOpened": "2024-04-21T12:30:42.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EmployeeDB.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\EmployeeDB.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\EmployeeDB.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\EmployeeDB.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\EmployeeDB.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAADwv8sAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:57:54.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\EmployeeBL.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\EmployeeBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\EmployeeBL.cs",
+              "RelativeToolTip": "FashionIsULibrary\\BL\\EmployeeBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:26:20.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDB.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\UserDB.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\UserDB.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\UserDB.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\UserDB.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAA/wIkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:25:14.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CartDB.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\CartDB.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\CartDB.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\CartDB.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\CartDB.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAkwFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:24:54.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomerDB.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\CustomerDB.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\CustomerDB.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\CustomerDB.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\CustomerDB.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAA/wDkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T09:57:44.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClothesDB.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\ClothesDB.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\ClothesDB.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\ClothesDB.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\ClothesDB.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:24:55.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IUserDL.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DLInterfaces\\IUserDL.cs",
               "RelativeDocumentMoniker": "FashionIsULibrary\\DLInterfaces\\IUserDL.cs",
@@ -218,7 +235,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "UtilityClass.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Utility\\UtilityClass.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\Utility\\UtilityClass.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Utility\\UtilityClass.cs",
+              "RelativeToolTip": "FashionIsULibrary\\Utility\\UtilityClass.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwJEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:28:13.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\CustomerBL.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\CustomerBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\CustomerBL.cs",
+              "RelativeToolTip": "FashionIsULibrary\\BL\\CustomerBL.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:26:14.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserFH.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\UserFH.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\UserFH.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\UserFH.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\UserFH.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T04:31:28.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\UserBL.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\UserBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\UserBL.cs",
+              "RelativeToolTip": "FashionIsULibrary\\BL\\UserBL.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:27:04.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PaymentMethodBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\PaymentMethodBL.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\PaymentMethodBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\PaymentMethodBL.cs",
+              "RelativeToolTip": "FashionIsULibrary\\BL\\PaymentMethodBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:26:52.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ReviewDB.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\ReviewDB.cs",
               "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\ReviewDB.cs",
@@ -231,68 +313,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserDB.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\UserDB.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\UserDB.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\UserDB.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\UserDB.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAkwNEAAABBAAAA",
+              "DocumentIndex": 14,
+              "Title": "OrderBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\OrderBL.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\OrderBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\OrderBL.cs",
+              "RelativeToolTip": "FashionIsULibrary\\BL\\OrderBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:25:14.939Z",
+              "WhenOpened": "2024-04-08T08:26:36.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserFH.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\UserFH.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\UserFH.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\UserFH.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\UserFH.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "DocumentIndex": 15,
+              "Title": "ClothesBL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\ClothesBL.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\ClothesBL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\ClothesBL.cs",
+              "RelativeToolTip": "FashionIsULibrary\\BL\\ClothesBL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T04:31:28.813Z"
+              "WhenOpened": "2024-04-08T08:26:04.503Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OrderDB.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\OrderDB.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\OrderDB.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:25:09.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClothesDB.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\ClothesDB.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\ClothesDB.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\ClothesDB.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\ClothesDB.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:24:55.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ICartDL.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DLInterfaces\\ICartDL.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\DLInterfaces\\ICartDL.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DLInterfaces\\ICartDL.cs",
-              "RelativeToolTip": "FashionIsULibrary\\DLInterfaces\\ICartDL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:29:49.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ReviewBL.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\ReviewBL.cs",
               "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\ReviewBL.cs",
@@ -300,31 +347,8 @@
               "RelativeToolTip": "FashionIsULibrary\\BL\\ReviewBL.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:26:58.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PaymentMethodBL.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\PaymentMethodBL.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\PaymentMethodBL.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\PaymentMethodBL.cs",
-              "RelativeToolTip": "FashionIsULibrary\\BL\\PaymentMethodBL.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAwAgAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:26:52.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OrderBL.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\OrderBL.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\OrderBL.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\OrderBL.cs",
-              "RelativeToolTip": "FashionIsULibrary\\BL\\OrderBL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:26:36.879Z"
+              "WhenOpened": "2024-04-08T08:26:58.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -336,47 +360,84 @@
               "RelativeToolTip": "FashionIsULibrary\\BL\\CartBL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:25:40.221Z"
+              "WhenOpened": "2024-04-08T08:25:40.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "ClothesBL.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\ClothesBL.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\ClothesBL.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\ClothesBL.cs",
-              "RelativeToolTip": "FashionIsULibrary\\BL\\ClothesBL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Title": "CartFH.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\CartFH.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\CartFH.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\CartFH.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\CartFH.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwBMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:26:04.503Z"
+              "WhenOpened": "2024-04-10T13:31:26.331Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "EmployeeBL.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\EmployeeBL.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\EmployeeBL.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\EmployeeBL.cs",
-              "RelativeToolTip": "FashionIsULibrary\\BL\\EmployeeBL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Title": "ReviewFH.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\ReviewFH.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\ReviewFH.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\ReviewFH.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\ReviewFH.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:26:20.731Z"
+              "WhenOpened": "2024-04-10T16:01:03.268Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "CustomerBL.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\CustomerBL.cs",
-              "RelativeDocumentMoniker": "FashionIsULibrary\\BL\\CustomerBL.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\BL\\CustomerBL.cs",
-              "RelativeToolTip": "FashionIsULibrary\\BL\\CustomerBL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Title": "OrderFH.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\OrderFH.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\OrderFH.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\OrderFH.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\OrderFH.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:26:14.873Z"
+              "WhenOpened": "2024-04-10T14:50:53.474Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "ClothesFH.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\ClothesFH.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\FH\\ClothesFH.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\FH\\ClothesFH.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\FH\\ClothesFH.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T12:37:53.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderDB.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DL\\DB\\OrderDB.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DL\\DB\\OrderDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:25:09.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ICartDL.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DLInterfaces\\ICartDL.cs",
+              "RelativeDocumentMoniker": "FashionIsULibrary\\DLInterfaces\\ICartDL.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DLInterfaces\\ICartDL.cs",
+              "RelativeToolTip": "FashionIsULibrary\\DLInterfaces\\ICartDL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T08:29:49.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "IClothesDL.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DLInterfaces\\IClothesDL.cs",
               "RelativeDocumentMoniker": "FashionIsULibrary\\DLInterfaces\\IClothesDL.cs",
@@ -388,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "IReviewDL.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DLInterfaces\\IReviewDL.cs",
               "RelativeDocumentMoniker": "FashionIsULibrary\\DLInterfaces\\IReviewDL.cs",
@@ -400,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "MUserFileStore.cs",
               "DocumentMoniker": "C:\\Users\\musno\\AppData\\Local\\Temp\\82452cb4-6c38-4f35-8efb-1bf9ab9909f6_OOP Project.zip.9f6\\OOP Project\\ICoreBL\\DL\\MUserFileStore.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\82452cb4-6c38-4f35-8efb-1bf9ab9909f6_OOP Project.zip.9f6\\OOP Project\\ICoreBL\\DL\\MUserFileStore.cs",
@@ -412,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "IOrderDL.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DLInterfaces\\IOrderDL.cs",
               "RelativeDocumentMoniker": "FashionIsULibrary\\DLInterfaces\\IOrderDL.cs",
@@ -424,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "AdminDL_FH.cs",
               "DocumentMoniker": "C:\\Users\\musno\\Downloads\\SkyLinesLibrary\\SkyLinesLibrary\\DL\\AdminDL_FH.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\SkyLinesLibrary\\SkyLinesLibrary\\DL\\AdminDL_FH.cs",
@@ -436,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "ClientDL_FH.cs",
               "DocumentMoniker": "C:\\Users\\musno\\Downloads\\SkyLinesLibrary\\SkyLinesLibrary\\DL\\ClientDL_FH.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\SkyLinesLibrary\\SkyLinesLibrary\\DL\\ClientDL_FH.cs",

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\AdminBL.cs" />
     <Compile Include="BL\CartBL.cs" />
     <Compile Include="BL\ClothesBL.cs" />
     <Compile Include="BL\CustomerBL.cs" />
@@ -56,6 +57,8 @@
     <Compile Include="DLInterfaces\IUserDL.cs" />
     <Compile Include="DL\DB\CartDB.cs" />
     <Compile Include="DL\DB\ClothesDB.cs" />
+    <Compile Include="DL\DB\CustomerDB.cs" />
+    <Compile Include="DL\DB\EmployeeDB.cs" />
     <Compile Include="DL\DB\OrderDB.cs" />
     <Compile Include="DL\DB\ReviewDB.cs" />
     <Compile Include="DL\DB\UserDB.cs" />

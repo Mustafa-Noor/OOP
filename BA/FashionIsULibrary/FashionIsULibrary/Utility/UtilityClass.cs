@@ -132,7 +132,7 @@ namespace FashionIsU
 
         public static bool ValidateRole(string role)
         {
-            if (role == "employee" || role == "customer")
+            if (role == "employee" || role == "customer" || role == "admin")
             {
                 return true;
             }

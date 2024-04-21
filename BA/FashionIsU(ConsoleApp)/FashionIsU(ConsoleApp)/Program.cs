@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using FashionIsU.UI;
 using FashionIsU;
 using FashionIsUlLibrary;
+using FashionIsULibrary;
+using FashionIsU_ConsoleApp_.UI;
 
 namespace FashionIsU_ConsoleApp_
 {
@@ -13,6 +15,12 @@ namespace FashionIsU_ConsoleApp_
     {
         static void Main(string[] args)
         {
+
+            CustomerDB customerDB = new CustomerDB();
+            EmployeeDB empDB = new EmployeeDB();
+
+            AdminBL admin = AdminBL.GetAdminBL();
+            empDB.RetrieveEmployees(admin);
 
             while (true)
             {
@@ -24,10 +32,10 @@ namespace FashionIsU_ConsoleApp_
                     string role = UserUI.TakeRole();
                     UserBL u = UserUI.SignInWindow(role);
 
-                    if (ObjectHandler.GetUserDL().FindUser(u) != null && role == "customer")
+                    if (customerDB.FindCustomer(u) != null && role == "customer")
                     {
                         
-                        CustomerBL customer = ObjectHandler.GetUserDL().FindUser(u) as CustomerBL;
+                        CustomerBL customer = customerDB.FindCustomer(u);
                         if (customer != null)
                         {
                             UserUI.CongratsforSignin();
@@ -282,10 +290,10 @@ namespace FashionIsU_ConsoleApp_
                             MainUI.ReturnForAll();
                         }
                     }
-                    else if (ObjectHandler.GetUserDL().FindUser(u) != null && role == "employee")
+                    else if (admin.FindEmployee(u) != null && role == "employee")
                     {
                         
-                        EmployeeBL employee = ObjectHandler.GetUserDL().FindUser(u) as EmployeeBL;
+                        EmployeeBL employee = admin.FindEmployee(u);
                         if (employee != null)
                         {
                             UserUI.CongratsforSignin();
@@ -479,6 +487,46 @@ namespace FashionIsU_ConsoleApp_
                             MainUI.ReturnForAll();
                         }
                     }
+                    else if(admin.IsAdmin(u) && role=="admin")
+                    {
+                        UserUI.CongratsforSignin();
+                        while(true)
+                        {
+                            MainUI.ClearScreen();
+                            string choice = AdminUI.AdminMenu();
+                            if(choice == "1")
+                            {
+                                MainUI.ClearScreen();
+                                EmployeeBL employee = EmployeeUI.TakeInputForEmployee();
+                                if(customerDB.IsCustomerExists(employee.GetUsername()) || admin.CheckEmployeeExist(employee.GetUsername()))
+                                {
+                                    UserUI.PrintUserTaken();
+                                }
+                                else
+                                {
+                                    empDB.AddEmployee(new EmployeeBL(employee));
+                                    admin.ClearEmployees();
+                                    empDB.RetrieveEmployees(admin);
+                                    EmployeeUI.EmployeeAdditionSuccess();
+                                }
+                                MainUI.ReturnForAll();
+                            }
+                            else if(choice == "2")
+                            {
+                                MainUI.ClearScreen();
+                                if (empDB.CheckEmployeesCount())
+                                {
+                                    EmployeeUI.DisplayEmployees(admin.GetAllEmployees());
+                                }
+                                else
+                                {
+                                    MainUI.ClearScreen();
+                                    EmployeeUI.EmployeesNotFound();
+                                }
+                                MainUI.ReturnForAll();
+                            }
+                        }
+                    }
                     else
                     {
                         UserUI.PrintUserNotFound();
@@ -488,17 +536,16 @@ namespace FashionIsU_ConsoleApp_
                 else if (Choice == "2")
                 {
                     MainUI.ClearScreen();
-                    string role = UserUI.TakeRole();
-                    UserBL u = UserUI.CreateUser(role);
-                    if (ObjectHandler.GetUserDL().IsUserExists(u))
+                    CustomerBL cus = CustomerUI.CreateCustomer();
+                    if (customerDB.IsCustomerExists(cus.GetUsername()) || empDB.IsEmployeeExists(cus.GetUsername()))
                     {
                         UserUI.PrintUserTaken();
                     }
                     else
                     {
-                        if (ObjectHandler.GetUserDL().AddUser(u))
+                        if (customerDB.AddCustomer(cus))
                         {
-                            UserUI.CongratsforSignup();
+                            CustomerUI.CongratsforSignup();
                         }
 
                     }

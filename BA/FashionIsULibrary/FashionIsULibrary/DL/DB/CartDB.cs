@@ -80,8 +80,6 @@ namespace FashionIsU
 
         public void RetrieveCart(CustomerBL customer)
         {
-            
-            
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {

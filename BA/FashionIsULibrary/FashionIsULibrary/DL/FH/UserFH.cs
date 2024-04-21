@@ -75,15 +75,7 @@ namespace FashionIsU
                                 }
 
                             }
-                            else
-                            {
-                                if (username == u.GetUsername() && password == u.GetPassword())
-                                {
-                                    EmployeeBL employee = new EmployeeBL(username, password, email, fname, lname, phone, role);
-                                    return employee;
-                                }
-
-                            }
+                            
                         }
                     }
                 }
@@ -243,11 +235,7 @@ namespace FashionIsU
                                 CustomerBL customer = new CustomerBL(username, password, email, fname, lname, phone, role);
                                 AllUsers.Add(customer);
                             }
-                            else
-                            {
-                                EmployeeBL employee = new EmployeeBL(username, password, email, fname, lname, phone, role);
-                                AllUsers.Add(employee);
-                            }
+                            
                         }
                         
 
