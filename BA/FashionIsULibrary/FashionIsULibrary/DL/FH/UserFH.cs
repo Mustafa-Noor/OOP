@@ -12,7 +12,7 @@ using FashionIsUlLibrary;
 
 namespace FashionIsU
 {
-    public class UserFH:IUserDL
+    public class UserFH
     {
         private static UserFH UserFHInstance;
         private string FilePath = "";

@@ -23,13 +23,20 @@ namespace FashionIsU_ConsoleApp_
         private static IClothesDL clothesDL = ClothesDB.GetClothesDB(UtilityClass.GetConnectionString());
         private static IOrderDL orderDL = OrderDB.GetOrderDB(UtilityClass.GetConnectionString());
         private static IReviewDL reviewDL = ReviewDB.GetReviewDB(UtilityClass.GetConnectionString());
-        private static IUserDL userDL = UserDB.GetUserDB(UtilityClass.GetConnectionString());
-        
+        private static ICustomerDL customerDL = CustomerDB.GetCustomerDB(UtilityClass.GetConnectionString());
+        private static IEmployeeDL employeeDL = EmployeeDB.GetEmployeeDB(UtilityClass.GetConnectionString());
+
+
+        private static AdminBL admin = AdminBL.GetAdminBL();
 
         public static ICartDL GetCartDL() { return cartDL; }
         public static IClothesDL GetClothesDL() { return clothesDL; }
         public static IOrderDL GetOrderDL() { return orderDL; }
         public static IReviewDL GetReviewDL() { return reviewDL; }
-        public static IUserDL GetUserDL() { return userDL; }
+        public static ICustomerDL GetCustomerDL() {  return customerDL; }
+        public static IEmployeeDL GetEmployeeDL() {  return employeeDL; }
+        public static AdminBL GetAdmin() { return admin; }
+
+        
     }
 }

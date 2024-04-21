@@ -6,11 +6,24 @@ using System.Text;
 using System.Threading.Tasks;
 using FashionIsU;
 
-namespace FashionIsULibrary
+namespace FashionIsUlLibrary
 {
-    public class EmployeeDB
+    public class EmployeeDB:IEmployeeDL
     {
-        string ConnectionString = UtilityClass.GetConnectionString();
+        private static EmployeeDB EmployeeDBInstance;
+        private string ConnectionString = "";
+        private EmployeeDB(string ConnectionString)
+        {
+            this.ConnectionString = ConnectionString;
+        }
+        public static EmployeeDB GetEmployeeDB(string connectionString)
+        {
+            if (EmployeeDBInstance == null)
+            {
+                EmployeeDBInstance = new EmployeeDB(connectionString);
+            }
+            return EmployeeDBInstance;
+        }
         public bool AddEmployee(EmployeeBL employee)
         {
             SqlConnection connection = new SqlConnection(ConnectionString);
@@ -67,25 +80,14 @@ namespace FashionIsULibrary
             SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
 
-            string query = string.Format("UPDATE Employees SET Password = '{0}', Email = '{1}', FirstName = '{2}', LastName = '{3}', PhoneNumber = '{4}' WHERE username = '{5}'", employee.GetPassword(), employee.GetEmail(), employee.GetFirstName(), employee.GetLastName(), employee.GetPhoneNumber(), employee.GetUsername());
+            string query = string.Format("UPDATE Employees SET Password = '{0}', Email = '{1}', FirstName = '{2}', LastName = '{3}', PhoneNumber = '{4}' , Position = '{5}' WHERE username = '{6}'", employee.GetPassword(), employee.GetEmail(), employee.GetFirstName(), employee.GetLastName(), employee.GetPhoneNumber(), employee.GetPosition(), employee.GetUsername());
             SqlCommand cmd = new SqlCommand(query, connection);
             int rows = cmd.ExecuteNonQuery();
             connection.Close();
 
 
         }
-
-        public bool IsEmployeeExists(string username)
-        {
-            SqlConnection connection = new SqlConnection(ConnectionString);
-            connection.Open();
-            string query = string.Format("Select count(*) from Employees where Username = '{0}'", username);
-            SqlCommand cmd = new SqlCommand(query, connection);
-            int count = (int)cmd.ExecuteScalar();
-            connection.Close();
-            return count > 0;
-        }
-
+        /*
         public EmployeeBL FindEmployee(UserBL user)
         {
 
@@ -124,6 +126,7 @@ namespace FashionIsULibrary
 
             return null; // User not found
         }
+        */
 
         public List<EmployeeBL> GetAllEmployees()
         {
@@ -160,6 +163,33 @@ namespace FashionIsULibrary
             return Employees;
         }
 
+        public bool DeleteEmployee(EmployeeBL employee)
+        {
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                string query = "DELETE FROM Employees where username = @username";
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@username", employee.GetUsername());
+
+                    // Execute the DELETE query
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    connection.Close();
+                    if (rowsAffected > 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+        /*
+
         public bool CheckEmployeesCount()
         {
             int count = 0;
@@ -177,6 +207,9 @@ namespace FashionIsULibrary
 
             return count > 0;
         }
+        */
+
+        /*
 
         public EmployeeBL FindEmployeesByUsername(string username)
         {
@@ -212,5 +245,7 @@ namespace FashionIsULibrary
 
             return employee;
         }
+        */
     }
+        
 }

@@ -35,5 +35,15 @@ namespace FashionIsU
         {
             this.Position = postion;
         }
+
+        public void UpdateProfile(EmployeeBL emp)
+        {
+            this.Position = emp.Position;
+            SetPassword(emp.Password);
+            SetEmail(emp.Email);
+            SetFirstName(emp.FirstName);
+            SetLastName(emp.LastName);
+
+        }
     }
 }

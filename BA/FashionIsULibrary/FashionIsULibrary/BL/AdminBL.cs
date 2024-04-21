@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FashionIsU;
 
-namespace FashionIsULibrary
+namespace FashionIsUlLibrary
 {
     public class AdminBL:UserBL
     {
@@ -70,6 +70,21 @@ namespace FashionIsULibrary
         public List<EmployeeBL> GetAllEmployees()
         {
             return Employees;
+        }
+
+        public bool CheckEmployeesCount()
+        { return Employees.Count > 0;}
+
+        public EmployeeBL FindEmployee(string username)
+        {
+            foreach (EmployeeBL emp in Employees)
+            {
+                if (emp.GetUsername() == username)
+                {
+                    return emp;
+                }
+            }
+            return null;
         }
     }
 }

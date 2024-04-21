@@ -7,15 +7,14 @@ using FashionIsU;
 
 namespace FashionIsUlLibrary
 {
-    public interface IUserDL
+    public interface ICustomerDL
     {
-        bool AddUser(UserBL user);
-        void UpdateProfile(UserBL user);
-        bool IsUserExists(UserBL cUser);
-        UserBL FindUser(UserBL u);
+        bool AddCustomer(CustomerBL customer);
+        void UpdateProfile(CustomerBL customer);
+        bool IsCustomerExists(string username);
+        CustomerBL FindCustomer(UserBL user);
         List<CustomerBL> GetAllCustomers();
         bool CheckCustomersCount();
         CustomerBL FindCustomerByUsername(string username);
-
     }
 }

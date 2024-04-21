@@ -24,6 +24,17 @@ namespace FashionIsU
             Thread.Sleep(300);
         }
 
+        public static void EmployeeUpdateSuccess()
+        {
+            Console.WriteLine("Employee Successfully Updated...");
+            Thread.Sleep(300);
+        }
+        public static void EmployeeDeleteSuccess()
+        {
+            Console.WriteLine("Employee Successfully Removed...");
+            Thread.Sleep(300);
+        }
+
         public static void EmployeesNotFound()
         {
             Console.WriteLine("There are no Employees Yet....");
@@ -109,13 +120,53 @@ namespace FashionIsU
         {
             Console.WriteLine("--------------------------------DISPLAY ALL EMPLOYEES------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-20}|{4,-15}|{5,-10}|{6,-15}|", "Username", "FirstName", "LastName", "Email", "PhoneNumber", "Role", "Position");
+            Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-20}|{4,-15}|{5,-10}|", "Username", "FirstName", "LastName", "Email", "PhoneNumber", "Position");
             Console.WriteLine("-----------------------------------------------------------------------------------------");
             foreach (EmployeeBL emp in AllEmployees)
             {
-                Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-20}|{4,-15}|{5,-10}|{6,-15}|", emp.GetUsername(), emp.GetFirstName(), emp.GetLastName(), emp.GetEmail(), emp.GetPhoneNumber(), emp.GetRole(), emp.GetPosition());
+                Console.WriteLine("|{0,-15}|{1,-15}|{2,-15}|{3,-20}|{4,-15}|{5,-10}|", emp.GetUsername(), emp.GetFirstName(), emp.GetLastName(), emp.GetEmail(), emp.GetPhoneNumber(),emp.GetPosition());
             }
             Console.WriteLine("-----------------------------------------------------------------------------------------");
+        }
+
+        public static string TakeUsernameOfEmployee()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.Write("Enter the Username of The Employee: " );
+            string username = Console.ReadLine();
+            username = ConsoleValidation.ValidateWords(username);
+            return username;
+        }
+
+        public static void UpdateEmployeeInput(EmployeeBL emp)
+        {
+            Console.WriteLine();
+            Console.WriteLine("------------------------------UPDATE EMPLOYEE PAGE----------------------------");
+            Console.WriteLine();
+            Console.Write("Enter Password: ");
+            string password = Console.ReadLine();
+            password = ConsoleValidation.RestrictPassword(password);
+            Console.Write("Enter Email: ");
+            string email = Console.ReadLine();
+            email = ConsoleValidation.ValidateEmail(email);
+            Console.Write("Enter First Name: ");
+            string fname = Console.ReadLine();
+            fname = ConsoleValidation.ValidateWordsWithInt(fname);
+            Console.Write("Enter Last Name: ");
+            string lname = Console.ReadLine();
+            lname = ConsoleValidation.ValidateWordsWithInt(lname);
+            Console.Write("Enter Contact Number: ");
+            string phone = Console.ReadLine();
+            phone = ConsoleValidation.ValidateContact(phone);
+            Console.Write("Enter Employee Position: ");
+            string position = Console.ReadLine();
+            position = ConsoleValidation.ValidateWordsWithInt(position);
+
+            EmployeeBL employee = new EmployeeBL(emp.GetUsername(), password, email, fname, lname, phone, emp.GetRole(), position);
+
+            emp.UpdateProfile(employee);
+
         }
 
     }

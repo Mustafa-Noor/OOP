@@ -21,7 +21,7 @@ namespace FashionIsU_ConsoleApp_.UI
             Console.WriteLine();
             Console.WriteLine("1. ADD AN EMPLOYEE");
             Console.WriteLine("2. VIEW ALL EMPLOYEES");
-            Console.WriteLine("3. UPDATE AN DETAILS OF AN EMPLOYEE");
+            Console.WriteLine("3. UPDATE DETAILS OF AN EMPLOYEE");
             Console.WriteLine("4. DELETE AN AN EMPLOYEE");
             Console.WriteLine("5. VIEW LIST OF CUTOMERS");
             Console.WriteLine("6. LOG OUT");

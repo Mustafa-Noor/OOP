@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using FashionIsU.UI;
 using FashionIsU;
 using FashionIsUlLibrary;
-using FashionIsULibrary;
 using FashionIsU_ConsoleApp_.UI;
 
 namespace FashionIsU_ConsoleApp_
@@ -16,26 +15,23 @@ namespace FashionIsU_ConsoleApp_
         static void Main(string[] args)
         {
 
-            CustomerDB customerDB = new CustomerDB();
-            EmployeeDB empDB = new EmployeeDB();
-
-            AdminBL admin = AdminBL.GetAdminBL();
-            empDB.RetrieveEmployees(admin);
-
             while (true)
             {
                 MainUI.ClearScreen();
                 string Choice = MainUI.MainMenu();
                 if (Choice == "1")
                 {
+                    ObjectHandler.GetAdmin().ClearEmployees();
+                    ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
+
                     MainUI.ClearScreen();
                     string role = UserUI.TakeRole();
                     UserBL u = UserUI.SignInWindow(role);
 
-                    if (customerDB.FindCustomer(u) != null && role == "customer")
+                    if (ObjectHandler.GetCustomerDL().FindCustomer(u) != null && role == "customer")
                     {
                         
-                        CustomerBL customer = customerDB.FindCustomer(u);
+                        CustomerBL customer = ObjectHandler.GetCustomerDL().FindCustomer(u);
                         if (customer != null)
                         {
                             UserUI.CongratsforSignin();
@@ -272,7 +268,7 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     MainUI.ClearScreen();
                                     CustomerUI.UpdateProfileInput(customer);
-                                    ObjectHandler.GetUserDL().UpdateProfile(customer);
+                                    ObjectHandler.GetCustomerDL().UpdateProfile(customer);
                                     UserUI.ProfileUpdateSuccess();
                                     MainUI.ReturnForAll();
 
@@ -290,10 +286,10 @@ namespace FashionIsU_ConsoleApp_
                             MainUI.ReturnForAll();
                         }
                     }
-                    else if (admin.FindEmployee(u) != null && role == "employee")
+                    else if (ObjectHandler.GetAdmin().FindEmployee(u) != null && role == "employee")
                     {
                         
-                        EmployeeBL employee = admin.FindEmployee(u);
+                        EmployeeBL employee = ObjectHandler.GetAdmin().FindEmployee(u);
                         if (employee != null)
                         {
                             UserUI.CongratsforSignin();
@@ -399,9 +395,9 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     
                                    MainUI.ClearScreen();
-                                   if (ObjectHandler.GetUserDL().CheckCustomersCount())
+                                   if (ObjectHandler.GetCustomerDL().CheckCustomersCount())
                                    {
-                                       CustomerUI.DisplayCustomers(ObjectHandler.GetUserDL().GetAllCustomers());
+                                       CustomerUI.DisplayCustomers(ObjectHandler.GetCustomerDL().GetAllCustomers());
                                    }
                                    else
                                    {
@@ -415,11 +411,11 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     
                                     MainUI.ClearScreen();
-                                    if (ObjectHandler.GetUserDL().CheckCustomersCount())
+                                    if (ObjectHandler.GetCustomerDL().CheckCustomersCount())
                                     {
-                                        CustomerUI.DisplayCustomers(ObjectHandler.GetUserDL().GetAllCustomers());
+                                        CustomerUI.DisplayCustomers(ObjectHandler.GetCustomerDL().GetAllCustomers());
                                         string username = CustomerUI.TakeUsername();
-                                        CustomerBL cus = ObjectHandler.GetUserDL().FindCustomerByUsername(username);
+                                        CustomerBL cus = ObjectHandler.GetCustomerDL().FindCustomerByUsername(username);
                                         if (cus != null)
                                         {
                                             ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(cus);
@@ -470,7 +466,9 @@ namespace FashionIsU_ConsoleApp_
                                 {
                                     MainUI.ClearScreen();
                                     EmployeeUI.UpdateProfileInput(employee);
-                                    ObjectHandler.GetUserDL().UpdateProfile(employee);
+                                    ObjectHandler.GetEmployeeDL().UpdateProfile(employee);
+                                    ObjectHandler.GetAdmin().ClearEmployees();
+                                    ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
                                     UserUI.ProfileUpdateSuccess();
                                     MainUI.ReturnForAll();
                                 }
@@ -487,7 +485,7 @@ namespace FashionIsU_ConsoleApp_
                             MainUI.ReturnForAll();
                         }
                     }
-                    else if(admin.IsAdmin(u) && role=="admin")
+                    else if(ObjectHandler.GetAdmin().IsAdmin(u) && role=="admin")
                     {
                         UserUI.CongratsforSignin();
                         while(true)
@@ -498,15 +496,15 @@ namespace FashionIsU_ConsoleApp_
                             {
                                 MainUI.ClearScreen();
                                 EmployeeBL employee = EmployeeUI.TakeInputForEmployee();
-                                if(customerDB.IsCustomerExists(employee.GetUsername()) || admin.CheckEmployeeExist(employee.GetUsername()))
+                                if(ObjectHandler.GetCustomerDL().IsCustomerExists(employee.GetUsername()) || ObjectHandler.GetAdmin().CheckEmployeeExist(employee.GetUsername()))
                                 {
                                     UserUI.PrintUserTaken();
                                 }
                                 else
                                 {
-                                    empDB.AddEmployee(new EmployeeBL(employee));
-                                    admin.ClearEmployees();
-                                    empDB.RetrieveEmployees(admin);
+                                    ObjectHandler.GetEmployeeDL().AddEmployee(new EmployeeBL(employee));
+                                    ObjectHandler.GetAdmin().ClearEmployees();
+                                    ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
                                     EmployeeUI.EmployeeAdditionSuccess();
                                 }
                                 MainUI.ReturnForAll();
@@ -514,9 +512,9 @@ namespace FashionIsU_ConsoleApp_
                             else if(choice == "2")
                             {
                                 MainUI.ClearScreen();
-                                if (empDB.CheckEmployeesCount())
+                                if (ObjectHandler.GetAdmin().CheckEmployeesCount())
                                 {
-                                    EmployeeUI.DisplayEmployees(admin.GetAllEmployees());
+                                    EmployeeUI.DisplayEmployees(ObjectHandler.GetAdmin().GetAllEmployees());
                                 }
                                 else
                                 {
@@ -524,6 +522,83 @@ namespace FashionIsU_ConsoleApp_
                                     EmployeeUI.EmployeesNotFound();
                                 }
                                 MainUI.ReturnForAll();
+                            }
+                            else if (choice == "3")
+                            {
+                                MainUI.ClearScreen();
+                                if (ObjectHandler.GetAdmin().CheckEmployeesCount())
+                                {
+                                    EmployeeUI.DisplayEmployees(ObjectHandler.GetAdmin().GetAllEmployees());
+                                    string username = EmployeeUI.TakeUsernameOfEmployee();
+                                    EmployeeBL emp = ObjectHandler.GetAdmin().FindEmployee(username);
+                                    if(emp != null)
+                                    {
+                                        MainUI.ClearScreen();
+                                        EmployeeUI.UpdateProfileInput(emp);
+                                        ObjectHandler.GetEmployeeDL().UpdateProfile(emp);
+                                        ObjectHandler.GetAdmin().ClearEmployees();
+                                        ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
+                                        EmployeeUI.EmployeeUpdateSuccess();
+                                    }
+                                    else
+                                    {
+                                        EmployeeUI.EmployeeNotFound();
+
+                                    }
+                                    MainUI.ReturnForAll();
+                                }
+                                else
+                                {
+                                    MainUI.ClearScreen();
+                                    EmployeeUI.EmployeesNotFound();
+                                }
+                                MainUI.ReturnForAll();
+                            }
+                            else if (choice == "4")
+                            {
+                                MainUI.ClearScreen();
+                                if (ObjectHandler.GetAdmin().CheckEmployeesCount())
+                                {
+                                    EmployeeUI.DisplayEmployees(ObjectHandler.GetAdmin().GetAllEmployees());
+                                    string username = EmployeeUI.TakeUsernameOfEmployee();
+                                    EmployeeBL emp = ObjectHandler.GetAdmin().FindEmployee(username);
+                                    if (emp != null)
+                                    {
+                                        ObjectHandler.GetEmployeeDL().DeleteEmployee(emp);
+                                        ObjectHandler.GetAdmin().ClearEmployees();
+                                        ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
+                                        EmployeeUI.EmployeeDeleteSuccess();
+                                    }
+                                    else
+                                    {
+                                        EmployeeUI.EmployeeNotFound();
+                                    }
+
+                                }
+                                else
+                                {
+                                    MainUI.ClearScreen();
+                                    EmployeeUI.EmployeesNotFound();
+                                }
+                                MainUI.ReturnForAll();
+                            }
+                            else if (choice == "5")
+                            {
+                                MainUI.ClearScreen();
+                                if (ObjectHandler.GetCustomerDL().CheckCustomersCount())
+                                {
+                                    CustomerUI.DisplayCustomers(ObjectHandler.GetCustomerDL().GetAllCustomers());
+                                }
+                                else
+                                {
+                                    MainUI.ClearScreen();
+                                    CustomerUI.NoCustomers();
+                                }
+                                MainUI.ReturnForAll();
+                            }
+                            else if(choice == "6")
+                            {
+                                break;
                             }
                         }
                     }
@@ -535,15 +610,18 @@ namespace FashionIsU_ConsoleApp_
                 }
                 else if (Choice == "2")
                 {
+                    ObjectHandler.GetAdmin().ClearEmployees();
+                    ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
+
                     MainUI.ClearScreen();
                     CustomerBL cus = CustomerUI.CreateCustomer();
-                    if (customerDB.IsCustomerExists(cus.GetUsername()) || empDB.IsEmployeeExists(cus.GetUsername()))
+                    if (ObjectHandler.GetCustomerDL().IsCustomerExists(cus.GetUsername()) || ObjectHandler.GetAdmin().CheckEmployeeExist(cus.GetUsername()))
                     {
                         UserUI.PrintUserTaken();
                     }
                     else
                     {
-                        if (customerDB.AddCustomer(cus))
+                        if (ObjectHandler.GetCustomerDL().AddCustomer(cus))
                         {
                             CustomerUI.CongratsforSignup();
                         }

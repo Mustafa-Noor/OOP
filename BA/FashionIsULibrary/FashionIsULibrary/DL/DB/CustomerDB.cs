@@ -6,11 +6,25 @@ using System.Text;
 using System.Threading.Tasks;
 using FashionIsU;
 
-namespace FashionIsULibrary
+namespace FashionIsUlLibrary
 {
-    public class CustomerDB
+    public class CustomerDB:ICustomerDL
     {
-        string ConnectionString = UtilityClass.GetConnectionString();
+
+        private static CustomerDB CustomerDBInstance;
+        private string ConnectionString = "";
+        private CustomerDB(string ConnectionString)
+        {
+            this.ConnectionString = ConnectionString;
+        }
+        public static CustomerDB GetCustomerDB(string connectionString)
+        {
+            if (CustomerDBInstance == null)
+            {
+                CustomerDBInstance = new CustomerDB(connectionString);
+            }
+            return CustomerDBInstance;
+        }
         public bool AddCustomer(CustomerBL customer)
         {
             SqlConnection connection = new SqlConnection(ConnectionString);
