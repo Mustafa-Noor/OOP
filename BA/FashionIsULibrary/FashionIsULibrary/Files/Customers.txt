@@ -1,0 +1,2 @@
+Eren,123456,eren@gmail.com,Eren,Yeager,0321-0011223,customer
+MiK,123456,mikasa@gmail.com,Mikasa,Ackerman,0310-1010121,customer

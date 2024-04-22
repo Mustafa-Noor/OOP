@@ -64,6 +64,8 @@
     <Compile Include="DL\DB\ReviewDB.cs" />
     <Compile Include="DL\FH\CartFH.cs" />
     <Compile Include="DL\FH\ClothesFH.cs" />
+    <Compile Include="DL\FH\CustomerFH.cs" />
+    <Compile Include="DL\FH\EmployeeFH.cs" />
     <Compile Include="DL\FH\OrderFH.cs" />
     <Compile Include="DL\FH\ReviewFH.cs" />
     <Compile Include="DL\FH\UserFH.cs" />

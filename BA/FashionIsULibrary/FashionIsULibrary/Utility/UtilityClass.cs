@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -18,6 +19,13 @@ namespace FashionIsU
         private static string OrdersFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Files\\Orders.txt";
         private static string OrderItemsFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Files\\OrderItems.txt";
         private static string ReviewsFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Files\\Reviews.txt";
+        private static string CustomerFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Files\\Customers.txt";
+        private static string EmployeeFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Files\\Employees.txt";
+
+        public static string GetCustomerFilePath()
+        { return CustomerFilePath; }
+        public static string GetEmployeeFilePath()
+        { return EmployeeFilePath; }
         public static string GetUserFilePath()
         { return UserFilePath;}
 
@@ -33,9 +41,6 @@ namespace FashionIsU
         {  return OrderItemsFilePath;}
         public static string GetReviewsFilePath()
         { return ReviewsFilePath;}
-
-
-
         public static string GetConnectionString()
         { return ConnectionString; }
 
