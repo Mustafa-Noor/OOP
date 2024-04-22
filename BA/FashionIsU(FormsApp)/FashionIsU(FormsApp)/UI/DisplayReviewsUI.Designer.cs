@@ -43,12 +43,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Controls.Add(this.displayRevLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 69);
             this.panel1.TabIndex = 9;
             // 
             // displayRevLabel
@@ -59,7 +59,7 @@
             this.displayRevLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.displayRevLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayRevLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.displayRevLabel.Location = new System.Drawing.Point(203, 8);
+            this.displayRevLabel.Location = new System.Drawing.Point(203, 16);
             this.displayRevLabel.Name = "displayRevLabel";
             this.displayRevLabel.Size = new System.Drawing.Size(486, 45);
             this.displayRevLabel.TabIndex = 2;
@@ -69,7 +69,7 @@
             // Diplaybtn
             // 
             this.Diplaybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Diplaybtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Diplaybtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.Diplaybtn.Font = new System.Drawing.Font("Palatino Linotype", 12F);
             this.Diplaybtn.Location = new System.Drawing.Point(587, 109);
             this.Diplaybtn.Name = "Diplaybtn";
@@ -123,6 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.ReviewsGrid);
             this.Controls.Add(this.Diplaybtn);

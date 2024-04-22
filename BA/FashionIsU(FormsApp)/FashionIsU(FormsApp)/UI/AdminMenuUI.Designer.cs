@@ -30,13 +30,13 @@
         {
             this.SidemenuPanel = new System.Windows.Forms.Panel();
             this.ExitBtn = new System.Windows.Forms.Button();
+            this.DisplayCusBtn = new System.Windows.Forms.Button();
             this.RemoveEmpBtn = new System.Windows.Forms.Button();
             this.UpdateEmpBtn = new System.Windows.Forms.Button();
             this.AddEmpBtn = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.AdminMenu = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.DisplayCusBtn = new System.Windows.Forms.Button();
             this.panelChild = new System.Windows.Forms.Panel();
             this.SidemenuPanel.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -75,9 +75,29 @@
             this.ExitBtn.UseVisualStyleBackColor = false;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
+            // DisplayCusBtn
+            // 
+            this.DisplayCusBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DisplayCusBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.DisplayCusBtn.FlatAppearance.BorderSize = 3;
+            this.DisplayCusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DisplayCusBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayCusBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DisplayCusBtn.Location = new System.Drawing.Point(0, 350);
+            this.DisplayCusBtn.Name = "DisplayCusBtn";
+            this.DisplayCusBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.DisplayCusBtn.Size = new System.Drawing.Size(250, 82);
+            this.DisplayCusBtn.TabIndex = 7;
+            this.DisplayCusBtn.Text = "Display All Customers";
+            this.DisplayCusBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DisplayCusBtn.UseVisualStyleBackColor = true;
+            this.DisplayCusBtn.Click += new System.EventHandler(this.DisplayCusBtn_Click);
+            // 
             // RemoveEmpBtn
             // 
             this.RemoveEmpBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.RemoveEmpBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.RemoveEmpBtn.FlatAppearance.BorderSize = 3;
             this.RemoveEmpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveEmpBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RemoveEmpBtn.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -94,6 +114,8 @@
             // UpdateEmpBtn
             // 
             this.UpdateEmpBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UpdateEmpBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.UpdateEmpBtn.FlatAppearance.BorderSize = 3;
             this.UpdateEmpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateEmpBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateEmpBtn.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -110,6 +132,8 @@
             // AddEmpBtn
             // 
             this.AddEmpBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AddEmpBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.AddEmpBtn.FlatAppearance.BorderSize = 3;
             this.AddEmpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddEmpBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddEmpBtn.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -150,25 +174,9 @@
             this.panel2.Size = new System.Drawing.Size(241, 97);
             this.panel2.TabIndex = 8;
             // 
-            // DisplayCusBtn
-            // 
-            this.DisplayCusBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.DisplayCusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DisplayCusBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayCusBtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.DisplayCusBtn.Location = new System.Drawing.Point(0, 350);
-            this.DisplayCusBtn.Name = "DisplayCusBtn";
-            this.DisplayCusBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.DisplayCusBtn.Size = new System.Drawing.Size(250, 82);
-            this.DisplayCusBtn.TabIndex = 7;
-            this.DisplayCusBtn.Text = "Display All Customers";
-            this.DisplayCusBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DisplayCusBtn.UseVisualStyleBackColor = true;
-            this.DisplayCusBtn.Click += new System.EventHandler(this.DisplayCusBtn_Click);
-            // 
             // panelChild
             // 
-            this.panelChild.BackgroundImage = global::FashionIsU_FormsApp_.Properties.Resources.walk;
+            this.panelChild.BackgroundImage = global::FashionIsU_FormsApp_.Properties.Resources.follow_me_social_business_theme_design_24877_50426;
             this.panelChild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChild.Location = new System.Drawing.Point(250, 0);

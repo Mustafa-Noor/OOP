@@ -41,20 +41,21 @@
             // 
             // NamePanel
             // 
-            this.NamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.NamePanel.BackColor = System.Drawing.Color.Black;
             this.NamePanel.Controls.Add(this.label1);
             this.NamePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.NamePanel.Location = new System.Drawing.Point(0, 0);
             this.NamePanel.Name = "NamePanel";
-            this.NamePanel.Size = new System.Drawing.Size(934, 62);
+            this.NamePanel.Size = new System.Drawing.Size(934, 101);
             this.NamePanel.TabIndex = 27;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(345, 8);
+            this.label1.Location = new System.Drawing.Point(345, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 54);
             this.label1.TabIndex = 2;
@@ -65,7 +66,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(376, 91);
+            this.label4.Location = new System.Drawing.Point(382, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 38);
             this.label4.TabIndex = 33;
@@ -85,11 +86,12 @@
             // SignInMenubtn
             // 
             this.SignInMenubtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SignInMenubtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.SignInMenubtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
-            this.SignInMenubtn.Location = new System.Drawing.Point(317, 267);
+            this.SignInMenubtn.BackColor = System.Drawing.Color.Black;
+            this.SignInMenubtn.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.SignInMenubtn.ForeColor = System.Drawing.Color.White;
+            this.SignInMenubtn.Location = new System.Drawing.Point(302, 256);
             this.SignInMenubtn.Name = "SignInMenubtn";
-            this.SignInMenubtn.Size = new System.Drawing.Size(274, 60);
+            this.SignInMenubtn.Size = new System.Drawing.Size(308, 71);
             this.SignInMenubtn.TabIndex = 37;
             this.SignInMenubtn.Text = "Open Sign In Page";
             this.SignInMenubtn.UseVisualStyleBackColor = false;
@@ -109,11 +111,12 @@
             // SignUpMenuBtn
             // 
             this.SignUpMenuBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SignUpMenuBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.SignUpMenuBtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
-            this.SignUpMenuBtn.Location = new System.Drawing.Point(317, 362);
+            this.SignUpMenuBtn.BackColor = System.Drawing.Color.Black;
+            this.SignUpMenuBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F);
+            this.SignUpMenuBtn.ForeColor = System.Drawing.Color.White;
+            this.SignUpMenuBtn.Location = new System.Drawing.Point(302, 345);
             this.SignUpMenuBtn.Name = "SignUpMenuBtn";
-            this.SignUpMenuBtn.Size = new System.Drawing.Size(274, 60);
+            this.SignUpMenuBtn.Size = new System.Drawing.Size(308, 78);
             this.SignUpMenuBtn.TabIndex = 39;
             this.SignUpMenuBtn.Text = "Open Sign Up Page Customer";
             this.SignUpMenuBtn.UseVisualStyleBackColor = false;
@@ -134,6 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(934, 561);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.SignUpMenuBtn);

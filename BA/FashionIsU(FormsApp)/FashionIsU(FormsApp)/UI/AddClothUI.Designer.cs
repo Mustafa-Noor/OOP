@@ -51,12 +51,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Controls.Add(this.AddItemLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 76);
             this.panel1.TabIndex = 7;
             // 
             // AddItemLabel
@@ -67,7 +67,7 @@
             this.AddItemLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.AddItemLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddItemLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.AddItemLabel.Location = new System.Drawing.Point(280, 8);
+            this.AddItemLabel.Location = new System.Drawing.Point(280, 20);
             this.AddItemLabel.Name = "AddItemLabel";
             this.AddItemLabel.Size = new System.Drawing.Size(295, 45);
             this.AddItemLabel.TabIndex = 2;
@@ -81,7 +81,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClothesGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ClothesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClothesGrid.Location = new System.Drawing.Point(42, 70);
+            this.ClothesGrid.Location = new System.Drawing.Point(42, 82);
             this.ClothesGrid.Name = "ClothesGrid";
             this.ClothesGrid.ReadOnly = true;
             this.ClothesGrid.RowHeadersWidth = 51;
@@ -176,7 +176,7 @@
             // Addbtn
             // 
             this.Addbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Addbtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.Addbtn.Font = new System.Drawing.Font("Palatino Linotype", 12F);
             this.Addbtn.Location = new System.Drawing.Point(622, 505);
             this.Addbtn.Name = "Addbtn";
@@ -240,6 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.colorBox);
             this.Controls.Add(this.GenderCombo);
@@ -255,7 +256,7 @@
             this.Controls.Add(this.ClothesGrid);
             this.Controls.Add(this.panel1);
             this.Name = "AddClothUI";
-            this.Text = "AddClothUI";
+            this.Text = "3";
             this.Load += new System.EventHandler(this.AddClothUI_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

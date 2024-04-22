@@ -51,12 +51,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.BuyItemLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 86);
             this.panel1.TabIndex = 8;
             // 
             // BuyItemLabel
@@ -66,8 +66,8 @@
             this.BuyItemLabel.BackColor = System.Drawing.Color.Transparent;
             this.BuyItemLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.BuyItemLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuyItemLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BuyItemLabel.Location = new System.Drawing.Point(264, 0);
+            this.BuyItemLabel.ForeColor = System.Drawing.Color.White;
+            this.BuyItemLabel.Location = new System.Drawing.Point(264, 17);
             this.BuyItemLabel.Name = "BuyItemLabel";
             this.BuyItemLabel.Size = new System.Drawing.Size(332, 45);
             this.BuyItemLabel.TabIndex = 2;
@@ -98,6 +98,7 @@
             this.PaymentMethodLABEL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PaymentMethodLABEL.AutoSize = true;
             this.PaymentMethodLABEL.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaymentMethodLABEL.ForeColor = System.Drawing.Color.White;
             this.PaymentMethodLABEL.Location = new System.Drawing.Point(106, 117);
             this.PaymentMethodLABEL.Name = "PaymentMethodLABEL";
             this.PaymentMethodLABEL.Size = new System.Drawing.Size(226, 23);
@@ -133,7 +134,7 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.SetPayment);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.PaymentMethodLABEL);
@@ -147,7 +148,7 @@
             // SetPayment
             // 
             this.SetPayment.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SetPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.SetPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.SetPayment.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.SetPayment.Location = new System.Drawing.Point(555, 159);
             this.SetPayment.Name = "SetPayment";
@@ -163,6 +164,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(36, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(675, 27);
@@ -173,7 +175,7 @@
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.Lime;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel3.Controls.Add(this.AmountLabelAfterPayment);
             this.panel3.Location = new System.Drawing.Point(41, 391);
             this.panel3.Name = "panel3";
@@ -186,6 +188,7 @@
             this.AmountLabelAfterPayment.AutoSize = true;
             this.AmountLabelAfterPayment.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AmountLabelAfterPayment.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabelAfterPayment.ForeColor = System.Drawing.Color.White;
             this.AmountLabelAfterPayment.Location = new System.Drawing.Point(28, 30);
             this.AmountLabelAfterPayment.Name = "AmountLabelAfterPayment";
             this.AmountLabelAfterPayment.Size = new System.Drawing.Size(593, 27);
@@ -199,11 +202,12 @@
             // PlaceOrderbtn
             // 
             this.PlaceOrderbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.PlaceOrderbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.PlaceOrderbtn.BackColor = System.Drawing.Color.Black;
             this.PlaceOrderbtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
-            this.PlaceOrderbtn.Location = new System.Drawing.Point(324, 585);
+            this.PlaceOrderbtn.ForeColor = System.Drawing.Color.White;
+            this.PlaceOrderbtn.Location = new System.Drawing.Point(324, 577);
             this.PlaceOrderbtn.Name = "PlaceOrderbtn";
-            this.PlaceOrderbtn.Size = new System.Drawing.Size(194, 42);
+            this.PlaceOrderbtn.Size = new System.Drawing.Size(222, 50);
             this.PlaceOrderbtn.TabIndex = 89;
             this.PlaceOrderbtn.Text = "Place Order";
             this.PlaceOrderbtn.UseVisualStyleBackColor = false;
@@ -213,6 +217,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.PlaceOrderbtn);
             this.Controls.Add(this.panel3);

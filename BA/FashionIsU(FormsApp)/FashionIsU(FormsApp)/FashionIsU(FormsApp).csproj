@@ -291,5 +291,14 @@
   <ItemGroup>
     <None Include="Resources\walk.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\follow-me-social-business-theme-design_24877-50426.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people-buying-christmas-gifts_23-2148328183.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supermarket-workers-collection_52683-37591.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

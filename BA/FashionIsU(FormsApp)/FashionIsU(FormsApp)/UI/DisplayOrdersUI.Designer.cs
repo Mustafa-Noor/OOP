@@ -38,12 +38,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.BuyItemLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 90);
             this.panel1.TabIndex = 9;
             // 
             // BuyItemLabel
@@ -53,8 +53,8 @@
             this.BuyItemLabel.BackColor = System.Drawing.Color.Transparent;
             this.BuyItemLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.BuyItemLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuyItemLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BuyItemLabel.Location = new System.Drawing.Point(212, 8);
+            this.BuyItemLabel.ForeColor = System.Drawing.Color.White;
+            this.BuyItemLabel.Location = new System.Drawing.Point(212, 27);
             this.BuyItemLabel.Name = "BuyItemLabel";
             this.BuyItemLabel.Size = new System.Drawing.Size(474, 45);
             this.BuyItemLabel.TabIndex = 2;
@@ -68,7 +68,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.OrdersGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.OrdersGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OrdersGrid.Location = new System.Drawing.Point(42, 73);
+            this.OrdersGrid.Location = new System.Drawing.Point(43, 105);
             this.OrdersGrid.Name = "OrdersGrid";
             this.OrdersGrid.ReadOnly = true;
             this.OrdersGrid.RowHeadersWidth = 51;
@@ -81,9 +81,10 @@
             // 
             this.AmountLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.AmountLabel.AutoSize = true;
-            this.AmountLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AmountLabel.BackColor = System.Drawing.Color.Black;
             this.AmountLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AmountLabel.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountLabel.ForeColor = System.Drawing.Color.White;
             this.AmountLabel.Location = new System.Drawing.Point(37, 560);
             this.AmountLabel.Name = "AmountLabel";
             this.AmountLabel.Size = new System.Drawing.Size(621, 32);
@@ -94,6 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.AmountLabel);
             this.Controls.Add(this.OrdersGrid);

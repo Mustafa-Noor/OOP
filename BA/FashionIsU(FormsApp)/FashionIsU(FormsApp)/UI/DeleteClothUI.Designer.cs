@@ -43,12 +43,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Controls.Add(this.UpdateItemLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 88);
             this.panel1.TabIndex = 9;
             // 
             // UpdateItemLabel
@@ -59,7 +59,7 @@
             this.UpdateItemLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.UpdateItemLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateItemLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.UpdateItemLabel.Location = new System.Drawing.Point(270, 8);
+            this.UpdateItemLabel.Location = new System.Drawing.Point(270, 26);
             this.UpdateItemLabel.Name = "UpdateItemLabel";
             this.UpdateItemLabel.Size = new System.Drawing.Size(326, 45);
             this.UpdateItemLabel.TabIndex = 2;
@@ -73,7 +73,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClothesGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ClothesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClothesGrid.Location = new System.Drawing.Point(39, 73);
+            this.ClothesGrid.Location = new System.Drawing.Point(38, 94);
             this.ClothesGrid.Name = "ClothesGrid";
             this.ClothesGrid.ReadOnly = true;
             this.ClothesGrid.RowHeadersWidth = 51;
@@ -105,7 +105,7 @@
             // Deletebtn
             // 
             this.Deletebtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Deletebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Deletebtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.Deletebtn.Font = new System.Drawing.Font("Palatino Linotype", 12F);
             this.Deletebtn.Location = new System.Drawing.Point(323, 563);
             this.Deletebtn.Name = "Deletebtn";
@@ -123,6 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.Deletebtn);
             this.Controls.Add(this.IdBox);

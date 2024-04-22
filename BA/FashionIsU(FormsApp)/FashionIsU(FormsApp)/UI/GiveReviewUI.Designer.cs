@@ -47,12 +47,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.ReviewPageLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 90);
             this.panel1.TabIndex = 7;
             // 
             // ReviewPageLabel
@@ -62,8 +62,8 @@
             this.ReviewPageLabel.BackColor = System.Drawing.Color.Transparent;
             this.ReviewPageLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.ReviewPageLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReviewPageLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ReviewPageLabel.Location = new System.Drawing.Point(282, 8);
+            this.ReviewPageLabel.ForeColor = System.Drawing.Color.White;
+            this.ReviewPageLabel.Location = new System.Drawing.Point(282, 27);
             this.ReviewPageLabel.Name = "ReviewPageLabel";
             this.ReviewPageLabel.Size = new System.Drawing.Size(292, 45);
             this.ReviewPageLabel.TabIndex = 2;
@@ -77,20 +77,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClothesGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ClothesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClothesGrid.Location = new System.Drawing.Point(40, 74);
+            this.ClothesGrid.Location = new System.Drawing.Point(40, 96);
             this.ClothesGrid.Name = "ClothesGrid";
             this.ClothesGrid.ReadOnly = true;
             this.ClothesGrid.RowHeadersWidth = 51;
             this.ClothesGrid.RowTemplate.Height = 24;
             this.ClothesGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ClothesGrid.Size = new System.Drawing.Size(801, 423);
+            this.ClothesGrid.Size = new System.Drawing.Size(801, 401);
             this.ClothesGrid.TabIndex = 84;
             // 
             // ReviewBtn
             // 
             this.ReviewBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReviewBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ReviewBtn.BackColor = System.Drawing.Color.Black;
             this.ReviewBtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
+            this.ReviewBtn.ForeColor = System.Drawing.Color.White;
             this.ReviewBtn.Location = new System.Drawing.Point(633, 590);
             this.ReviewBtn.Name = "ReviewBtn";
             this.ReviewBtn.Size = new System.Drawing.Size(195, 46);
@@ -137,11 +138,11 @@
             this.UsernameLabel.TabIndex = 89;
             this.UsernameLabel.Text = "Enter ID Of Cloth";
             // 
-            // CoomentBox
+            // CommentBox
             // 
             this.CommentBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.CommentBox.Location = new System.Drawing.Point(390, 554);
-            this.CommentBox.Name = "CoomentBox";
+            this.CommentBox.Name = "CommentBox";
             this.CommentBox.Size = new System.Drawing.Size(468, 22);
             this.CommentBox.TabIndex = 95;
             // 
@@ -163,6 +164,7 @@
             // GiveReviewUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.CommentBox);
             this.Controls.Add(this.label3);

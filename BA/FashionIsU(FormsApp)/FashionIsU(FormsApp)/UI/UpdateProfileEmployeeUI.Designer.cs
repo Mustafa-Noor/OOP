@@ -51,7 +51,7 @@
             // UpdateProfileBtn
             // 
             this.UpdateProfileBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.UpdateProfileBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.UpdateProfileBtn.BackColor = System.Drawing.Color.MediumAquamarine;
             this.UpdateProfileBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F);
             this.UpdateProfileBtn.Location = new System.Drawing.Point(324, 557);
             this.UpdateProfileBtn.Name = "UpdateProfileBtn";
@@ -165,7 +165,7 @@
             // 
             this.UsernameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UsernameLabel.AutoSize = true;
-            this.UsernameLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.UsernameLabel.BackColor = System.Drawing.Color.MediumAquamarine;
             this.UsernameLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.UsernameLabel.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameLabel.Location = new System.Drawing.Point(238, 129);
@@ -176,12 +176,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Controls.Add(this.ReviewPageLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 86);
             this.panel1.TabIndex = 86;
             // 
             // ReviewPageLabel
@@ -192,7 +192,7 @@
             this.ReviewPageLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.ReviewPageLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReviewPageLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ReviewPageLabel.Location = new System.Drawing.Point(259, 8);
+            this.ReviewPageLabel.Location = new System.Drawing.Point(259, 25);
             this.ReviewPageLabel.Name = "ReviewPageLabel";
             this.ReviewPageLabel.Size = new System.Drawing.Size(323, 45);
             this.ReviewPageLabel.TabIndex = 2;
@@ -203,10 +203,11 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // UpdateProfileEmployee
+            // UpdateProfileEmployeeUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.UpdateProfileBtn);
             this.Controls.Add(this.contact);
@@ -221,7 +222,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.UsernameLabel);
             this.Controls.Add(this.panel1);
-            this.Name = "UpdateProfileEmployee";
+            this.Name = "UpdateProfileEmployeeUI";
             this.Text = "UpdateProfileEmployee";
             this.Load += new System.EventHandler(this.UpdateProfileEmployee_Load);
             this.panel1.ResumeLayout(false);

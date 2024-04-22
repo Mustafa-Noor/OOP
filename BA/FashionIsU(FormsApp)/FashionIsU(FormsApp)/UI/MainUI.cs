@@ -27,6 +27,7 @@ namespace FashionIsU_FormsApp_
 
         private void SignUpMenuBtn_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
             Form form = new SignUpUI();
             form.ShowDialog();

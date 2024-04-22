@@ -46,12 +46,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.BuyItemLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 95);
             this.panel1.TabIndex = 7;
             // 
             // BuyItemLabel
@@ -61,8 +61,8 @@
             this.BuyItemLabel.BackColor = System.Drawing.Color.Transparent;
             this.BuyItemLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.BuyItemLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuyItemLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BuyItemLabel.Location = new System.Drawing.Point(297, 0);
+            this.BuyItemLabel.ForeColor = System.Drawing.Color.White;
+            this.BuyItemLabel.Location = new System.Drawing.Point(297, 21);
             this.BuyItemLabel.Name = "BuyItemLabel";
             this.BuyItemLabel.Size = new System.Drawing.Size(300, 45);
             this.BuyItemLabel.TabIndex = 2;
@@ -76,20 +76,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CartGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CartGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CartGrid.Location = new System.Drawing.Point(51, 74);
+            this.CartGrid.Location = new System.Drawing.Point(51, 113);
             this.CartGrid.Name = "CartGrid";
             this.CartGrid.ReadOnly = true;
             this.CartGrid.RowHeadersWidth = 51;
             this.CartGrid.RowTemplate.Height = 24;
             this.CartGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CartGrid.Size = new System.Drawing.Size(801, 423);
+            this.CartGrid.Size = new System.Drawing.Size(801, 384);
             this.CartGrid.TabIndex = 84;
             // 
             // Removebtn
             // 
             this.Removebtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Removebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Removebtn.BackColor = System.Drawing.Color.Black;
             this.Removebtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
+            this.Removebtn.ForeColor = System.Drawing.Color.White;
             this.Removebtn.Location = new System.Drawing.Point(584, 513);
             this.Removebtn.Name = "Removebtn";
             this.Removebtn.Size = new System.Drawing.Size(169, 42);
@@ -139,8 +140,9 @@
             // ChangeQBtn
             // 
             this.ChangeQBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.ChangeQBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ChangeQBtn.BackColor = System.Drawing.Color.Black;
             this.ChangeQBtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
+            this.ChangeQBtn.ForeColor = System.Drawing.Color.White;
             this.ChangeQBtn.Location = new System.Drawing.Point(584, 572);
             this.ChangeQBtn.Name = "ChangeQBtn";
             this.ChangeQBtn.Size = new System.Drawing.Size(169, 42);
@@ -156,6 +158,7 @@
             // ManageCartUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.ChangeQBtn);
             this.Controls.Add(this.Removebtn);

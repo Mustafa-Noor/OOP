@@ -60,7 +60,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 82);
             this.panel1.TabIndex = 9;
             // 
             // UpdateEmployeeLabel
@@ -71,7 +71,7 @@
             this.UpdateEmployeeLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.UpdateEmployeeLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateEmployeeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.UpdateEmployeeLabel.Location = new System.Drawing.Point(241, 8);
+            this.UpdateEmployeeLabel.Location = new System.Drawing.Point(241, 23);
             this.UpdateEmployeeLabel.Name = "UpdateEmployeeLabel";
             this.UpdateEmployeeLabel.Size = new System.Drawing.Size(419, 45);
             this.UpdateEmployeeLabel.TabIndex = 2;

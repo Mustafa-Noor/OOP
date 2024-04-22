@@ -73,6 +73,36 @@ namespace FashionIsU_FormsApp_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap follow_me_social_business_theme_design_24877_50426 {
+            get {
+                object obj = ResourceManager.GetObject("follow-me-social-business-theme-design_24877-50426", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap people_buying_christmas_gifts_23_2148328183 {
+            get {
+                object obj = ResourceManager.GetObject("people-buying-christmas-gifts_23-2148328183", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap supermarket_workers_collection_52683_37591 {
+            get {
+                object obj = ResourceManager.GetObject("supermarket-workers-collection_52683-37591", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap walk {
             get {
                 object obj = ResourceManager.GetObject("walk", resourceCulture);

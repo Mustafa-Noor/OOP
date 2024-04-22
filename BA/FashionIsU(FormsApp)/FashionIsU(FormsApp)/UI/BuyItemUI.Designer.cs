@@ -47,11 +47,11 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.BuyItemLabel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 81);
             this.panel1.TabIndex = 6;
             // 
             // BuyItemLabel
@@ -61,8 +61,8 @@
             this.BuyItemLabel.BackColor = System.Drawing.Color.Transparent;
             this.BuyItemLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.BuyItemLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuyItemLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BuyItemLabel.Location = new System.Drawing.Point(307, 0);
+            this.BuyItemLabel.ForeColor = System.Drawing.Color.White;
+            this.BuyItemLabel.Location = new System.Drawing.Point(307, 14);
             this.BuyItemLabel.Name = "BuyItemLabel";
             this.BuyItemLabel.Size = new System.Drawing.Size(286, 45);
             this.BuyItemLabel.TabIndex = 2;
@@ -76,13 +76,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClothesGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ClothesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ClothesGrid.Location = new System.Drawing.Point(59, 75);
+            this.ClothesGrid.Location = new System.Drawing.Point(57, 87);
             this.ClothesGrid.Name = "ClothesGrid";
             this.ClothesGrid.ReadOnly = true;
             this.ClothesGrid.RowHeadersWidth = 51;
             this.ClothesGrid.RowTemplate.Height = 24;
             this.ClothesGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ClothesGrid.Size = new System.Drawing.Size(801, 423);
+            this.ClothesGrid.Size = new System.Drawing.Size(801, 406);
             this.ClothesGrid.TabIndex = 83;
             // 
             // IdBox
@@ -127,11 +127,12 @@
             // Addbtn
             // 
             this.Addbtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Addbtn.BackColor = System.Drawing.Color.Black;
             this.Addbtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
+            this.Addbtn.ForeColor = System.Drawing.Color.White;
             this.Addbtn.Location = new System.Drawing.Point(327, 607);
             this.Addbtn.Name = "Addbtn";
-            this.Addbtn.Size = new System.Drawing.Size(169, 42);
+            this.Addbtn.Size = new System.Drawing.Size(216, 42);
             this.Addbtn.TabIndex = 88;
             this.Addbtn.Text = "Add To Cart";
             this.Addbtn.UseVisualStyleBackColor = false;
@@ -144,6 +145,7 @@
             // BuyItemUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.Addbtn);
             this.Controls.Add(this.QuantityBox);

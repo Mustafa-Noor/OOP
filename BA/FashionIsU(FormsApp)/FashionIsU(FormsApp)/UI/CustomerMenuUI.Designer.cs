@@ -50,9 +50,11 @@
             // ViewItemsBtn
             // 
             this.ViewItemsBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ViewItemsBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ViewItemsBtn.FlatAppearance.BorderSize = 3;
             this.ViewItemsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewItemsBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewItemsBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ViewItemsBtn.ForeColor = System.Drawing.Color.White;
             this.ViewItemsBtn.Location = new System.Drawing.Point(0, 94);
             this.ViewItemsBtn.Name = "ViewItemsBtn";
             this.ViewItemsBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -77,6 +79,7 @@
             // 
             this.CusMenu.AutoSize = true;
             this.CusMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CusMenu.ForeColor = System.Drawing.Color.White;
             this.CusMenu.Location = new System.Drawing.Point(32, 38);
             this.CusMenu.Name = "CusMenu";
             this.CusMenu.Size = new System.Drawing.Size(193, 29);
@@ -93,7 +96,7 @@
             // SidemenuPanel
             // 
             this.SidemenuPanel.AutoScroll = true;
-            this.SidemenuPanel.BackColor = System.Drawing.Color.PaleGreen;
+            this.SidemenuPanel.BackColor = System.Drawing.Color.Black;
             this.SidemenuPanel.Controls.Add(this.ExitBtn);
             this.SidemenuPanel.Controls.Add(this.UpdateProfileBtn);
             this.SidemenuPanel.Controls.Add(this.ReviewPageBtn);
@@ -112,9 +115,11 @@
             // 
             this.ExitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ExitBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ExitBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ExitBtn.FlatAppearance.BorderSize = 3;
             this.ExitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ExitBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ExitBtn.Location = new System.Drawing.Point(0, 593);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -128,9 +133,11 @@
             // UpdateProfileBtn
             // 
             this.UpdateProfileBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UpdateProfileBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.UpdateProfileBtn.FlatAppearance.BorderSize = 3;
             this.UpdateProfileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateProfileBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateProfileBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.UpdateProfileBtn.ForeColor = System.Drawing.Color.White;
             this.UpdateProfileBtn.Location = new System.Drawing.Point(0, 511);
             this.UpdateProfileBtn.Name = "UpdateProfileBtn";
             this.UpdateProfileBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -144,9 +151,11 @@
             // ReviewPageBtn
             // 
             this.ReviewPageBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ReviewPageBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ReviewPageBtn.FlatAppearance.BorderSize = 3;
             this.ReviewPageBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReviewPageBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReviewPageBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ReviewPageBtn.ForeColor = System.Drawing.Color.White;
             this.ReviewPageBtn.Location = new System.Drawing.Point(0, 433);
             this.ReviewPageBtn.Name = "ReviewPageBtn";
             this.ReviewPageBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -160,9 +169,11 @@
             // DisplayOrderBtn
             // 
             this.DisplayOrderBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DisplayOrderBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.DisplayOrderBtn.FlatAppearance.BorderSize = 3;
             this.DisplayOrderBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DisplayOrderBtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DisplayOrderBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DisplayOrderBtn.ForeColor = System.Drawing.Color.White;
             this.DisplayOrderBtn.Location = new System.Drawing.Point(0, 348);
             this.DisplayOrderBtn.Name = "DisplayOrderBtn";
             this.DisplayOrderBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -176,9 +187,11 @@
             // PlaceOrderbtn
             // 
             this.PlaceOrderbtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PlaceOrderbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.PlaceOrderbtn.FlatAppearance.BorderSize = 3;
             this.PlaceOrderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlaceOrderbtn.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlaceOrderbtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.PlaceOrderbtn.ForeColor = System.Drawing.Color.White;
             this.PlaceOrderbtn.Location = new System.Drawing.Point(0, 264);
             this.PlaceOrderbtn.Name = "PlaceOrderbtn";
             this.PlaceOrderbtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -192,9 +205,11 @@
             // ManageCart
             // 
             this.ManageCart.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ManageCart.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ManageCart.FlatAppearance.BorderSize = 3;
             this.ManageCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ManageCart.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ManageCart.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ManageCart.ForeColor = System.Drawing.Color.White;
             this.ManageCart.Location = new System.Drawing.Point(0, 181);
             this.ManageCart.Name = "ManageCart";
             this.ManageCart.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -232,7 +247,7 @@
             // 
             // panelChild
             // 
-            this.panelChild.BackgroundImage = global::FashionIsU_FormsApp_.Properties.Resources.walk;
+            this.panelChild.BackgroundImage = global::FashionIsU_FormsApp_.Properties.Resources.people_buying_christmas_gifts_23_2148328183;
             this.panelChild.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChild.Location = new System.Drawing.Point(250, 0);

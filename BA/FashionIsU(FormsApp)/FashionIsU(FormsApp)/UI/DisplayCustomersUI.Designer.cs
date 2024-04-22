@@ -37,12 +37,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Controls.Add(this.DisplayCustomersLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 53);
+            this.panel1.Size = new System.Drawing.Size(884, 92);
             this.panel1.TabIndex = 9;
             // 
             // DisplayCustomersLabel
@@ -53,7 +53,7 @@
             this.DisplayCustomersLabel.Cursor = System.Windows.Forms.Cursors.No;
             this.DisplayCustomersLabel.Font = new System.Drawing.Font("Palatino Linotype", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DisplayCustomersLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.DisplayCustomersLabel.Location = new System.Drawing.Point(230, 8);
+            this.DisplayCustomersLabel.Location = new System.Drawing.Point(230, 28);
             this.DisplayCustomersLabel.Name = "DisplayCustomersLabel";
             this.DisplayCustomersLabel.Size = new System.Drawing.Size(389, 45);
             this.DisplayCustomersLabel.TabIndex = 2;
@@ -67,19 +67,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CustomersGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CustomersGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CustomersGrid.Location = new System.Drawing.Point(42, 77);
+            this.CustomersGrid.Location = new System.Drawing.Point(48, 114);
             this.CustomersGrid.Name = "CustomersGrid";
             this.CustomersGrid.ReadOnly = true;
             this.CustomersGrid.RowHeadersWidth = 51;
             this.CustomersGrid.RowTemplate.Height = 24;
             this.CustomersGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CustomersGrid.Size = new System.Drawing.Size(801, 533);
+            this.CustomersGrid.Size = new System.Drawing.Size(801, 490);
             this.CustomersGrid.TabIndex = 86;
             // 
             // DisplayCustomersUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(884, 661);
             this.Controls.Add(this.CustomersGrid);
             this.Controls.Add(this.panel1);

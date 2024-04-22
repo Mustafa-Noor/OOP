@@ -69,11 +69,12 @@
             // SignUpbtn
             // 
             this.SignUpbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SignUpbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.SignUpbtn.BackColor = System.Drawing.Color.Black;
             this.SignUpbtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
-            this.SignUpbtn.Location = new System.Drawing.Point(479, 450);
+            this.SignUpbtn.ForeColor = System.Drawing.Color.White;
+            this.SignUpbtn.Location = new System.Drawing.Point(479, 444);
             this.SignUpbtn.Name = "SignUpbtn";
-            this.SignUpbtn.Size = new System.Drawing.Size(169, 42);
+            this.SignUpbtn.Size = new System.Drawing.Size(201, 48);
             this.SignUpbtn.TabIndex = 75;
             this.SignUpbtn.Text = "Sign Up";
             this.SignUpbtn.UseVisualStyleBackColor = false;
@@ -82,7 +83,7 @@
             // contact
             // 
             this.contact.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.contact.Location = new System.Drawing.Point(377, 371);
+            this.contact.Location = new System.Drawing.Point(403, 384);
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(201, 22);
             this.contact.TabIndex = 74;
@@ -90,7 +91,7 @@
             // lastName
             // 
             this.lastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lastName.Location = new System.Drawing.Point(377, 332);
+            this.lastName.Location = new System.Drawing.Point(403, 345);
             this.lastName.Name = "lastName";
             this.lastName.Size = new System.Drawing.Size(201, 22);
             this.lastName.TabIndex = 73;
@@ -99,10 +100,10 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(272, 371);
+            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(273, 384);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 23);
+            this.label8.Size = new System.Drawing.Size(115, 27);
             this.label8.TabIndex = 72;
             this.label8.Text = "Contact No";
             // 
@@ -110,17 +111,17 @@
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(274, 330);
+            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(273, 340);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 23);
+            this.label9.Size = new System.Drawing.Size(110, 27);
             this.label9.TabIndex = 71;
             this.label9.Text = "Last Name";
             // 
             // firstName
             // 
             this.firstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.firstName.Location = new System.Drawing.Point(377, 295);
+            this.firstName.Location = new System.Drawing.Point(403, 308);
             this.firstName.Name = "firstName";
             this.firstName.Size = new System.Drawing.Size(201, 22);
             this.firstName.TabIndex = 70;
@@ -128,7 +129,7 @@
             // email
             // 
             this.email.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.email.Location = new System.Drawing.Point(377, 256);
+            this.email.Location = new System.Drawing.Point(403, 269);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(201, 22);
             this.email.TabIndex = 69;
@@ -137,10 +138,10 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(274, 295);
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(273, 303);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 23);
+            this.label6.Size = new System.Drawing.Size(113, 27);
             this.label6.TabIndex = 68;
             this.label6.Text = "First Name";
             // 
@@ -148,17 +149,17 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(294, 255);
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(298, 269);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 23);
+            this.label7.Size = new System.Drawing.Size(64, 27);
             this.label7.TabIndex = 67;
             this.label7.Text = "Email";
             // 
             // password
             // 
             this.password.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.password.Location = new System.Drawing.Point(377, 216);
+            this.password.Location = new System.Drawing.Point(403, 229);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(201, 22);
             this.password.TabIndex = 66;
@@ -166,7 +167,7 @@
             // username
             // 
             this.username.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.username.Location = new System.Drawing.Point(377, 177);
+            this.username.Location = new System.Drawing.Point(403, 190);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(201, 22);
             this.username.TabIndex = 65;
@@ -176,7 +177,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(271, 77);
+            this.label4.Location = new System.Drawing.Point(282, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(322, 38);
             this.label4.TabIndex = 62;
@@ -186,10 +187,10 @@
             // 
             this.SignInLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.SignInLink.AutoSize = true;
-            this.SignInLink.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignInLink.Location = new System.Drawing.Point(519, 524);
+            this.SignInLink.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInLink.Location = new System.Drawing.Point(517, 513);
             this.SignInLink.Name = "SignInLink";
-            this.SignInLink.Size = new System.Drawing.Size(59, 23);
+            this.SignInLink.Size = new System.Drawing.Size(72, 27);
             this.SignInLink.TabIndex = 61;
             this.SignInLink.TabStop = true;
             this.SignInLink.Text = "SignIn";
@@ -199,10 +200,10 @@
             // 
             this.label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(274, 524);
+            this.label.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(232, 513);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(216, 23);
+            this.label.Size = new System.Drawing.Size(256, 27);
             this.label.TabIndex = 60;
             this.label.Text = "Already Have An Account?";
             // 
@@ -210,10 +211,10 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(189, 216);
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(201, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 23);
+            this.label3.Size = new System.Drawing.Size(187, 27);
             this.label3.TabIndex = 59;
             this.label3.Text = "Password (6-Digits)";
             // 
@@ -221,29 +222,30 @@
             // 
             this.UsernameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UsernameLabel.AutoSize = true;
-            this.UsernameLabel.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameLabel.Location = new System.Drawing.Point(274, 175);
+            this.UsernameLabel.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameLabel.Location = new System.Drawing.Point(284, 190);
             this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(88, 23);
+            this.UsernameLabel.Size = new System.Drawing.Size(104, 27);
             this.UsernameLabel.TabIndex = 58;
             this.UsernameLabel.Text = "Username";
             // 
             // NamePanel
             // 
-            this.NamePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.NamePanel.BackColor = System.Drawing.Color.Black;
             this.NamePanel.Controls.Add(this.label1);
             this.NamePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.NamePanel.Location = new System.Drawing.Point(0, 0);
             this.NamePanel.Name = "NamePanel";
-            this.NamePanel.Size = new System.Drawing.Size(934, 62);
+            this.NamePanel.Size = new System.Drawing.Size(934, 84);
             this.NamePanel.TabIndex = 57;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(318, 8);
+            this.label1.Location = new System.Drawing.Point(337, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 54);
             this.label1.TabIndex = 2;
@@ -253,22 +255,22 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(330, 127);
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(319, 140);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 23);
+            this.label2.Size = new System.Drawing.Size(241, 27);
             this.label2.TabIndex = 56;
             this.label2.Text = "Welcome To Fashion Is U";
             // 
             // ReturnBtn
             // 
             this.ReturnBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ReturnBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ReturnBtn.BackColor = System.Drawing.Color.Red;
             this.ReturnBtn.Font = new System.Drawing.Font("Palatino Linotype", 10F);
             this.ReturnBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.ReturnBtn.Location = new System.Drawing.Point(271, 450);
+            this.ReturnBtn.Location = new System.Drawing.Point(251, 444);
             this.ReturnBtn.Name = "ReturnBtn";
-            this.ReturnBtn.Size = new System.Drawing.Size(169, 42);
+            this.ReturnBtn.Size = new System.Drawing.Size(189, 48);
             this.ReturnBtn.TabIndex = 76;
             this.ReturnBtn.Text = "Return";
             this.ReturnBtn.UseVisualStyleBackColor = false;
