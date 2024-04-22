@@ -18,6 +18,8 @@ namespace FashionIsU_FormsApp_.UI
         public SignInUI()
         {
             InitializeComponent();
+            ObjectHandler.GetAdmin().ClearEmployees();
+            ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -50,9 +52,9 @@ namespace FashionIsU_FormsApp_.UI
 
             UserBL u = GiveUser();
 
-            if (ObjectHandler.GetUserDL().FindUser(u) != null && RoleCombo.Text == "Customer")
+            if (ObjectHandler.GetCustomerDL().FindCustomer(u) != null && RoleCombo.Text == "Customer")
             {
-                CustomerBL customer = ObjectHandler.GetUserDL().FindUser(u) as CustomerBL;
+                CustomerBL customer = ObjectHandler.GetCustomerDL().FindCustomer(u);
                 if(customer != null)
                 {
                     this.Hide();
@@ -64,9 +66,9 @@ namespace FashionIsU_FormsApp_.UI
                     MessageBox.Show("Customer not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else if (ObjectHandler.GetUserDL().FindUser(u) != null && RoleCombo.Text == "Employee")
+            else if (ObjectHandler.GetAdmin().FindEmployee(u) != null && RoleCombo.Text == "Employee")
             {
-                EmployeeBL employee = ObjectHandler.GetUserDL().FindUser(u) as EmployeeBL;
+                EmployeeBL employee = ObjectHandler.GetAdmin().FindEmployee(u);
                 if(employee != null)
                 {
                     this.Hide();
@@ -77,6 +79,12 @@ namespace FashionIsU_FormsApp_.UI
                 {
                     MessageBox.Show("Employee not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+            else if (ObjectHandler.GetAdmin().IsAdmin(u) && RoleCombo.Text == "Admin")
+            {
+                this.Hide();
+                Form form = new AdminMenuUI();
+                form.ShowDialog();
             }
             else
             {

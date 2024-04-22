@@ -3,12 +3,83 @@
   "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\placeorderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\placeorderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\customermenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\customermenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\adminmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\adminmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\adminmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\adminmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\addemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\addemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\employeemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\employeemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\employeemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\employeemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\removeemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\removeemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\displaycustomersadminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displaycustomersadminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\displaycustomersadminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displaycustomersadminui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displaycustomersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displaycustomersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displaycustomersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displaycustomersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\updateemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\updateprofilecustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateprofilecustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\managecartui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\managecartui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\updateemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\removeemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\removeemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\ui\\addemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\addemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\addclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\addclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\managecartui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\managecartui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\updateclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,28 +90,12 @@
       "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\addclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\addclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\addclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\addclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\updateprofileemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateprofileemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\updateprofileemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateprofileemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\updateprofilecustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateprofilecustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\updateprofilecustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateprofilecustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\addclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\addclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\signupui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,60 +106,68 @@
       "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\signupui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\signinui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\signinui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\customermenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\customermenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\placeorderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\placeorderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\placeorderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\placeorderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\managecartui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\managecartui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\managecartui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\managecartui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\givereviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\givereviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\givereviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\givereviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\employeemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\employeemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\customermenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\customermenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displayreviewsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displayreviewsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displayordersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displayordersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\givereviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\givereviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\signinui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\signinui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\signinui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\signinui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\updateprofileemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateprofileemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displayorderofcustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displayorderofcustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displayorderofcustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displayorderofcustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displaycustomersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displaycustomersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(formsapp)\\fashionisu(formsapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\updateprofileemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\updateprofileemployeeui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\placeorderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\placeorderui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\givereviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\givereviewui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displayordersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displayordersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displayorderofcustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displayorderofcustomerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\deleteclothui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,32 +186,12 @@
       "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\buyitemui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\employeemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\employeemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\customermenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\customermenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displayreviewsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displayreviewsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displayordersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displayordersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\displaycustomersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\displaycustomersui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\signinui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\ui\\signinui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|solutionrelative:fashionisu(formsapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38162B58-4A7F-4388-B479-C79176FD5A3B}|FashionIsU(FormsApp)\\FashionIsU(FormsApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\fashionisu(formsapp)\\ui\\placeorderui.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,11 +209,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 183,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 44,
               "Title": "BuyItemUI.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\BuyItemUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\BuyItemUI.cs",
@@ -183,31 +226,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 27,
               "Title": "CustomerMenuUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs [Design]",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T10:16:34.525Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "ManageCartUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\ManageCartUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\ManageCartUI.cs [Design]",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\ManageCartUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\ManageCartUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T15:58:06.448Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 45,
               "Title": "BuyItemUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\BuyItemUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\BuyItemUI.cs",
@@ -219,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 40,
               "Title": "DisplayOrdersUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrdersUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayOrdersUI.cs",
@@ -231,229 +276,489 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 11,
               "Title": "DisplayCustomersUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs [Design]",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T09:00:00.43Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 41,
               "Title": "DisplayOrderOfCustomerUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs [Design]",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T09:16:14.935Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EmployeeMenuUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T05:10:46.436Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UpdateProfileCustomerUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T04:03:43.71Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UpdateProfileEmployeeUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAA9AAAA",
+              "Title": "EmployeeMenuUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:46:38.896Z"
+              "WhenOpened": "2024-04-09T05:10:46.436Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateProfileCustomerUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T04:03:43.71Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AddClothUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs [Design]",
+              "Title": "AddEmployeeUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddEmployeeUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\AddEmployeeUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddEmployeeUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\AddEmployeeUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T05:29:30.644Z"
+              "WhenOpened": "2024-04-22T03:36:22.676Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddClothUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
-              "ViewState": "AQIAAJYAAAAAAAAAAAAIwKEAAAAcAAAA",
+              "DocumentIndex": 12,
+              "Title": "UpdateEmployeeUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateEmployeeUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateEmployeeUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateEmployeeUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateEmployeeUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T05:32:34.955Z"
+              "WhenOpened": "2024-04-22T04:56:26.634Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RemoveEmployeeUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\RemoveEmployeeUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\RemoveEmployeeUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\RemoveEmployeeUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\RemoveEmployeeUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T05:26:19.852Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UpdateClothUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs [Design]",
+              "Title": "AdminMenuUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AdminMenuUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\AdminMenuUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AdminMenuUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\AdminMenuUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T07:28:18.289Z"
+              "WhenOpened": "2024-04-22T02:57:05.404Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AdminMenuUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AdminMenuUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\AdminMenuUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AdminMenuUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\AdminMenuUI.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAAAGMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T03:33:55.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeMenuUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAuwIUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T05:11:40.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RemoveEmployeeUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\RemoveEmployeeUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\RemoveEmployeeUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\RemoveEmployeeUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\RemoveEmployeeUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T05:22:51.717Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlaceOrderUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAD4v1gAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T17:30:18.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DisplayCustomersAdminUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersAdminUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayCustomersAdminUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersAdminUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayCustomersAdminUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T05:32:38.273Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderDB.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs",
+              "RelativeDocumentMoniker": "..\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs",
+              "RelativeToolTip": "..\\FashionIsULibrary\\FashionIsULibrary\\DL\\DB\\OrderDB.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAD4vzMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T05:40:22.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DisplayCustomersAdminUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersAdminUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayCustomersAdminUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersAdminUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayCustomersAdminUI.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwBsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T05:34:43.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AddEmployeeUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddEmployeeUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\AddEmployeeUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddEmployeeUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\AddEmployeeUI.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwDUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T03:49:34.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DisplayCustomersUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAABkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T09:02:04.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ManageCartUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAH8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:17:13.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UpdateEmployeeUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateEmployeeUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateEmployeeUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateEmployeeUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateEmployeeUI.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAgwEYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T04:57:55.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "UpdateClothUI.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs",
               "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs",
               "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJIAAAAcAAAA",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAiwBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T07:31:01.227Z"
+              "WhenOpened": "2024-04-09T07:31:01.227Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 18,
+              "Title": "AddClothUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\AddClothUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T05:29:30.644Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateClothUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateClothUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T07:28:18.289Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UpdateProfileCustomerUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAwCsAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T04:06:52.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CustomerMenuUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAkwEUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T11:05:15.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddClothUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\AddClothUI.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwEYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T05:32:34.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SignUpUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwDMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T10:08:21.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SignUpUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\SignUpUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T09:57:11.485Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GiveReviewUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T10:44:15.175Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MainUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\MainUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\MainUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\MainUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\MainUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T09:44:37.62Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SignInUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\SignInUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\SignInUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T09:58:42.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DisplayReviewsUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:16:00.013Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SignInUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\SignInUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\SignInUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T09:54:32.333Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UpdateProfileEmployeeUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAADwv3wAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T10:46:38.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DisplayOrderOfCustomerUI.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T09:21:09.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\Program.cs",
+              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\Program.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\Program.cs",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T18:43:10.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "ObjectHandler.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\ObjectHandler.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\ObjectHandler.cs",
               "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\ObjectHandler.cs",
               "RelativeToolTip": "FashionIsU(FormsApp)\\ObjectHandler.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAHAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCQAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T10:01:58.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 37,
               "Title": "UpdateProfileEmployeeUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs [Design]",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateProfileEmployeeUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:45:08.558Z"
+              "WhenOpened": "2024-04-09T10:45:08.558Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UpdateProfileCustomerUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\UpdateProfileCustomerUI.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAwF4AAABpAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T04:06:52.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SignUpUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAADwv5oAAABpAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T10:08:21.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SignUpUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\SignUpUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignUpUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:57:11.485Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SignInUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\SignInUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:54:32.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PlaceOrderUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAuwHAAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T17:30:18.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 38,
               "Title": "PlaceOrderUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs [Design]",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs [Design]",
+              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\PlaceOrderUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:45:00.786Z"
+              "WhenOpened": "2024-04-19T10:45:00.786Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ManageCartUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\ManageCartUI.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAowB0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T16:17:13.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MainUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\MainUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\MainUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\MainUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\MainUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:44:37.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 39,
               "Title": "GiveReviewUI.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs",
@@ -461,45 +766,12 @@
               "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs",
               "ViewState": "AQIAAGoAAAAAAAAAAAAIwFkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T03:27:51.658Z"
+              "WhenOpened": "2024-04-09T03:27:51.658Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GiveReviewUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\GiveReviewUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:44:15.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DisplayReviewsUI.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs [Design]",
-              "RelativeToolTip": "..\\..\\OOP LAB\\BusinessApp\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:16:00.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DisplayOrderOfCustomerUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayOrderOfCustomerUI.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAwwBgAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T09:21:09.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 42,
               "Title": "DeleteClothUI.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DeleteClothUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DeleteClothUI.cs",
@@ -511,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 43,
               "Title": "DeleteClothUI.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DeleteClothUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DeleteClothUI.cs",
@@ -522,43 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "EmployeeMenuUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\EmployeeMenuUI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIEAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T05:11:40.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CustomerMenuUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\CustomerMenuUI.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAIA9wHIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T11:05:15.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "SignInUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\SignInUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\SignInUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\SignInUI.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAQwHgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:58:42.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 46,
               "Title": "DisplayReviewsUI.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs",
@@ -566,11 +802,12 @@
               "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayReviewsUI.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAwwE0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T10:19:26.139Z"
+              "WhenOpened": "2024-04-09T10:19:26.139Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 47,
               "Title": "DisplayOrdersUI.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayOrdersUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayOrdersUI.cs",
@@ -582,31 +819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "DisplayCustomersUI.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\DisplayCustomersUI.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBcAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T09:02:04.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\Program.cs",
-              "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\Program.cs",
-              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\Program.cs",
-              "RelativeToolTip": "FashionIsU(FormsApp)\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T18:43:10.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 48,
               "Title": "PlaceOrderUI.Designer.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\PlaceOrderUI.Designer.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\PlaceOrderUI.Designer.cs",
@@ -614,11 +827,12 @@
               "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\PlaceOrderUI.Designer.cs",
               "ViewState": "AQIAAKkAAAAAAAAAAAAowLoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T18:24:13.308Z"
+              "WhenOpened": "2024-04-08T18:24:13.308Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 49,
               "Title": "MainUI.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(FormsApp)\\FashionIsU(FormsApp)\\UI\\MainUI.cs",
               "RelativeDocumentMoniker": "FashionIsU(FormsApp)\\UI\\MainUI.cs",
@@ -626,7 +840,8 @@
               "RelativeToolTip": "FashionIsU(FormsApp)\\UI\\MainUI.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAA6wB8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T09:55:34.318Z"
+              "WhenOpened": "2024-04-08T09:55:34.318Z",
+              "EditorCaption": ""
             }
           ]
         }

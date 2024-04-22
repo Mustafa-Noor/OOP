@@ -84,7 +84,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void DisplayCustomersBtn_Click(object sender, EventArgs e)
         {
-            if(ObjectHandler.GetUserDL().CheckCustomersCount())
+            if(ObjectHandler.GetCustomerDL().CheckCustomersCount())
             {
                 openChildForm(new DisplayCustomersUI());
             }
@@ -96,7 +96,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void ReviewPageBtn_Click(object sender, EventArgs e)
         {
-            if (ObjectHandler.GetUserDL().CheckCustomersCount())
+            if (ObjectHandler.GetCustomerDL().CheckCustomersCount())
             {
                 openChildForm(new DisplayOrderOfCustomerUI());
             }

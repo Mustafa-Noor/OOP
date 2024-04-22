@@ -115,7 +115,7 @@
             this.SignUpMenuBtn.Name = "SignUpMenuBtn";
             this.SignUpMenuBtn.Size = new System.Drawing.Size(274, 60);
             this.SignUpMenuBtn.TabIndex = 39;
-            this.SignUpMenuBtn.Text = "Open Sign Up Page";
+            this.SignUpMenuBtn.Text = "Open Sign Up Page Customer";
             this.SignUpMenuBtn.UseVisualStyleBackColor = false;
             this.SignUpMenuBtn.Click += new System.EventHandler(this.SignUpMenuBtn_Click);
             // 

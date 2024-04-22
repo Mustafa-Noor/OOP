@@ -19,6 +19,8 @@ namespace FashionIsU_FormsApp_.UI
         public SignUpUI()
         {
             InitializeComponent();
+            ObjectHandler.GetAdmin().ClearEmployees();
+            ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
         }
 
         private void SignInLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -37,7 +39,6 @@ namespace FashionIsU_FormsApp_.UI
 
         private void SignUpbtn_Click(object sender, EventArgs e)
         {
-            if(!ValidateRole()){ return; }
             if(!ValidateUsername()){ return; }
             if(!ValidatePassword()) { return; }
             if(!ValidateEmail()) { return; }
@@ -45,16 +46,16 @@ namespace FashionIsU_FormsApp_.UI
             if(!ValidateLastName()) { return; }
             if (!ValidateContact()) {  return; }
 
-            UserBL user = CreateUser();
-            if (ObjectHandler.GetUserDL().IsUserExists(user))
+            CustomerBL cus = CreateCustomer();
+            if (ObjectHandler.GetCustomerDL().IsCustomerExists(cus.GetUsername()) || ObjectHandler.GetAdmin().CheckEmployeeExist(cus.GetUsername()))
             {
                 MessageBox.Show("User Already Exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                if (ObjectHandler.GetUserDL().AddUser(user))
+                if (ObjectHandler.GetCustomerDL().AddCustomer(cus))
                 {
-                    MessageBox.Show("User added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Customer added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearTextBoxes();
                 }
 
@@ -62,37 +63,15 @@ namespace FashionIsU_FormsApp_.UI
             
         }
 
-        private UserBL CreateUser()
+        private CustomerBL CreateCustomer()
         {
-            if (RoleCombo.Text.ToLower() == "customer")
-            {
-                return new CustomerBL(username.Text, password.Text, email.Text, firstName.Text, lastName.Text, contact.Text, RoleCombo.Text.ToLower());
-            }
-            else
-            {
-
-                return new EmployeeBL(username.Text, password.Text, email.Text, firstName.Text, lastName.Text, contact.Text, RoleCombo.Text.ToLower());
-            }
+            return new CustomerBL(username.Text, password.Text, email.Text, firstName.Text, lastName.Text, contact.Text, "customer");
         }
 
         private void SignUpUI_Load(object sender, EventArgs e)
         {
 
         }
-        private bool ValidateRole()
-        {
-            if (!UtilityClass.ValidateRole(RoleCombo.Text.ToLower()))
-            {
-                errorProvider1.SetError(RoleCombo, "Select a Role.");
-                return false;
-            }
-            else
-            {
-                errorProvider1.SetError(RoleCombo, string.Empty);
-                return true;
-            }
-        }
-
         private bool ValidateUsername()
         {
             if (UtilityClass.CheckforEmpty(username.Text) || UtilityClass.CheckingForSpace(username.Text) || UtilityClass.CheckingForcomma(username.Text))

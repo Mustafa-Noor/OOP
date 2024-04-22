@@ -39,11 +39,9 @@ namespace FashionIsU
         {
             
             SqlConnection connection = new SqlConnection(ConnectionString);
-            
-
             connection.Open();
 
-            string query = string.Format("Insert into Orders (OrderDate, TotalPrice, DeliveryAddress, PaymentType, Username) OUTPUT INSERTED.OrderID Values('{0}', '{1}', '{2}', '{3}', '{4}')", order.GetOrderDate(), order.GetTotalPrice(), order.GetDeliveryAddress(), order.GetPaymentMethod().GetPaymentType(), order.GetUsername());
+            string query = string.Format("Insert into Orders (OrderDate, TotalPrice, DeliveryAddress, PaymentType, Username) OUTPUT INSERTED.OrderID Values('{0}', '{1}', '{2}', '{3}', '{4}')", order.GetOrderDate().ToString("yyyy-MM-dd HH:mm:ss"), order.GetTotalPrice(), order.GetDeliveryAddress(), order.GetPaymentMethod().GetPaymentType(), order.GetUsername());
             SqlCommand cmd = new SqlCommand(query, connection);
             int orderId = (int)cmd.ExecuteScalar();
             connection.Close();

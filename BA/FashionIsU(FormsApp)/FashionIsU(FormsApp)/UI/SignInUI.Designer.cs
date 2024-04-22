@@ -88,7 +88,8 @@
             this.RoleCombo.FormattingEnabled = true;
             this.RoleCombo.Items.AddRange(new object[] {
             "Employee",
-            "Customer"});
+            "Customer",
+            "Admin"});
             this.RoleCombo.Location = new System.Drawing.Point(379, 247);
             this.RoleCombo.Name = "RoleCombo";
             this.RoleCombo.Size = new System.Drawing.Size(201, 24);
@@ -135,11 +136,11 @@
             this.label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(312, 490);
+            this.label.Location = new System.Drawing.Point(180, 490);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(177, 23);
+            this.label.Size = new System.Drawing.Size(305, 23);
             this.label.TabIndex = 41;
-            this.label.Text = "Or just Sign Up Here..";
+            this.label.Text = "(For Customers) Or just Sign Up Here..";
             // 
             // label3
             // 

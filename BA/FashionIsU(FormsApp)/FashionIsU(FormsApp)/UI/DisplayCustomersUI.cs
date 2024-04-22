@@ -36,7 +36,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void DisplayCustomers()
         {
-            List<CustomerBL> AllCustomers = ObjectHandler.GetUserDL().GetAllCustomers();
+            List<CustomerBL> AllCustomers = ObjectHandler.GetCustomerDL().GetAllCustomers();
             foreach (CustomerBL customer in AllCustomers)
             {
                 dataTable.Rows.Add(customer.GetUsername(), customer.GetFirstName(), customer.GetLastName(), customer.GetEmail(), customer.GetPhoneNumber());

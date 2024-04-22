@@ -40,8 +40,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.TextBox();
             this.username = new System.Windows.Forms.TextBox();
-            this.RoleCombo = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SignInLink = new System.Windows.Forms.LinkLabel();
             this.label = new System.Windows.Forms.Label();
@@ -84,7 +82,7 @@
             // contact
             // 
             this.contact.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.contact.Location = new System.Drawing.Point(372, 403);
+            this.contact.Location = new System.Drawing.Point(377, 371);
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(201, 22);
             this.contact.TabIndex = 74;
@@ -92,7 +90,7 @@
             // lastName
             // 
             this.lastName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lastName.Location = new System.Drawing.Point(372, 364);
+            this.lastName.Location = new System.Drawing.Point(377, 332);
             this.lastName.Name = "lastName";
             this.lastName.Size = new System.Drawing.Size(201, 22);
             this.lastName.TabIndex = 73;
@@ -102,7 +100,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(267, 403);
+            this.label8.Location = new System.Drawing.Point(272, 371);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(97, 23);
             this.label8.TabIndex = 72;
@@ -113,7 +111,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(269, 362);
+            this.label9.Location = new System.Drawing.Point(274, 330);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 23);
             this.label9.TabIndex = 71;
@@ -122,7 +120,7 @@
             // firstName
             // 
             this.firstName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.firstName.Location = new System.Drawing.Point(372, 327);
+            this.firstName.Location = new System.Drawing.Point(377, 295);
             this.firstName.Name = "firstName";
             this.firstName.Size = new System.Drawing.Size(201, 22);
             this.firstName.TabIndex = 70;
@@ -130,7 +128,7 @@
             // email
             // 
             this.email.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.email.Location = new System.Drawing.Point(372, 288);
+            this.email.Location = new System.Drawing.Point(377, 256);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(201, 22);
             this.email.TabIndex = 69;
@@ -140,7 +138,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(269, 327);
+            this.label6.Location = new System.Drawing.Point(274, 295);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 23);
             this.label6.TabIndex = 68;
@@ -151,7 +149,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(289, 287);
+            this.label7.Location = new System.Drawing.Point(294, 255);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(54, 23);
             this.label7.TabIndex = 67;
@@ -160,7 +158,7 @@
             // password
             // 
             this.password.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.password.Location = new System.Drawing.Point(372, 248);
+            this.password.Location = new System.Drawing.Point(377, 216);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(201, 22);
             this.password.TabIndex = 66;
@@ -168,45 +166,21 @@
             // username
             // 
             this.username.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.username.Location = new System.Drawing.Point(372, 209);
+            this.username.Location = new System.Drawing.Point(377, 177);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(201, 22);
             this.username.TabIndex = 65;
-            // 
-            // RoleCombo
-            // 
-            this.RoleCombo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.RoleCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RoleCombo.FormattingEnabled = true;
-            this.RoleCombo.Items.AddRange(new object[] {
-            "Employee",
-            "Customer"});
-            this.RoleCombo.Location = new System.Drawing.Point(377, 172);
-            this.RoleCombo.Name = "RoleCombo";
-            this.RoleCombo.Size = new System.Drawing.Size(201, 24);
-            this.RoleCombo.TabIndex = 64;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(274, 170);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 23);
-            this.label5.TabIndex = 63;
-            this.label5.Text = "Select Role";
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(337, 77);
+            this.label4.Location = new System.Drawing.Point(271, 77);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(188, 38);
+            this.label4.Size = new System.Drawing.Size(322, 38);
             this.label4.TabIndex = 62;
-            this.label4.Text = "Sign Up Page";
+            this.label4.Text = "Customer Sign Up Page";
             // 
             // SignInLink
             // 
@@ -237,7 +211,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(184, 248);
+            this.label3.Location = new System.Drawing.Point(189, 216);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 23);
             this.label3.TabIndex = 59;
@@ -248,7 +222,7 @@
             this.UsernameLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.UsernameLabel.AutoSize = true;
             this.UsernameLabel.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameLabel.Location = new System.Drawing.Point(269, 207);
+            this.UsernameLabel.Location = new System.Drawing.Point(274, 175);
             this.UsernameLabel.Name = "UsernameLabel";
             this.UsernameLabel.Size = new System.Drawing.Size(88, 23);
             this.UsernameLabel.TabIndex = 58;
@@ -345,8 +319,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
-            this.Controls.Add(this.RoleCombo);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.SignInLink);
             this.Controls.Add(this.label);
@@ -385,8 +357,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.ComboBox RoleCombo;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel SignInLink;
         private System.Windows.Forms.Label label;

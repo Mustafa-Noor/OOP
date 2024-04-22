@@ -534,7 +534,7 @@ namespace FashionIsU_ConsoleApp_
                                     if(emp != null)
                                     {
                                         MainUI.ClearScreen();
-                                        EmployeeUI.UpdateProfileInput(emp);
+                                        EmployeeUI.UpdateEmployeeInput(emp);
                                         ObjectHandler.GetEmployeeDL().UpdateProfile(emp);
                                         ObjectHandler.GetAdmin().ClearEmployees();
                                         ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());

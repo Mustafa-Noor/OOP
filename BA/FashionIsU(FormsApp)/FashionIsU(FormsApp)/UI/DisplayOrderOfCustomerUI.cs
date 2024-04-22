@@ -43,7 +43,7 @@ namespace FashionIsU_FormsApp_.UI
         private void Diplaybtn_Click(object sender, EventArgs e)
         {
             if (!ValidateUsername()) { return; }
-            CustomerBL cus = ObjectHandler.GetUserDL().FindCustomerByUsername(username.Text);
+            CustomerBL cus = ObjectHandler.GetCustomerDL().FindCustomerByUsername(username.Text);
             if (cus != null)
             {
                 ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(cus);

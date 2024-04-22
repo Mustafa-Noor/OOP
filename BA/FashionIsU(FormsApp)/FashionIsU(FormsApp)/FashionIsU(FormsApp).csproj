@@ -56,6 +56,18 @@
     <Compile Include="UI\AddClothUI.Designer.cs">
       <DependentUpon>AddClothUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\AddEmployeeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddEmployeeUI.Designer.cs">
+      <DependentUpon>AddEmployeeUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminMenuUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminMenuUI.Designer.cs">
+      <DependentUpon>AdminMenuUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\BuyItemUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +85,12 @@
     </Compile>
     <Compile Include="UI\DeleteClothUI.Designer.cs">
       <DependentUpon>DeleteClothUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DisplayCustomersAdminUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DisplayCustomersAdminUI.Designer.cs">
+      <DependentUpon>DisplayCustomersAdminUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\DisplayCustomersUI.cs">
       <SubType>Form</SubType>
@@ -122,6 +140,12 @@
     <Compile Include="UI\PlaceOrderUI.Designer.cs">
       <DependentUpon>PlaceOrderUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\RemoveEmployeeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RemoveEmployeeUI.Designer.cs">
+      <DependentUpon>RemoveEmployeeUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\SignInUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +172,12 @@
     <Compile Include="UI\UpdateClothUI.Designer.cs">
       <DependentUpon>UpdateClothUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UpdateEmployeeUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UpdateEmployeeUI.Designer.cs">
+      <DependentUpon>UpdateEmployeeUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\UpdateProfileCustomerUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +193,12 @@
     <EmbeddedResource Include="UI\AddClothUI.resx">
       <DependentUpon>AddClothUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddEmployeeUI.resx">
+      <DependentUpon>AddEmployeeUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminMenuUI.resx">
+      <DependentUpon>AdminMenuUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\BuyItemUI.resx">
       <DependentUpon>BuyItemUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DeleteClothUI.resx">
       <DependentUpon>DeleteClothUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DisplayCustomersAdminUI.resx">
+      <DependentUpon>DisplayCustomersAdminUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DisplayCustomersUI.resx">
       <DependentUpon>DisplayCustomersUI.cs</DependentUpon>
@@ -209,6 +248,9 @@
     <EmbeddedResource Include="UI\PlaceOrderUI.resx">
       <DependentUpon>PlaceOrderUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\RemoveEmployeeUI.resx">
+      <DependentUpon>RemoveEmployeeUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\SignInUI.resx">
       <DependentUpon>SignInUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UpdateClothUI.resx">
       <DependentUpon>UpdateClothUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UpdateEmployeeUI.resx">
+      <DependentUpon>UpdateEmployeeUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UpdateProfileCustomerUI.resx">
       <DependentUpon>UpdateProfileCustomerUI.cs</DependentUpon>

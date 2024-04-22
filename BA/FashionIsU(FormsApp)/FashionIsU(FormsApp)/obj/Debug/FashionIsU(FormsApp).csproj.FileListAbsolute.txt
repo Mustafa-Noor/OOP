@@ -58,3 +58,8 @@ C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\Fashio
 C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\FashionIsU(FormsApp)\FashionIsU(FormsApp)\obj\Debug\FashionI.F9934834.Up2Date
 C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\FashionIsU(FormsApp)\FashionIsU(FormsApp)\obj\Debug\FashionIsU(FormsApp).exe
 C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\FashionIsU(FormsApp)\FashionIsU(FormsApp)\obj\Debug\FashionIsU(FormsApp).pdb
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\FashionIsU(FormsApp)\FashionIsU(FormsApp)\obj\Debug\FashionIsU_FormsApp_.UI.AdminMenuUI.resources
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\FashionIsU(FormsApp)\FashionIsU(FormsApp)\obj\Debug\FashionIsU_FormsApp_.UI.AddEmployeeUI.resources
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\FashionIsU(FormsApp)\FashionIsU(FormsApp)\obj\Debug\FashionIsU_FormsApp_.UI.UpdateEmployeeUI.resources
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\FashionIsU(FormsApp)\FashionIsU(FormsApp)\obj\Debug\FashionIsU_FormsApp_.UI.DisplayCustomersAdminUI.resources
+C:\Users\musno\OneDrive\Desktop\Semester 2\Object Oriented Programming\BA\FashionIsU(FormsApp)\FashionIsU(FormsApp)\obj\Debug\FashionIsU_FormsApp_.UI.RemoveEmployeeUI.resources

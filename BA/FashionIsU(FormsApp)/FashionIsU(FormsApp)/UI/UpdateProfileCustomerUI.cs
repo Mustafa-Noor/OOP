@@ -41,7 +41,7 @@ namespace FashionIsU_FormsApp_.UI
             if (!ValidateLastName()) { return; }
             if (!ValidateContact()) { return; }
             customer.UpdateProfile(password.Text, email.Text, firstName.Text, lastName.Text, contact.Text);
-            ObjectHandler.GetUserDL().UpdateProfile(customer);
+            ObjectHandler.GetCustomerDL().UpdateProfile(customer);
             MessageBox.Show("Successfully Update Profile", "Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ClearTextBoxes();
 

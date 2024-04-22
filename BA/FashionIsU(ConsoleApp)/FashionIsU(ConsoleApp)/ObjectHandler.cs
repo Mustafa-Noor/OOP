@@ -10,6 +10,8 @@ namespace FashionIsU_ConsoleApp_
 {
     internal class ObjectHandler
     {
+        private static AdminBL admin = AdminBL.GetAdminBL();
+
         /*
         private static ICartDL cartDL = CartFH.GetCartFH(UtilityClass.GetCartsFilePath());
         private static IClothesDL clothesDL = ClothesFH.GetClothesFH(UtilityClass.GetClothesFilePath());
@@ -18,16 +20,13 @@ namespace FashionIsU_ConsoleApp_
         private static IUserDL userDL = UserFH.GetUserFH(UtilityClass.GetUserFilePath());
         */
 
-        
+
         private static ICartDL cartDL = CartDB.GetCartDB(UtilityClass.GetConnectionString());
         private static IClothesDL clothesDL = ClothesDB.GetClothesDB(UtilityClass.GetConnectionString());
         private static IOrderDL orderDL = OrderDB.GetOrderDB(UtilityClass.GetConnectionString());
         private static IReviewDL reviewDL = ReviewDB.GetReviewDB(UtilityClass.GetConnectionString());
         private static ICustomerDL customerDL = CustomerDB.GetCustomerDB(UtilityClass.GetConnectionString());
         private static IEmployeeDL employeeDL = EmployeeDB.GetEmployeeDB(UtilityClass.GetConnectionString());
-
-
-        private static AdminBL admin = AdminBL.GetAdminBL();
 
         public static ICartDL GetCartDL() { return cartDL; }
         public static IClothesDL GetClothesDL() { return clothesDL; }

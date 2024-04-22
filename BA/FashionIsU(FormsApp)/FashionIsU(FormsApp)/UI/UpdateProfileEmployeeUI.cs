@@ -117,7 +117,7 @@ namespace FashionIsU_FormsApp_.UI
             if (!ValidateLastName()) { return; }
             if (!ValidateContact()) { return; }
             employee.UpdateProfile(password.Text, email.Text, firstName.Text, lastName.Text, contact.Text);
-            ObjectHandler.GetUserDL().UpdateProfile(employee);
+            ObjectHandler.GetEmployeeDL().UpdateProfile(employee);
             MessageBox.Show("Successfully Update Profile", "Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ClearTextBoxes();
         }
