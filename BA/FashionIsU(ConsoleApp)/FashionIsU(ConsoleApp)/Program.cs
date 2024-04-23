@@ -193,7 +193,7 @@ namespace FashionIsU_ConsoleApp_
                                         PaymentMethodBL p = PaymentMethodUI.TakeTypeOfPayment();
                                         MainUI.ClearScreen();
                                         OrderBL order = OrderUI.TakeInputForOrder(customer, new PaymentMethodBL(p.GetPaymentType()));
-                                        ObjectHandler.GetOrderDL().AddOrder(order);
+                                        ObjectHandler.GetOrderDL().AddOrder(new OrderBL(order));
                                         customer.ClearOrders();
                                         ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(customer);
                                         ObjectHandler.GetCartDL().EmptyCart(customer);

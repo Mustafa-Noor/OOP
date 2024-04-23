@@ -8,6 +8,7 @@ namespace FashionIsU
 {
     public abstract class UserBL
     {
+        // protected attributes (parent class)
         protected string Username;
         protected string Password;
         protected string Email;
@@ -16,6 +17,7 @@ namespace FashionIsU
         protected string PhoneNumber;
         protected string Role;
 
+        // paramterized constructors 
         public UserBL(string username, string password, string email, string firstName, string lastName, string phoneNumber, string role)
         {
             Username = username;
@@ -39,8 +41,6 @@ namespace FashionIsU
 
         }
 
-        
-
 
         public UserBL(string username, string password) 
         {
@@ -50,6 +50,7 @@ namespace FashionIsU
         }
 
         
+        // Getter and setters 
         public string GetRole()
         {
             return Role;
@@ -119,6 +120,8 @@ namespace FashionIsU
             PhoneNumber = value;
         }
 
+
+        // Update Profile Function
         public void UpdateProfile(string password, string email, string firstName, string lastName, string phoneNumber)
         {
             SetPassword(password);

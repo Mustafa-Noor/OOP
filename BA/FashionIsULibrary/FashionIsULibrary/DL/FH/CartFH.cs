@@ -11,13 +11,14 @@ namespace FashionIsU
 {
     public class CartFH : ICartDL
     {
-        private static CartFH CartFHInstance;
+        // this is the for singleton functionality
+        private static CartFH CartFHInstance; // this if the instance
         private string FilePath = "";
         private CartFH(string FilePath)
         {
             this.FilePath = FilePath;
         }
-        public static CartFH GetCartFH(string filePath)
+        public static CartFH GetCartFH(string filePath)  //get the instance
         {
             if (CartFHInstance == null)
             {
@@ -26,7 +27,7 @@ namespace FashionIsU
             return CartFHInstance;
         }
 
-        public void SaveItemInCart(ClothesBL cloth, CustomerBL customer)
+        public void SaveItemInCart(ClothesBL cloth, CustomerBL customer) // save an item of clothing in the cart file
         {
             
             if (!CheckItemInCart(cloth.GetId(), customer))
@@ -41,7 +42,7 @@ namespace FashionIsU
 
         }
 
-        public bool CheckItemInCart(int id, CustomerBL customer)
+        public bool CheckItemInCart(int id, CustomerBL customer) // check the existence of an item in cart
         {
             
 
@@ -73,7 +74,7 @@ namespace FashionIsU
             return false;
         }
 
-        public void RetrieveCart(CustomerBL customer)
+        public void RetrieveCart(CustomerBL customer) //loads the cart of the customer
         {
             
             if (File.Exists(FilePath))
@@ -107,7 +108,7 @@ namespace FashionIsU
         }
 
 
-        public List<ClothesBL> GetAllClothesInCart(CustomerBL customer)
+        public List<ClothesBL> GetAllClothesInCart(CustomerBL customer) // get the list of clothes in the cart
         {
             List<ClothesBL> AllClothes = new List<ClothesBL>();
             
@@ -163,7 +164,7 @@ namespace FashionIsU
             return AllClothes;
         }
 
-        public void DeleteAnItem(int id, CustomerBL customer)
+        public void DeleteAnItem(int id, CustomerBL customer) // deletes an item of cloth
         {
             
             List<ClothesBL> AllClothes = GetAllClothesInCart(customer);
@@ -181,7 +182,7 @@ namespace FashionIsU
             }
         }
 
-        public void UpdateQuantity(int id, CustomerBL customer, int quantity)
+        public void UpdateQuantity(int id, CustomerBL customer, int quantity) // updates the quantity of an item
         {
             
             List<ClothesBL> AllClothes = GetAllClothesInCart(customer);
@@ -200,7 +201,7 @@ namespace FashionIsU
 
         }
 
-        public void EmptyCart(CustomerBL customer)
+        public void EmptyCart(CustomerBL customer) // empties the cart
         {
             if (File.Exists(FilePath))
             {

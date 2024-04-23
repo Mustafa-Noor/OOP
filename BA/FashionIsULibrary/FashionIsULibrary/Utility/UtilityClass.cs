@@ -22,6 +22,7 @@ namespace FashionIsU
         private static string CustomerFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Files\\Customers.txt";
         private static string EmployeeFilePath = "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsULibrary\\FashionIsULibrary\\Files\\Employees.txt";
 
+        // getter of all file path
         public static string GetCustomerFilePath()
         { return CustomerFilePath; }
         public static string GetEmployeeFilePath()
@@ -41,13 +42,15 @@ namespace FashionIsU
         {  return OrderItemsFilePath;}
         public static string GetReviewsFilePath()
         { return ReviewsFilePath;}
+
+        // getter of connection string of database
         public static string GetConnectionString()
         { return ConnectionString; }
 
 
-        
+        // these are for validations
 
-        public static bool ContainsInteger(string input)
+        public static bool ContainsInteger(string input) // checks the existence of an integer
         {
             foreach (char c in input)
             {
@@ -59,7 +62,7 @@ namespace FashionIsU
             return false;
         }
 
-        public static bool CheckingforInteger(string sen)
+        public static bool CheckingforInteger(string sen) // return true if it contains integer
         {
             for (int x = 0; x < sen.Length; x++)
             {
@@ -72,7 +75,7 @@ namespace FashionIsU
             return true;
         }
 
-        public static bool CheckingPasswordLength(string sen)
+        public static bool CheckingPasswordLength(string sen) // checks the length of password
         {
             if (sen.Length != 6)
             {
@@ -81,7 +84,7 @@ namespace FashionIsU
             return true;
         }
 
-        public static bool CheckingForSpace(string sen)
+        public static bool CheckingForSpace(string sen) // checks for space in the string
         {
             for (int x = 0; x < sen.Length; x++)
             {
@@ -93,7 +96,7 @@ namespace FashionIsU
             return false;
         }
 
-        public static bool CheckforEmpty(string sen)
+        public static bool CheckforEmpty(string sen) // check the empty string
         {
             if (sen == "")
             {
@@ -103,12 +106,12 @@ namespace FashionIsU
             return false;
         }
 
-        public static bool ValidateContactPattern(string contact)
+        public static bool ValidateContactPattern(string contact) // checks the contact no pattern
         {
             string pattern = @"^\d{4}-\d{7}$"; // Pattern for "XXXX-XXXXXXX" format
             return Regex.IsMatch(contact, pattern);
         }
-        public static bool ValidateEmailPattern(string email)
+        public static bool ValidateEmailPattern(string email) // checks the email pattern
         {
             string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
 
@@ -120,7 +123,7 @@ namespace FashionIsU
         
 
 
-        public static bool ValidateRatingString(string ratingString)
+        public static bool ValidateRatingString(string ratingString) // checks the rating
         {
             // Check if the input is a number
             if (!int.TryParse(ratingString, out int rating))
@@ -135,7 +138,7 @@ namespace FashionIsU
 
         
 
-        public static bool ValidateRole(string role)
+        public static bool ValidateRole(string role) // validates the role
         {
             if (role == "employee" || role == "customer" || role == "admin")
             {
@@ -147,7 +150,7 @@ namespace FashionIsU
             }
         }
 
-        public static bool CheckingForcomma(string sen)
+        public static bool CheckingForcomma(string sen) // checks for comma due to file handling
         {
             for (int x = 0; x < sen.Length; x++)
             {

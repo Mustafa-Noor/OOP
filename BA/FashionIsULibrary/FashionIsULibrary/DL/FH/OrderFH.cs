@@ -10,13 +10,14 @@ namespace FashionIsU
 {
     public class OrderFH:IOrderDL
     {
-        private static OrderFH OrderFHInstance;
+        // this is for the singleton functionality
+        private static OrderFH OrderFHInstance; // this is the instance
         private string FilePath = "";
         private OrderFH(string FilePath)
         {
             this.FilePath = FilePath;
         }
-        public static OrderFH GetOrderFH(string filePath)
+        public static OrderFH GetOrderFH(string filePath) // this return the instance
         {
             if (OrderFHInstance == null)
             {
@@ -25,7 +26,7 @@ namespace FashionIsU
             return OrderFHInstance;
         }
 
-        public bool AddOrder(OrderBL order)
+        public bool AddOrder(OrderBL order) // adds an order on file
         {
             int orderId = GetAllOrdersCount()+1;
             using (StreamWriter f = new StreamWriter(FilePath, true))
@@ -41,7 +42,7 @@ namespace FashionIsU
             return false;
         }
 
-        public void SaveOrderItems(int OrderId, OrderBL order)
+        public void SaveOrderItems(int OrderId, OrderBL order) // sace the items of an order
         {
             string path = UtilityClass.GetOrderItemsFilePath();
             using (StreamWriter f = new StreamWriter(path, true))
@@ -54,7 +55,7 @@ namespace FashionIsU
             }
         }
 
-        public int GetAllOrdersCount()
+        public int GetAllOrdersCount() // return the count of all the orders
         {
             int count = 0;  
             if (File.Exists(FilePath))
@@ -76,7 +77,7 @@ namespace FashionIsU
             return count;
         }
 
-        public List<ClothesBL> GetListOfClothesInOrder(int orderID)
+        public List<ClothesBL> GetListOfClothesInOrder(int orderID) // returns the list of cloth against an order
         {
             List<ClothesBL> Clothes = new List<ClothesBL>();
             string path = UtilityClass.GetOrderItemsFilePath();
@@ -110,7 +111,7 @@ namespace FashionIsU
             return Clothes;
         }
 
-        public void RetrieveOrdersOfCustomer(CustomerBL customer)
+        public void RetrieveOrdersOfCustomer(CustomerBL customer) // loads the list order of a customer
         {
             if (File.Exists(FilePath))
             {

@@ -12,22 +12,14 @@ namespace FashionIsU
 {
     public class ClothesDB:IClothesDL
     {
-        //private List<ClothesBL> TotalClothes = new List<ClothesBL> { };
-
-        /*
-        public void AddClothes(ClothesBL c)
-        {
-            TotalClothes.Add(c);
-        }
-
-        */
-        private static ClothesDB ClothesDBInstance;
+        // this is for the singleton functionality
+        private static ClothesDB ClothesDBInstance; // instance of clothes db
         private string ConnectionString = "";
         private ClothesDB(string ConnectionString)
         {
             this.ConnectionString = ConnectionString;
         }
-        public static ClothesDB GetClothesDB(string connectionString)
+        public static ClothesDB GetClothesDB(string connectionString) // returns the instance
         {
             if (ClothesDBInstance == null)
             {
@@ -36,6 +28,7 @@ namespace FashionIsU
             return ClothesDBInstance;
         }
 
+        // adds an item  of clothing in the database
         public bool AddClothes(ClothesBL c)
         {
             
@@ -57,15 +50,8 @@ namespace FashionIsU
             }
         }
 
-        /*
-        public bool CheckClothes()
-        {
-            return TotalClothes.Count > 0;
-        }
 
-        */
-
-        public bool CheckClothes()
+        public bool CheckClothes() // checks the count of cloths in the database
         {
             
             SqlConnection connection = new SqlConnection(ConnectionString);
@@ -77,21 +63,7 @@ namespace FashionIsU
             return count > 0;
         }
 
-        /*
-        public ClothesBL FindClothByID(int id)
-        {
-            foreach(ClothesBL c in TotalClothes)
-            {
-                if(c.GetId() == id)
-                {
-                    return c;
-                }
-            }
-
-            return null;
-        }
-        */
-        public ClothesBL FindClothByID(int id)
+        public ClothesBL FindClothByID(int id) // finds an item of clothing from the database from their id
         {
             ClothesBL cloth = null;
 
@@ -127,7 +99,7 @@ namespace FashionIsU
   
         }
 
-        public bool CheckClothExistence(ClothesBL c)
+        public bool CheckClothExistence(ClothesBL c) // checks if an items exists or not
         {
             bool clothExists = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -152,7 +124,7 @@ namespace FashionIsU
             return clothExists;
         }
 
-        public bool CheckClothExistenceByQuantity(ClothesBL c)
+        public bool CheckClothExistenceByQuantity(ClothesBL c) // checks if an items already exist including their quantity
         {
             bool clothExists = false;
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -181,7 +153,7 @@ namespace FashionIsU
 
 
 
-        public void ChangeQuantity(int id, int quantity)
+        public void ChangeQuantity(int id, int quantity) //changes the quantity of an item
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -201,7 +173,7 @@ namespace FashionIsU
             }
         }
 
-        public void UpdateCloth(ClothesBL cloth)
+        public void UpdateCloth(ClothesBL cloth) // updates an item entirely
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -225,14 +197,8 @@ namespace FashionIsU
             }
         }
 
-        /*
-        public List <ClothesBL> GetAllClothes()
-        {
-            return TotalClothes;
-        }
-        */
 
-        public List <ClothesBL> GetAllClothes()
+        public List <ClothesBL> GetAllClothes() // returns the list of all clothes
         {
             List <ClothesBL> clothes = new List <ClothesBL>();
 
@@ -267,14 +233,8 @@ namespace FashionIsU
 
             return clothes;
         }
-        /*
-        public void DeleteCloth(ClothesBL c)
-        {
-            TotalClothes.Remove(c);
-        }
-        */
 
-        public bool DeleteCloth(ClothesBL c)
+        public bool DeleteCloth(ClothesBL c) // deletes an item of clothing
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))

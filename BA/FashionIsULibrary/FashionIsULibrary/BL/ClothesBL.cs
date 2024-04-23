@@ -134,7 +134,7 @@ namespace FashionIsU
 
         public void AddReview(ReviewBL rev) // Adds the review In the List Of Reviews
         {
-            Reviews.Add(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()));
+            Reviews.Add(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername())); //Compostion Relation
         }
 
         public List<ReviewBL> GetReviews() // Gives the list of reviews

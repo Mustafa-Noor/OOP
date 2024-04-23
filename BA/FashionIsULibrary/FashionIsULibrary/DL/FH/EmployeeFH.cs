@@ -12,13 +12,14 @@ namespace FashionIsU
 {
     public class EmployeeFH:IEmployeeDL
     {
-        private static EmployeeFH EmployeeFHInstance;
+        // this is for the singleton functionality
+        private static EmployeeFH EmployeeFHInstance; // instance
         private string FilePath = "";
         private EmployeeFH(string FilePath)
         {
             this.FilePath = FilePath;
         }
-        public static EmployeeFH GetEmployeeFH(string filePath)
+        public static EmployeeFH GetEmployeeFH(string filePath) // return the instance
         {
             if (EmployeeFHInstance == null)
             {
@@ -27,7 +28,7 @@ namespace FashionIsU
             return EmployeeFHInstance;
         }
 
-        public bool AddEmployee(EmployeeBL employee)
+        public bool AddEmployee(EmployeeBL employee) // adds an employee in the database
         {
             using (StreamWriter f = new StreamWriter(FilePath, true))
             {
@@ -41,7 +42,7 @@ namespace FashionIsU
             return false;
         }
 
-        public void RetrieveEmployees(AdminBL admin)
+        public void RetrieveEmployees(AdminBL admin) // loads the list of employees in the admin
         {
             if (File.Exists(FilePath))
             {
@@ -72,7 +73,7 @@ namespace FashionIsU
             }
         }
 
-        public List<EmployeeBL> GetAllEmployees()
+        public List<EmployeeBL> GetAllEmployees() // return the list of employees
         {
             List <EmployeeBL> Employees = new List <EmployeeBL>();
             if (File.Exists(FilePath))
@@ -106,7 +107,7 @@ namespace FashionIsU
             return Employees;
         }
 
-        public bool DeleteEmployee(EmployeeBL employee)
+        public bool DeleteEmployee(EmployeeBL employee) // deletes an employee from the database
         {
             bool empDeleted = false;
             List<EmployeeBL> Employees = GetAllEmployees();
@@ -133,7 +134,7 @@ namespace FashionIsU
             return empDeleted;
         }
 
-        public void UpdateProfile(EmployeeBL employee)
+        public void UpdateProfile(EmployeeBL employee) // update the profile of an employee in the file
         {
             List<EmployeeBL> Employees = GetAllEmployees();
             foreach (EmployeeBL stored in Employees)

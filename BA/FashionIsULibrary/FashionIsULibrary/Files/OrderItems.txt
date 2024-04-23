@@ -8,3 +8,4 @@
 6,1,Hoodie,Female,Green,1230,4
 6,7,Kuch,Male,Red,10,5
 5,5,Socks,Male,Red,1200,3
+6,9,Jeans,Male,Indigo,2300,2

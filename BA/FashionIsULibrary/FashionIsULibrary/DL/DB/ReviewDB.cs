@@ -11,22 +11,16 @@ namespace FashionIsU
 {
     public class ReviewDB:IReviewDL
     {
-        // private List<ReviewBL> AllReviews = new List<ReviewBL>();
+        
+        // this is for the singleton functionality
 
-        /*
-        public void AddReviews(ReviewBL rev)
-        {
-            AllReviews.Add(rev);
-        }
-        */
-
-        private static ReviewDB ReviewDBInstance;
+        private static ReviewDB ReviewDBInstance; // this is the instance
         private string ConnectionString = "";
         private ReviewDB(string ConnectionString)
         {
             this.ConnectionString = ConnectionString;
         }
-        public static ReviewDB GetReviewDB(string connectionString)
+        public static ReviewDB GetReviewDB(string connectionString) // funtion to get the instance
         {
             if (ReviewDBInstance == null)
             {
@@ -35,7 +29,7 @@ namespace FashionIsU
             return ReviewDBInstance;
         }
 
-        public void DeleteReview(ClothesBL c)
+        public void DeleteReview(ClothesBL c) // delete reviews
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -53,7 +47,7 @@ namespace FashionIsU
             }
         }
 
-        public bool AddReviews(ReviewBL rev, ClothesBL cloth)
+        public bool AddReviews(ReviewBL rev, ClothesBL cloth) // adds a review
         {
             SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
@@ -72,7 +66,7 @@ namespace FashionIsU
             }
         }
 
-        public void RetrieveReviews(ClothesBL c)
+        public void RetrieveReviews(ClothesBL c) // gets all the reviews against an item of clothing
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))

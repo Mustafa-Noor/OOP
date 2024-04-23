@@ -9,10 +9,12 @@ namespace FashionIsU
 {
     public class ReviewBL
     {
+        // attributes
         private int Rating;
         private string Comment;
         private string Username;
 
+        // Paramterized Constructor
         public ReviewBL(int rating, string comment, string username)
         {
             Rating = rating;
@@ -20,6 +22,7 @@ namespace FashionIsU
             Username = username;
         }
 
+        // Getter and setters
         public int GetRating()
         {
             return Rating;

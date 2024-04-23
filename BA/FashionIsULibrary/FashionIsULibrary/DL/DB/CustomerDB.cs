@@ -10,14 +10,14 @@ namespace FashionIsUlLibrary
 {
     public class CustomerDB:ICustomerDL
     {
-
-        private static CustomerDB CustomerDBInstance;
+        // this is for singleton functionality
+        private static CustomerDB CustomerDBInstance; // make an instance of customerdb
         private string ConnectionString = "";
         private CustomerDB(string ConnectionString)
         {
             this.ConnectionString = ConnectionString;
         }
-        public static CustomerDB GetCustomerDB(string connectionString)
+        public static CustomerDB GetCustomerDB(string connectionString) // get the instance
         {
             if (CustomerDBInstance == null)
             {
@@ -25,7 +25,7 @@ namespace FashionIsUlLibrary
             }
             return CustomerDBInstance;
         }
-        public bool AddCustomer(CustomerBL customer)
+        public bool AddCustomer(CustomerBL customer) // adds a customer
         {
             SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
@@ -45,7 +45,7 @@ namespace FashionIsUlLibrary
             }
         }
 
-        public void UpdateProfile(CustomerBL customer)
+        public void UpdateProfile(CustomerBL customer) // changes the profile of an customer
         {
             SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
@@ -58,7 +58,7 @@ namespace FashionIsUlLibrary
 
         }
 
-        public bool IsCustomerExists(string username)
+        public bool IsCustomerExists(string username) // checks if the customer already exist
         {
             SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
@@ -69,7 +69,7 @@ namespace FashionIsUlLibrary
             return count > 0;
         }
 
-        public CustomerBL FindCustomer(UserBL user)
+        public CustomerBL FindCustomer(UserBL user) // find the customer from the database
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -108,7 +108,7 @@ namespace FashionIsUlLibrary
             return null; // User not found
         }
 
-        public List<CustomerBL> GetAllCustomers()
+        public List<CustomerBL> GetAllCustomers() // return the list of all customers
         {
             List<CustomerBL> customers = new List<CustomerBL>();
 
@@ -142,7 +142,7 @@ namespace FashionIsUlLibrary
             return customers;
         }
 
-        public bool CheckCustomersCount()
+        public bool CheckCustomersCount() //checks the count of the customers
         {
             int count = 0;
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -160,7 +160,7 @@ namespace FashionIsUlLibrary
             return count > 0;
         }
 
-        public CustomerBL FindCustomerByUsername(string username)
+        public CustomerBL FindCustomerByUsername(string username) // find the customer from their username
         {
             CustomerBL customer = null;
             using (SqlConnection connection = new SqlConnection(ConnectionString))

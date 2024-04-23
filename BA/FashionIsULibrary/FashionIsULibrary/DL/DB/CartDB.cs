@@ -11,13 +11,14 @@ namespace FashionIsU
 {
     public class CartDB:ICartDL
     {
-        private static CartDB CartDBInstance;
-        private string ConnectionString = "";
+        // This functionality is due to Singleton 
+        private static CartDB CartDBInstance; // Instance of CartDB
+        private string ConnectionString = ""; // connection string attribute
         private CartDB(string ConnectionString)        
         {
             this.ConnectionString = ConnectionString;
         }
-        public static CartDB GetCartDB(string connectionString)
+        public static CartDB GetCartDB(string connectionString) // function to get cart db
         {
             if (CartDBInstance == null)
             {
@@ -25,7 +26,9 @@ namespace FashionIsU
             }
             return CartDBInstance;
         }
-        public void SaveItemInCart(ClothesBL cloth, CustomerBL customer)
+
+
+        public void SaveItemInCart(ClothesBL cloth, CustomerBL customer) // saves a cloth in cart of customer
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -55,7 +58,7 @@ namespace FashionIsU
             }
         }
 
-        public bool CheckItemInCart(int id, CustomerBL customer)
+        public bool CheckItemInCart(int id, CustomerBL customer) // checks the existence of an item in cart
         {
             
 
@@ -78,7 +81,7 @@ namespace FashionIsU
         }
 
 
-        public void RetrieveCart(CustomerBL customer)
+        public void RetrieveCart(CustomerBL customer) // Gets the entire cart of customer from database
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -112,7 +115,7 @@ namespace FashionIsU
             
         }
 
-        public void DeleteAnItem(int id, CustomerBL customer)
+        public void DeleteAnItem(int id, CustomerBL customer) // deletes an item from the cart of the customer
         {
             
 
@@ -134,7 +137,7 @@ namespace FashionIsU
         }
 
 
-        public void UpdateQuantity(int id, CustomerBL customer, int quantity)
+        public void UpdateQuantity(int id, CustomerBL customer, int quantity) // changes the quantity of an item in cart
         {
             
 
@@ -156,7 +159,7 @@ namespace FashionIsU
             }
         }
 
-        public void EmptyCart(CustomerBL customer)
+        public void EmptyCart(CustomerBL customer) // clears the cart
         {
             
 

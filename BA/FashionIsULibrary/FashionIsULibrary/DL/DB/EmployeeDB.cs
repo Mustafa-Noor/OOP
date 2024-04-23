@@ -10,13 +10,14 @@ namespace FashionIsUlLibrary
 {
     public class EmployeeDB:IEmployeeDL
     {
-        private static EmployeeDB EmployeeDBInstance;
+        // this is for the singleton functionality
+        private static EmployeeDB EmployeeDBInstance; // instance 
         private string ConnectionString = "";
         private EmployeeDB(string ConnectionString)
         {
             this.ConnectionString = ConnectionString;
         }
-        public static EmployeeDB GetEmployeeDB(string connectionString)
+        public static EmployeeDB GetEmployeeDB(string connectionString) // get the instance 
         {
             if (EmployeeDBInstance == null)
             {
@@ -24,7 +25,7 @@ namespace FashionIsUlLibrary
             }
             return EmployeeDBInstance;
         }
-        public bool AddEmployee(EmployeeBL employee)
+        public bool AddEmployee(EmployeeBL employee) // adds an employee in the database
         {
             SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
@@ -44,7 +45,7 @@ namespace FashionIsUlLibrary
             }
         }
 
-        public void RetrieveEmployees(AdminBL admin)
+        public void RetrieveEmployees(AdminBL admin) // loads all employees in the list contained by admin
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
@@ -75,7 +76,7 @@ namespace FashionIsUlLibrary
             }
         }
 
-        public void UpdateProfile(EmployeeBL employee)
+        public void UpdateProfile(EmployeeBL employee) // changes the profile of an employee
         {
             SqlConnection connection = new SqlConnection(ConnectionString);
             connection.Open();
@@ -87,48 +88,9 @@ namespace FashionIsUlLibrary
 
 
         }
-        /*
-        public EmployeeBL FindEmployee(UserBL user)
-        {
+        
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
-            {
-                connection.Open();
-
-                string query = "SELECT * FROM Employees WHERE Username = @Username AND Password = @Password";
-                using (SqlCommand cmd = new SqlCommand(query, connection))
-                {
-                    cmd.Parameters.AddWithValue("@Username", user.GetUsername());
-                    cmd.Parameters.AddWithValue("@Password", user.GetPassword());
-
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            string username = Convert.ToString(reader["Username"]);
-                            string password = Convert.ToString(reader["Password"]);
-                            string email = Convert.ToString(reader["Email"]);
-                            string fname = Convert.ToString(reader["FirstName"]);
-                            string lname = Convert.ToString(reader["LastName"]);
-                            string phone = Convert.ToString(reader["PhoneNumber"]);
-                            string role = Convert.ToString(reader["Role"]);
-                            string position = Convert.ToString(reader["Position"]);
-                            connection.Close();
-
-                            EmployeeBL emp = new EmployeeBL(username, password, email, fname, lname, phone, role, position);
-                            return emp;
-                        }
-                    }
-
-                }
-
-            }
-
-            return null; // User not found
-        }
-        */
-
-        public List<EmployeeBL> GetAllEmployees()
+        public List<EmployeeBL> GetAllEmployees() // gets the list of all employees present in the database
         {
             List<EmployeeBL> Employees = new List<EmployeeBL>();
 
@@ -163,7 +125,7 @@ namespace FashionIsUlLibrary
             return Employees;
         }
 
-        public bool DeleteEmployee(EmployeeBL employee)
+        public bool DeleteEmployee(EmployeeBL employee) // deletes an employee from the database
         {
 
             using (SqlConnection connection = new SqlConnection(ConnectionString))
@@ -188,64 +150,7 @@ namespace FashionIsUlLibrary
                 }
             }
         }
-        /*
-
-        public bool CheckEmployeesCount()
-        {
-            int count = 0;
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
-            {
-                connection.Open();
-
-                string query = "SELECT COUNT(*) FROM Employees";
-                using (SqlCommand cmd = new SqlCommand(query, connection))
-                {
-                    count = (int)cmd.ExecuteScalar();
-                }
-                connection.Close();
-            }
-
-            return count > 0;
-        }
-        */
-
-        /*
-
-        public EmployeeBL FindEmployeesByUsername(string username)
-        {
-            EmployeeBL employee = null;
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
-            {
-                connection.Open();
-
-                string query = "SELECT * FROM Employees WHERE Username = @Username";
-                using (SqlCommand cmd = new SqlCommand(query, connection))
-                {
-                    cmd.Parameters.AddWithValue("@Username", username);
-
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            string foundUsername = reader["Username"].ToString();
-                            string password = reader["Password"].ToString();
-                            string email = reader["Email"].ToString();
-                            string fname = reader["FirstName"].ToString();
-                            string lname = reader["LastName"].ToString();
-                            string phone = reader["PhoneNumber"].ToString();
-                            string role = reader["Role"].ToString();
-                            string position = reader["Position"].ToString();
-
-                            employee = new EmployeeBL(username, password, email, fname, lname, phone, role, position);
-                        }
-                        connection.Close();
-                    }
-                }
-            }
-
-            return employee;
-        }
-        */
+        
     }
         
 }

@@ -12,13 +12,14 @@ namespace FashionIsU
 {
     public class CustomerFH:ICustomerDL
     {
-        private static CustomerFH CustomerFHInstance;
+        // this is for the singleton functionality
+        private static CustomerFH CustomerFHInstance; //instance of the customerfh
         private string FilePath = "";
         private CustomerFH(string FilePath)
         {
             this.FilePath = FilePath;
         }
-        public static CustomerFH GetCustomerFH(string filePath)
+        public static CustomerFH GetCustomerFH(string filePath) // get the instance of the customer
         {
             if (CustomerFHInstance == null)
             {
@@ -26,7 +27,7 @@ namespace FashionIsU
             }
             return CustomerFHInstance;
         }
-        public bool AddCustomer(CustomerBL customer)
+        public bool AddCustomer(CustomerBL customer) // adds a customer  in file
         {
             using (StreamWriter f = new StreamWriter(FilePath, true))
             {
@@ -40,7 +41,7 @@ namespace FashionIsU
             return false;
         }
 
-        public void UpdateProfile(CustomerBL customer)
+        public void UpdateProfile(CustomerBL customer) // updates the profile of a customer
         {
             List<CustomerBL> Customers = GetAllCustomers();
 
@@ -60,7 +61,7 @@ namespace FashionIsU
             }
         }
 
-        public bool IsCustomerExists(string username)
+        public bool IsCustomerExists(string username) // cheks the existence of a customer
         {
             if(File.Exists(FilePath))
             {
@@ -87,7 +88,7 @@ namespace FashionIsU
             return false;
         }
 
-        public CustomerBL FindCustomer(UserBL user)
+        public CustomerBL FindCustomer(UserBL user) // finds a customer in file
         {
             if (File.Exists(FilePath))
             {
@@ -120,7 +121,7 @@ namespace FashionIsU
             return null;
         }
 
-        public List<CustomerBL> GetAllCustomers()
+        public List<CustomerBL> GetAllCustomers() // return the list of all customers
         {
             List<CustomerBL> Customers = new List<CustomerBL>();
             if (File.Exists(FilePath))
@@ -153,7 +154,7 @@ namespace FashionIsU
             return Customers;
         }
 
-        public bool CheckCustomersCount()
+        public bool CheckCustomersCount() // cheks the count of customers
         {
             int count = 0;
             if (File.Exists(FilePath))
@@ -173,7 +174,7 @@ namespace FashionIsU
             }
             return count > 0;
         }
-        public CustomerBL FindCustomerByUsername(string username)
+        public CustomerBL FindCustomerByUsername(string username) // find a customer from their username
         {
             if (File.Exists(FilePath))
             {

@@ -12,22 +12,15 @@ namespace FashionIsU
 {
     public class OrderDB:IOrderDL
     {
-        // private List <OrderBL> TotalOrders = new List <OrderBL> ();
+        //this is for the singleton functionality
 
-        /*
-        public void AddOrder(OrderBL order)
-        {
-            TotalOrders.Add (order);
-        }
-        */
-
-        private static OrderDB OrderDBInstance;
+        private static OrderDB OrderDBInstance; // instance
         private string ConnectionString = "";
         private OrderDB(string ConnectionString)
         {
             this.ConnectionString = ConnectionString;
         }
-        public static OrderDB GetOrderDB(string connectionString)
+        public static OrderDB GetOrderDB(string connectionString) // gets the instance 
         {
             if (OrderDBInstance == null)
             {
@@ -35,7 +28,7 @@ namespace FashionIsU
             }
             return OrderDBInstance;
         }
-        public bool AddOrder(OrderBL order)
+        public bool AddOrder(OrderBL order) // adds an order in the list
         {
             
             SqlConnection connection = new SqlConnection(ConnectionString);
@@ -54,7 +47,7 @@ namespace FashionIsU
            
         }
 
-        public void SaveOrderItems(int OrderId, OrderBL order)
+        public void SaveOrderItems(int OrderId, OrderBL order) // save items of an order
         {
                 
 
@@ -85,7 +78,7 @@ namespace FashionIsU
                 }
         }
 
-        public void RetrieveOrdersOfCustomer(CustomerBL customer)
+        public void RetrieveOrdersOfCustomer(CustomerBL customer) // gets the list of order of a customer
         {
             
             
@@ -121,7 +114,7 @@ namespace FashionIsU
 
         }
 
-        public List <ClothesBL> GetListOfClothesInOrder(int orderID)
+        public List <ClothesBL> GetListOfClothesInOrder(int orderID) // get the list of order items of an order
         {
             List<ClothesBL> Clothes = new List<ClothesBL>();
             
@@ -157,14 +150,5 @@ namespace FashionIsU
             return Clothes;
         }
 
-
-
-
-        /*
-        public List <OrderBL> GetAllOrder()
-        {
-            return TotalOrders;
-        }
-        */
     }
 }

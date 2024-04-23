@@ -10,13 +10,14 @@ namespace FashionIsU
 {
     public class ReviewFH:IReviewDL
     {
-        private static ReviewFH ReviewFHInstance;
+        // this is for the singleton functionality
+        private static ReviewFH ReviewFHInstance; // instance 
         private string FilePath = "";
         private ReviewFH(string FilePath)
         {
             this.FilePath = FilePath;
         }
-        public static ReviewFH GetReviewFH(string filePath)
+        public static ReviewFH GetReviewFH(string filePath) // get the instance
         {
             if (ReviewFHInstance == null)
             {
@@ -25,7 +26,7 @@ namespace FashionIsU
             return ReviewFHInstance;
         }
 
-        public bool AddReviews(ReviewBL rev, ClothesBL cloth)
+        public bool AddReviews(ReviewBL rev, ClothesBL cloth) // add review in file
         {
             using (StreamWriter f = new StreamWriter(FilePath, true))
             {
@@ -39,7 +40,7 @@ namespace FashionIsU
             return false;
         }
 
-        public void RetrieveReviews(ClothesBL c)
+        public void RetrieveReviews(ClothesBL c) // get the list of reviews against a cloth
         {
             if (File.Exists(FilePath))
             {
@@ -66,7 +67,7 @@ namespace FashionIsU
             }
         }
 
-        public void DeleteReview(ClothesBL c)
+        public void DeleteReview(ClothesBL c) //delete a review
         {
                 if (File.Exists(FilePath))
                 {

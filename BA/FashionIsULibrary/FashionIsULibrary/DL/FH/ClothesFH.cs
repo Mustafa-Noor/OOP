@@ -11,14 +11,15 @@ namespace FashionIsU
 {
     public class ClothesFH : IClothesDL
     {
-        private static int ClothesId = 0;
-        private static ClothesFH ClothesFHInstance;
+        // this is for the single functionality
+        private static int ClothesId = 0; // this is for auto increment functionality in file
+        private static ClothesFH ClothesFHInstance; // instance of clothes
         private string FilePath = "";
         private ClothesFH(string FilePath)
         {
             this.FilePath = FilePath;
         }
-        public static ClothesFH GetClothesFH(string filePath)
+        public static ClothesFH GetClothesFH(string filePath) // get the instance
         {
             if (ClothesFHInstance == null)
             {
@@ -26,7 +27,7 @@ namespace FashionIsU
             }
             return ClothesFHInstance;
         }
-        public bool AddClothes(ClothesBL c)
+        public bool AddClothes(ClothesBL c) // adds an item of clothing
         {
             ClothesId = GetAllClothes().Max(cloth => cloth.GetId())+1;
             using (StreamWriter f = new StreamWriter(FilePath, true))
@@ -42,7 +43,7 @@ namespace FashionIsU
             return false;
         }
 
-        public bool CheckClothes()
+        public bool CheckClothes() // checks the amount of clothes or its existence
         {
             int count = 0;
             if (File.Exists(FilePath))
@@ -64,7 +65,7 @@ namespace FashionIsU
             return count > 0;
         }
 
-        public List<ClothesBL> GetAllClothes()
+        public List<ClothesBL> GetAllClothes() // gives the lst of all clothes
         {
             List<ClothesBL> Clothes = new List<ClothesBL>();
             if (File.Exists(FilePath))
@@ -95,7 +96,7 @@ namespace FashionIsU
             return Clothes;
         }
 
-        public ClothesBL FindClothByID(int id)
+        public ClothesBL FindClothByID(int id) // find a cloth by their id
         {
 
             if (File.Exists(FilePath))
@@ -133,7 +134,7 @@ namespace FashionIsU
             return null;
         }
 
-        public bool CheckClothExistence(ClothesBL c)
+        public bool CheckClothExistence(ClothesBL c) // checks the existence of a cloth in database
         {
             if (File.Exists(FilePath))
             {
@@ -165,7 +166,7 @@ namespace FashionIsU
             return false;
         }
 
-        public bool CheckClothExistenceByQuantity(ClothesBL c)
+        public bool CheckClothExistenceByQuantity(ClothesBL c) // cheks the exitence inclduing their quantity
         {
             if (File.Exists(FilePath))
             {
@@ -198,7 +199,7 @@ namespace FashionIsU
             return false;
         }
 
-        public void ChangeQuantity(int id, int quantity)
+        public void ChangeQuantity(int id, int quantity) // changes the quantity of an items
         {
             List<ClothesBL> AllClothes = GetAllClothes();
             foreach (ClothesBL stored in AllClothes)
@@ -223,7 +224,7 @@ namespace FashionIsU
             }
         }
 
-        public void UpdateCloth(ClothesBL cloth)
+        public void UpdateCloth(ClothesBL cloth) // updates the quantity of an item
         {
             List<ClothesBL> AllClothes = GetAllClothes();
             foreach (ClothesBL stored in AllClothes)
@@ -248,7 +249,7 @@ namespace FashionIsU
             }
         }
 
-        public bool DeleteCloth(ClothesBL c)
+        public bool DeleteCloth(ClothesBL c) // deletes an item of clothing
         {
             List<ClothesBL> AllClothes = GetAllClothes();
 

@@ -110,7 +110,7 @@ namespace FashionIsU_FormsApp_.UI
 
             int amount = method.GetAmount(customer.GetCart().GetTotalCartAmount());
             OrderBL order = new OrderBL(customer.GetCart().GetCartItems(), amount, address.Text, new PaymentMethodBL(method.GetPaymentType()), customer.GetUsername());
-            ObjectHandler.GetOrderDL().AddOrder(order);
+            ObjectHandler.GetOrderDL().AddOrder(new OrderBL(order));
             customer.ClearOrders();
             ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(customer);
             ObjectHandler.GetCartDL().EmptyCart(customer);

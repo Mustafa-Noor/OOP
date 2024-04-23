@@ -8,7 +8,9 @@ namespace FashionIsU
 {
     public class EmployeeBL : UserBL
     {
-        private string Position;
+        private string Position; // attribute of postion
+
+        // Parameterized constructors
         public EmployeeBL(string username, string password, string email, string firstName, string lastName , string phoneNumber, string role, string position) : base(username, password, email, firstName, lastName, phoneNumber, role) 
         {
             this.Position = position;
@@ -26,6 +28,7 @@ namespace FashionIsU
             this.Position= emp.Position;
         }
 
+        //Getter and Setter
         public string GetPosition()
         {
             return this.Position;
@@ -36,6 +39,7 @@ namespace FashionIsU
             this.Position = postion;
         }
 
+        // Updates The Profile Of Customer
         public void UpdateProfile(EmployeeBL emp)
         {
             this.Position = emp.Position;

@@ -9,7 +9,7 @@ namespace FashionIsU
     public class PaymentMethodBL
     {
         
-        private string PaymentType;
+        private string PaymentType; // payment type attribute
 
         public PaymentMethodBL(string type)
         {
@@ -17,6 +17,7 @@ namespace FashionIsU
             PaymentType = type;
         }
 
+        // caluclates the amount depending upon type
         public int GetAmount(int amount)
         {
             if (PaymentType.ToLower() == "cash")
@@ -31,7 +32,7 @@ namespace FashionIsU
             return amount;
         }
 
-
+        // Getter and Setter
         public void SetPaymentType(string paymentType)
         {
             PaymentType = paymentType;

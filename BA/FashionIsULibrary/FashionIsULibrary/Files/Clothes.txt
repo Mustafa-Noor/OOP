@@ -5,4 +5,4 @@
 6,Bag,Male,Navy,1200,32
 7,Kuch,Male,Red,10,18
 8,Coat,Male,Black,1200,65
-9,Jeans,Male,Indigo,2300,19
+9,Jeans,Male,Indigo,2300,17

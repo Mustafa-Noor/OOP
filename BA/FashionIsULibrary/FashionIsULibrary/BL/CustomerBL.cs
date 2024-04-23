@@ -9,11 +9,11 @@ namespace FashionIsU
 {
     public class CustomerBL : UserBL
     {
-       
+       // Order List and Cart Of Customer
         private List<OrderBL> Orders;
         private CartBL Cart;
         
-       
+       // Parameterized Constructors
         public CustomerBL(string username,string password, string email, string firstName,string lastName, string phone,string role) : base(username, password, email, firstName, lastName, phone, role)
         {
             
@@ -33,7 +33,7 @@ namespace FashionIsU
            
         }
 
-        
+        // Getter and Setters
         public CartBL GetCart()
         {
             return Cart;
@@ -44,27 +44,23 @@ namespace FashionIsU
             return Orders;
         }
 
-        public void SetOrderList(List <OrderBL> Orders)
-        {
-            this.Orders = Orders;
-        }
-
+        // Add Order in List of order
         public void AddOrderCustomer(OrderBL order)
         {
-            Orders.Add(order);
+            Orders.Add(new OrderBL(order)); //Compostion relation
         }
 
-        public bool CheckOrders()
+        public bool CheckOrders() // checks the count of orders
         {
             return Orders.Count > 0;
         }
 
-        public void ClearCart()
+        public void ClearCart() // this clears the cart
         {
             Cart.GetCartItems().Clear();
         }
 
-        public float FindTotalAmountSpent()
+        public float FindTotalAmountSpent() // calcultes the total amount spent by customer
         {
             float totalAmount = 0;
             foreach(OrderBL order in Orders)
@@ -75,12 +71,12 @@ namespace FashionIsU
             return totalAmount;
         }
 
-        public int GetOrdersCount()
+        public int GetOrdersCount() // return the count of orders
         {
             return Orders.Count;
         }
 
-        public void ClearOrders()
+        public void ClearOrders() // clears the order list
         { Orders.Clear(); }
 
         

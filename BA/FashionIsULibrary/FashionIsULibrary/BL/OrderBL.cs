@@ -9,6 +9,7 @@ namespace FashionIsU
 {
     public class OrderBL
     {
+        // Attributes Of Order
         private int OrderId;
         private DateTime OrderDate;
         private List<ClothesBL> Items;
@@ -16,6 +17,8 @@ namespace FashionIsU
         private string DeliveryAddress;
         private PaymentMethodBL PaymentMethod;
         private string Username;
+
+        // Paramterized Consstructors
         public OrderBL(List<ClothesBL> items, int totalPrice, string deliveryAddress, PaymentMethodBL paymentMethod, string username)
         {
             OrderDate = DateTime.Now;
@@ -37,7 +40,20 @@ namespace FashionIsU
             this.Username = username;
         }
 
+        public OrderBL(OrderBL order)
+        {
+            
+            OrderId = order.OrderId;
+            OrderDate = order.OrderDate;
+            Items = order.Items;
+            TotalPrice = order.TotalPrice;
+            DeliveryAddress = order.DeliveryAddress;
+            this.PaymentMethod = order.PaymentMethod;
+            this.Username = order.Username;
 
+        }
+
+        // Getter and Setters
 
         public int GetId()
         {
@@ -48,7 +64,10 @@ namespace FashionIsU
             return Username;
         }
 
-        public void SetUsername(string username) { }
+        public void SetUsername(string username)
+        {
+            this.Username = username;
+        }
 
         public DateTime GetOrderDate()
         {
