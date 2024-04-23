@@ -11,42 +11,9 @@ namespace FashionIsU.UI
 {
     internal class UserUI
     {
-        /*
-        public static UserBL SignUpWindowforUser()
-        {
-            Console.WriteLine();
-            Console.WriteLine("---------------------------------SIGN UP--------------------------------");
-            Console.WriteLine();
-            Console.WriteLine();
+        
 
-            Console.Write("Enter Username: ");
-            string name = Console.ReadLine();
-            name = ConsoleUtility.ValidateWords(name);
-            Console.Write("Enter Password (Must be 6-Digits): ");
-            string password = Console.ReadLine();
-            password = ConsoleUtility.RestrictPassword(password);
-            Console.Write("Enter Email: ");
-            string email = Console.ReadLine();
-            email = ConsoleUtility.ValidateEmail(email);
-            Console.Write("Enter First Name: ");
-            string fname = Console.ReadLine();
-            fname = ConsoleUtility.ValidateWordsWithInt(fname);
-            Console.Write("Enter Last Name: ");
-            string lname= Console.ReadLine();
-            lname = ConsoleUtility.ValidateWordsWithInt(lname);
-            Console.Write("Enter Contact Number: ");
-            string phone = Console.ReadLine();
-            phone = ConsoleUtility.ValidateContact(phone);
-            
-
-
-            UserBL u = new UserBL(name, password, email, fname, lname, phone, type);
-            return u;
-
-        }
-        */
-
-        public static void CongratsforSignin()
+        public static void CongratsforSignin() // this shows that sign in is success
         {
             Console.WriteLine();
             Console.WriteLine("---------------------------");
@@ -58,7 +25,7 @@ namespace FashionIsU.UI
 
         
 
-        public static UserBL SignInWindow(string role)
+        public static UserBL SignInWindow(string role) // this takes input for sign in
         {
 
             Console.WriteLine();
@@ -67,10 +34,10 @@ namespace FashionIsU.UI
             Console.WriteLine();
             Console.Write("Enter Username: ");
             string Name = Console.ReadLine();
-            Name = ConsoleValidation.ValidateWords(Name);
+            Name = ConsoleValidationUI.ValidateWords(Name);
             Console.Write("Enter Password (6-Digits): ");
             string Password = Console.ReadLine();
-            Password = ConsoleValidation.RestrictPassword(Password);
+            Password = ConsoleValidationUI.RestrictPassword(Password);
             if (role.ToLower() == "customer")
             {
                 return new CustomerBL(Name, Password);
@@ -82,25 +49,25 @@ namespace FashionIsU.UI
         }
         
 
-        public static void PrintUserTaken()
+        public static void PrintUserTaken() // this shows that user is already tkaen
         {
             Console.WriteLine("User ALready Exist...");
             Thread.Sleep(300);
         }
 
-        public static void PrintUserNotFound()
+        public static void PrintUserNotFound() // this show that user is not found
         {
             Console.WriteLine("User Not Found...");
             Thread.Sleep(300);
         }
 
-        public static void IncorrectRole()
+        public static void IncorrectRole() // this shows that role is incoorect
         {
             Console.WriteLine("Incorrect role...");
             Thread.Sleep(300);
         }
 
-        public static void ProfileUpdateSuccess()
+        public static void ProfileUpdateSuccess() // this shows that profile update is success
         {
             Console.WriteLine();
             Console.WriteLine("Profile Has Been Updated Successfully...");
@@ -109,12 +76,12 @@ namespace FashionIsU.UI
         }
 
 
-        public static string TakeRole()
+        public static string TakeRole() // this takes input regarding role
         {
             Console.WriteLine();
             Console.Write("Enter your Role (Admin, Employee or Customer): ");
             string role = Console.ReadLine();
-            role = ConsoleValidation.GetValidRole(role);
+            role = ConsoleValidationUI.GetValidRole(role);
             return role;
 
         }

@@ -9,13 +9,13 @@ namespace FashionIsU_ConsoleApp_.UI
 {
     internal class AdminUI
     {
-        public static void AdminNotFound()
+        public static void AdminNotFound() // shows that admin is not found
         {
             Console.WriteLine("Admin is not Found..");
             Thread.Sleep(300);
         }
 
-        public static string AdminMenu()
+        public static string AdminMenu() // displays the admin menu
         {
             Console.WriteLine("------------------------------ADMIN MENU----------------------------");
             Console.WriteLine();

@@ -12,7 +12,7 @@ namespace FashionIsU
     internal class CustomerUI
     {
 
-        public static CustomerBL CreateCustomer()
+        public static CustomerBL CreateCustomer() // this takes input for signing up customer
         {
             Console.WriteLine();
             Console.WriteLine("---------------------------------SIGN UP FOR CUSTOMER--------------------------------");
@@ -21,32 +21,32 @@ namespace FashionIsU
 
             Console.Write("Enter Username: ");
             string name = Console.ReadLine();
-            name = ConsoleValidation.ValidateWords(name);
+            name = ConsoleValidationUI.ValidateWords(name);
 
             Console.Write("Enter Password (Must be 6-Digits): ");
             string password = Console.ReadLine();
-            password = ConsoleValidation.RestrictPassword(password);
+            password = ConsoleValidationUI.RestrictPassword(password);
 
             Console.Write("Enter Email: ");
             string email = Console.ReadLine();
-            email = ConsoleValidation.ValidateEmail(email);
+            email = ConsoleValidationUI.ValidateEmail(email);
 
             Console.Write("Enter First Name: ");
             string fname = Console.ReadLine();
-            fname = ConsoleValidation.ValidateWordsWithInt(fname);
+            fname = ConsoleValidationUI.ValidateWordsWithInt(fname);
 
             Console.Write("Enter Last Name: ");
             string lname = Console.ReadLine();
-            lname = ConsoleValidation.ValidateWordsWithInt(lname);
+            lname = ConsoleValidationUI.ValidateWordsWithInt(lname);
 
             Console.Write("Enter Contact Number: ");
             string phone = Console.ReadLine();
-            phone = ConsoleValidation.ValidateContact(phone);
+            phone = ConsoleValidationUI.ValidateContact(phone);
 
             return new CustomerBL(name, password, email, fname, lname, phone, "customer");
         }
 
-        public static void CongratsforSignup()
+        public static void CongratsforSignup() // this congratulates custoemr for signing up
         {
             Console.WriteLine();
             Console.WriteLine("---------------------------");
@@ -56,13 +56,13 @@ namespace FashionIsU
             Console.Read();
         }
 
-        public static void CustomerNotFound()
+        public static void CustomerNotFound() // this shows that customer is not found
         {
             Console.WriteLine("Customer is not Found..");
             Thread.Sleep(300);
         }
 
-        public static string CustomerMenu()
+        public static string CustomerMenu() // this displays the customer is not found
         {
             Console.WriteLine("------------------------------CUSTOMER MENU----------------------------");
             Console.WriteLine();
@@ -83,35 +83,35 @@ namespace FashionIsU
 
         }
 
-        public static void DisplayTotalAmountSpent(CustomerBL customer)
+        public static void DisplayTotalAmountSpent(CustomerBL customer) // this displays the total amount spent
         {
             Console.WriteLine();
             Console.WriteLine("------------------------------TOTAL AMOUNT SPENT----------------------------");
             Console.WriteLine();
             float totalAmountSpent = customer.FindTotalAmountSpent();
-            Console.WriteLine($"Total amount spent by {customer.GetFirstName()} {customer.GetLastName()}: Rs{totalAmountSpent}");
+            Console.WriteLine($"Total amount spent by {customer.GetFirstName()} {customer.GetLastName()}: Rs{totalAmountSpent}:C");
         }
 
-        public static void UpdateProfileInput(CustomerBL cus)
+        public static void UpdateProfileInput(CustomerBL cus) // this takes the input for updating the profile of customer
         {
             Console.WriteLine();
             Console.WriteLine("------------------------------UPDATE PROFILE PAGE----------------------------");
             Console.WriteLine();
             Console.Write("Enter Password(6-Digits): ");
             string password = Console.ReadLine();
-            password = ConsoleValidation.RestrictPassword(password);
+            password = ConsoleValidationUI.RestrictPassword(password);
             Console.Write("Enter Email: ");
             string email = Console.ReadLine();
-            email = ConsoleValidation.ValidateEmail(email);
+            email = ConsoleValidationUI.ValidateEmail(email);
             Console.Write("Enter First Name: ");
             string fname = Console.ReadLine();
-            fname = ConsoleValidation.ValidateWordsWithInt(fname);
+            fname = ConsoleValidationUI.ValidateWordsWithInt(fname);
             Console.Write("Enter Last Name: ");
             string lname = Console.ReadLine();
-            lname = ConsoleValidation.ValidateWordsWithInt(lname);
+            lname = ConsoleValidationUI.ValidateWordsWithInt(lname);
             Console.Write("Enter Contact Number: ");
             string phone = Console.ReadLine();
-            phone = ConsoleValidation.ValidateContact(phone);
+            phone = ConsoleValidationUI.ValidateContact(phone);
 
 
             cus.UpdateProfile(password, email, fname, lname, phone) ;
@@ -120,40 +120,7 @@ namespace FashionIsU
 
         }
 
-    /*
-        public static CustomerBL SignUpWindow(string role)
-        {
-            Console.WriteLine();
-            Console.WriteLine("---------------------------------SIGN UP--------------------------------");
-            Console.WriteLine();
-            Console.WriteLine();
-
-            Console.Write("Enter Username: ");
-            string name = Console.ReadLine();
-            name = ConsoleUtility.ValidateWords(name);
-            Console.Write("Enter Password (Must be 6-Digits): ");
-            string password = Console.ReadLine();
-            password = ConsoleUtility.RestrictPassword(password);
-            Console.Write("Enter Email: ");
-            string email = Console.ReadLine();
-            email = ConsoleUtility.ValidateEmail(email);
-            Console.Write("Enter First Name: ");
-            string fname = Console.ReadLine();
-            fname = ConsoleUtility.ValidateWordsWithInt(fname);
-            Console.Write("Enter Last Name: ");
-            string lname = Console.ReadLine();
-            lname = ConsoleUtility.ValidateWordsWithInt(lname);
-            Console.Write("Enter Contact Number: ");
-            string phone = Console.ReadLine();
-            phone = ConsoleUtility.ValidateContact(phone);
-
-            UserBL user = new CustomerBL(name, password, email, fname, lname, phone, role);
-        }
-    */
-
-        
-
-        public static void DisplayCustomers(List<CustomerBL> AllCustomers)
+        public static void DisplayCustomers(List<CustomerBL> AllCustomers) // this displays the list of customers
         {
             Console.WriteLine("--------------------------------DISPLAY ALL CUSTOMERS------------------------------------");
             Console.WriteLine();
@@ -168,7 +135,7 @@ namespace FashionIsU
 
 
 
-        public static void NoCustomers()
+        public static void NoCustomers() // this shows that there are not customers
         {
             Console.WriteLine();
             Console.WriteLine("There are no Custoemrs Yet...");
@@ -177,12 +144,12 @@ namespace FashionIsU
         }
 
 
-        public static string TakeUsername()
+        public static string TakeUsername() // this takes the username of the customer
         {
             Console.WriteLine();
             Console.Write("Enter the Username Of the Customer: ");
             string username = Console.ReadLine();
-            username = ConsoleValidation.ValidateWords(username);
+            username = ConsoleValidationUI.ValidateWords(username);
             return username;
 
         }

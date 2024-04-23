@@ -12,7 +12,7 @@ namespace FashionIsU
 {
     internal class ClothesUI
     {
-        public static void DisplayAllClothes(List <ClothesBL> AllClothes)
+        public static void DisplayAllClothes(List <ClothesBL> AllClothes) // display all the list of clothes
         {
             Console.WriteLine();
             Console.WriteLine("--------------------------------DISPLAY ALL CLOTHES---------------------------------------------");
@@ -27,19 +27,19 @@ namespace FashionIsU
         }
 
 
-        public static void NoClothesFound()
+        public static void NoClothesFound() // displays that clothes are not found
         {
             Console.WriteLine("No Clothes Found ....");
             Thread.Sleep(500);
         }
 
-        public static void IncorrectId()
+        public static void IncorrectId() // shows that id is incorrect
         {
             Console.WriteLine("No Cloth found against that ID ....");
             Thread.Sleep(500);
         }
 
-        public static ClothesBL TakeInputForClothes()
+        public static ClothesBL TakeInputForClothes() // takes the input for adding a cloth
         {
             int Id = 0;
             int price =0, available = 0;
@@ -53,25 +53,25 @@ namespace FashionIsU
             Console.WriteLine();
             Console.Write("Enter the Type: ");
             string type = Console.ReadLine();
-            type = ConsoleValidation.ValidateWordsWithInt(type);
+            type = ConsoleValidationUI.ValidateWordsWithInt(type);
             Console.Write("Enter the Gender: ");
             string gender = Console.ReadLine();
-            gender = ConsoleValidation.ValidateGender(gender);
+            gender = ConsoleValidationUI.ValidateGender(gender);
             Console.Write("Enter the Color: ");
             string color = Console.ReadLine();
-            color = ConsoleValidation.ValidateWordsWithInt(color);
+            color = ConsoleValidationUI.ValidateWordsWithInt(color);
             Console.Write("Enter the Price: Rs ");
             temp = Console.ReadLine();
-            price = ConsoleValidation.ValidateInt(temp, price);
+            price = ConsoleValidationUI.ValidateInt(temp, price);
             Console.Write("Enter the Quantity: ");
             temp = Console.ReadLine();
-            available = ConsoleValidation.ValidateInt(temp, available);
+            available = ConsoleValidationUI.ValidateInt(temp, available);
 
             ClothesBL c = new ClothesBL(type, gender, color, price, available);
             return c;
         }
 
-        public static ClothesBL TakeInputForUpdateClothe(ClothesBL cloth)
+        public static ClothesBL TakeInputForUpdateClothe(ClothesBL cloth) // takes the input for updating cloth
         {
             int price = 0, available = 0;
             string temp;
@@ -84,66 +84,66 @@ namespace FashionIsU
 
             Console.Write("Enter the Type: ");
             string type = Console.ReadLine();
-            type = ConsoleValidation.ValidateWordsWithInt(type);
+            type = ConsoleValidationUI.ValidateWordsWithInt(type);
 
             Console.Write("Enter the Gender: ");
             string gender = Console.ReadLine();
-            gender = ConsoleValidation.ValidateGender(gender);
+            gender = ConsoleValidationUI.ValidateGender(gender);
 
             Console.Write("Enter the Color: ");
             string color = Console.ReadLine();
-            color = ConsoleValidation.ValidateWordsWithInt(color);
+            color = ConsoleValidationUI.ValidateWordsWithInt(color);
             Console.Write("Enter the Price: Rs ");
             temp = Console.ReadLine();
-            price= ConsoleValidation.ValidateInt(temp, price);
+            price= ConsoleValidationUI.ValidateInt(temp, price);
 
             Console.Write("Enter the Quantity: ");
             temp = Console.ReadLine();
-            available = ConsoleValidation.ValidateInt(temp, available);
+            available = ConsoleValidationUI.ValidateInt(temp, available);
 
             return new ClothesBL(type, gender, color, price, available);
             
         }
 
 
-        public static int TakeId()
+        public static int TakeId() // takes the id of cloth
         {
             int id = 0;
             Console.WriteLine();
             Console.Write("Enter the ID of Clothing : ");
             string temp = Console.ReadLine() ;
-            id = ConsoleValidation.ValidateInt(temp, id);
+            id = ConsoleValidationUI.ValidateInt(temp, id);
             return id;
         }
 
-        public static int TakeQuantity()
+        public static int TakeQuantity() // takes the quantity of cloth
         {
             int quantity = 0;
             Console.Write("Enter the Quantity: ");
             string temp = Console.ReadLine();
-            quantity = ConsoleValidation.ValidateInt(temp, quantity);
+            quantity = ConsoleValidationUI.ValidateInt(temp, quantity);
             return quantity;
         }
 
-        public static void NotPossible()
+        public static void NotPossible() // shows that it is not possible
         {
             Console.WriteLine("Not Possible....");
             Thread.Sleep(500);
         }
 
-        public static void ClothUpdatedSuccessfully()
+        public static void ClothUpdatedSuccessfully() // show that cloth is updated successfully
         {
             Console.WriteLine("Cloth Updated Successfully....");
             Thread.Sleep(500);
         }
 
-        public static void ClothDeletedSuccessfully()
+        public static void ClothDeletedSuccessfully() // shows that cloth is deleted successfully
         {
             Console.WriteLine("Cloth Deleted Successfully....");
             Thread.Sleep(500);
         }
 
-        public static void ClothAlreadyExist()
+        public static void ClothAlreadyExist() // shows that cloth already exist
         {
             Console.WriteLine("Cloth Already Exist....");
             Thread.Sleep(500);

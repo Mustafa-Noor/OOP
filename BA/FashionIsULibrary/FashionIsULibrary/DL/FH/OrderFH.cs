@@ -133,7 +133,7 @@ namespace FashionIsU
                                 string paymentType = splittedRecord[4];
                                 List<ClothesBL> Clothes = GetListOfClothesInOrder(orderId);
                                 OrderBL order = new OrderBL(orderId, date, Clothes, price, address, new PaymentMethodBL(paymentType), customer.GetUsername());
-                                customer.AddOrderCustomer(order);
+                                customer.AddOrderCustomer(new OrderBL(order));
                             }
                         }
                     }

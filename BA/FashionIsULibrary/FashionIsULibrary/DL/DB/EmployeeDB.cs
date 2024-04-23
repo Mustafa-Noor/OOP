@@ -68,7 +68,7 @@ namespace FashionIsUlLibrary
                             string position = Convert.ToString(reader["Position"]);
 
                             EmployeeBL emp = new EmployeeBL(username, password, email, fname, lname, phone, role, position);
-                            admin.AddEmployee(emp);
+                            admin.AddEmployee(new EmployeeBL(emp));
                         }
                         connection.Close();
                     }

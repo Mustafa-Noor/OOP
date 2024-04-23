@@ -1,1 +1,5 @@
 Asta,5,Socks,Male,Red,1200,1
+Eren,1,Hoodie,Female,Green,1230,2
+Eren,9,Jeans,Male,Indigo,2300,3
+Eren,7,Kuch,Male,Red,10,1
+Eren,4,Sweater,Male,Cyan,1399,3

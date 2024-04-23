@@ -78,6 +78,8 @@ namespace FashionIsU_FormsApp_.UI
                     cloth.DropQuantity(Quantity);
                     ObjectHandler.GetClothesDL().ChangeQuantity(Id, cloth.GetQuantity());
                     ObjectHandler.GetCartDL().SaveItemInCart(cartItem, customer);
+                    customer.ClearCart();
+                    ObjectHandler.GetCartDL().RetrieveCart(customer);
                     MessageBox.Show("Successfully Added To Cart", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ObjectHandler.GetCartDL().RetrieveCart(customer);
                     dataTable.Rows.Clear();

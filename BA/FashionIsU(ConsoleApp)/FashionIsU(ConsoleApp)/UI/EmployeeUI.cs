@@ -10,38 +10,36 @@ namespace FashionIsU
 {
     internal class EmployeeUI
     {
-       
-
-        public static void EmployeeNotFound()
+        public static void EmployeeNotFound() // this shows that employee is not found
         {
             Console.WriteLine("Employee is not Found..");
             Thread.Sleep(300);
         }
 
-        public static void EmployeeAdditionSuccess()
+        public static void EmployeeAdditionSuccess() // this shows that employee is added successfully
         {
             Console.WriteLine("Employee Successfully Added...");
             Thread.Sleep(300);
         }
 
-        public static void EmployeeUpdateSuccess()
+        public static void EmployeeUpdateSuccess() // this show update is success
         {
             Console.WriteLine("Employee Successfully Updated...");
             Thread.Sleep(300);
         }
-        public static void EmployeeDeleteSuccess()
+        public static void EmployeeDeleteSuccess() // this shows that employee is removed successfully
         {
             Console.WriteLine("Employee Successfully Removed...");
             Thread.Sleep(300);
         }
 
-        public static void EmployeesNotFound()
+        public static void EmployeesNotFound() // this shows that there are no employees
         {
             Console.WriteLine("There are no Employees Yet....");
             Thread.Sleep(300);
         }
 
-        public static string EmployeeMenu()
+        public static string EmployeeMenu() // this displays the employee menu
         {
             Console.WriteLine("------------------------------EMPLOYEE MENU----------------------------");
             Console.WriteLine();
@@ -60,63 +58,63 @@ namespace FashionIsU
 
         }
 
-        public static EmployeeBL TakeInputForEmployee()
+        public static EmployeeBL TakeInputForEmployee() // this takes the input for adding an employee
         {
             Console.WriteLine();
             Console.WriteLine("------------------------------ADD EMPLOYEE PAGE----------------------------");
             Console.WriteLine();
             Console.Write("Enter Employee Username: ");
             string username = Console.ReadLine();
-            username = ConsoleValidation.ValidateWords(username);
+            username = ConsoleValidationUI.ValidateWords(username);
             Console.Write("Enter Password: ");
             string password = Console.ReadLine();
-            password = ConsoleValidation.RestrictPassword(password);
+            password = ConsoleValidationUI.RestrictPassword(password);
             Console.Write("Enter Email: ");
             string email = Console.ReadLine();
-            email = ConsoleValidation.ValidateEmail(email);
+            email = ConsoleValidationUI.ValidateEmail(email);
             Console.Write("Enter First Name: ");
             string fname = Console.ReadLine();
-            fname = ConsoleValidation.ValidateWordsWithInt(fname);
+            fname = ConsoleValidationUI.ValidateWordsWithInt(fname);
             Console.Write("Enter Last Name: ");
             string lname = Console.ReadLine();
-            lname = ConsoleValidation.ValidateWordsWithInt(lname);
+            lname = ConsoleValidationUI.ValidateWordsWithInt(lname);
             Console.Write("Enter Contact Number: ");
             string phone = Console.ReadLine();
-            phone = ConsoleValidation.ValidateContact(phone);
+            phone = ConsoleValidationUI.ValidateContact(phone);
             Console.Write("Enter Employee Postion: ");
             string position = Console.ReadLine();
-            position = ConsoleValidation.ValidateWordsWithInt(position);
+            position = ConsoleValidationUI.ValidatePosition(position);
 
             return new EmployeeBL(username, password, email, fname, lname, phone, "employee", position);
         }
 
-        public static void UpdateProfileInput(EmployeeBL emp)
+        public static void UpdateProfileInput(EmployeeBL emp) // this takes the input for updating profile of employees
         {
             Console.WriteLine();
             Console.WriteLine("------------------------------UPDATE PROFILE PAGE----------------------------");
             Console.WriteLine();
             Console.Write("Enter Password: ");
             string password = Console.ReadLine();
-            password = ConsoleValidation.RestrictPassword(password);
+            password = ConsoleValidationUI.RestrictPassword(password);
             Console.Write("Enter Email: ");
             string email = Console.ReadLine();
-            email = ConsoleValidation.ValidateEmail(email);
+            email = ConsoleValidationUI.ValidateEmail(email);
             Console.Write("Enter First Name: ");
             string fname = Console.ReadLine();
-            fname = ConsoleValidation.ValidateWordsWithInt(fname);
+            fname = ConsoleValidationUI.ValidateWordsWithInt(fname);
             Console.Write("Enter Last Name: ");
             string lname = Console.ReadLine();
-            lname = ConsoleValidation.ValidateWordsWithInt(lname);
+            lname = ConsoleValidationUI.ValidateWordsWithInt(lname);
             Console.Write("Enter Contact Number: ");
             string phone = Console.ReadLine();
-            phone = ConsoleValidation.ValidateContact(phone);
+            phone = ConsoleValidationUI.ValidateContact(phone);
             
 
             emp.UpdateProfile(password, email, fname, lname, phone);
            
         }
 
-        public static void DisplayEmployees(List<EmployeeBL> AllEmployees)
+        public static void DisplayEmployees(List<EmployeeBL> AllEmployees) // this display the list of employees
         {
             Console.WriteLine("--------------------------------DISPLAY ALL EMPLOYEES------------------------------------");
             Console.WriteLine();
@@ -129,39 +127,39 @@ namespace FashionIsU
             Console.WriteLine("-----------------------------------------------------------------------------------------");
         }
 
-        public static string TakeUsernameOfEmployee()
+        public static string TakeUsernameOfEmployee() // this takes the username of the employee
         {
             Console.WriteLine();
             Console.WriteLine();
             Console.Write("Enter the Username of The Employee: " );
             string username = Console.ReadLine();
-            username = ConsoleValidation.ValidateWords(username);
+            username = ConsoleValidationUI.ValidateWords(username);
             return username;
         }
 
-        public static void UpdateEmployeeInput(EmployeeBL emp)
+        public static void UpdateEmployeeInput(EmployeeBL emp) // this takes the input for updating the employee
         {
             Console.WriteLine();
             Console.WriteLine("------------------------------UPDATE EMPLOYEE PAGE----------------------------");
             Console.WriteLine();
             Console.Write("Enter Password: ");
             string password = Console.ReadLine();
-            password = ConsoleValidation.RestrictPassword(password);
+            password = ConsoleValidationUI.RestrictPassword(password);
             Console.Write("Enter Email: ");
             string email = Console.ReadLine();
-            email = ConsoleValidation.ValidateEmail(email);
+            email = ConsoleValidationUI.ValidateEmail(email);
             Console.Write("Enter First Name: ");
             string fname = Console.ReadLine();
-            fname = ConsoleValidation.ValidateWordsWithInt(fname);
+            fname = ConsoleValidationUI.ValidateWordsWithInt(fname);
             Console.Write("Enter Last Name: ");
             string lname = Console.ReadLine();
-            lname = ConsoleValidation.ValidateWordsWithInt(lname);
+            lname = ConsoleValidationUI.ValidateWordsWithInt(lname);
             Console.Write("Enter Contact Number: ");
             string phone = Console.ReadLine();
-            phone = ConsoleValidation.ValidateContact(phone);
+            phone = ConsoleValidationUI.ValidateContact(phone);
             Console.Write("Enter Employee Position: ");
             string position = Console.ReadLine();
-            position = ConsoleValidation.ValidateWordsWithInt(position);
+            position = ConsoleValidationUI.ValidateWordsWithInt(position);
 
             EmployeeBL employee = new EmployeeBL(emp.GetUsername(), password, email, fname, lname, phone, emp.GetRole(), position);
 

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FashionIsU
 {
-    internal class ConsoleValidation
+    internal class ConsoleValidationUI
     {
-        public static string ValidateWordsWithInt(string name)
+        public static string ValidateWordsWithInt(string name) // validation for words which cant have integer
         {
             while (UtilityClass.CheckforEmpty(name) || UtilityClass.CheckingForSpace(name) || UtilityClass.ContainsInteger(name) || UtilityClass.CheckingForcomma(name))
             {
@@ -38,7 +38,7 @@ namespace FashionIsU
             return name;
         }
 
-        public static string ValidateWords(string name)
+        public static string ValidateWords(string name) // validation for words which can contain integer
         {
             while (UtilityClass.CheckforEmpty(name) || UtilityClass.CheckingForSpace(name) || UtilityClass.CheckingForcomma(name))
             {
@@ -69,7 +69,7 @@ namespace FashionIsU
 
         }
 
-        public static string ValidateGender(string gender)
+        public static string ValidateGender(string gender) // it validates the gender
         {
             while (UtilityClass.CheckforEmpty(gender) || (gender.ToLower() != "male" && gender.ToLower() != "female"))
             {
@@ -91,7 +91,29 @@ namespace FashionIsU
             return gender;
         }
 
-        public static int ValidateInt(string temp, int number)
+        public static string ValidatePosition(string position) // it validates the postion
+        {
+            while (UtilityClass.CheckforEmpty(position) || (position.ToLower() != "manager" && position.ToLower() != "salesman" && position.ToLower() != "supervisor"))
+            {
+                if (UtilityClass.CheckforEmpty(position))
+                {
+                    Console.WriteLine("Gender should not be empty.");
+                }
+                else if (position.ToLower() != "manager" && position.ToLower() != "salesman" && position.ToLower() != "supervisor")
+                {
+                    Console.WriteLine("Postion should be either Manager, Salesman or Supervisor.");
+                }
+
+                // Prompt for input again
+                Console.Write("Enter position again: ");
+                position = Console.ReadLine();
+            }
+
+
+            return position;
+        }
+
+        public static int ValidateInt(string temp, int number) // it validates integer
         {
             do
             {
@@ -112,7 +134,7 @@ namespace FashionIsU
             return number;
         }
 
-        public static int ValidateRating(string rating)
+        public static int ValidateRating(string rating) // it validates rating
         {
 
 
@@ -135,7 +157,7 @@ namespace FashionIsU
             return int.Parse(rating);
         }
 
-        public static string ValidateContact(string contact)
+        public static string ValidateContact(string contact) // it validates the contact
         {
             while (UtilityClass.CheckforEmpty(contact) || !UtilityClass.ValidateContactPattern(contact))
             {
@@ -157,7 +179,7 @@ namespace FashionIsU
             return contact;
         }
 
-        public static string RestrictPassword(string password)
+        public static string RestrictPassword(string password) // it restricts the password 
         {
             while (UtilityClass.CheckforEmpty(password) || UtilityClass.CheckingForSpace(password) || !UtilityClass.CheckingPasswordLength(password) || !UtilityClass.CheckingforInteger(password))
             {
@@ -186,7 +208,7 @@ namespace FashionIsU
 
         }
 
-        public static string GetValidRole(string role)
+        public static string GetValidRole(string role) // it validates role
         {
             string lowerCaseRole = role.ToLower();
             while (!UtilityClass.ValidateRole(lowerCaseRole))
@@ -205,7 +227,7 @@ namespace FashionIsU
             return lowerCaseRole;
         }
 
-        public static string ValidateSentences(string sen)
+        public static string ValidateSentences(string sen) // it validates sentences
         {
             while (UtilityClass.CheckforEmpty(sen) || UtilityClass.CheckingForcomma(sen))
             {
@@ -226,7 +248,7 @@ namespace FashionIsU
             return sen;
         }
 
-        public static string ValidateEmail(string email)
+        public static string ValidateEmail(string email) // it validates email
         {
             while (UtilityClass.CheckforEmpty(email) || !UtilityClass.ValidateEmailPattern(email) || UtilityClass.CheckingForcomma(email))
             {

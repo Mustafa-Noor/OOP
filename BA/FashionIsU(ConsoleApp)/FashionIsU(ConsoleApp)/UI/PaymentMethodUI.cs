@@ -11,7 +11,7 @@ namespace FashionIsU
     {
         
 
-        public static PaymentMethodBL TakeTypeOfPayment()
+        public static PaymentMethodBL TakeTypeOfPayment() // this takes the type of payment method
         {
             Console.WriteLine();
             Console.WriteLine("-------------------------------SELECT PAYMENT METHOD--------------------------------");

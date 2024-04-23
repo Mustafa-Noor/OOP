@@ -12,7 +12,7 @@ namespace FashionIsU
 {
     internal class OrderUI
     {
-        public static OrderBL TakeInputForOrder(CustomerBL customer, PaymentMethodBL pm)
+        public static OrderBL TakeInputForOrder(CustomerBL customer, PaymentMethodBL pm) // this takes the input for order of customer
         {
             int price = pm.GetAmount(customer.GetCart().GetTotalCartAmount());
             Console.WriteLine();
@@ -21,14 +21,14 @@ namespace FashionIsU
             Console.WriteLine("Your Total Price (After PaymentMethod) : Rs " + price);
             Console.Write("Enter Your Delivery Address : ");
             string address = Console.ReadLine();
-            address = ConsoleValidation.ValidateSentences(address);
+            address = ConsoleValidationUI.ValidateSentences(address);
 
             OrderBL order = new OrderBL(customer.GetCart().GetCartItems(), price, address, new PaymentMethodBL(pm.GetPaymentType()), customer.GetUsername()) ;
             return order;
         }
 
 
-        public static void OrderSuccessful()
+        public static void OrderSuccessful() // this shows that order made succes
         {
             Console.WriteLine();
             Console.WriteLine("Your Order has Been Made Successfully...");
@@ -36,7 +36,7 @@ namespace FashionIsU
             Thread.Sleep(300);
         }
 
-        public static void NeverPlaced()
+        public static void NeverPlaced() // this shows that they have not placed any order
         {
             Console.WriteLine();
             Console.WriteLine("Your Have Not Placed An Order Before...");
@@ -44,22 +44,22 @@ namespace FashionIsU
             Thread.Sleep(300);
         }
 
-        public static void DisplayOrders(List<OrderBL> orders)
+        public static void DisplayOrders(List<OrderBL> orders) // this displays the orders
         {
-            Console.WriteLine("----------------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------------------------------------------------------------------");
             Console.WriteLine("|{0,-14}|{1,-60}|{2,-13}|{3,-21}|{4,-15}|", "Order Date", "Items", "Total Price", "Delivery Address", "Payment Type");
-            Console.WriteLine("----------------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------------------------------------------------------------------");
 
             foreach (OrderBL order in orders)
             {
-                Console.WriteLine($"|{order.GetOrderDate().ToString("yyyy-MM-dd"),-14}|{FormatItems(order.GetItems()),-60}|Rs{order.GetTotalPrice(),-13}|{order.GetDeliveryAddress(),-21}|{order.GetPaymentMethod().GetPaymentType(),-15}|");
+                Console.WriteLine($"|{order.GetOrderDate().ToString("yyyy-MM-dd"),-14}|{FormatItems(order.GetItems()),-60}|Rs{order.GetTotalPrice(),-11}|{order.GetDeliveryAddress(),-21}|{order.GetPaymentMethod().GetPaymentType(),-15}|");
             }
 
-            Console.WriteLine("----------------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------------------------------------------------------------------");
         }
 
 
-        private static string FormatItems(List<ClothesBL> items)
+        private static string FormatItems(List<ClothesBL> items) // this format the items for displayng in orders
         {
             StringBuilder sb = new StringBuilder();
             foreach (var item in items)

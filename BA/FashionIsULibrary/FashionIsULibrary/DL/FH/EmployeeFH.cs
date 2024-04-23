@@ -64,7 +64,7 @@ namespace FashionIsU
                             string position = splittedRecord[7];
 
                             EmployeeBL emp = new EmployeeBL(username, password, email, fname, lname, contact, role, position);
-                            admin.AddEmployee(emp);
+                            admin.AddEmployee(new EmployeeBL(emp));
 
                         }
 

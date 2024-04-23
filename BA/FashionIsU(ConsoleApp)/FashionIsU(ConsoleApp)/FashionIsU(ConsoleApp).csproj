@@ -53,7 +53,7 @@
     <Compile Include="UI\AdminUI.cs" />
     <Compile Include="UI\CartUI.cs" />
     <Compile Include="UI\ClothesUI.cs" />
-    <Compile Include="UI\ConsoleValidation.cs" />
+    <Compile Include="UI\ConsoleValidationUI.cs" />
     <Compile Include="UI\CustomerUI.cs" />
     <Compile Include="UI\EmployeeUI.cs" />
     <Compile Include="UI\MainUI.cs" />

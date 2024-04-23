@@ -102,7 +102,7 @@ namespace FashionIsU
                             string paymentType = Convert.ToString(reader["PaymentType"]);
                             List<ClothesBL> Clothes = GetListOfClothesInOrder(orderID);    
                             OrderBL order = new OrderBL(orderID, orderDate, Clothes, price, address, new PaymentMethodBL(paymentType), customer.GetUsername());
-                            customer.AddOrderCustomer(order);
+                            customer.AddOrderCustomer(new OrderBL(order));
                             
                         }
                         connection.Close();

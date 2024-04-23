@@ -8,7 +8,7 @@ namespace FashionIsU
 {
     internal class MainUI
     {
-        public static void PrintHeader()
+        public static void PrintHeader() // this is for displaying the header
         {
 
             Console.WriteLine("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ");
@@ -24,7 +24,7 @@ namespace FashionIsU
             Console.WriteLine("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ");
         }
 
-        public static string MainMenu()
+        public static string MainMenu() // this shows the sign in sign up menu
         {
             Console.WriteLine();
             Console.WriteLine("--------------------------------MAIN MENU--------------------------------");
@@ -37,7 +37,7 @@ namespace FashionIsU
             return Choice;
         }
 
-        public static void ClearScreen()
+        public static void ClearScreen() // this clears the console screen
         {
 
             Console.Clear();
