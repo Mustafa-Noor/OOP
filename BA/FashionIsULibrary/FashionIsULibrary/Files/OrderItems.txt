@@ -4,3 +4,7 @@
 4,3,Jackey,Male,Grey,1200,12
 4,1,Hoodie,Male,Grey,1200,21
 5,9,Jeans,Male,Indigo,2300,2
+6,3,Jackey,Male,Grey,1200,4
+6,1,Hoodie,Female,Green,1230,4
+6,7,Kuch,Male,Red,10,5
+5,5,Socks,Male,Red,1200,3

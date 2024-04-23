@@ -194,6 +194,7 @@
             this.AmountLabelAfterPayment.Size = new System.Drawing.Size(593, 27);
             this.AmountLabelAfterPayment.TabIndex = 53;
             this.AmountLabelAfterPayment.Text = "Your Total Amount After Your Payment Method Selection Is : Rs ";
+            this.AmountLabelAfterPayment.Click += new System.EventHandler(this.AmountLabelAfterPayment_Click);
             // 
             // errorProvider1
             // 

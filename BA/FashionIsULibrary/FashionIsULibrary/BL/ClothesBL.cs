@@ -9,6 +9,7 @@ namespace FashionIsU
 {
     public class ClothesBL
     {
+        // attributes of clothes
         private int ClothesID;
         private string Type;
         private string Gender;
@@ -17,6 +18,7 @@ namespace FashionIsU
         private int Quantity;
         private List<ReviewBL> Reviews;
 
+        // Parameterized Constructors
         public ClothesBL(int id, string type, string gender, string color, int price, int availability)
         {
             ClothesID = id;
@@ -52,7 +54,7 @@ namespace FashionIsU
         }
 
 
-
+        // Getter and Setters
         public int GetId()
         {
             return ClothesID;
@@ -114,41 +116,42 @@ namespace FashionIsU
             Quantity = availability;
         }
 
-        public bool IsAvailableToBuy(int Quantity)
+
+        public bool IsAvailableToBuy(int Quantity) // Compares the quantity to tell if an item is available to buy
         {
             if (Quantity > 0 && Quantity <= this.Quantity)
             { return true; }
             return false;
         }
 
-        public void DropQuantity(int quantity)
+        public void DropQuantity(int quantity) // Reduces the quantity of Cloth after being bought
         {
             Quantity -= quantity;
         }
 
-        public void AddQuantity(int quantity)
+        public void AddQuantity(int quantity) // Increases the quantity of Cloth
         { Quantity += quantity; }
 
-        public void AddReview(ReviewBL rev)
+        public void AddReview(ReviewBL rev) // Adds the review In the List Of Reviews
         {
             Reviews.Add(new ReviewBL(rev.GetRating(), rev.GetComment(), rev.GetUsername()));
         }
 
-        public List<ReviewBL> GetReviews()
+        public List<ReviewBL> GetReviews() // Gives the list of reviews
         {
             return Reviews;
         }
 
-        public void SetReviews(List<ReviewBL> reviews)
+        public void SetReviews(List<ReviewBL> reviews) 
         {
             this.Reviews = reviews;
         }
 
-        public void ClearReviews()
+        public void ClearReviews() //Clears the list of reviews
         { Reviews.Clear(); }
 
 
-        public void UpdateCloth(ClothesBL cloth)
+        public void UpdateCloth(ClothesBL cloth) // Updates the details of the cloth
         {
             SetGender(cloth.GetGender());
             SetColor(cloth.GetColor());

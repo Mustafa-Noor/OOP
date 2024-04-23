@@ -8,13 +8,15 @@ namespace FashionIsU
 {
     public class CartBL
     {
-        private List<ClothesBL> Cart;
+        private List<ClothesBL> Cart; // List Of Clothes In The Cart
 
+        // Constructor Of Cart
         public CartBL()
         {
             Cart = new List<ClothesBL>();
         }
 
+        //Adds a cloth in the cart
         public void AddIntoCart(ClothesBL c)
         {
             if(!Cart.Contains(c))
@@ -24,6 +26,7 @@ namespace FashionIsU
             
         }
 
+        // Calculates the total Amount of Cart Items
         public int GetTotalCartAmount()
         {
             int total = 0;
@@ -35,18 +38,19 @@ namespace FashionIsU
             return total;
         }
 
+        // Gives the list of All Cart Items
         public List<ClothesBL> GetCartItems()
         {
             return Cart;
         }
 
-        public bool CheckCart()
+        public bool CheckCart() // Checks the count of clothes in the cart
         {
             return Cart.Count > 0;
         }
 
 
-        public ClothesBL FindClothFromCart(int id)
+        public ClothesBL FindClothFromCart(int id) // Finds a Cloth from Cart 
         {
             foreach(ClothesBL c in Cart)
             {
@@ -58,7 +62,7 @@ namespace FashionIsU
             return null;
         }
 
-        public bool DelItem(ClothesBL c)
+        public bool DelItem(ClothesBL c) // Deletes a cloth from the cart
         {
             foreach(ClothesBL cloth in Cart)
             {

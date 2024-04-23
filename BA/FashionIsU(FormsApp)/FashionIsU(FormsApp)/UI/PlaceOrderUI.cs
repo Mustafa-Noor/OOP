@@ -19,6 +19,7 @@ namespace FashionIsU_FormsApp_.UI
         public PlaceOrderUI(CustomerBL customer)
         {
             InitializeComponent();
+            HidePanels();
             this.customer = customer;
             customer.ClearCart();
             ObjectHandler.GetCartDL().RetrieveCart(customer);
@@ -52,12 +53,18 @@ namespace FashionIsU_FormsApp_.UI
 
         private void SetPayment_Click(object sender, EventArgs e)
         {
-            if(ValidatePaymentCombo())
+            if(!ValidatePaymentCombo())
+            {
+                return; 
+            }
+            else
             {
                 PaymentMethodBL method = new PaymentMethodBL(PaymentCombo.Text.ToLower());
                 SetLabelAmountAfterPayment(method);
+                ShowPanels();
             }
             
+
         }
 
         
@@ -78,12 +85,29 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
+        private void HidePanels()
+        {
+            panel3.Hide();
+            label3.Hide();
+            address.Hide();
+            PlaceOrderbtn.Hide();
+        }
+
+        private void ShowPanels()
+        {
+            panel3.Show();
+            label3.Show();
+            address.Show();
+            PlaceOrderbtn.Show();
+        }
+
         private void PlaceOrderbtn_Click(object sender, EventArgs e)
         {
             SetPayment_Click(sender, e);
             PaymentMethodBL method = new PaymentMethodBL(PaymentCombo.Text.ToLower());
             if (method == null) { return; }
             if (!ValidateAddress()) { return; }
+
             int amount = method.GetAmount(customer.GetCart().GetTotalCartAmount());
             OrderBL order = new OrderBL(customer.GetCart().GetCartItems(), amount, address.Text, new PaymentMethodBL(method.GetPaymentType()), customer.GetUsername());
             ObjectHandler.GetOrderDL().AddOrder(order);
@@ -116,6 +140,11 @@ namespace FashionIsU_FormsApp_.UI
                 return true;
 
             }
+        }
+
+        private void AmountLabelAfterPayment_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
