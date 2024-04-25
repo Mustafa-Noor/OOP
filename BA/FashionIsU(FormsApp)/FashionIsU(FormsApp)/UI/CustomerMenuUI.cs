@@ -19,11 +19,11 @@ namespace FashionIsU_FormsApp_.UI
             InitializeComponent();
             this.customer = customer;
             ObjectHandler.GetCartDL().RetrieveCart(customer);
-            ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(customer);
+            ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(customer); // loads the cart of the customer
         }
 
         private Form activeForm = null;
-        public void openChildForm(Form childForm)
+        public void openChildForm(Form childForm) // proper functionality to open the child form
         {
             if (activeForm != null)
             {
@@ -46,7 +46,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void StudentMenuBtn_Click(object sender, EventArgs e)
         {
-            if(ObjectHandler.GetClothesDL().CheckClothes())
+            if(ObjectHandler.GetClothesDL().CheckClothes()) // open buyitem page
             {
                 openChildForm(new BuyItemUI(customer));
             }
@@ -62,7 +62,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private void ManageCart_Click(object sender, EventArgs e)
+        private void ManageCart_Click(object sender, EventArgs e) // open the cart management page
         {
             if(customer.GetCart().CheckCart())
             {
@@ -74,7 +74,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void PlaceOrderbtn_Click(object sender, EventArgs e)
+        private void PlaceOrderbtn_Click(object sender, EventArgs e) //opens the place order page
         {
             if (customer.GetCart().CheckCart())
             {
@@ -86,7 +86,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void DisplayOrderBtn_Click(object sender, EventArgs e)
+        private void DisplayOrderBtn_Click(object sender, EventArgs e) // open the display orders page
         {
             if(customer.CheckOrders())
             {
@@ -98,7 +98,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ReviewPageBtn_Click(object sender, EventArgs e)
+        private void ReviewPageBtn_Click(object sender, EventArgs e) // opens give review page
         {
             if (ObjectHandler.GetClothesDL().CheckClothes())
             {
@@ -110,13 +110,13 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // opens update profile page
         {
             openChildForm(new UpdateProfileCustomerUI(customer));
 
         }
 
-        private void ExitBtn_Click(object sender, EventArgs e)
+        private void ExitBtn_Click(object sender, EventArgs e) // exit button
         {
             this.Hide();
             Form form = new MainUI();

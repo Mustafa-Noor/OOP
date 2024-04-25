@@ -31,7 +31,7 @@ namespace FashionIsU_FormsApp_.UI
             DisplayClothes();
         }
 
-        private void DisplayClothes()
+        private void DisplayClothes() // dispay all the cloths in the cart
         {
             List<ClothesBL> CartItems = customer.GetCart().GetCartItems();
             foreach (ClothesBL cloth in CartItems)
@@ -43,7 +43,7 @@ namespace FashionIsU_FormsApp_.UI
         }
 
 
-        private void MakeColumns()
+        private void MakeColumns() // make columns on the datagrid
         {
             dataTable.Columns.Add("ClothesID", typeof(string));
             dataTable.Columns.Add("Type", typeof(string));
@@ -53,15 +53,15 @@ namespace FashionIsU_FormsApp_.UI
             dataTable.Columns.Add("Quantity", typeof(string));
         }
 
-        private void Removebtn_Click(object sender, EventArgs e)
+        private void Removebtn_Click(object sender, EventArgs e) // functionality for the remove btn
         {
-            if (!ValidateID(IdBox.Text)) { return; }
+            if (!ValidateID(IdBox.Text)) { return; } // validates the id text box
             int Id = Convert.ToInt32(IdBox.Text);
-            ClothesBL cloth = customer.GetCart().FindClothFromCart(Id);
+            ClothesBL cloth = customer.GetCart().FindClothFromCart(Id); // find the cloth by their id
             if (cloth != null)
             {
                 int quantity = cloth.GetQuantity();
-                ClothesBL shopItem = ObjectHandler.GetClothesDL().FindClothByID(Id);
+                ClothesBL shopItem = ObjectHandler.GetClothesDL().FindClothByID(Id); // funcionality for removing an items in cart
                 shopItem.AddQuantity(quantity);
                 ObjectHandler.GetClothesDL().ChangeQuantity(Id, shopItem.GetQuantity());
                 ObjectHandler.GetCartDL().DeleteAnItem(Id, customer);
@@ -78,7 +78,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateID(string ID)
+        private bool ValidateID(string ID) // validation for the id text box
         {
             int number;
             if (string.IsNullOrWhiteSpace(ID) || !int.TryParse(ID, out number))
@@ -94,7 +94,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateQuantity(string quantity)
+        private bool ValidateQuantity(string quantity) // validtion for the quantity text box 
         {
            
             if (string.IsNullOrWhiteSpace(quantity) || !int.TryParse(quantity, out int number) || number <= 0)
@@ -112,19 +112,19 @@ namespace FashionIsU_FormsApp_.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!ValidateID(IdBox.Text)) { return; }
+            if (!ValidateID(IdBox.Text)) { return; } /// validation for the text boxes
             if (!ValidateQuantity(QuantityBox.Text)) { return; }
             int Id = Convert.ToInt32(IdBox.Text);
             int Quantity = Convert.ToInt32(QuantityBox.Text);
-            ClothesBL cloth = customer.GetCart().FindClothFromCart(Id);
+            ClothesBL cloth = customer.GetCart().FindClothFromCart(Id); // finds item in cart
             if (cloth != null)
             {
                 int currentQuantity = cloth.GetQuantity();
-                ClothesBL shopItem = ObjectHandler.GetClothesDL().FindClothByID(Id);
+                ClothesBL shopItem = ObjectHandler.GetClothesDL().FindClothByID(Id); 
                 shopItem.AddQuantity(currentQuantity);
                 if (shopItem.IsAvailableToBuy(Quantity))
                 {
-                    ObjectHandler.GetCartDL().UpdateQuantity(Id, customer, Quantity);
+                    ObjectHandler.GetCartDL().UpdateQuantity(Id, customer, Quantity); // functionality for changing the quantity of a cart item
                     shopItem.DropQuantity(Quantity);
                     ObjectHandler.GetClothesDL().ChangeQuantity(Id, shopItem.GetQuantity());
                     customer.ClearCart();
@@ -146,7 +146,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clears all the text boxes
         {
             IdBox.Clear();
             QuantityBox.Clear();

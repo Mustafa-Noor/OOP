@@ -24,7 +24,7 @@ namespace FashionIsU_FormsApp_.UI
             MakeColumns();
         }
 
-        private bool ValidateID(string ID)
+        private bool ValidateID(string ID) // validation for id
         {
             int number;
             if (string.IsNullOrWhiteSpace(ID) || !int.TryParse(ID, out number))
@@ -41,7 +41,7 @@ namespace FashionIsU_FormsApp_.UI
         }
 
         DataTable dataTable = new DataTable();
-        private void DisplayReviews(ClothesBL c)
+        private void DisplayReviews(ClothesBL c) // display reviews of a cloth
         {
             foreach (ReviewBL rev in c.GetReviews())
             {
@@ -61,15 +61,15 @@ namespace FashionIsU_FormsApp_.UI
 
         private void Diplaybtn_Click(object sender, EventArgs e)
         {
-            if (!ValidateID(IdBox.Text)) { return; }
+            if (!ValidateID(IdBox.Text)) { return; } // validation for id box
             int id = Convert.ToInt32(IdBox.Text);
 
-            ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id);
+            ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id); // find the cloth
 
             if (c != null)
             {
                 c.ClearReviews();
-                ObjectHandler.GetReviewDL().RetrieveReviews(c);
+                ObjectHandler.GetReviewDL().RetrieveReviews(c); // functionality for displaying reviews
                 dataTable.Rows.Clear();
                 DisplayReviews(c);
 

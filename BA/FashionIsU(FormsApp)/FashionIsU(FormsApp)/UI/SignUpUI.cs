@@ -23,14 +23,14 @@ namespace FashionIsU_FormsApp_.UI
             ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
         }
 
-        private void SignInLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void SignInLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) // go to the sign in page
         {
             this.Hide();
             Form form = new SignInUI();
             form.ShowDialog();
         }
 
-        private void ReturnBtn_Click(object sender, EventArgs e)
+        private void ReturnBtn_Click(object sender, EventArgs e) // return to the main menu
         {
             this.Hide();
             Form form = new MainUI();
@@ -39,14 +39,14 @@ namespace FashionIsU_FormsApp_.UI
 
         private void SignUpbtn_Click(object sender, EventArgs e)
         {
-            if(!ValidateUsername()){ return; }
+            if(!ValidateUsername()){ return; } // validations for the text boxes
             if(!ValidatePassword()) { return; }
             if(!ValidateEmail()) { return; }
             if(!ValidateFirstName()) { return; }
             if(!ValidateLastName()) { return; }
             if (!ValidateContact()) {  return; }
 
-            CustomerBL cus = CreateCustomer();
+            CustomerBL cus = CreateCustomer(); // create customers
             if (ObjectHandler.GetCustomerDL().IsCustomerExists(cus.GetUsername()) || ObjectHandler.GetAdmin().CheckEmployeeExist(cus.GetUsername()))
             {
                 MessageBox.Show("User Already Exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -63,7 +63,7 @@ namespace FashionIsU_FormsApp_.UI
             
         }
 
-        private CustomerBL CreateCustomer()
+        private CustomerBL CreateCustomer() // creates the object of the customer
         {
             return new CustomerBL(username.Text, password.Text, email.Text, firstName.Text, lastName.Text, contact.Text, "customer");
         }
@@ -72,7 +72,7 @@ namespace FashionIsU_FormsApp_.UI
         {
 
         }
-        private bool ValidateUsername()
+        private bool ValidateUsername() // validation for the usernamen text box
         {
             if (UtilityClass.CheckforEmpty(username.Text) || UtilityClass.CheckingForSpace(username.Text) || UtilityClass.CheckingForcomma(username.Text))
             {
@@ -86,7 +86,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidatePassword()
+        private bool ValidatePassword() // validation for the password text box
         {
             if (UtilityClass.CheckforEmpty(password.Text) || UtilityClass.CheckingForSpace(password.Text) || !UtilityClass.CheckingPasswordLength(password.Text) || !UtilityClass.CheckingforInteger(password.Text))
             {
@@ -99,7 +99,7 @@ namespace FashionIsU_FormsApp_.UI
                 return true;
             }
         }
-        private bool ValidateEmail()
+        private bool ValidateEmail() // validtion for the email text box
         {
             if ((UtilityClass.CheckforEmpty(email.Text) || !UtilityClass.ValidateEmailPattern(email.Text)) || UtilityClass.CheckingForcomma(email.Text))
             {
@@ -113,8 +113,8 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateFirstName()
-        {
+        private bool ValidateFirstName() // validation for the first name 
+        { 
             if (UtilityClass.CheckforEmpty(firstName.Text) || UtilityClass.CheckingForSpace(firstName.Text) || UtilityClass.ContainsInteger(firstName.Text) || UtilityClass.CheckingForcomma(firstName.Text))
             {
                 errorProvider1.SetError(firstName, "It Should not Contain space or Contain Number or Comma");
@@ -127,7 +127,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateLastName()
+        private bool ValidateLastName() // validation for the last name
         {
             if (UtilityClass.CheckforEmpty(lastName.Text) || UtilityClass.CheckingForSpace(lastName.Text) || UtilityClass.ContainsInteger(lastName.Text) || UtilityClass.CheckingForcomma(lastName.Text))
             {
@@ -141,7 +141,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateContact()
+        private bool ValidateContact() // validation for the contact
         {
             if(UtilityClass.CheckforEmpty(contact.Text) || !UtilityClass.ValidateContactPattern(contact.Text))
             {
@@ -155,7 +155,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clears all the text boxes
         {
             username.Clear();
             password.Clear();

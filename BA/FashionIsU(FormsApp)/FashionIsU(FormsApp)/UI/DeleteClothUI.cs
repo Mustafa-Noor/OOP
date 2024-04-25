@@ -26,7 +26,7 @@ namespace FashionIsU_FormsApp_.UI
         }
 
         DataTable dataTable = new DataTable();
-        private void MakeColumns()
+        private void MakeColumns() // makes columns
         {
             dataTable.Columns.Add("ClothesID", typeof(string));
             dataTable.Columns.Add("Type", typeof(string));
@@ -36,7 +36,7 @@ namespace FashionIsU_FormsApp_.UI
             dataTable.Columns.Add("Availability", typeof(string));
         }
 
-        private void DisplayClothes()
+        private void DisplayClothes() // displays clothes on the grid
         {
             List<ClothesBL> AllClothes = ObjectHandler.GetClothesDL().GetAllClothes();
             foreach (ClothesBL cloth in AllClothes)
@@ -47,7 +47,7 @@ namespace FashionIsU_FormsApp_.UI
             ClothesGrid.DataSource = dataTable;
         }
 
-        private bool ValidateID()
+        private bool ValidateID() // validation for id
         {
             int number;
             if (string.IsNullOrWhiteSpace(IdBox.Text) || !int.TryParse(IdBox.Text, out number))
@@ -65,13 +65,13 @@ namespace FashionIsU_FormsApp_.UI
 
         private void Deletebtn_Click(object sender, EventArgs e)
         {
-            if (!ValidateID()) { return; }
+            if (!ValidateID()) { return; } // validate id text box
             int Id = Convert.ToInt32(IdBox.Text);
             ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(Id);
 
             if (c != null)
             {
-                ObjectHandler.GetReviewDL().DeleteReview(c);
+                ObjectHandler.GetReviewDL().DeleteReview(c); // delete their review and the cloth
                 if (ObjectHandler.GetClothesDL().DeleteCloth(c))
                 {
                     MessageBox.Show("Successfully Deleted!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);

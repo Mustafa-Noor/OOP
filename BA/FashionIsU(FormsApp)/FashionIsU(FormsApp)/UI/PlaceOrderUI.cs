@@ -19,10 +19,10 @@ namespace FashionIsU_FormsApp_.UI
         public PlaceOrderUI(CustomerBL customer)
         {
             InitializeComponent();
-            HidePanels();
+            HidePanels(); // hide address regarding panels in the start
             this.customer = customer;
             customer.ClearCart();
-            ObjectHandler.GetCartDL().RetrieveCart(customer);
+            ObjectHandler.GetCartDL().RetrieveCart(customer); // loads the cart of the customer
         }
 
         private void PlaceOrderUI_Load(object sender, EventArgs e)
@@ -35,12 +35,12 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private void SetLabelAmount()
+        private void SetLabelAmount() // set the label carrying the amont
         {
             AmountLabel.Text = "Your Total Amount According To Your Cart is : Rs " + customer.GetCart().GetTotalCartAmount();
         }
 
-        private void SetLabelAmountAfterPayment(PaymentMethodBL method)
+        private void SetLabelAmountAfterPayment(PaymentMethodBL method) // set amount on label
         {
             int amount = method.GetAmount(customer.GetCart().GetTotalCartAmount());
             AmountLabelAfterPayment.Text = "Your Total Amount After Your Payment Method Selection Is : Rs " + amount;
@@ -53,13 +53,13 @@ namespace FashionIsU_FormsApp_.UI
 
         private void SetPayment_Click(object sender, EventArgs e)
         {
-            if(!ValidatePaymentCombo())
+            if(!ValidatePaymentCombo()) // valdation for payment method combo box
             {
                 return; 
             }
             else
             {
-                PaymentMethodBL method = new PaymentMethodBL(PaymentCombo.Text.ToLower());
+                PaymentMethodBL method = new PaymentMethodBL(PaymentCombo.Text.ToLower()); 
                 SetLabelAmountAfterPayment(method);
                 ShowPanels();
             }
@@ -69,7 +69,7 @@ namespace FashionIsU_FormsApp_.UI
 
         
 
-        private bool ValidatePaymentCombo()
+        private bool ValidatePaymentCombo() // validation for the combo box of payment type
         {
             
             if (string.IsNullOrWhiteSpace(PaymentCombo.Text))
@@ -107,7 +107,8 @@ namespace FashionIsU_FormsApp_.UI
             PaymentMethodBL method = new PaymentMethodBL(PaymentCombo.Text.ToLower());
             if (method == null) { return; }
             if (!ValidateAddress()) { return; }
-
+             
+            // functionality for placing the order
             int amount = method.GetAmount(customer.GetCart().GetTotalCartAmount());
             OrderBL order = new OrderBL(customer.GetCart().GetCartItems(), amount, address.Text, new PaymentMethodBL(method.GetPaymentType()), customer.GetUsername());
             ObjectHandler.GetOrderDL().AddOrder(new OrderBL(order));
@@ -122,12 +123,12 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        public void ClearTextBoxes()
+        public void ClearTextBoxes() // clears the text boxes
         {
             address.Clear();
         }
 
-        private bool ValidateAddress()
+        private bool ValidateAddress() // validates the address text box
         {
             if(UtilityClass.CheckforEmpty(address.Text) || UtilityClass.CheckingForcomma(address.Text))
             { 

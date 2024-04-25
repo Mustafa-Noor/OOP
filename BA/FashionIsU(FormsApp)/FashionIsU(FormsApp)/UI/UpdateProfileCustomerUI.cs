@@ -35,7 +35,7 @@ namespace FashionIsU_FormsApp_.UI
         private void UpdateProfileBtn_Click(object sender, EventArgs e)
         {
             
-            if (!ValidatePassword()) { return; }
+            if (!ValidatePassword()) { return; } // validations for the text boxes
             if (!ValidateEmail()) { return; }
             if (!ValidateFirstName()) { return; }
             if (!ValidateLastName()) { return; }
@@ -46,7 +46,7 @@ namespace FashionIsU_FormsApp_.UI
             ClearTextBoxes();
 
         }
-
+        // functions for the validaiotn of input boxes
         private bool ValidatePassword()
         {
             if (UtilityClass.CheckforEmpty(password.Text) || UtilityClass.CheckingForSpace(password.Text) || !UtilityClass.CheckingPasswordLength(password.Text) || !UtilityClass.CheckingforInteger(password.Text))

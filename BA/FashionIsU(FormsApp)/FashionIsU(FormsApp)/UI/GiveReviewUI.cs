@@ -37,7 +37,7 @@ namespace FashionIsU_FormsApp_.UI
             dataTable.Columns.Add("Availability", typeof(string));
         }
 
-        private void DisplayClothes()
+        private void DisplayClothes() // display all the cloth
         {
             List<ClothesBL> AllClothes = ObjectHandler.GetClothesDL().GetAllClothes();
             foreach (ClothesBL cloth in AllClothes)
@@ -49,7 +49,7 @@ namespace FashionIsU_FormsApp_.UI
         }
 
 
-        private bool ValidateID(string ID)
+        private bool ValidateID(string ID) // validaiton for id text box
         {
             int number;
             if (string.IsNullOrWhiteSpace(ID) || !int.TryParse(ID, out number))
@@ -65,7 +65,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateRating()
+        private bool ValidateRating() // validation for rating text box
         {
             
             if (!UtilityClass.ValidateRatingString(RatingBox.Text))
@@ -81,7 +81,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateComment()
+        private bool ValidateComment() // validation for comment text box
         {
             if (UtilityClass.CheckforEmpty(CommentBox.Text) || UtilityClass.CheckingForcomma(CommentBox.Text))
             {
@@ -98,15 +98,15 @@ namespace FashionIsU_FormsApp_.UI
 
         private void ReviewBtn_Click(object sender, EventArgs e)
         {
-            if (!ValidateID(IdBox.Text)) { return; }
+            if (!ValidateID(IdBox.Text)) { return; } // validation for text boxes
             if (!ValidateRating()) { return; }
             if (!ValidateComment()) { return; }
             int rating = int.Parse(RatingBox.Text);
             int Id = int .Parse(IdBox.Text);    
-            ClothesBL cloth = ObjectHandler.GetClothesDL().FindClothByID(Id);
+            ClothesBL cloth = ObjectHandler.GetClothesDL().FindClothByID(Id); // finds the cloth by their id
             if (cloth != null)
             {
-                ObjectHandler.GetReviewDL().AddReviews(new ReviewBL(rating, CommentBox.Text, customer.GetUsername()), cloth);
+                ObjectHandler.GetReviewDL().AddReviews(new ReviewBL(rating, CommentBox.Text, customer.GetUsername()), cloth); // adds review through composition
                 cloth.ClearReviews();
                 ObjectHandler.GetReviewDL().RetrieveReviews(cloth);
                 MessageBox.Show("Successfully Submitted Review", "Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -119,7 +119,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clears all the text boxes
         {
             IdBox.Clear();
             RatingBox.Clear();

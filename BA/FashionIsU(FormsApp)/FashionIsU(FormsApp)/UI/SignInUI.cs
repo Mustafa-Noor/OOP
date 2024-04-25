@@ -27,14 +27,14 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private void SignUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void SignUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) // go to the sign up page for customer
         {
             this.Hide();
             Form form = new SignUpUI();
             form.ShowDialog();
         }
 
-        private void ReturnBtn_Click(object sender, EventArgs e)
+        private void ReturnBtn_Click(object sender, EventArgs e) // return to the main menu
         {
             this.Hide();
             Form form = new MainUI();
@@ -43,7 +43,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void SignInbtn_Click(object sender, EventArgs e)
         {
-            if(!ValidateRole())
+            if(!ValidateRole()) // validation for the text boxes
             { return; }
             if(!ValidateUsername())
             { return; }
@@ -52,7 +52,7 @@ namespace FashionIsU_FormsApp_.UI
 
             UserBL u = GiveUser();
 
-            if (ObjectHandler.GetCustomerDL().FindCustomer(u) != null && RoleCombo.Text == "Customer")
+            if (ObjectHandler.GetCustomerDL().FindCustomer(u) != null && RoleCombo.Text == "Customer") // sign in for customer
             {
                 CustomerBL customer = ObjectHandler.GetCustomerDL().FindCustomer(u);
                 if(customer != null)
@@ -66,7 +66,7 @@ namespace FashionIsU_FormsApp_.UI
                     MessageBox.Show("Customer not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else if (ObjectHandler.GetAdmin().FindEmployee(u) != null && RoleCombo.Text == "Employee")
+            else if (ObjectHandler.GetAdmin().FindEmployee(u) != null && RoleCombo.Text == "Employee") // sign in for employee
             {
                 EmployeeBL employee = ObjectHandler.GetAdmin().FindEmployee(u);
                 if(employee != null)
@@ -80,7 +80,7 @@ namespace FashionIsU_FormsApp_.UI
                     MessageBox.Show("Employee not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else if (ObjectHandler.GetAdmin().IsAdmin(u) && RoleCombo.Text == "Admin")
+            else if (ObjectHandler.GetAdmin().IsAdmin(u) && RoleCombo.Text == "Admin") // sign in for admin
             {
                 this.Hide();
                 Form form = new AdminMenuUI();
@@ -93,7 +93,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private UserBL GiveUser()
+        private UserBL GiveUser() // gives user based on their roles
         {
             if (RoleCombo.Text == "Customer")
             {
@@ -112,7 +112,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private bool ValidateRole()
+        private bool ValidateRole() // validaiton for role combo box
         {
             if(!UtilityClass.ValidateRole(RoleCombo.Text.ToLower()))
             {
@@ -126,7 +126,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateUsername()
+        private bool ValidateUsername() // validation for username text box
         {
             if (UtilityClass.CheckforEmpty(username.Text) || UtilityClass.CheckingForSpace(username.Text))
             {
@@ -140,7 +140,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidatePassword()
+        private bool ValidatePassword() // validation for password text box
         {
             if (UtilityClass.CheckforEmpty(password.Text) || UtilityClass.CheckingForSpace(password.Text) || !UtilityClass.CheckingPasswordLength(password.Text) || !UtilityClass.CheckingforInteger(password.Text))
             {

@@ -19,7 +19,7 @@ namespace FashionIsU_FormsApp_.UI
         {
             InitializeComponent();
             this.customer = customer;
-            ObjectHandler.GetCartDL().RetrieveCart(customer);
+            ObjectHandler.GetCartDL().RetrieveCart(customer); // loads the cart of the customer
         }
 
         DataTable dataTable = new DataTable();
@@ -35,7 +35,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private void DisplayClothes()
+        private void DisplayClothes() // display all the clothes
         {
             
 
@@ -49,7 +49,7 @@ namespace FashionIsU_FormsApp_.UI
         }
 
 
-        private void MakeColumns()
+        private void MakeColumns() // makes columns for the table
         {
             dataTable.Columns.Add("ClothesID", typeof(string));
             dataTable.Columns.Add("Type", typeof(string));
@@ -61,19 +61,19 @@ namespace FashionIsU_FormsApp_.UI
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
-            if(!ValidateID(IdBox.Text)) { return; }
+            if(!ValidateID(IdBox.Text)) { return; } // validation for text boxes
             if(!ValidateQuantity(QuantityBox.Text)) { return; }
 
             int Id = Convert.ToInt32(IdBox.Text);
             int Quantity = Convert.ToInt32(QuantityBox.Text);
 
-            ClothesBL cloth = ObjectHandler.GetClothesDL().FindClothByID(Id);
+            ClothesBL cloth = ObjectHandler.GetClothesDL().FindClothByID(Id); // find cloth from their id
 
             if (cloth != null && customer.GetCart().FindClothFromCart(Id) == null)
             {
                 if(cloth.IsAvailableToBuy(Quantity))
                 {
-                    ClothesBL cartItem = new ClothesBL(cloth);
+                    ClothesBL cartItem = new ClothesBL(cloth); // functionality for buying the cloth
                     cartItem.SetQuantity(Quantity);
                     cloth.DropQuantity(Quantity);
                     ObjectHandler.GetClothesDL().ChangeQuantity(Id, cloth.GetQuantity());
@@ -102,7 +102,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private bool ValidateID(string ID)
+        private bool ValidateID(string ID) // validation for id
         {
             int number;
             if (string.IsNullOrWhiteSpace(ID) || !int.TryParse(ID, out number))
@@ -118,7 +118,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateQuantity(string quantity)
+        private bool ValidateQuantity(string quantity) // validation for quantity
         {
             
             if (string.IsNullOrWhiteSpace(quantity) || !int.TryParse(quantity, out int number) || number <= 0)

@@ -21,7 +21,7 @@ namespace FashionIsU_FormsApp_.UI
         }
 
         private Form activeForm = null;
-        public void openChildForm(Form childForm)
+        public void openChildForm(Form childForm) // functionality for the child forms
         {
             if (activeForm != null)
             {
@@ -57,7 +57,7 @@ namespace FashionIsU_FormsApp_.UI
             openChildForm(new AddClothUI());
         }
 
-        private void UpdateItemBtn_Click(object sender, EventArgs e)
+        private void UpdateItemBtn_Click(object sender, EventArgs e) // opens update items page
         {
             if(ObjectHandler.GetClothesDL().CheckClothes())
             {
@@ -70,7 +70,7 @@ namespace FashionIsU_FormsApp_.UI
             
         }
 
-        private void DeleteItemBtn_Click(object sender, EventArgs e)
+        private void DeleteItemBtn_Click(object sender, EventArgs e) // opens delete items page
         {
             if (ObjectHandler.GetClothesDL().CheckClothes())
             {
@@ -82,7 +82,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void DisplayCustomersBtn_Click(object sender, EventArgs e)
+        private void DisplayCustomersBtn_Click(object sender, EventArgs e) // open display customers page
         {
             if(ObjectHandler.GetCustomerDL().CheckCustomersCount())
             {
@@ -94,7 +94,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ReviewPageBtn_Click(object sender, EventArgs e)
+        private void ReviewPageBtn_Click(object sender, EventArgs e) // opens order of customers view page
         {
             if (ObjectHandler.GetCustomerDL().CheckCustomersCount())
             {
@@ -106,7 +106,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void DisplayReviewsBTn_Click(object sender, EventArgs e)
+        private void DisplayReviewsBTn_Click(object sender, EventArgs e) // display reviews of an item page
         {
             if (ObjectHandler.GetClothesDL().CheckClothes())
             {
@@ -118,12 +118,12 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // opens update profile page
         {
             openChildForm(new UpdateProfileEmployeeUI(employee));
         }
 
-        private void ExitBtn_Click(object sender, EventArgs e)
+        private void ExitBtn_Click(object sender, EventArgs e) // exits the employee menu
         {
             this.Hide();
             Form form = new MainUI();

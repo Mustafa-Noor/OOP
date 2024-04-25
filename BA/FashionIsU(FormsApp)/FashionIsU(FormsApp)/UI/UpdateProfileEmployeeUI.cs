@@ -30,6 +30,7 @@ namespace FashionIsU_FormsApp_.UI
             UsernameLabel.Text = "Your Username is : " + employee.GetUsername();
         }
 
+        // validaion for the input boxes
         private bool ValidatePassword()
         {
             if (UtilityClass.CheckforEmpty(password.Text) || UtilityClass.CheckingForSpace(password.Text) || !UtilityClass.CheckingPasswordLength(password.Text) || !UtilityClass.CheckingforInteger(password.Text))
@@ -99,7 +100,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clears all the text boxes
         {
 
             password.Clear();
@@ -109,9 +110,9 @@ namespace FashionIsU_FormsApp_.UI
             contact.Clear();
         }
 
-        private void UpdateProfileBtn_Click(object sender, EventArgs e)
+        private void UpdateProfileBtn_Click(object sender, EventArgs e) // updates the profile of an customer
         {
-            if (!ValidatePassword()) { return; }
+            if (!ValidatePassword()) { return; } /// validation for the text boxes
             if (!ValidateEmail()) { return; }
             if (!ValidateFirstName()) { return; }
             if (!ValidateLastName()) { return; }

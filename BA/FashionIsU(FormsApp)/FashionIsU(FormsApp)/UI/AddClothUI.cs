@@ -22,11 +22,11 @@ namespace FashionIsU_FormsApp_.UI
         DataTable dataTable = new DataTable();
         private void AddClothUI_Load(object sender, EventArgs e)
         {
-            MakeColumns();
-            DisplayClothes();
+            MakeColumns(); // this makes column for the datagrid on loading of the form
+            DisplayClothes(); // this is a function to display clothes
         }
 
-        private void MakeColumns()
+        private void MakeColumns() // this method makes column
         {
             dataTable.Columns.Add("ClothesID", typeof(string));
             dataTable.Columns.Add("Type", typeof(string));
@@ -36,7 +36,7 @@ namespace FashionIsU_FormsApp_.UI
             dataTable.Columns.Add("Availability", typeof(string));
         }
 
-        private void DisplayClothes()
+        private void DisplayClothes() // this displays clothes
         {
             List<ClothesBL> AllClothes = ObjectHandler.GetClothesDL().GetAllClothes();
             foreach (ClothesBL cloth in AllClothes)
@@ -52,21 +52,21 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private void Addbtn_Click(object sender, EventArgs e)
+        private void Addbtn_Click(object sender, EventArgs e) // add button event
         {
-            if (!ValidateType()) { return; }
+            if (!ValidateType()) { return; } // Validations
             if(!ValidateGender()) { return; }
             if(!ValidateColor()) { return; }
             if(!ValidatePrice()) { return; }
             if(!ValidateQuantity()) { return; }
 
-            int price = Convert.ToInt32(PriceBox.Text);
+            int price = Convert.ToInt32(PriceBox.Text); // convert textbox to int
             int quantity = Convert.ToInt32(QuantityBox.Text);
 
             ClothesBL cloth = new ClothesBL(TypeBox.Text, GenderCombo.Text, colorBox.Text, price, quantity);
             if (!ObjectHandler.GetClothesDL().CheckClothExistence(cloth))
             {
-                ObjectHandler.GetClothesDL().AddClothes(cloth);
+                ObjectHandler.GetClothesDL().AddClothes(cloth); // add cloth in list of dl
                 MessageBox.Show("Successfully Added!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataTable.Rows.Clear();
                 DisplayClothes();
@@ -81,6 +81,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateType()
         {
+            // Validation for type
             
             if (UtilityClass.CheckforEmpty(TypeBox.Text) || UtilityClass.CheckingForSpace(TypeBox.Text) || UtilityClass.ContainsInteger(TypeBox.Text) || UtilityClass.CheckingForcomma(TypeBox.Text))
             {
@@ -97,6 +98,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private bool ValidateGender()
         {
+            // Validation for gender
             if (UtilityClass.CheckforEmpty(GenderCombo.Text))
             {
                 errorProvider1.SetError(GenderCombo, "It Is Required");
@@ -110,7 +112,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateColor()
+        private bool ValidateColor() // validaiton for color
         {
             if (UtilityClass.CheckforEmpty(colorBox.Text) || UtilityClass.CheckingForSpace(colorBox.Text) || UtilityClass.ContainsInteger(colorBox.Text) || UtilityClass.CheckingForcomma(colorBox.Text))
             {
@@ -125,7 +127,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidatePrice()
+        private bool ValidatePrice() // validation for price
         {
             
             if (string.IsNullOrWhiteSpace(PriceBox.Text) || !int.TryParse(PriceBox.Text, out int number) || number <= 0)
@@ -141,7 +143,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateQuantity() 
+        private bool ValidateQuantity() // validation for quantity
         {
             
             if (string.IsNullOrWhiteSpace(QuantityBox.Text) || !int.TryParse(QuantityBox.Text, out int number) || number <= 0)
@@ -157,7 +159,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clears all the text boxes
         {
             TypeBox.Clear();
             PriceBox.Clear();

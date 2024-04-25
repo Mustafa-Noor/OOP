@@ -36,7 +36,7 @@ namespace FashionIsU_FormsApp_.UI
             dataTable.Columns.Add("Availability", typeof(string));
         }
 
-        private void DisplayClothes()
+        private void DisplayClothes() // dispay all the cloths on the grid
         {
             List<ClothesBL> AllClothes = ObjectHandler.GetClothesDL().GetAllClothes();
             foreach (ClothesBL cloth in AllClothes)
@@ -47,7 +47,7 @@ namespace FashionIsU_FormsApp_.UI
             ClothesGrid.DataSource = dataTable;
         }
 
-        private bool ValidateType()
+        private bool ValidateType() // validation for the type text box
         {
 
             if (UtilityClass.CheckforEmpty(TypeBox.Text) || UtilityClass.CheckingForSpace(TypeBox.Text) || UtilityClass.ContainsInteger(TypeBox.Text) || UtilityClass.CheckingForcomma(TypeBox.Text))
@@ -63,7 +63,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateGender()
+        private bool ValidateGender() // validation for the gender text box
         {
             if (UtilityClass.CheckforEmpty(GenderCombo.Text))
             {
@@ -78,7 +78,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateColor()
+        private bool ValidateColor() // validation for the color text box
         {
             if (UtilityClass.CheckforEmpty(colorBox.Text))
             {
@@ -93,7 +93,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidatePrice()
+        private bool ValidatePrice() // validation for the price
         {
             
             if (string.IsNullOrWhiteSpace(PriceBox.Text) || !int.TryParse(PriceBox.Text, out int number) || number <= 0)
@@ -109,7 +109,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateQuantity()
+        private bool ValidateQuantity() //validation for the quantity txt box
         {
             
             if (string.IsNullOrWhiteSpace(QuantityBox.Text) || !int.TryParse(QuantityBox.Text, out int number) || number <= 0)
@@ -125,7 +125,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateID()
+        private bool ValidateID() // validation for the id text box
         {
             int number;
             if (string.IsNullOrWhiteSpace(IdBox.Text) || !int.TryParse(IdBox.Text, out number))
@@ -141,7 +141,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clears all the text boxes
         {
             IdBox.Clear();
             TypeBox.Clear();
@@ -150,9 +150,9 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private void Updatebtn_Click(object sender, EventArgs e)
+        private void Updatebtn_Click(object sender, EventArgs e) // updates the items of cloth
         {
-            if (!ValidateID()) { return; }
+            if (!ValidateID()) { return; } // validaiton for the input boxes
             if (!ValidateType()) { return; }
             if (!ValidateGender()) { return; }
             if (!ValidateColor()) { return; }
@@ -163,7 +163,7 @@ namespace FashionIsU_FormsApp_.UI
             int price = Convert.ToInt32(PriceBox.Text);
             int quantity = Convert.ToInt32(QuantityBox.Text);
 
-            ClothesBL cloth = ObjectHandler.GetClothesDL().FindClothByID(id);
+            ClothesBL cloth = ObjectHandler.GetClothesDL().FindClothByID(id); // find the cloth by their id
             if (cloth != null)
             {
                 ClothesBL c = new ClothesBL(TypeBox.Text, GenderCombo.Text, colorBox.Text, price, quantity);

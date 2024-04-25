@@ -50,7 +50,7 @@ namespace FashionIsU_FormsApp_.UI
             EmployeeGrid.DataSource = dataTable;
         }
 
-        private bool ValidateUsername()
+        private bool ValidateUsername() // validates the username text box
         {
             if (UtilityClass.CheckforEmpty(username.Text) || UtilityClass.CheckingForSpace(username.Text) || UtilityClass.CheckingForcomma(username.Text))
             {
@@ -66,11 +66,11 @@ namespace FashionIsU_FormsApp_.UI
 
         private void Deletebtn_Click(object sender, EventArgs e)
         {
-            if (!ValidateUsername()) { return; }
+            if (!ValidateUsername()) { return; } // validation for username 
             EmployeeBL emp = ObjectHandler.GetAdmin().FindEmployee(username.Text);
             if (emp != null)
             {
-
+                // funcitonalitty for deleting an employee
                 ObjectHandler.GetEmployeeDL().DeleteEmployee(emp);
                 ObjectHandler.GetAdmin().ClearEmployees();
                 ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());

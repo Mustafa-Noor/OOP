@@ -24,7 +24,7 @@ namespace FashionIsU_FormsApp_.UI
         }
 
         private Form activeForm = null;
-        public void openChildForm(Form childForm)
+        public void openChildForm(Form childForm) // this is for the child panels
         {
             if (activeForm != null)
             {
@@ -47,7 +47,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void AddEmpBtn_Click(object sender, EventArgs e)
         {
-            if (ObjectHandler.GetAdmin().CheckEmployeesCount())
+            if (ObjectHandler.GetAdmin().CheckEmployeesCount()) // checks the number of employees
             {
                 openChildForm(new AddEmployeeUI());
             }
@@ -61,7 +61,7 @@ namespace FashionIsU_FormsApp_.UI
         {
             if (ObjectHandler.GetAdmin().CheckEmployeesCount())
             {
-                openChildForm(new UpdateEmployeeUI());
+                openChildForm(new UpdateEmployeeUI()); // opens update employee
             }
             else
             {
@@ -69,7 +69,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void RemoveEmpBtn_Click(object sender, EventArgs e)
+        private void RemoveEmpBtn_Click(object sender, EventArgs e) // open the remove employee page
         {
             if (ObjectHandler.GetAdmin().CheckEmployeesCount())
             {
@@ -81,7 +81,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void DisplayCusBtn_Click(object sender, EventArgs e)
+        private void DisplayCusBtn_Click(object sender, EventArgs e) // displays customer on pressing of button
         {
             if (ObjectHandler.GetCustomerDL().CheckCustomersCount())
             {
@@ -93,7 +93,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ExitBtn_Click(object sender, EventArgs e)
+        private void ExitBtn_Click(object sender, EventArgs e) // exits the program
         {
             this.Hide();
             Form form = new MainUI();

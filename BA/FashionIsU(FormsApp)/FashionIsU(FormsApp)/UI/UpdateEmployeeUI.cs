@@ -29,7 +29,7 @@ namespace FashionIsU_FormsApp_.UI
 
         DataTable dataTable = new DataTable();
 
-        private void MakeColumns()
+        private void MakeColumns() // makes columm for the grid
         {
             dataTable.Columns.Add("Username", typeof(string));
             dataTable.Columns.Add("Password", typeof(string));
@@ -40,7 +40,7 @@ namespace FashionIsU_FormsApp_.UI
             dataTable.Columns.Add("Position", typeof(string));
         }
 
-        private void DisplayEmployees()
+        private void DisplayEmployees() // display eployee
         {
             List<EmployeeBL> AllEmployees = ObjectHandler.GetAdmin().GetAllEmployees();
             foreach (EmployeeBL emp in AllEmployees)
@@ -53,7 +53,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
-            if (!ValidateUsername()) { return; }
+            if (!ValidateUsername()) { return; } // validation for the text boxes
             if (!ValidatePassword()) { return; }
             if (!ValidateEmail()) { return; }
             if (!ValidateFirstName()) { return; }
@@ -63,6 +63,7 @@ namespace FashionIsU_FormsApp_.UI
             EmployeeBL emp = ObjectHandler.GetAdmin().FindEmployee(username.Text);
             if (emp != null)
             {
+                // functionality for updation of the employee
                 EmployeeBL employeeUpdate = new EmployeeBL(emp.GetUsername(), password.Text, emailBox.Text, fname.Text, lname.Text, contact.Text, emp.GetRole(), PositionBox.Text);
                 emp.UpdateProfile(employeeUpdate);
                 ObjectHandler.GetEmployeeDL().UpdateProfile(emp);
@@ -80,7 +81,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private bool ValidateUsername()
+        private bool ValidateUsername() // validaiton for the username textbox
         {
             if (UtilityClass.CheckforEmpty(username.Text) || UtilityClass.CheckingForSpace(username.Text) || UtilityClass.CheckingForcomma(username.Text))
             {
@@ -94,7 +95,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidatePassword()
+        private bool ValidatePassword() // validaiton for tpassword text box
         {
             if (UtilityClass.CheckforEmpty(password.Text) || UtilityClass.CheckingForSpace(password.Text) || !UtilityClass.CheckingPasswordLength(password.Text) || !UtilityClass.CheckingforInteger(password.Text))
             {
@@ -107,7 +108,7 @@ namespace FashionIsU_FormsApp_.UI
                 return true;
             }
         }
-        private bool ValidateEmail()
+        private bool ValidateEmail() // validaiotn for the email text box
         {
             if ((UtilityClass.CheckforEmpty(emailBox.Text) || !UtilityClass.ValidateEmailPattern(emailBox.Text)) || UtilityClass.CheckingForcomma(emailBox.Text))
             {
@@ -121,7 +122,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateFirstName()
+        private bool ValidateFirstName() // validation for the firstname
         {
             if (UtilityClass.CheckforEmpty(fname.Text) || UtilityClass.CheckingForSpace(fname.Text) || UtilityClass.ContainsInteger(fname.Text) || UtilityClass.CheckingForcomma(fname.Text))
             {
@@ -135,7 +136,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateLastName()
+        private bool ValidateLastName() // validaiont for the lastname
         {
             if (UtilityClass.CheckforEmpty(lname.Text) || UtilityClass.CheckingForSpace(lname.Text) || UtilityClass.ContainsInteger(lname.Text) || UtilityClass.CheckingForcomma(lname.Text))
             {
@@ -149,7 +150,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateContact()
+        private bool ValidateContact() //validation for the contact box
         {
             if (UtilityClass.CheckforEmpty(contact.Text) || !UtilityClass.ValidateContactPattern(contact.Text))
             {
@@ -163,7 +164,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidatePostion()
+        private bool ValidatePostion() // validation for the position comvo box
         {
             if (UtilityClass.CheckforEmpty(PositionBox.Text))
             {
@@ -178,7 +179,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clearts all the text boxes
         {
             username.Clear();
             password.Clear();

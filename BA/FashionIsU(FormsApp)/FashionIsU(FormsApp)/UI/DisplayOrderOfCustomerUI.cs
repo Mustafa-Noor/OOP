@@ -26,7 +26,7 @@ namespace FashionIsU_FormsApp_.UI
             MakeColumns();
         }
 
-        private bool ValidateUsername()
+        private bool ValidateUsername() // validation for the username textboxes
         {
             if (UtilityClass.CheckforEmpty(username.Text) || UtilityClass.CheckingForSpace(username.Text))
             {
@@ -40,13 +40,13 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private void Diplaybtn_Click(object sender, EventArgs e)
+        private void Diplaybtn_Click(object sender, EventArgs e) // displays orders
         {
             if (!ValidateUsername()) { return; }
-            CustomerBL cus = ObjectHandler.GetCustomerDL().FindCustomerByUsername(username.Text);
+            CustomerBL cus = ObjectHandler.GetCustomerDL().FindCustomerByUsername(username.Text); // finds customer
             if (cus != null)
             {
-                ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(cus);
+                ObjectHandler.GetOrderDL().RetrieveOrdersOfCustomer(cus); // for displaying their order
                 dataTable.Rows.Clear();
                 DisplayOrders(cus.GetOrderList());
             }
@@ -58,7 +58,7 @@ namespace FashionIsU_FormsApp_.UI
 
         DataTable dataTable =  new DataTable();
 
-        private void DisplayOrders(List <OrderBL> customerOrders)
+        private void DisplayOrders(List <OrderBL> customerOrders) // display orders
         {
             foreach (OrderBL order in customerOrders)
             {
@@ -77,7 +77,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private string FormatItems(List<ClothesBL> items)
+        private string FormatItems(List<ClothesBL> items) // this is for formatting the items in order with comma between them
         {
             StringBuilder sb = new StringBuilder();
             foreach (var item in items)

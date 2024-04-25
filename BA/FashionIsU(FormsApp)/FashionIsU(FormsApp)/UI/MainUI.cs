@@ -21,7 +21,7 @@ namespace FashionIsU_FormsApp_
         private void SignInMenubtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form form = new SignInUI();
+            Form form = new SignInUI(); // opens the sign in page
             form.ShowDialog();
         }
 
@@ -29,8 +29,13 @@ namespace FashionIsU_FormsApp_
         {
             
             this.Hide();
-            Form form = new SignUpUI();
+            Form form = new SignUpUI(); // opens the sign up page
             form.ShowDialog();
+        }
+
+        private void MainUI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

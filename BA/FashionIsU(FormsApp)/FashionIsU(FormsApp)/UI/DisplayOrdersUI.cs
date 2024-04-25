@@ -31,7 +31,7 @@ namespace FashionIsU_FormsApp_.UI
             DisplayAmount();
         }
 
-        private void DisplayOrders()
+        private void DisplayOrders() // display orders
         {
             foreach (OrderBL order in customer.GetOrderList())
             {
@@ -50,7 +50,7 @@ namespace FashionIsU_FormsApp_.UI
             
         }
 
-        private string FormatItems(List<ClothesBL> items)
+        private string FormatItems(List<ClothesBL> items) // formatting items in order with comma
         {
             StringBuilder sb = new StringBuilder();
             foreach (var item in items)
@@ -60,7 +60,7 @@ namespace FashionIsU_FormsApp_.UI
             return sb.ToString().TrimEnd(',', ' ');
         }
 
-        private void DisplayAmount()
+        private void DisplayAmount() // display amount spent
         {
             AmountLabel.Text = "Your Total Amount Spent Including All The Orders is : Rs " + customer.FindTotalAmountSpent();
         }

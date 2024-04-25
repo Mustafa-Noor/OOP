@@ -34,7 +34,7 @@ namespace FashionIsU_FormsApp_.UI
             
         }
 
-        private void DisplayCustomers()
+        private void DisplayCustomers() // displays all the customers
         {
             List<CustomerBL> AllCustomers = ObjectHandler.GetCustomerDL().GetAllCustomers();
             foreach (CustomerBL customer in AllCustomers)

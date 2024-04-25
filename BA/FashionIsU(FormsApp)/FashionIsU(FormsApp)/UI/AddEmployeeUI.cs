@@ -17,8 +17,8 @@ namespace FashionIsU_FormsApp_.UI
         public AddEmployeeUI()
         {
             InitializeComponent();
-            ObjectHandler.GetAdmin().ClearEmployees();
-            ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
+            ObjectHandler.GetAdmin().ClearEmployees(); // clears the list of employees
+            ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin()); // loads employees in admin
 
         }
 
@@ -29,7 +29,7 @@ namespace FashionIsU_FormsApp_.UI
         }
         DataTable dataTable = new DataTable();
 
-        private void MakeColumns()
+        private void MakeColumns() // makes columns
         {
             dataTable.Columns.Add("Username", typeof(string));
             dataTable.Columns.Add("Password", typeof(string));
@@ -40,7 +40,7 @@ namespace FashionIsU_FormsApp_.UI
             dataTable.Columns.Add("Position", typeof(string));
         }
 
-        private void DisplayEmployees()
+        private void DisplayEmployees() // display employees
         {
             List<EmployeeBL> AllEmployees = ObjectHandler.GetAdmin().GetAllEmployees();
             foreach (EmployeeBL emp in AllEmployees)
@@ -51,7 +51,7 @@ namespace FashionIsU_FormsApp_.UI
             EmployeeGrid.DataSource = dataTable;
         }
 
-        private bool ValidateUsername()
+        private bool ValidateUsername() // validation for username
         {
             if (UtilityClass.CheckforEmpty(username.Text) || UtilityClass.CheckingForSpace(username.Text) || UtilityClass.CheckingForcomma(username.Text))
             {
@@ -65,7 +65,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidatePassword()
+        private bool ValidatePassword() // validation for password 
         {
             if (UtilityClass.CheckforEmpty(password.Text) || UtilityClass.CheckingForSpace(password.Text) || !UtilityClass.CheckingPasswordLength(password.Text) || !UtilityClass.CheckingforInteger(password.Text))
             {
@@ -78,7 +78,7 @@ namespace FashionIsU_FormsApp_.UI
                 return true;
             }
         }
-        private bool ValidateEmail()
+        private bool ValidateEmail() // validation for email
         {
             if ((UtilityClass.CheckforEmpty(emailBox.Text) || !UtilityClass.ValidateEmailPattern(emailBox.Text)) || UtilityClass.CheckingForcomma(emailBox.Text))
             {
@@ -92,7 +92,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateFirstName()
+        private bool ValidateFirstName() // validation for firstname
         {
             if (UtilityClass.CheckforEmpty(fname.Text) || UtilityClass.CheckingForSpace(fname.Text) || UtilityClass.ContainsInteger(fname.Text) || UtilityClass.CheckingForcomma(fname.Text))
             {
@@ -106,7 +106,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateLastName()
+        private bool ValidateLastName() // validation for lastname
         {
             if (UtilityClass.CheckforEmpty(lname.Text) || UtilityClass.CheckingForSpace(lname.Text) || UtilityClass.ContainsInteger(lname.Text) || UtilityClass.CheckingForcomma(lname.Text))
             {
@@ -120,7 +120,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidateContact()
+        private bool ValidateContact() // validation for contact
         {
             if (UtilityClass.CheckforEmpty(contact.Text) || !UtilityClass.ValidateContactPattern(contact.Text))
             {
@@ -134,7 +134,7 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private bool ValidatePostion()
+        private bool ValidatePostion() // validation for postion
         {
             if (UtilityClass.CheckforEmpty(PositionBox.Text))
             {
@@ -149,12 +149,12 @@ namespace FashionIsU_FormsApp_.UI
             }
         }
 
-        private EmployeeBL CreateEmployee()
+        private EmployeeBL CreateEmployee() // creates an employee object
         {
             return new EmployeeBL(username.Text, password.Text, emailBox.Text, fname.Text, lname.Text, contact.Text, "employee", PositionBox.Text);
         }
 
-        private void ClearTextBoxes()
+        private void ClearTextBoxes() // clears the text boxes
         {
             username.Clear();
             password.Clear();
@@ -166,7 +166,7 @@ namespace FashionIsU_FormsApp_.UI
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
-            if (!ValidateUsername()) {  return; }
+            if (!ValidateUsername()) {  return; } // Validations for the text boxes
             if (!ValidatePassword()) { return; }
             if (!ValidateEmail()) { return; }
             if (!ValidateFirstName()) { return; }
@@ -174,16 +174,16 @@ namespace FashionIsU_FormsApp_.UI
             if (!ValidateContact()) { return; }
             if (!ValidatePostion()) { return; }
 
-            EmployeeBL employee = CreateEmployee();
+            EmployeeBL employee = CreateEmployee(); // creates employee
             if(ObjectHandler.GetCustomerDL().IsCustomerExists(employee.GetUsername()) || ObjectHandler.GetAdmin().CheckEmployeeExist(employee.GetUsername()))
             {
                 MessageBox.Show("User Already Exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                ObjectHandler.GetEmployeeDL().AddEmployee(new EmployeeBL(employee));
+                ObjectHandler.GetEmployeeDL().AddEmployee(new EmployeeBL(employee)); // adds employee in dl
                 ObjectHandler.GetAdmin().ClearEmployees();
-                ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin());
+                ObjectHandler.GetEmployeeDL().RetrieveEmployees(ObjectHandler.GetAdmin()); // leads employee in admin
                 MessageBox.Show("Employee added successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dataTable.Rows.Clear();
                 DisplayEmployees();

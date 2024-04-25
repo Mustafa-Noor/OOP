@@ -25,7 +25,7 @@ namespace FashionIsU_FormsApp_.UI
         }
 
         DataTable dataTable = new DataTable();
-        private void MakeColumns()
+        private void MakeColumns() // makes columns for the grid
         {
             dataTable.Columns.Add("Username", typeof(string));
             dataTable.Columns.Add("FirstName", typeof(string));
@@ -35,7 +35,7 @@ namespace FashionIsU_FormsApp_.UI
 
         }
 
-        private void DisplayCustomers()
+        private void DisplayCustomers() // displays customers
         {
             List<CustomerBL> AllCustomers = ObjectHandler.GetCustomerDL().GetAllCustomers();
             foreach (CustomerBL customer in AllCustomers)
