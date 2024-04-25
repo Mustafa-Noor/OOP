@@ -36,7 +36,7 @@ namespace FashionIsU
             {
                 connection.Open();
 
-                string query = "Delete FROM Reviews WHERE ClothesID = @clothID";
+                string query = "Delete FROM Reviews WHERE ClothID = @clothID";
 
                 using (SqlCommand cmd = new SqlCommand(query, connection))
                 {

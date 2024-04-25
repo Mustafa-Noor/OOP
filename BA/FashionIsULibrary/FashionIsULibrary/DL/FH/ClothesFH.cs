@@ -284,9 +284,5 @@ namespace FashionIsU
         }
 
 
-
-
-
-
     }
 }
