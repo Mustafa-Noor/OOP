@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(ConsoleApp)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\ba\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\ui\\clothesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\BA\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\ui\\clothesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\ui\\clothesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -180,8 +180,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\Program.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAAwBsAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:45:56.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T08:45:56.93Z"
             },
             {
               "$type": "Document",
@@ -193,8 +192,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\UI\\ClothesUI.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T08:55:29.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T08:55:29.741Z"
             },
             {
               "$type": "Document",
