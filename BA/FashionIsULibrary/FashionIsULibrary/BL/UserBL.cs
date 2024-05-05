@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FashionIsU
 {
-    public abstract class UserBL
+    public class UserBL
     {
         // protected attributes (parent class)
         protected string Username;

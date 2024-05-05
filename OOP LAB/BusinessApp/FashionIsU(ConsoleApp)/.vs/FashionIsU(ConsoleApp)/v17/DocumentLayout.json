@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\businessapp\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\businessapp\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\objecthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\businessapp\\fashionisu(consoleapp)\\fashionisu(consoleapp)\\ui\\consolevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\fashionisu(consoleapp)\\ui\\consolevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E29F5AA-61C5-4C7D-B52A-9A610DB4C487}|FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp).csproj|solutionrelative:fashionisu(consoleapp)\\ui\\consolevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -73,8 +73,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\ObjectHandler.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T06:32:40.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T06:32:40.717Z"
             },
             {
               "$type": "Document",
@@ -86,8 +85,7 @@
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\UI\\ConsoleValidation.cs",
               "ViewState": "AQIAAN4AAAAAAAAAAAAIwPMAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T10:21:47.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T10:21:47.09Z"
             },
             {
               "$type": "Document",
@@ -169,7 +167,7 @@
               "RelativeDocumentMoniker": "FashionIsU(ConsoleApp)\\Program.cs",
               "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\BusinessApp\\FashionIsU(ConsoleApp)\\FashionIsU(ConsoleApp)\\Program.cs",
               "RelativeToolTip": "FashionIsU(ConsoleApp)\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPwAAAAlAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwDwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T08:45:56.93Z",
               "EditorCaption": ""

@@ -50,19 +50,19 @@ namespace FashionIsU_ConsoleApp_
                                         MainUI.ClearScreen();
                                         ClothesUI.DisplayAllClothes(ObjectHandler.GetClothesDL().GetAllClothes()); // displays cloth
                                         int id = ClothesUI.TakeId(); // takes id of cloth
-                                        ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id); // this is the cloth found by id
+                                        ClothesBL c = ObjectHandler.GetClothesDL().FindClothByID(id); 
                                         if (c != null && customer.GetCart().FindClothFromCart(id) == null)
                                         {
-                                            int quantity = ClothesUI.TakeQuantity(); // takes the quantity of item to buy
-                                            if (c.IsAvailableToBuy(quantity)) // checks if that item is available
+                                            int quantity = ClothesUI.TakeQuantity(); 
+                                            if (c.IsAvailableToBuy(quantity)) 
                                             {
-                                                ClothesBL cartItem = new ClothesBL(c); // makes an object of cloth for the cart
-                                                cartItem.SetQuantity(quantity); // set quantity of cart item
-                                                c.DropQuantity(quantity); // drops the quantity of cloth of shop
+                                                ClothesBL cartItem = new ClothesBL(c); 
+                                                cartItem.SetQuantity(quantity); 
+                                                c.DropQuantity(quantity); 
                                                 ObjectHandler.GetClothesDL().ChangeQuantity(id, c.GetQuantity());
-                                                ObjectHandler.GetCartDL().SaveItemInCart(cartItem, customer); // save the item in cart
+                                                ObjectHandler.GetCartDL().SaveItemInCart(cartItem, customer); 
                                                 CartUI.AddedToCart();
-                                                ObjectHandler.GetCartDL().RetrieveCart(customer); // load custoemr cart
+                                                ObjectHandler.GetCartDL().RetrieveCart(customer); 
                                             }
                                             else
                                             {
