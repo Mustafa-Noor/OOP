@@ -65,7 +65,7 @@ namespace GameLibrary
         public void StyleHealthBar(ProgressBar HealthBar, Image img)
         {
             HealthBar.Minimum = 0;
-            HealthBar.Maximum = 100;
+            HealthBar.Maximum = 1000;
             HealthBar.Value = Health;
             HealthBar.Width = img.Width;
             HealthBar.Height = 10; 
@@ -98,6 +98,7 @@ namespace GameLibrary
             this.Pb.Location = MovementController.Move(this.Pb.Location);
             HealthBar.Left = Pb.Left;
             HealthBar.Top = Pb.Bottom + 5;
+            HealthBar.Value = this.Health;
         }
 
         public ObjectType GetObjectType()

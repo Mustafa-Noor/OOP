@@ -25,17 +25,17 @@ namespace Invasion
             game = Game.GetGameInstance(this);
 
             
-             game.AddGameObject(Properties.Resources.heroship,ObjectType.Hero, 100, 400, new KeyboardMovement(10, new Point(this.Width, this.Height), Properties.Resources.spr_bullet_strip03, this), 100);
-             game.AddGameObject(Properties.Resources.enemy1,ObjectType.Enemy, 100, 100, new HorizontalMovement(10, new Point(this.Width, this.Height), HorizontalDirection.Left), 100);
-            game.AddGameObject(Properties.Resources.enemy2, ObjectType.Enemy, 500, 0, new HorizontalMovement(10, new Point(this.Width, this.Height), HorizontalDirection.Left), 100);
+             game.AddGameObject(Properties.Resources.heroship,ObjectType.Hero, 100, 400, new KeyboardMovement(10, new Point(this.Width, this.Height), Properties.Resources.spr_bullet_strip03, this), 1000);
+             game.AddGameObject(Properties.Resources.enemy1,ObjectType.Enemy, 100, 100, new HorizontalMovement(10, new Point(this.Width, this.Height), HorizontalDirection.Left), 1000);
+            game.AddGameObject(Properties.Resources.enemy2, ObjectType.Enemy, 500, 0, new HorizontalMovement(10, new Point(this.Width, this.Height), HorizontalDirection.Left), 1000);
             //  game.AddGameObject(Properties.Resources.USSR_Pe3, 100, 10, new ZigZagMovement(5, new Point(this.Width, this.Height)));
             CollisionDetection col1 = new CollisionDetection(ObjectType.HeroFire, ObjectType.Enemy, CollisionAction.ReduceEnemyHealth);
             CollisionDetection col2 = new CollisionDetection(ObjectType.EnemyFire, ObjectType.Hero, CollisionAction.ReduceHeroHealth);
-            CollisionDetection col3 = new CollisionDetection(ObjectType.EnemyFire, ObjectType.Hero, CollisionAction.ReduceHeroHealth);
+            
 
             game.AddCollisionDetections(col1);
             game.AddCollisionDetections(col2);
-            game.AddCollisionDetections(col3);
+           
             
             
             
@@ -46,11 +46,18 @@ namespace Invasion
             game.RemoveGameObject();
             game.Update();
             
-            if(!game.IsHeroAlive() || !game.AreEnemyAlive())
+            if(!game.IsHeroAlive())
             {
                 GameLoop.Enabled = false;
                 this.Close();
                 Form form = new RestartForm(); // endgame form
+                form.ShowDialog();
+            }
+            else if(!game.AreEnemyAlive())
+            {
+                GameLoop.Enabled = false;
+                this.Close();
+                Form form = new YouWon();
                 form.ShowDialog();
             }
             else
@@ -69,7 +76,7 @@ namespace Invasion
 
         }
 
-        private void SetLabel() // set the label carrying the amont
+        private void SetLabel() 
         {
             HeroCount.Text = "HeroCount: " + game.GetLivePlayersCount();
             EnemyCount.Text = "EnemyCount: " + game.GetLiveEnemiesCount();

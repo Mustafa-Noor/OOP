@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GameLibrary
 {
@@ -34,16 +35,18 @@ namespace GameLibrary
                             {
                                 if (Action == CollisionAction.ReduceEnemyHealth)
                                 {
-                                    obj2.SetHealth(obj1.GetHealth()-100);
+                                    obj2.SetHealth(obj2.GetHealth()-1);
+                                    break;
                                    
                                 }
                                 else if(Action == CollisionAction.ReduceHeroHealth)
                                 {
-                                    obj2.SetHealth(obj1.GetHealth()-25);
+                                    obj2.SetHealth(obj2.GetHealth()-1);
+                                    break;
                                     
                                 }
 
-                                break;
+                                
                                 
                                 
                             }

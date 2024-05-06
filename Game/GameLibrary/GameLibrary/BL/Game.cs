@@ -67,19 +67,15 @@ namespace GameLibrary
        
         public void Update()
         {
-            foreach (GameObject gameobject in GameObjects.ToList())
+            foreach (GameObject gameObject in GameObjects.ToList())
              {
-                gameobject.Update();
- 
+                gameObject.Update();
+                foreach (CollisionDetection collision in CollisionDetections)
+                {
+                    collision.CheckCollision(GameObjects);
+                }
+
             }
-            foreach (CollisionDetection collision in CollisionDetections)
-            {
-                collision.CheckCollision(GameObjects);
-            }
-
-
-
-
         }
 
         public void AddCollisionDetections(CollisionDetection col)
@@ -100,12 +96,12 @@ namespace GameLibrary
         public void Fire(Image BulletImage)
         {
             int left = 0, top = 0;
-            foreach (GameObject gameobject in GameObjects)
+            foreach (GameObject gameObject in GameObjects)
             {
-                if (gameobject.GetObjectType() == ObjectType.Hero)
+                if (gameObject.GetObjectType() == ObjectType.Hero)
                 {
-                    left = gameobject.Pb.Left + (gameobject.Pb.Width/2)-10;
-                    top = (gameobject.Pb.Top);
+                    left = gameObject.Pb.Left + (gameObject.Pb.Width/2)-10;
+                    top = (gameObject.Pb.Top);
                     break;
                 }
             }
@@ -120,12 +116,12 @@ namespace GameLibrary
             int left = 0, top = 0;
             for (int i = 0; i < GameObjects.Count; i++)
             {
-                GameObject gameobject = GameObjects[i];
-                if (gameobject.GetObjectType() == ObjectType.Enemy)
+                GameObject gameObject = GameObjects[i];
+                if (gameObject.GetObjectType() == ObjectType.Enemy)
                 {
 
-                    left = gameobject.Pb.Left -3;
-                    top = (gameobject.Pb.Top) + (gameobject.Pb.Height / 2);
+                    left = gameObject.Pb.Left -3;
+                    top = (gameObject.Pb.Top) + (gameObject.Pb.Height / 2);
                     AddGameObject(img, ObjectType.EnemyFire, left, top, new FireMovement(30, new Point(FormReference.Width, FormReference.Height), FireDirection.Down));
                 }
             }
@@ -136,8 +132,8 @@ namespace GameLibrary
         {
             for (int i = 0; i < GameObjects.Count; i++)
             {
-                GameObject gameobject = GameObjects[i];
-                if (gameobject.GetObjectType() == ObjectType.Hero)
+                GameObject gameObject = GameObjects[i];
+                if (gameObject.GetObjectType() == ObjectType.Hero)
                 {
 
                     return true;
@@ -150,11 +146,11 @@ namespace GameLibrary
         {
             for (int i = 0; i < GameObjects.Count; i++)
             {
-                GameObject gameobject = GameObjects[i];
-                if (gameobject.GetObjectType() == ObjectType.Hero)
+                GameObject gameObject = GameObjects[i];
+                if (gameObject.GetObjectType() == ObjectType.Hero)
                 {
 
-                    return gameobject;
+                    return gameObject;
                 }
             }
             return null;
@@ -172,16 +168,16 @@ namespace GameLibrary
         {
             for (int i = 0; i < GameObjects.Count; i++)
             {
-                GameObject gameobject = GameObjects[i];
-                if (gameobject.GetHealth() <= 0)
+                GameObject gameObject = GameObjects[i];
+                if (gameObject.GetHealth() == 0)
                 {
 
-                    GameObjects.Remove(gameobject);
-                    if(gameobject.GetObjectType() == ObjectType.Enemy)
+                    GameObjects.Remove(gameObject);
+                    if(gameObject.GetObjectType() == ObjectType.Enemy)
                     {
-                        FormReference.Controls.Remove(gameobject.GetHealthBar());
+                        FormReference.Controls.Remove(gameObject.GetHealthBar());
                     }
-                    FormReference.Controls.Remove(gameobject.Pb);
+                    FormReference.Controls.Remove(gameObject.Pb);
 
                 }
             }
@@ -196,11 +192,11 @@ namespace GameLibrary
         {
             List<GameObject> Enemies = new List<GameObject>();
 
-            foreach (GameObject gameobject in GameObjects)
+            foreach (GameObject gameObject in GameObjects)
             {
-                if (gameobject.GetObjectType() == ObjectType.Enemy)
+                if (gameObject.GetObjectType() == ObjectType.Enemy)
                 {
-                    Enemies.Add(gameobject);
+                    Enemies.Add(gameObject);
                 }
             }
             return Enemies.Count;
@@ -209,11 +205,11 @@ namespace GameLibrary
         {
             List<GameObject> Players = new List<GameObject>();
 
-            foreach (GameObject gameobject in GameObjects)
+            foreach (GameObject gameObject in GameObjects)
             {
-                if (gameobject.GetObjectType() == ObjectType.Hero)
+                if (gameObject.GetObjectType() == ObjectType.Hero)
                 {
-                    Players.Add(gameobject);
+                    Players.Add(gameObject);
                 }
             }
             return Players.Count;
