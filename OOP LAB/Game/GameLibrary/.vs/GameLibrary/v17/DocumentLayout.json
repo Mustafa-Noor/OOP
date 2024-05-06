@@ -3,47 +3,87 @@
   "WorkspaceRootPath": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\bl\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\bl\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\verticalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\verticalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\movement\\horizontalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\movement\\horizontalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\movement\\firemovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\movement\\firemovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\enum\\collisionaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\enum\\collisionaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\collision\\collisiondetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\collision\\collisiondetection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\bl\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\bl\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\enum\\objecttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\enum\\objecttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\enum\\horizontaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\enum\\horizontaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\enum\\firedirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\enum\\firedirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\movement\\zigzagmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\movement\\zigzagmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\Downloads\\Escape2.0-master (1)\\Escape2.0-master\\Consumer\\Main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\zigzagmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\zigzagmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\keyboardmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\keyboardmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\verticaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\verticaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\horizontalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\horizontalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\horizontaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\horizontaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\imovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\imovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7A172491-19B0-4372-AB94-CCF744E91298}|GameLibrary\\GameLibrary.csproj|solutionrelative:gamelibrary\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\zigzagmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\zigzagmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\keyboardmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\keyboardmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\horizontaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\horizontaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\horizontalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\horizontalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\verticalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\verticalmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\verticaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\verticaldirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\musno\\onedrive\\desktop\\semester 2\\object oriented programming\\oop lab\\game\\gamelibrary\\gamelibrary\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\gamelibrary\\imovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gamelibrary\\imovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,11 +93,140 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HorizontalMovement.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Movement\\HorizontalMovement.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\Movement\\HorizontalMovement.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Movement\\HorizontalMovement.cs",
+              "RelativeToolTip": "GameLibrary\\Movement\\HorizontalMovement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T04:27:25.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FireMovement.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Movement\\FireMovement.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\Movement\\FireMovement.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Movement\\FireMovement.cs",
+              "RelativeToolTip": "GameLibrary\\Movement\\FireMovement.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T04:27:17.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ObjectType.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Enum\\ObjectType.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\Enum\\ObjectType.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Enum\\ObjectType.cs",
+              "RelativeToolTip": "GameLibrary\\Enum\\ObjectType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T04:24:21.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HorizontalDirection.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Enum\\HorizontalDirection.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\Enum\\HorizontalDirection.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Enum\\HorizontalDirection.cs",
+              "RelativeToolTip": "GameLibrary\\Enum\\HorizontalDirection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T04:24:18.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FireDirection.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Enum\\FireDirection.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\Enum\\FireDirection.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Enum\\FireDirection.cs",
+              "RelativeToolTip": "GameLibrary\\Enum\\FireDirection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T04:24:16.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\BL\\Game.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\BL\\Game.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\BL\\Game.cs",
+              "RelativeToolTip": "GameLibrary\\BL\\Game.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwEgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:04:24.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameObject.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\BL\\GameObject.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\BL\\GameObject.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\BL\\GameObject.cs",
+              "RelativeToolTip": "GameLibrary\\BL\\GameObject.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:03:36.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CollisionAction.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Enum\\CollisionAction.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\Enum\\CollisionAction.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Enum\\CollisionAction.cs",
+              "RelativeToolTip": "GameLibrary\\Enum\\CollisionAction.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:03:31.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CollisionDetection.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Collision\\CollisionDetection.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\Collision\\CollisionDetection.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Collision\\CollisionDetection.cs",
+              "RelativeToolTip": "GameLibrary\\Collision\\CollisionDetection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:00:04.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ZigZagMovement.cs",
+              "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Movement\\ZigZagMovement.cs",
+              "RelativeDocumentMoniker": "GameLibrary\\Movement\\ZigZagMovement.cs",
+              "ToolTip": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Movement\\ZigZagMovement.cs",
+              "RelativeToolTip": "GameLibrary\\Movement\\ZigZagMovement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:00:00.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\musno\\Downloads\\Escape2.0-master (1)\\Escape2.0-master\\Consumer\\Main.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Escape2.0-master (1)\\Escape2.0-master\\Consumer\\Main.cs",
@@ -65,12 +234,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Downloads\\Escape2.0-master (1)\\Escape2.0-master\\Consumer\\Main.cs",
               "ViewState": "AQIAAOEAAAAAAAAAAAAAAPQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T15:33:06.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T15:33:06.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "ZigZagMovement.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\ZigZagMovement.cs",
               "RelativeDocumentMoniker": "GameLibrary\\ZigZagMovement.cs",
@@ -78,12 +246,11 @@
               "RelativeToolTip": "GameLibrary\\ZigZagMovement.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T12:17:29.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T12:17:29.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "KeyboardMovement.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\KeyboardMovement.cs",
               "RelativeDocumentMoniker": "GameLibrary\\KeyboardMovement.cs",
@@ -91,12 +258,11 @@
               "RelativeToolTip": "GameLibrary\\KeyboardMovement.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:55:49.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T03:55:49.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "HorizontalDirection.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\HorizontalDirection.cs",
               "RelativeDocumentMoniker": "GameLibrary\\HorizontalDirection.cs",
@@ -104,12 +270,11 @@
               "RelativeToolTip": "GameLibrary\\HorizontalDirection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:43:10.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T03:43:10.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "HorizontalMovement.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\HorizontalMovement.cs",
               "RelativeDocumentMoniker": "GameLibrary\\HorizontalMovement.cs",
@@ -117,12 +282,11 @@
               "RelativeToolTip": "GameLibrary\\HorizontalMovement.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:44:26.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T03:44:26.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "VerticalMovement.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\VerticalMovement.cs",
               "RelativeDocumentMoniker": "GameLibrary\\VerticalMovement.cs",
@@ -130,12 +294,11 @@
               "RelativeToolTip": "GameLibrary\\VerticalMovement.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:51:54.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T03:51:54.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "VerticalDirection.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\VerticalDirection.cs",
               "RelativeDocumentMoniker": "GameLibrary\\VerticalDirection.cs",
@@ -143,12 +306,11 @@
               "RelativeToolTip": "GameLibrary\\VerticalDirection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:54:49.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T03:54:49.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "GameObject.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\GameObject.cs",
               "RelativeDocumentMoniker": "GameLibrary\\GameObject.cs",
@@ -156,12 +318,11 @@
               "RelativeToolTip": "GameLibrary\\GameObject.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:41:50.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T03:41:50.133Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\Game.cs",
               "RelativeDocumentMoniker": "GameLibrary\\Game.cs",
@@ -169,12 +330,11 @@
               "RelativeToolTip": "GameLibrary\\Game.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAQwCUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T03:39:12.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T03:39:12.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "IMovement.cs",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\IMovement.cs",
               "RelativeDocumentMoniker": "GameLibrary\\IMovement.cs",
@@ -186,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UserControl1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\musno\\OneDrive\\Desktop\\Semester 2\\Object Oriented Programming\\OOP LAB\\Game\\GameLibrary\\GameLibrary\\UserControl1.cs",
               "RelativeDocumentMoniker": "GameLibrary\\UserControl1.cs",

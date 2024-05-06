@@ -32,6 +32,7 @@
             this.GameLoop = new System.Windows.Forms.Timer(this.components);
             this.HeroCount = new System.Windows.Forms.Label();
             this.EnemyCount = new System.Windows.Forms.Label();
+            this.EnemyFireLoop = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // GameLoop
@@ -61,6 +62,12 @@
             this.EnemyCount.TabIndex = 1;
             this.EnemyCount.Text = "Hero Count :";
             // 
+            // EnemyFireLoop
+            // 
+            this.EnemyFireLoop.Enabled = true;
+            this.EnemyFireLoop.Interval = 900;
+            this.EnemyFireLoop.Tick += new System.EventHandler(this.EnemyFireLoop_Tick);
+            // 
             // Invasion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -84,6 +91,7 @@
         private System.Windows.Forms.Timer GameLoop;
         private System.Windows.Forms.Label HeroCount;
         private System.Windows.Forms.Label EnemyCount;
+        private System.Windows.Forms.Timer EnemyFireLoop;
     }
 }
 

@@ -37,6 +37,11 @@ namespace GameLibrary
                                     obj2.SetHealth(obj1.GetHealth()-100);
                                     break;
                                 }
+                                if(Action == CollisionAction.ReduceHeroHealth)
+                                {
+                                    obj2.SetHealth(obj1.GetHealth()-25);
+                                    break;
+                                }
                                 
                                 
                             }

@@ -16,6 +16,7 @@ namespace GameLibrary
         private int HeroCount=0;
         private int EnemyCount=0;
         private List<CollisionDetection> CollisionDetections;
+        private int FireTurn;
         private Game(Form form)
         {
             this.FormReference = form;
@@ -66,6 +67,7 @@ namespace GameLibrary
             foreach (GameObject gameobject in GameObjects.ToList())
             {
                 gameobject.Update();
+
                 foreach (CollisionDetection collision in CollisionDetections)
                 {
                     collision.CheckCollision(GameObjects);
@@ -108,6 +110,48 @@ namespace GameLibrary
             
             AddGameObject(BulletImage,ObjectType.HeroFire, left, top, new FireMovement(20, new Point(FormReference.Width, FormReference.Height), FireDirection.Up));
         }
+
+        public void FireEnemy(Image img)
+        {
+            List<GameObject> Enemies = new List<GameObject>();
+            int left = 0, top = 0;
+            for (int i = 0; i < GameObjects.Count; i++)
+            {
+                GameObject gameobject = GameObjects[i];
+                if (gameobject.GetObjectType() == ObjectType.Enemy)
+                {
+                    Enemies.Add(gameobject);
+                }
+            }
+            if (Enemies != null && Enemies.Count > FireTurn)
+            {
+                GameObject enemy = Enemies[FireTurn % 4];
+                left = enemy.Pb.Left - 3;
+                top = (enemy.Pb.Top) + (enemy.Pb.Height / 2);
+                AddGameObject(img, ObjectType.EnemyFire, left, top, new FireMovement(30, new Point(FormReference.Width, FormReference.Height), FireDirection.Down));
+            }
+            else if (Enemies.Count != 0)
+            {
+                FireTurn--;
+            }
+
+        }
+
+        public bool IsHeroAlive()
+        {
+            for (int i = 0; i < GameObjects.Count; i++)
+            {
+                GameObject gameobject = GameObjects[i];
+                if (gameobject.GetObjectType() == ObjectType.Hero)
+                {
+
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
 
         public void RemoveGameObject()
         {
